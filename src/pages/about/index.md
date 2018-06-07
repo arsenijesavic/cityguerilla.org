@@ -1,5 +1,5 @@
 ---
-templateKey: 'about-page'
+templateKey: 'about'
 path: /about
 title: About our values
 details: 'City Guerilla is a creative laboratory which rests on the following principles: self-organized youth, their creative association, peer education and alternative education, exchanging a wide range of skills, knowledge and ideas. These young people have different educational backgrounds, interests, talents, abilities, life experience and attitudes. The synergy of these versatile factors forms specific creative spaces for applying various ideas in the fields of art and social activism with an aim to inspire young people to take an active part in shaping their own urban environment and strengthen civil society.

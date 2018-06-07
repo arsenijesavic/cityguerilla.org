@@ -25,7 +25,9 @@ li {
   display: inline-block;
 }
 
-a {}
+a {
+  display: inline-block;
+}
 
 .scroll::-webkit-scrollbar {
   width: 15px;

@@ -48,14 +48,14 @@ const Layout = ({ children }) => (
         style={{
           width: '100%',
           height: '100%',
-          marginBottom: `${45 * 2}px`,
+          marginBottom: `${45}px`,
           paddingBottom: `${45.3 * 2}px`,
           background: `url(${grid})`,
         }}
       >
         {children()}
       </div>
-      <footer style={{ margin: `${45 * 2}px auto`, textAlign: 'center' }}>
+      <footer style={{ margin: `$0px auto`, textAlign: 'center' }}>
         <p style={{ padding: '11.25px 0' }}>cityguerilla@gmail.com</p>
         <div style={{ padding: '11.25px 0' }}>
           <a style={{ marginRight: '11.25px' }} href="">

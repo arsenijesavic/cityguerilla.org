@@ -5,6 +5,8 @@
   "author": "Austin Green",
   "dependencies": {
     "bulma": "^0.6.0",
+    "d3-ease": "^1.0.3",
+    "exenv": "^1.2.2",
     "gatsby": "^1.9.213",
     "gatsby-link": "^1.6.44",
     "gatsby-plugin-netlify": "^1.0.19",
@@ -22,6 +24,7 @@
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-helmet": "^5.2.0",
+    "react-move": "^2.7.0",
     "styled-components": "^3.3.2",
     "uuid": "^3.2.1"
   },

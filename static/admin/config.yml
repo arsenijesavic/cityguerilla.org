@@ -6,17 +6,20 @@ media_folder: static/img
 public_folder: assets/images
 
 collections:
-  - name: "projects"
-    label: "Projects"
-    folder: "src/pages/blog"
+  - name: "actions"
+    label: "Actions"
+    folder: "src/pages/actions"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Date from", name: "dateFrom", widget: "date"}
+      - {label: "Date to", name: "dateFrom", widget: "date"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Images", name: "images", widget: "list", field: - {label: Image, name: image, widget: image}}
 
   - name: "pages"
     label: "Pages"
