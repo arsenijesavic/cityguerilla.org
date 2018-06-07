@@ -19,7 +19,12 @@ collections:
       - {label: "Date from", name: "dateFrom", widget: "date"}
       - {label: "Date to", name: "dateFrom", widget: "date"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Images", name: "images", widget: "image"}
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        fields:
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
 
   - name: "pages"
     label: "Pages"

@@ -4,7 +4,7 @@ import { Grid, Cell } from '../components'
 const GuerilasPage = () => {
   return (
     <Grid>
-      <Cell width={20} height={1} bottom={1} background={false} >
+      <Cell width={20} height={1} bottom={1} background={false}>
         <Select />
       </Cell>
 
@@ -31,8 +31,9 @@ const Select = () => (
           textAlign: 'center',
           fontSize: '30px',
           padding: '2.5px 0',
-          margin: '0'
-        }} >
+          margin: '0',
+        }}
+      >
         +
       </div>
     </Cell>
@@ -51,7 +52,8 @@ const Member = () => (
     bottom={Math.floor(Math.random() * 2)}
     left={Math.floor(Math.random() * 2)}
     background={false}
-    padding={false}>
+    padding={false}
+  >
     <Grid>
       <Cell width={2} height={2} padding={false}>
         <img

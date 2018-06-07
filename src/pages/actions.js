@@ -3,13 +3,15 @@ import styled from 'styled-components'
 import { Grid, Cell } from '../components'
 
 const ActionsPage = ({ data }) => {
-  const projects = data.allMarkdownRemark.edges.map(v => ({ ...v.node.frontmatter }))
+  const projects = data.allMarkdownRemark.edges.map(v => ({
+    ...v.node.frontmatter,
+  }))
 
   return (
     <Grid>
       {projects &&
-        projects.map(project => (
-          <Cell width={6} height={6} top={1} left={2}>
+        projects.map((project, i) => (
+          <Cell key={i} width={6} height={6} top={1} left={2}>
             <Project {...project} />
           </Cell>
         ))}
@@ -37,6 +39,7 @@ const Overflow = styled.div`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   &:hover {
+    left: -100%;
     opacity: 0;
   }
 `
@@ -53,7 +56,6 @@ const Project = ({ title, description, images }) => (
     />
   </Wrap>
 )
-
 
 export const query = graphql`
   query ActionsQuery {
