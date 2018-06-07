@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import './index.css'
-
+import grid from '../assets/svg/grid.svg'
 const Layout = ({ children }) => (
   <div>
     <Helmet>
@@ -50,7 +50,7 @@ const Layout = ({ children }) => (
           height: '100%',
           marginBottom: `${45 * 2}px`,
           paddingBottom: `${45.3 * 2}px`,
-          background: 'url(static/svg/grid.svg)',
+          background: `url(${grid})`,
         }}
       >
         {children()}

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import './index.css'
+import logo from '../../assets/images/logo.jpg'
 
 const Header = ({ siteTitle }) => (
   <header className="header">
@@ -16,7 +17,8 @@ const Header = ({ siteTitle }) => (
         <Link to="/">
           <img
             className="header__logo"
-            src="static/images/logo.jpg"
+            //src="static/images/logo.jpg"
+            src={logo}
             alt="logo"
           />
         </Link>
