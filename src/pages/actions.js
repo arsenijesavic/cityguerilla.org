@@ -4,15 +4,15 @@ import { Grid, Cell } from '../components'
 
 const ActionsPage = ({ data }) => {
   const projects = data.allMarkdownRemark.edges.map(v => ({ ...v.node.frontmatter }))
-  console.log(projects)
+
   return (
     <Grid>
-      {/* {projects &&
+      {projects &&
         projects.map(project => (
           <Cell width={6} height={6} top={1} left={2}>
             <Project {...project} />
           </Cell>
-        ))} */}
+        ))}
     </Grid>
   )
 }
@@ -40,7 +40,7 @@ const Overflow = styled.div`
     opacity: 0;
   }
 `
-const Project = ({ title, description, photos }) => (
+const Project = ({ title, description, images }) => (
   <Wrap>
     <Overflow>
       <h1>{title}</h1>
@@ -48,7 +48,7 @@ const Project = ({ title, description, photos }) => (
     </Overflow>
     <img
       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-      src={`http://localhost:1337/${photos[0].url}`}
+      src={images[0].url}
       alt=""
     />
   </Wrap>
@@ -65,6 +65,10 @@ export const query = graphql`
           }
           frontmatter {
             title
+            description
+            images {
+              url
+            }
           }
           excerpt
         }

@@ -43,7 +43,10 @@ Hackarton je zamišljen kao 24-časovni kreativni izazov sa ciljem da se mladi i
 dateFrom: 2016-12-17T15:04:10.000Z
 dateTo: 2016-12-17T15:04:10.000Z
 type: conference
-images: wtf
+images:
+  - {url: http://cityguerilla.org/images/actions/01_City_Guerilla_Dacida_2017.jpg}
+  - {url: http://cityguerilla.org/images/actions/01_City_Guerilla_Dacida_2017.jpg}
+  - {url: http://cityguerilla.org/images/actions/01_City_Guerilla_Dacida_2017.jpg}
 video: wtf§
 tags:
   - digital art
