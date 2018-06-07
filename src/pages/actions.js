@@ -2,8 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { Grid, Cell } from '../components'
 
-const ActionsPage = () => {
-
+const ActionsPage = ({ data }) => {
+  const projects = data.allMarkdownRemark.edges.map(v => ({ ...v.node.frontmatter }))
+  console.log(projects)
   return (
     <Grid>
       {/* {projects &&
@@ -53,6 +54,24 @@ const Project = ({ title, description, photos }) => (
   </Wrap>
 )
 
+
+export const query = graphql`
+  query ActionsQuery {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/action/" } }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`
 
 // export const pageQuery = graphql`
 //   query ActionsQuery {
