@@ -7,7 +7,7 @@ public_folder: assets/images
 
 collections:
   - name: "actions"
-    label: "Actions"
+    label: "Action"
     folder: "src/pages/action"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -25,6 +25,51 @@ collections:
           - {label: "Description", name: "description", widget: "string"}
           - {label: "Image", name: "image", widget: "image"}
 
+  - name: "projects"
+    label: "Projects"
+    folder: "src/pages/project"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Date from", name: "dateFrom", widget: "date"}
+      - {label: "Date to", name: "dateFrom", widget: "date"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        fields:
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+
+  - name: "members"
+    label: "Members"
+    folder: "src/pages/member"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
+      - {label: "Full name", name: "fullName", widget: "string"}
+      - {label: "CV", name: "cv", widget: "markdown"}
+      - {label: "Member from", name: "memberFrom", widget: "date"}
+      - {label: "Member to", name: "memberTo", widget: "date"}
+      - {label: "Interest", name: "interest", widget: "list"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "City" , name: "city", widget: "string"}
+      - {label: "Website" , name: "website", widget: "string"}
+
+  - name: "creativeBoard"
+    label: "Creative Board"
+    folder: "src/pages/creative-board"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+
   - name: "pages"
     label: "Pages"
     files:
@@ -40,7 +85,8 @@ collections:
             searchFields: ["title"]
             valueField: "title"
             displayFields: ["title"]
-          - {label: "Event Name", name: "eventName", widget: "text"}
+          - {label: "Event Name", name: "eventName", widget: "string"}
+          - {label: "Event Date", name: "eventDate", widget: "date"}
           - {label: "Event Image", name: "eventImage", widget: "image"}
 
       - file: "src/pages/about/index.md"
