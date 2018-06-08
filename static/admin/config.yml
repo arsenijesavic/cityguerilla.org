@@ -80,6 +80,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
           - label: "Event"
             name: "event"
+            widget: "object"
             fields:
               - {label: "Event Name", name: "eventName", widget: "string"}
               - {label: "Event Date", name: "eventDate", widget: "date"}
