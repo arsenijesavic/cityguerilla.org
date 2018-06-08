@@ -54,6 +54,6 @@ dateFrom: '2017-10-01'
 tags:
   - test
 images:
-  - image: /assets/images/01_city_guerilla_druga_strana_normalnosti_2017.jpg
+  - image: /img/01_city_guerilla_druga_strana_normalnosti_2017.jpg
 ---
-test
+
