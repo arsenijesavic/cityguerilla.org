@@ -1,0 +1,21 @@
+---
+  templateKey: "member"
+  name: "Iva Teodora Vuković"
+  location: "Belgrade"
+  since: "2015 - 2015"
+  from: "2015"
+  to: "2015"
+  website: ""
+  image: "/img/member_image76887.jpg"
+  involved: 
+    - "2015: DIALOGUE #4 Ivan Kucina"
+    - "2015: Dialogue #3 Open library"
+    - "2015: Collective interpretation of the Spanish house"
+    - "2015: Open Library "
+  bio: "She graduated from the VI Belgrade high school and elementary music school Stankovic, attended a photo course at the National Talent Center, enrolled at the Faculty of Architecture in 2012, took part in numerous workshops and seminars mostly in the fields of architecture, urbanism and design, both within and outside the faculty (SCAPES:LAB, Map as a medium, New housing models for flood victims - From idea to project and change, OIKONET - Habitat Regeneration Strategies etc.). She worked on several freelance projects and participated in competitions, participated in several exhibitions at the faculty, also in the field of architecture and design."
+  tags: 
+    - "Design"
+    - "Architecture"
+    - "Music"
+    - "Urbanism"
+    - "Photography"

@@ -1,0 +1,20 @@
+---
+  templateKey: "member"
+  name: "Irena Petković"
+  location: "Belgrade"
+  since: "2015 - 2015"
+  from: "2015"
+  to: "2015"
+  website: ""
+  image: "/img/member_image696171.jpg"
+  involved: 
+    - "2015: Savamala Imaginarium"
+    - "2015: Open Library "
+  bio: "-She won awards in the field of fine arts, calligraphy, design;\n-Participant of \"Organic South Serbia\", a project for graphic design. -Volunteer of Resource Center Leskovac since 2010, and a Youth leader since 2013.\n\nPeer educator:\n-Educator at \"Unique handicrafts\" workshops;\n-Educator and lecturer at art workshop with children aged up to 14 years\nSeminars:\n- \"Green ambassadors in the prevention of climate change\" - Seminar in Kyustendil, Bulgaria\n- \"Project Cycle Management\" - Seminar and learning about project writing, Mavrovo - Macedonia\n- Seminar \"Team work, communication and public appearance\", Leskovac"
+  tags: 
+    - "Design"
+    - "Culture"
+    - "Books"
+    - "Ecology"
+    - "Painting"
+    - "Education"

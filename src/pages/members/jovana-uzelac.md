@@ -1,0 +1,22 @@
+---
+  templateKey: "member"
+  name: "Jovana Uzelac"
+  location: "Belgrade"
+  since: "2015 - 2015"
+  from: "2015"
+  to: "2015"
+  website: ""
+  image: "/img/member_image320280.jpg"
+  involved: 
+    - "2015: Savamala Imaginarium"
+    - "2015: Accidental Guides of Savamala"
+  bio: "My name is Jovana Uzelac and I'm a student of the first year of the Faculty of Applied Arts in Belgrade, at the Book illustration department. I was born in 1993 in Belgrade, where after finishing the Philological Gymnasium I decided to dedicate myself to various artistic disciplines and enroll in the faculty I currently attend.\n\nSince 2012, I have been actively engaged in improving my artistic abilities, as well as in other creative disciplines. In 2013, I joined the volunteer project of “Bulevar umetnosti” portal, an online magazine for culture and art \"Bulevar\", where I participated as a journalist, exploring current events in the field of design, culture and art. I also participated in the project as a photographer, in order to provide high quality graphic material to colleagues. Recognizing the effort I invested, the project leaders promoted me to executive editor. In 2014, I became a part of the Undergrad team, in cooperation with which I worked as a documentary photographer recording ruined and abandoned places in the underground of Belgrade. The project also included public exhibitions of documented photographs."
+  tags: 
+    - "Design"
+    - "Art"
+    - "Graphics"
+    - "Research on Cities"
+    - "Culture"
+    - "Writing"
+    - "Photography"
+    - "Books"

@@ -1,0 +1,20 @@
+---
+  templateKey: "member"
+  name: "Olga Jorgačević"
+  location: "Belgrade"
+  since: "2015 - 2018"
+  from: "2015"
+  to: "2018"
+  website: ""
+  image: "/img/member_image19267.jpg"
+  involved: 
+    - "2015: Savamala Imaginarium"
+    - "2015: Accidental Guides of Savamala"
+  bio: "She was born in 1990 in Belgrade, where she graduated from the The College of Fine and Applied Arts, Department of Graphic Design. In addition to design, she engages in illustration and handmade sculptural items. She has participated in several exhibitions in the country and abroad: \"Energy of Space\" (La Chaux-de-Fonds, Switzerland), International Laser Summit of Cheap Graphics (Belgrade, 2013), \"Monstruo PeRFIDO\" (Epitome Institute, San Antonio, 2013), \"Me, myself and I\" (Center D'Art Neuchatelois, Neuchatel, Switzerland) and others. She is currently working as a graphic designer for design incubator Nova Iskra."
+  tags: 
+    - "Design"
+    - "Illustration"
+    - "Art"
+    - "Graphics"
+    - "Sculpture"
+    - "Nova Iskra"

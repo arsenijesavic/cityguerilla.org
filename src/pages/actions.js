@@ -40,6 +40,21 @@ const Wrap = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
+
+  > div {
+    &:hover {
+      left: -200%;
+      opacity: 0;
+    }
+  }
+
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+  }
 `
 
 const Overflow = styled.div`
@@ -59,6 +74,7 @@ const Overflow = styled.div`
   }
 
   > p {
+    margin: 5px 0;
     > span {
       background: black;
       color: white;
@@ -68,11 +84,7 @@ const Overflow = styled.div`
     }
   }
 
-  &:hover {
-    left: -100%;
-    right: -200%;
-    opacity: 0;
-  }
+
 
 `
 const Project = ({ title, tags, images }) => (
@@ -80,11 +92,10 @@ const Project = ({ title, tags, images }) => (
     <Overflow>
       <h1>{title}</h1>
       <p>
-        {tags && tags.map(tag => <span>{tag}</span>)}
+        {tags && tags.slice(0, 8).map(tag => <span>{tag}</span>)}
       </p>
     </Overflow>
     <img
-      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
       src={images && images[0].image}
       alt=""
     />

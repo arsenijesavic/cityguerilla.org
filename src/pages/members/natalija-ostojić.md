@@ -1,0 +1,23 @@
+---
+  templateKey: "member"
+  name: "Natalija Ostojić"
+  location: "Belgrade"
+  since: "2015 - 2018"
+  from: "2015"
+  to: "2018"
+  website: ""
+  image: "/img/member_image933633.jpg"
+  involved: 
+    - "2015: My Piece of Savamala"
+    - "2015: DIALOGUE #4 Ivan Kucina"
+    - "2015: Dialogue #3 Open library"
+    - "2015: Dialogue#1 Milena Ivković "
+    - "2015: Collective interpretation of the Spanish house"
+    - "2015: Open Library "
+  bio: "In 2011, she graduated with the final paper on the topic of \"Urban Design and Cultural Diversity - Let’s Buy Green\".\nIn 2013, she completed her Master Academic Studies at the Faculty of Architecture in Belgrade, with the topic of \"Co-operative Housing for the Elderly in Vracar area\". During her studies she participated in numerous exhibitions and workshops with her works.\nShe is one of the founders of the School of Urban Practices, with which she worked on the “C5 project”  in 2013, together with Professor Ivan Kucina.\nSince May 2014, she has been writing for the EkoKuća magazine, and participated in the organization of the exhibition EKOKULT.\nCurrently she is working at the architectural office Aba consult in Belgrade."
+  tags: 
+    - "Architecture"
+    - "Urbanism"
+    - "Participatory Design"
+    - "Citizens Participation"
+    - "School of Urban Practices"

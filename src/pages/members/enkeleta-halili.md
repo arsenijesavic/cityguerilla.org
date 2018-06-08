@@ -1,0 +1,20 @@
+---
+  templateKey: "member"
+  name: "Enkeleta Halili"
+  location: "Prishtina"
+  since: "2011 - 2011"
+  from: "2011"
+  to: "2011"
+  website: ""
+  image: "/img/EnkeletaHalili.jpg"
+  involved: []
+  bio: "I’ve finished my economics study and now I am a student at the Faculty of Philology in Prishtina, where I study German language and literature. In different cultural events organized by the Goethe-Institute and the German and Swiss embassies in Prishtina, I have had an opportunity to gain various professional experiences and get to know interesting people. Currently I’m active in an educational project. Cultures, languages, literature and individual personalities fascinate and inspire me. I love to travel to different places and get to know interesting people and cultures at the same time.\n \nUnë i kam përfunduar studimet në Shkencat Ekonomike dhe jam studente në Fakultetin e Filologjisë, në degën e Gjuhës dhe Letërsië Gjermane. Kam pasur rastin të fitoj përvojë pune dhe të njihem me njerëz interesant në ngjarje të ndryshme kulturore të Institutit Goethe si dhe të Ambasadës Gjermane dhe asaj Zvicerane në Prishtinë. Aktualisht, punoj në një projekt arsimor. Më magjepsin e më frymëzojnë kulturat, gjuhët, letërsia dhe personalitetet individuale. Më pëlqen të udhëtoj në vende te ndryshme, ku mund të takoj e të njihem me njerëz dhe."
+  tags: 
+    - "Culture"
+    - "People"
+    - "German"
+    - "Travelling"
+    - "Germany"
+    - "Languages"
+    - "Education"
+    - "Kosovo"

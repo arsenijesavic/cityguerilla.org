@@ -1,23 +1,82 @@
 import React from 'react'
 import { Grid, Cell } from '../components'
+import moment from 'moment'
+const GuerilasPage = ({ data }) => {
+  const members = data.allMarkdownRemark.edges.map(v => ({
+    ...v.node.frontmatter,
+    url: v.node.fields.slug
+  }))
 
-const GuerilasPage = () => {
+  const years = members
+    .map(v => v.from)
+    .filter((v, i, a) => a.indexOf(v) === i).sort((a, b) => Number(b) - Number(a))
+    .reduce((acc, cur, i) => { acc[cur] = []; return acc }, {})
+
+  members.forEach(v => {
+    const active = getYearFromTo(v.from, v.to)
+    active.forEach(x => years[x] = [...years[x], ...v])
+  })
+
+  console.log(years)
   return (
     <Grid>
       <Cell width={20} height={1} bottom={1} background={false}>
         <Select />
       </Cell>
 
-      <Grid>
-        <Member />
-        <Member />
-        <Member />
-        <Member />
-        <Member />
-      </Grid>
+      {years && Object.keys(years).map((v, i) =>
+        <Grid key={i}>
+          <Cell width={5} height={1} top={1} right={1} left={2} bottom={1} >
+            <div style={{ background: 'black' }}>
+              <h3 style={{ textAlign: 'center', padding: '10px', color: 'white' }}>{v}</h3>
+            </div>
+          </Cell>
+          <Cell clear />
+          {years[v] && years[v].map((member, i) =>
+            <Member key={i} {...member} />
+          )}
+        </Grid>
+      )}
+
     </Grid>
   )
 }
+
+export default GuerilasPage
+
+
+const getYearFromTo = (from, to) => {
+  const Start = new Date(`June 26, ${from} 11:13:00`);
+  const End = new Date(`June 26, ${to} 11:13:00`);
+  var years = moment(End).diff(Start, 'years');
+  var yearsBetween = [];
+  for (var year = 0; year < years; year++)
+    yearsBetween.push(Start.getFullYear() + year);
+  return yearsBetween
+}
+
+
+export const query = graphql`
+  query GuerilasQuery {
+        allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/members/" } }) {
+        edges {
+      node {
+        fields {
+      slug
+    }
+          frontmatter {
+        name
+            image
+      from
+      to
+    }
+  }
+}
+}
+}
+`
+
+
 
 const Select = () => (
   <Grid>
@@ -43,7 +102,7 @@ const Select = () => (
   </Grid>
 )
 
-const Member = () => (
+const Member = ({ name, image }) => (
   <Cell
     width={3}
     height={3}
@@ -58,27 +117,13 @@ const Member = () => (
       <Cell width={2} height={2} padding={false}>
         <img
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          src="http://cityguerilla.org/images/members/member_image265602.jpg"
+          src={image}
           alt=""
         />
       </Cell>
       <Cell width={3} height={1} clear>
-        <h5 style={{ padding: '12.5px 10px' }}>Dragana Krtinic</h5>
+        <h5 style={{ padding: '12.5px 5px' }}>{name}</h5>
       </Cell>
     </Grid>
   </Cell>
 )
-
-export default GuerilasPage
-
-// export const aboutPageQuery = graphql`
-//   query AboutPage($id: String!) {
-//     markdownRemark(id: { eq: $id }) {
-//       html
-//       frontmatter {
-//         title
-//         details
-//       }
-//     }
-//   }
-// `

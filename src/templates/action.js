@@ -63,7 +63,7 @@ const ActionPage = ({ data }) => {
         <div style={{ width: '45px', height: '45px', background: 'black' }}>
           <h1 style={{ fontSize: '27px', padding: '2.5px 15px', color: 'white', fontWeight: '100', }}>#</h1>
         </div>
-        <div style={{ padding: '5px 30px' }}>
+        <div style={{ padding: '2.5px 30px' }}>
           {tags && tags.map((tag, i) =>
             <span key={i}
               style={{ marginRight: '5px', display: 'inline-block', fontSize: '0.707em', textTransform: 'uppercase' }}>
@@ -90,7 +90,7 @@ const ActionPage = ({ data }) => {
                 style={{ width: '35px', height: '35px', objectFit: 'cover', float: 'left' }}
                 src="http://cityguerilla.org/images/members/member_image409246.jpg"
                 alt="" />
-              <h5 style={{ float: 'left', padding: '10px', fontWeight: '500' }}>{member}</h5>
+              <h5 style={{ float: 'left', padding: '10px', fontWeight: '700' }}>{member}</h5>
               <br style={{ clear: 'both' }} />
             </li>
           )}
