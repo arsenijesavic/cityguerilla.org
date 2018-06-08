@@ -88,7 +88,7 @@ collections:
           - label: "Featured Project"
             name: "featuredProject"
             widget: "relation"
-            collection: "actions"
+            collection: "projects"
             searchFields: ["title"]
             valueField: "title"
             displayFields: ["title"]
