@@ -6,8 +6,13 @@ import styled from 'styled-components'
 
 const IndexPage = ({ data }) => {
   const { event, featuredProject } = data.allMarkdownRemark.edges[0].node.frontmatter
+  const actions = data.actions.edges.map(v => ({
+    ...v.node.frontmatter,
+    url: v.node.fields.slug
+  }))
   console.log(event)
   console.log(featuredProject)
+  console.log(actions)
   return (
     <Grid>
       <Cell width={4} height={3}>
@@ -18,22 +23,9 @@ const IndexPage = ({ data }) => {
 
       <Cell width={13} height={6} top={1} left={1}>
         <Carousel autoplay>
-          <Action
-            title="Puls of Savamala"
-            description="Every city has a unique set of sounds, forming a characteristic audio landscape. The Guerilla has devoted itself to investigating these sounds, in order to showcase Savamala through that landscape. The focus of PULS is to create an experience of a city through sound, visualisation, performance and installation."
-          />
-          <Action
-            title="Puls of Savamala"
-            description="Every city has a unique set of sounds, forming a characteristic audio landscape. The Guerilla has devoted itself to investigating these sounds, in order to showcase Savamala through that landscape. The focus of PULS is to create an experience of a city through sound, visualisation, performance and installation."
-          />
-          <Action
-            title="Puls of Savamala"
-            description="Every city has a unique set of sounds, forming a characteristic audio landscape. The Guerilla has devoted itself to investigating these sounds, in order to showcase Savamala through that landscape. The focus of PULS is to create an experience of a city through sound, visualisation, performance and installation."
-          />
-          <Action
-            title="Puls of Savamala"
-            description="Every city has a unique set of sounds, forming a characteristic audio landscape. The Guerilla has devoted itself to investigating these sounds, in order to showcase Savamala through that landscape. The focus of PULS is to create an experience of a city through sound, visualisation, performance and installation."
-          />
+          {actions && actions.map((action, i) =>
+            <Action key={i} {...action} />
+          )}
         </Carousel>
       </Cell>
 
@@ -151,6 +143,24 @@ export const query = graphql`
         }
       }
     }
+
+    actions: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/action/"}}) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            description
+            images {
+              url
+            }
+          }
+          excerpt
+        }
+      }
+    }
   }
 `
 
@@ -180,16 +190,16 @@ const Overflow = styled.div`
 
   }
 `
-const Action = ({ title, description, photos }) => (
+const Action = ({ title, description, images }) => (
   <Wrap>
     <Overflow>
       <h1>{title}</h1>
       <p>{description}</p>
     </Overflow>
+    {console.log(images)}
     <img
       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-      //src={`http://localhost:1337/${photos[0].url}`}
-      src="http://cityguerilla.org/images/actions/01_20140516_PULS_Radionica_GradskaGerila_Foto_Gerila.jpg"
+      //src={images[0].image}
       alt=""
     />
   </Wrap>

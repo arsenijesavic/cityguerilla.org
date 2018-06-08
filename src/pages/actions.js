@@ -55,7 +55,7 @@ const Project = ({ title, description, images }) => (
     </Overflow>
     <img
       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-      src={images[0].url}
+      src={images[0].image}
       alt=""
     />
   </Wrap>
@@ -73,7 +73,7 @@ export const query = graphql`
             title
             description
             images {
-              url
+              image
             }
           }
           excerpt

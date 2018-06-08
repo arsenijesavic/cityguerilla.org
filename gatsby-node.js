@@ -117,25 +117,24 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
 }
 
-
-
 exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
     const { createNodeField } = boundActionCreators;
     getNodes()
         .filter(node => node.internal.type === "MarkdownRemark")
         .forEach(node => {
+            if (node.frontmatter) {
+                if (node.frontmatter.featuredProject) {
 
-            if (node.frontmatter && node.frontmatter.featuredProject) {
+                    const authorNode = getNodes()
+                        .find(node2 =>
+                            node2.internal.type === "MarkdownRemark" &&
+                            node2.frontmatter.title === node.frontmatter.featuredProject
+                        )
 
-                const authorNode = getNodes()
-                    .find(node2 =>
-                        node2.internal.type === "MarkdownRemark" &&
-                        node2.frontmatter.title === node.frontmatter.featuredProject
-                    )
-
-                node.frontmatter = {
-                    ...node.frontmatter,
-                    featuredProject: authorNode.frontmatter
+                    node.frontmatter = {
+                        ...node.frontmatter,
+                        featuredProject: authorNode.frontmatter
+                    }
                 }
             }
         });

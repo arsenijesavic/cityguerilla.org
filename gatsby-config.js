@@ -12,7 +12,6 @@ module.exports = {
         name: 'pages',
       },
     },
-
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -20,8 +19,8 @@ module.exports = {
         name: 'images',
       },
     },
-    'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
