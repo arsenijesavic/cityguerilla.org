@@ -78,6 +78,12 @@ collections:
         name: "home"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
+          - label: "Event"
+            name: "event"
+            fields:
+              - {label: "Event Name", name: "eventName", widget: "string"}
+              - {label: "Event Date", name: "eventDate", widget: "date"}
+              - {label: "Event Image", name: "eventImage", widget: "image"}
           - label: "Featured Project"
             name: "featuredProject"
             widget: "relation"
@@ -85,11 +91,6 @@ collections:
             searchFields: ["title"]
             valueField: "title"
             displayFields: ["title"]
-          - {label: "Event Name", name: "eventName", widget: "string"}
-          - {label: "Event Date", name: "eventDate", widget: "date"}
-          - {label: "Event Image", name: "eventImage", widget: "image"}
-          - {label: "Test ", name: "test", widget: "categories"}
-
 
       - file: "src/pages/about/index.md"
         label: "About"
