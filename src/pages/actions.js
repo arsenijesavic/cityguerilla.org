@@ -7,7 +7,7 @@ const ActionsPage = ({ data }) => {
   const projects = data.allMarkdownRemark.edges.map(v => ({
     ...v.node.frontmatter,
   }))
-
+  console.log(projects)
   return (
     <Grid>
       {projects &&

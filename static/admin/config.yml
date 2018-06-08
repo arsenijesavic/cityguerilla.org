@@ -39,7 +39,7 @@ collections:
             collection: "actions"
             searchFields: ["title"]
             valueField: "title"
-            displayFields: ["twitterHandle"]
+            displayFields: ["title"]
 
       - file: "src/pages/about/index.md"
         label: "About"
