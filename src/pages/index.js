@@ -74,8 +74,7 @@ const IndexPage = ({ data }) => {
       <Cell width={7} height={5} top={1}>
         <img
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          //src={`./${featuredProject.images[0].image}`}
-          src={withPrefix('../../../static/img/01_20130428-Spanska-Kuca-Simfonija-ljustura')}
+          src={`${featuredProject.images[0].image.replace('/static', '')}`}
           alt=""
         />
       </Cell>
