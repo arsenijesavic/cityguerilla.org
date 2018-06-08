@@ -47,15 +47,15 @@ const Overflow = styled.div`
     opacity: 0;
   }
 `
-const Project = ({ title, description, images }) => (
+const Project = ({ title, tags, images }) => (
   <Wrap>
     <Overflow>
       <h1>{title}</h1>
-      <p>{description && description.split('.')[0]}.</p>
+      <p>{tags}.</p>
     </Overflow>
     <img
       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-      src={images[0].image}
+      src={images && images[0].image}
       alt=""
     />
   </Wrap>
@@ -71,7 +71,7 @@ export const query = graphql`
           }
           frontmatter {
             title
-            description
+            tags
             images {
               image
             }
