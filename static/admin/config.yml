@@ -40,6 +40,8 @@ collections:
             searchFields: ["title"]
             valueField: "title"
             displayFields: ["title"]
+          - {label: "Event Name", name: "eventName", widget: "text"}
+          - {label: "Event Image", name: "eventImage", widget: "image"}
 
       - file: "src/pages/about/index.md"
         label: "About"
