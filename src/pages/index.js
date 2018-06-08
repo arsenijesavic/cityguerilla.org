@@ -1,10 +1,13 @@
 import React from 'react'
+import { withPrefix } from 'gatsby-link'
+
 import { Grid, Cell, Carousel } from '../components'
 import styled from 'styled-components'
 
 const IndexPage = ({ data }) => {
-  const { event } = data.allMarkdownRemark.edges[0].node.frontmatter
+  const { event, featuredProject } = data.allMarkdownRemark.edges[0].node.frontmatter
   console.log(event)
+  console.log(featuredProject)
   return (
     <Grid>
       <Cell width={4} height={3}>
@@ -71,7 +74,8 @@ const IndexPage = ({ data }) => {
       <Cell width={7} height={5} top={1}>
         <img
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          src="http://cityguerilla.org/images/projects/01_20111230_biblioteka_Knez_Mihailova_Gradska_Gerila_FotoMirjanaUtvic.jpg"
+          //src={`./${featuredProject.images[0].image}`}
+          src={withPrefix('../../../static/img/01_20130428-Spanska-Kuca-Simfonija-ljustura')}
           alt=""
         />
       </Cell>
@@ -92,12 +96,10 @@ const IndexPage = ({ data }) => {
       <Cell width={6} height={9} top={0} left={5}>
         <div style={{ padding: '30px' }}>
           <h2 style={{ textAlign: 'center' }}>-</h2>
-          <h2 style={{ textAlign: 'center' }}>The Open Library</h2>
-          <p style={{ marginTop: '30px' }}>
-            Since our community is not used to free book exchange at a local
-            level, the Goethe-Guerilla group set up the first Open Library object
-            in the year 2011.
-        </p>
+          <h2 style={{ textAlign: 'center' }}>{featuredProject.title}</h2>
+          <p style={{ marginTop: '30px', textAlign: 'justify' }}>
+            {featuredProject.description.split('.')[0].trim()}
+          </p>
         </div>
       </Cell>
 
@@ -128,6 +130,7 @@ const IndexPage = ({ data }) => {
 }
 export default IndexPage
 
+
 export const query = graphql`
   query IndexQuery {
     allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/home/"}}) {
@@ -136,6 +139,14 @@ export const query = graphql`
           frontmatter {
             event {
               eventName
+              eventImage
+            }
+            featuredProject {
+              title
+              description
+              images {
+                image
+              }
             }
           }
         }

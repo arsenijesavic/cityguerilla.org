@@ -2,9 +2,7 @@
 templateKey: action
 title: The Symphony of Savamala Project
 description: >-
-  The Guerilla team began to deal with sounds and sound-art as early as 2011 —
-  forming Guerilla’s Trashophonic Orchestra with the idea of using recycled
-  material to make instruments and produce various tunes. This idea eventually
+  The Guerilla team began to deal with sounds and sound-art as early as 2011 — forming Guerilla’s Trashophonic Orchestra with the idea of using recycled material to make instruments and produce various tunes. This idea eventually
   underwent a complete transformation. Beginning in 2013, the Guerilla team
   spent most of their time researching sounds in Savamala since this city
   neighborhood, being the crossroads of all major transport lines, had for a
@@ -40,7 +38,7 @@ tags:
   - savamala
   - reserach on city
 images:
-  - image: /assets/images/01_20130428-spanska-kuca-simfonija-ljustura.jpg
-  - image: /assets/images/03_20130421-spanska-kuca-simfonija-ljustura.jpg
+  - image: /static/img/01_20130428-spanska-kuca-simfonija-ljustura.jpg
+  - image: /static/img/03_20130421-spanska-kuca-simfonija-ljustura.jpg
 ---
 
