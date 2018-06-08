@@ -154,7 +154,7 @@ export const query = graphql`
             title
             description
             images {
-              url
+              image
             }
           }
           excerpt
