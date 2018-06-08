@@ -14,8 +14,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Date from", name: "dateFrom", widget: "date"}
       - {label: "Date to", name: "dateFrom", widget: "date"}
       - {label: "Tags", name: "tags", widget: "list"}
@@ -30,15 +29,28 @@ collections:
     label: "Pages"
     files:
       - file: "src/pages/about/index.md"
+        label: "Home"
+        name: "home"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
+          - label: "Featured Project"
+            name: "featuredProject"
+            widget: "relation"
+            collection: "actions"
+            searchFields: ["title"]
+            valueField: "title"
+            displayFields: ["twitterHandle"]
+
+      - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Details", name: "details", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
+          - {label: "Featured Action", name: "featuredAction", widget: "string"}
+          - {label: "Details", name: "details", widget: "markdown"}
+
       - file: "src/pages/products/index.md"
-        label: "Products Page"
+        label: "Home"
         name: "products"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}

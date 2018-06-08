@@ -1,6 +1,5 @@
 import React from 'react'
 import { Grid, Cell, Carousel } from '../components'
-//import Carousel from 'nuka-carousel'
 import styled from 'styled-components'
 
 const IndexPage = () => (
@@ -32,8 +31,8 @@ const IndexPage = () => (
       </Carousel>
     </Cell>
 
-    <Cell width={12} height={2} top={1} left={1}>
-      SEARCH BAR
+    <Cell width={12} height={2} top={1} left={1} background={false}>
+      <input type="search" placeholder="search" />
     </Cell>
 
     <Cell width={5} height={1} top={1} right={1} align="right">

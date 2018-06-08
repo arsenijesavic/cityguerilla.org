@@ -27,6 +27,7 @@ li {
 
 a {
   display: inline-block;
+  text-decoration: none;
 }
 
 .scroll::-webkit-scrollbar {
@@ -127,4 +128,46 @@ button {
 .mat-div textarea {
   /*border-top: 2px solid black;*/
   resize: none;
+}
+
+
+
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  width: calc(5*44px);
+  height: 44px;
+  /* background: white url("../images/Search-icon.svg") no-repeat 9px center; */
+  background-size: 20px 20px;
+  border: none;
+  outline: none;
+  padding: 9px 10px 9px 32px;
+  transition: all .5s ease-in-out;
+}
+
+input::-webkit-search-decoration, input::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type=search]:focus {
+  width: 538px;
+  height: 88px;
+  background-color: #fff;
+}
+
+input:-moz-placeholder {
+  color: #999;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.icon {
+  display: inline-block;
+  /* background-image: url("../images/search.png"); */
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
 }

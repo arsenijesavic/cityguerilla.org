@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Grid, Cell } from '../components'
+import Link from 'gatsby-link'
 
 const ActionsPage = ({ data }) => {
   const projects = data.allMarkdownRemark.edges.map(v => ({
@@ -12,7 +13,9 @@ const ActionsPage = ({ data }) => {
       {projects &&
         projects.map((project, i) => (
           <Cell key={i} width={6} height={6} top={1} left={2}>
-            <Project {...project} />
+            <Link to="">
+              <Project {...project} />
+            </Link>
           </Cell>
         ))}
     </Grid>

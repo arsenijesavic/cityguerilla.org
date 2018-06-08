@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const AboutPage = ({ data }) => {
+const ActionPage = ({ data }) => {
   return <Grid />
 }
 
-export default AboutPage
+export default ActionPage
 
 // export const aboutPageQuery = graphql`
 //   query AboutPage($id: String!) {

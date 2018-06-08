@@ -4,10 +4,11 @@ import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import './index.css'
 import grid from '../assets/svg/grid.svg'
-const Layout = ({ children }) => (
+
+const Layout = ({ data, children }) => (
   <div>
     <Helmet>
-      {/* <title>{title}</title> */}
+      <title>{data.site.siteMetadata.title}</title>
       <meta charset="utf-8" />
       <meta
         name="viewport"
@@ -56,12 +57,24 @@ const Layout = ({ children }) => (
         {children()}
       </div>
       <footer style={{ margin: `$0px auto`, textAlign: 'center' }}>
-        <p style={{ padding: '11.25px 0' }}>cityguerilla@gmail.com</p>
+        <a
+          style={{ padding: '11.25px 0' }}
+          target="_top"
+          href="mailto:cityguerilla@gmail.com?Subject=Hello"
+        >
+          cityguerilla@gmail.com
+        </a>
         <div style={{ padding: '11.25px 0' }}>
-          <a style={{ marginRight: '11.25px' }} href="">
+          <a
+            style={{ marginRight: '11.25px' }}
+            target="_tab"
+            href="https://www.facebook.com/gradskagerila/"
+          >
             facebook
           </a>
-          <a href="">instagram</a>
+          <a target="_tab" href="https://www.instagram.com/city.guerilla/">
+            instagram
+          </a>
         </div>
         <p style={{ padding: '11.25px 0' }}>
           2017. CityGuerilla. All right reserved. ©
@@ -77,12 +90,12 @@ Layout.propTypes = {
 
 export default Layout
 
-// export const query = graphql`
-//   query SiteTitleQuery {
-//       site {
-//     siteMetadata {
-//       title
-//     }
-//     }
-//   }
-// `
+export const query = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
