@@ -27,3 +27,6 @@
     - "Anita Knežić"
     - "Mirjana Utvić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_20131113_Otvorena-biblioteka---dekonstrukcija_Gradska-Gerila_Foto_Gerila.jpg"

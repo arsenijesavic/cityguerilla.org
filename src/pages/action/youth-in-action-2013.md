@@ -35,3 +35,6 @@
     - "Simon Marić"
     - "Nikola Marković"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_201309_Youth in Action Foto Nebojsa Vasic.jpg"

@@ -14,3 +14,6 @@
     - "Stefan Nešić"
     - "Anita Knežić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_2014_Savamala_Info-buvljak_GradskaGerila_crtez_StefanNesic.jpg"

@@ -23,3 +23,6 @@
     - "Zorica Milisavljević"
     - "Anita Knežić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/SavamalaMapJewelry-0.jpg"

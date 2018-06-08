@@ -25,3 +25,6 @@
     - "Miloš Perišić"
     - "Zorica Milisavljević"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/20110625_Rimini_Wohlfühlorte_phAleksandraStosic-(1).jpg"

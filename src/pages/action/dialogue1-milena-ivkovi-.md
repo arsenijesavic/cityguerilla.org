@@ -27,3 +27,6 @@
     - "Mirjana Utvić"
     - "Zorica Milisavljević"
     - "Olivera Petrović"
+  images: 
+    - 
+      image: "/img/01_GGdij_01_milena_ivkovic-Blok74_RTRDM_Foto_GradskaGerila.jpg"

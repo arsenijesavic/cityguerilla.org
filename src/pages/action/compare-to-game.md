@@ -26,3 +26,6 @@
     - "Arsenije Savić"
     - "Miloš Jovanović"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_20151205_Techne_Milica_Nikolic_GradskaGerila.jpg"

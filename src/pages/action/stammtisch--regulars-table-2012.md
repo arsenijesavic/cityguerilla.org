@@ -24,3 +24,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/10_Stammtisch_Fidel_Ilija-Lazarević.jpg"

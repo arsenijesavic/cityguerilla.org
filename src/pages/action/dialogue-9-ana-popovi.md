@@ -10,3 +10,6 @@
     - "Theater"
   members: 
     - "Doroteja Rokvić"
+  images: 
+    - 
+      image: "/img/01_City_guerilla_Diajlozi10.jpg"

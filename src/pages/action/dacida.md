@@ -14,3 +14,6 @@
     - "Ivana Andrejić"
     - "Miloš Jovanović"
     - "Dragana Krtinić"
+  images: 
+    - 
+      image: "/img/01_City_Guerilla_Dacida_2017.jpg"

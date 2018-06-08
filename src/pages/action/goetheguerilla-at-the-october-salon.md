@@ -25,3 +25,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/1_jedan_put_sama_akcija_zaustavljanja_saobraćaja_ispred_Geozavoda.jpg"

@@ -30,3 +30,6 @@
     - "Anita Knežić"
     - "Simon Marić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_2013_Smfonija_ŽIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"

@@ -23,3 +23,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_2012_SavamalaPostexpress_GG_Foto_IlijaLazarevic.jpg"

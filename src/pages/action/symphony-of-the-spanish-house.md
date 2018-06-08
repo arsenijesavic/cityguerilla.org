@@ -29,3 +29,6 @@
     - "Zorica Milisavljević"
     - "Anita Knežić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_20130422-Spanska-Kuca-Simfonija-ljustura.jpg"

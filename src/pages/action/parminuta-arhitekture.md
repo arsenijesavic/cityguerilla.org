@@ -17,3 +17,6 @@
     - "Anita Knežić"
     - "Anita Knežić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_2015_ParMinuta-Arhitekture-_arch.-Srđan-Gavrilović_Screenshot-Video-Gerila.jpg"

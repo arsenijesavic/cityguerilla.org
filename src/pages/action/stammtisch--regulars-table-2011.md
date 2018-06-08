@@ -25,3 +25,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/1_20110527_Stammtisch-(1).jpg"

@@ -26,3 +26,6 @@
     - "Nina Vurdelja"
     - "Turbo God"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/20100227_Workshop_with_Frank_Bolter_ph_Milica_Nikolic_Micikitis-(114).jpg"

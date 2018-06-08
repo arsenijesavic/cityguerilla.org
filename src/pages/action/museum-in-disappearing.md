@@ -8,3 +8,6 @@
   tags: []
   members: 
     - "Milan Stanimirović"
+  images: 
+    - 
+      image: "/img/01_City_guerilla_Muzej_u_nestajanju_2017.jpg"

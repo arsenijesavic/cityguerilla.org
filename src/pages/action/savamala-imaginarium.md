@@ -24,3 +24,6 @@
     - "Jovana Uzelac"
     - "Simon Marić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_20150630-Gradska-Gerila_DanG-Spanska-kuca_Savamala-imaginarijum_Milica-Nikolic.jpg"

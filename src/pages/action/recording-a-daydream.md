@@ -15,3 +15,6 @@
     - "Stefan Malešević"
     - "Milica Nikolić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/Flanerija_City_Guerilla_01 Stefan Malesevic (1).jpg"

@@ -17,3 +17,6 @@
     - "Mirjana Utvić"
     - "Milica Nikolić"
     - "Katarina Živković"
+  images: 
+    - 
+      image: "/img/Salon_Otvorene_biblioteke_City Guerilla_01.jpg"

@@ -26,3 +26,6 @@
     - "Zorica Milisavljević"
     - "Anita Knežić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_20130630_Zlatne_ribice_Savamale_Gradska Gerila_Foto_Nina Vujasin.jpg"

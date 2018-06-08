@@ -23,3 +23,6 @@
     - "Mirjana Utvić"
     - "Zorica Milisavljević"
     - "Katarina Kragović"
+  images: 
+    - 
+      image: "/img/01_City_guerilla_Diajlozi2_2015.jpg"

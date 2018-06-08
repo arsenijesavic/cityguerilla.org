@@ -25,3 +25,6 @@
     - "Zorica Milisavljević"
     - "Anita Knežić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_2013_Druga_perspektiva_Savamala_Gradska_Gerila_Foto_Gerila.jpg"

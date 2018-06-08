@@ -15,3 +15,6 @@
     - "Milica Nikolić"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/2_2010_Framing-old-Belgrade_Karađorđeva-Savamala_Foto-Milica-Nikolić.jpeg.jpg"

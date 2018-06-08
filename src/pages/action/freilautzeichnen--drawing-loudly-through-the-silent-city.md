@@ -21,3 +21,6 @@
     - "Marina Mandić"
     - "Zorica Milisavljević"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/20101013_Radionica_sa_Torstenom_Strajhartom-(18).jpg"

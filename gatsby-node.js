@@ -122,7 +122,7 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
     getNodes()
         .filter(node => node.internal.type === "MarkdownRemark")
         .forEach(node => {
-            if (node.frontmatter) {
+            if (node) {
                 if (node.frontmatter.featuredProject) {
 
                     const authorNode = getNodes()

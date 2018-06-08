@@ -11,3 +11,6 @@
     - "Film"
   members: 
     - "Ivana Andrejić"
+  images: 
+    - 
+      image: "/img/01_City_guerilla_Diajlozi6_2015.jpg"

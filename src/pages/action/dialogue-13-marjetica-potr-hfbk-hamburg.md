@@ -14,3 +14,6 @@
     - "Common Space"
   members: 
     - "Mirjana Utvić"
+  images: 
+    - 
+      image: "/img/01_City_guerilla_Dijalozi13_2016.jpg"

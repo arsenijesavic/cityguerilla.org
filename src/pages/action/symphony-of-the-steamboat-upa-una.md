@@ -26,3 +26,6 @@
     - "Anita Knežić"
     - "Simon Marić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_201305_Simfonija Župe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"

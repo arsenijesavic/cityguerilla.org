@@ -23,3 +23,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/11_20111112_Biblioteka_u_Knezu-(14).jpg"

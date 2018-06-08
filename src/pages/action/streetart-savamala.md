@@ -23,3 +23,6 @@
     - "Zorica Milisavljević"
     - "Anita Knežić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_20130702_StreetArt_Savamala_Gradska-Gerila_Foto_Gerila.jpg"

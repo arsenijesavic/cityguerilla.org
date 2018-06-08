@@ -31,3 +31,6 @@
     - "Zorica Milisavljević"
     - "Anita Knežić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_2014_Parking-terasa_Savamala_Gradska_Gerila_Foto_Gerila.jpg"

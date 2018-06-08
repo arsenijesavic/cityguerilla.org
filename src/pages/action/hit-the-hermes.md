@@ -42,3 +42,6 @@
     - "Miloš Jovanović"
     - "Zorica Milisavljević"
     - "Milan Stanimirović"
+  images: 
+    - 
+      image: "/img/01_20150802-Hit-the-Hermes-Kolektiv-CityGuerilla_ph.Milica-Nikolic-Micikitis.jpg"

@@ -15,3 +15,6 @@
     - "Sonja Lukić"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/20101027_Sajam_knjiga-(1).jpg"

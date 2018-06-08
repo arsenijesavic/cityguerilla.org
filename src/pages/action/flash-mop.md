@@ -25,3 +25,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/12_Flešmoba_ilijaLazarevic.jpg"

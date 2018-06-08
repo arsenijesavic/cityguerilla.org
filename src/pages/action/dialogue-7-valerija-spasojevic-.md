@@ -9,3 +9,6 @@
   members: 
     - "Arsenije Savić"
     - "Mirjana Utvić"
+  images: 
+    - 
+      image: "/img/01_City_guerilla_Diajlozi7_2015.jpg"

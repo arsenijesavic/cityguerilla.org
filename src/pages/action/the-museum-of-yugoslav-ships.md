@@ -29,3 +29,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/11_20100421_Muzej_brodova_ph_Milica_Nikolic_Micikitis-(68).jpg"

@@ -20,3 +20,6 @@
     - "Mirjana Utvić"
     - "Dragana Krtinić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_20170515_City Guerilla_Failure as Practice.jpg"

@@ -21,3 +21,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/31.5.2010.-Krug-dvojke-kroz-vreme-i-modu-(100).jpg"

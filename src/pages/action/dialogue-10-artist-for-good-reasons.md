@@ -10,3 +10,6 @@
     - "Dialogue"
   members: 
     - "Doroteja Rokvić"
+  images: 
+    - 
+      image: "/img/01_City_guerilla_Dijalozi10_2016.jpg"

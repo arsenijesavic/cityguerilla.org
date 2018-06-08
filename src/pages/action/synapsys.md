@@ -32,3 +32,6 @@
     - "Miloš Jovanović"
     - "Zorica Milisavljević"
     - "Stanislav Drča"
+  images: 
+    - 
+      image: "/img/01_2016_Gradska-Gerila-(RS)-Synapsis-ph-Miran-Kramar.jpg"

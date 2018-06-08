@@ -33,3 +33,6 @@
     - "Zorica Milisavljević"
     - "Anita Knežić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_20140516_PULS_Radionica_GradskaGerila_Foto_Gerila.jpg"

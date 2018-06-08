@@ -8,3 +8,6 @@
   tags: []
   members: 
     - "Doroteja Rokvić"
+  images: 
+    - 
+      image: "/img/01_City_guerilla_Diajlozi8_2015.jpg"

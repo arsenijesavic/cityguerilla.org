@@ -36,3 +36,6 @@
     - "Mirjana Utvić"
     - "Zorica Milisavljević"
     - "Olivera Petrović"
+  images: 
+    - 
+      image: "/img/01_2015_ŠUP_Moje-parče-Svamale-Gradska-Gerila.jpg"

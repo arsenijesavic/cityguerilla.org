@@ -25,3 +25,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/10_SM_Susreti_GG12_Foto_Gerila.jpg"

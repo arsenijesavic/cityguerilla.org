@@ -13,3 +13,6 @@
     - "Festival"
   members: 
     - "Katarina Živković"
+  images: 
+    - 
+      image: "/img/20424771_10155366711140446_134464530_o.jpg"

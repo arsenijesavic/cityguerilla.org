@@ -25,3 +25,6 @@
     - "Jovana Uzelac"
     - "Simon Marić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/DSCF6344.gif"

@@ -23,3 +23,6 @@
     - "Zorica Milisavljević"
     - "Anita Knežić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_20130508_Intervjui u Savamali_Gradska Gerila_Foto_Gerila.jpg"

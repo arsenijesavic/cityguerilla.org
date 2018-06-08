@@ -11,3 +11,6 @@
   members: 
     - "Simon Marić"
     - "Mirjana Utvić"
+  images: 
+    - 
+      image: "/img/01_City_guerilla_Diajlozi5_2015.jpg"

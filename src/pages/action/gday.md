@@ -43,3 +43,6 @@
     - "Mirjana Utvić"
     - "Zorica Milisavljević"
     - "Olivera Petrović"
+  images: 
+    - 
+      image: "/img/20150630-DanG-Spanska-kuca-Milica-Nikolic-Micikitis-(1).gif"

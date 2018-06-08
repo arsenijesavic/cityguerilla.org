@@ -10,3 +10,6 @@
     - "Knowledge Exchange"
   members: 
     - "Katarina Živković"
+  images: 
+    - 
+      image: "/img/Digitalno_citanje _digitalno_pisanje_2016_City_Guerilla_01.jpg"

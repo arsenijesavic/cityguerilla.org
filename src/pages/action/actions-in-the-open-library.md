@@ -25,3 +25,6 @@
     - "Mirjana Utvić"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/10_20120402-Otvorena-biblioteka-Dan-dečje-knjige-Nina-Antanasković.jpg"

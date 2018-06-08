@@ -30,3 +30,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/10_20110819_Beglika_festival_Bulgaria_izbor-(6).jpg"

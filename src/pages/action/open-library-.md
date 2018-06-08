@@ -29,3 +29,6 @@
     - "Mirjana Utvić"
     - "Zorica Milisavljević"
     - "Olivera Petrović"
+  images: 
+    - 
+      image: "/img/10_2015_Otvorena-biblioteka_GradskaGerila.jpg"

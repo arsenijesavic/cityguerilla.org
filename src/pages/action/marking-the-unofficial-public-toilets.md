@@ -24,3 +24,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/2011Palas-toplicin-venac-(2).jpg"

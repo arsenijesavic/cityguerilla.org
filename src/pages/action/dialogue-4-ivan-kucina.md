@@ -30,3 +30,6 @@
     - "Mirjana Utvić"
     - "Zorica Milisavljević"
     - "Olivera Petrović"
+  images: 
+    - 
+      image: "/img/01_2015_GradskaGerila_Dijalog4_Ivan_Kucina_FotoGradskaGerila.jpg"

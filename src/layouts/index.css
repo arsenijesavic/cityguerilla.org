@@ -176,42 +176,11 @@ input::-webkit-input-placeholder {
 
 
 
-.actions-item-1 {
-  border: 1px solid black;
-  width: 315px;
-  height: 360px;
-  background: white;
-  margin-top: 45px;
-}
 
-.actions-item-1 .action-image {
-  height: 88.5%;
-  width: 85.5%;
-  margin: 41px 0px 0px 45px;
-  opacity: 0.3;
-}
-
-.actions-item-2 {
-  border: 1px solid black;
-  width: 360px;
-  height: 270px;
-  background: white;
-  margin-top: 90px;
-  margin-left: 90px;
-}
-
-.actions-item-2 .action-image {
-  height: 88.5%;
-  width: 62.8%;
-  margin: -45px 0px 0px 133px;
-  opacity: 0.3;
-}
 
 .actions-item-3 {
-  border: 1px solid black;
   width: 495px;
   height: 180px;
-  background: white;
   margin-top: 135px;
   margin-left: -180px;
   margin-right: 45px;

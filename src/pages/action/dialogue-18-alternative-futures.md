@@ -11,3 +11,6 @@
   members: 
     - "Arsenije Savić"
     - "Ivana Andrejić"
+  images: 
+    - 
+      image: "/img/01_City_guerilla_Diajlozi_2016.jpg"

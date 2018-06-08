@@ -31,3 +31,6 @@
     - "Mirjana Utvić"
     - "Zorica Milisavljević"
     - "Katarina Kragović"
+  images: 
+    - 
+      image: "/img/01_20151019_GradskaGerila_Kokica_Moli_Iva-Milojkovic_ph.Milica-Nikolic.jpg"

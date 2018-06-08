@@ -27,3 +27,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/2011_Druga_perspektiva_grada_i_bicikl_phAleksandraStosic-(1).jpg"

@@ -20,3 +20,6 @@
     - "Stanislav Drča"
     - "Zorica Milisavljević"
     - "Stanislav Drča"
+  images: 
+    - 
+      image: "/img/Dasein_Actopolis_City_Guerilla_2016_01.jpg"

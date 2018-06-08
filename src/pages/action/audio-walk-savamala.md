@@ -18,3 +18,6 @@
     - "Milica Nikolić"
     - "Anita Knežić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_2014.11.4.-audiowalk-photo-by-Milica-Nikolic-2mnt-brankov-most.jpg"

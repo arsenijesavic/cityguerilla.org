@@ -17,3 +17,6 @@
     - "Igor Cvejić"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/Koncert-KM8-GG-2014-1-a.jpg"

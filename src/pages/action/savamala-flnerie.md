@@ -22,3 +22,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_20121124_Flanerija_Savamala_ZoricaMilisavljević.jpg"

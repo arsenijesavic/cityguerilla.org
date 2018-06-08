@@ -23,3 +23,6 @@
     - "Stefan Malešević"
     - "Zorica Milisavljević"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/10_Foto Relja Bobic©dis-patch.jpg"

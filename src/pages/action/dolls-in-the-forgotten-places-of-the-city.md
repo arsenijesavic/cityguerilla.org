@@ -24,3 +24,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/20100626_Puppen_in_der_Stadt_ph_Milica_Nikolic-(100).jpg"

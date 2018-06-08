@@ -28,3 +28,6 @@
     - "Miloš Perišić"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/20110509_Speed_Dating_Novi_Sad-(1).jpg"

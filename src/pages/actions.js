@@ -3,18 +3,29 @@ import styled from 'styled-components'
 import { Grid, Cell } from '../components'
 import Link from 'gatsby-link'
 
+const getRandomCell = () => {
+  const options = {
+    0: { width: 7, height: 8, top: 1 },
+    1: { width: 8, height: 6, top: 2, left: 2 },
+    2: { width: 11, height: 4, top: 3, left: 4, right: 1 }
+  }
+  const option = Math.floor(Math.random() * 3)
+
+  return options[option]
+}
+
 const ActionsPage = ({ data }) => {
   const projects = data.allMarkdownRemark.edges.map(v => ({
     ...v.node.frontmatter,
     url: v.node.fields.slug
   }))
-  console.log(projects)
+
   return (
     <Grid>
       {projects &&
         projects.map((project, i) => (
-          <Cell key={i} width={6} height={6} top={1} left={2}>
-            <Link to={project.url}>
+          <Cell key={i} {...getRandomCell()}>
+            <Link style={{ display: 'block', width: '100%', height: '100%' }} to={project.url}>
               <Project {...project} />
             </Link>
           </Cell>
@@ -34,24 +45,40 @@ const Wrap = styled.div`
 const Overflow = styled.div`
   position: absolute;
   top: 0;
-  right: 0;
   bottom: 0;
   left: 0;
-  padding: 11.25px;
+  right: 0;
+  padding: 15px;
   background: rgba(255, 255, 255, 0.7);
   opacity: 1;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+
+  > h1 {
+    font-size: 24px;
+  }
+
+  > p {
+    > span {
+      margin-right: 5px;
+      font-size: 0.707em;
+      text-transform: uppercase;
+    }
+  }
+
   &:hover {
     left: -100%;
     opacity: 0;
   }
+
 `
 const Project = ({ title, tags, images }) => (
   <Wrap>
     <Overflow>
       <h1>{title}</h1>
-      <p>{tags}.</p>
+      <p>
+        {tags && tags.map(tag => <span>{tag}</span>)}
+      </p>
     </Overflow>
     <img
       style={{ width: '100%', height: '100%', objectFit: 'cover' }}

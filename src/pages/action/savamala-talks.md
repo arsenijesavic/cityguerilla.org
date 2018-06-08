@@ -20,3 +20,6 @@
     - "Dragana Krtinić"
     - "Simon Marić"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/01_2015_Gradska-Gerila_Savamala-Priča_Aplikacija_Noć-muzeja.jpg"

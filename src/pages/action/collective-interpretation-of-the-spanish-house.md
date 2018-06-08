@@ -47,3 +47,6 @@
     - "Mirjana Utvić"
     - "Zorica Milisavljević"
     - "Olivera Petrović"
+  images: 
+    - 
+      image: "/img/11_20150627_DanG-Spanska-kuca-Milica-Nikolic-GradskaGerila.jpg"

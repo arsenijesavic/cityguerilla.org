@@ -15,3 +15,6 @@
     - "Sonja Lukić"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/2010_17.6_Ključne kvalifikacije...GG_BG_1.jpg"

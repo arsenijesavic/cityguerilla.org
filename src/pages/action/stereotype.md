@@ -17,3 +17,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/A_pixabay_CC0-Creative-Commons.jpg"

@@ -20,3 +20,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/29.5.2010.-Koncert-muzej-25.-maj-Milica-Nikolic-Micikitis-(11).jpg"

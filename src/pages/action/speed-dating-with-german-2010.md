@@ -16,3 +16,6 @@
     - "Sonja Lukić"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
+  images: 
+    - 
+      image: "/img/9.5.2010_SpeedDating_Foto_Goethe-Guerilla_1.jpg"
