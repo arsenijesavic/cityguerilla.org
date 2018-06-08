@@ -27,22 +27,34 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    result.data.allMarkdownRemark.edges.map(({ node }) => {
+      const {id, fields: { slug }, frontmatter: { templateKey } } = node
 
-    posts.forEach(edge => {
-      const id = edge.node.id
       createPage({
-        path: edge.node.fields.slug,
-        //tags: edge.node.frontmatter.tags,
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-        ),
-        // additional data can be passed via context
-        context: {
-          id,
-        },
+        path: slug,
+        component: path.resolve(`./src/templates/${templateKey}.js`),
+        context: { slug,id },
       })
     })
+
+    // const posts = result.data.allMarkdownRemark.edges
+
+    // posts.forEach(edge => {
+    //   const id = edge.node.id
+
+    //   createPage({
+    //     path: edge.node.fields.slug,
+    //     slug: edge.node.fields.slug
+    //     //tags: edge.node.frontmatter.tags,
+    //     component: path.resolve(
+    //       `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+    //     ),
+    //     // additional data can be passed via context
+    //     context: {
+    //       id,
+    //     },
+    //   })
+    // })
 
     // Tag pages:
     let tags = []

@@ -88,6 +88,8 @@ collections:
           - {label: "Event Name", name: "eventName", widget: "string"}
           - {label: "Event Date", name: "eventDate", widget: "date"}
           - {label: "Event Image", name: "eventImage", widget: "image"}
+          - {label: "Test ", name: "test", widget: "categories"}
+
 
       - file: "src/pages/about/index.md"
         label: "About"

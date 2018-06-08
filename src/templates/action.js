@@ -1,56 +1,27 @@
 import React from 'react'
-import styled from 'styled-components'
+import { Grid, Cell } from '../components'
 
 const ActionPage = ({ data }) => {
+  const action = { ...data.markdownRemark.frontmatter }
+  console.log(action)
   return <Grid />
 }
 
 export default ActionPage
 
-// export const aboutPageQuery = graphql`
-//   query AboutPage($id: String!) {
-//     markdownRemark(id: { eq: $id }) {
-//       html
-//       frontmatter {
-//         title
-//         details
-//       }
-//     }
-//   }
-// `
-
-const Grid = styled.div`
-  &::after {
-    content: '';
-    clear: both;
-    display: table;
+export const ActionQuery = graphql`
+  query ActionBySlug($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      frontmatter {
+        title
+        description
+        dateFrom
+        dateTo
+        type
+        images {
+          url
+        }
+      }
+    }
   }
 `
-
-const Cell = ({
-  width,
-  height,
-  top,
-  right,
-  left,
-  align = 'left',
-  clear,
-  children,
-}) => (
-  <div
-    style={{
-      width: `${45 * width}px`,
-      height: `${45 * height}px`,
-      marginTop: top && `${45 * top}px`,
-      marginRight: right && `${45 * right}px`,
-      marginLeft: left && `${45 * left}px`,
-      float: align,
-      clear: clear && 'both',
-      padding: '1px',
-    }}
-  >
-    <div style={{ width: '100%', height: '100%', background: 'white' }}>
-      {children}
-    </div>
-  </div>
-)

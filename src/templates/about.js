@@ -1,8 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
+import { Grid, Cell } from '../components'
 
 const AboutPage = ({ data }) => {
-  const { details } = data.markdownRemark.frontmatter
+  const  { details } = { ...data.markdownRemark.frontmatter }
 
   return (
     <Grid>
@@ -47,7 +47,7 @@ const AboutPage = ({ data }) => {
             padding: '30px 35px 0px 45px',
           }}
         >
-          <p>{details}</p>
+           <p>{details}</p>
         </div>
       </Cell>
 
@@ -75,39 +75,3 @@ export const aboutPageQuery = graphql`
     }
   }
 `
-
-const Grid = styled.div`
-  &::after {
-    content: '';
-    clear: both;
-    display: table;
-  }
-`
-
-const Cell = ({
-  width,
-  height,
-  top,
-  right,
-  left,
-  align = 'left',
-  clear,
-  children,
-}) => (
-  <div
-    style={{
-      width: `${45 * width}px`,
-      height: `${45 * height}px`,
-      marginTop: top && `${45 * top}px`,
-      marginRight: right && `${45 * right}px`,
-      marginLeft: left && `${45 * left}px`,
-      float: align,
-      clear: clear && 'both',
-      padding: '1px',
-    }}
-  >
-    <div style={{ width: '100%', height: '100%', background: 'white' }}>
-      {children}
-    </div>
-  </div>
-)

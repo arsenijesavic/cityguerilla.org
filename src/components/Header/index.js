@@ -39,10 +39,10 @@ const Header = ({ siteTitle }) => (
 export default Header
 
 const navigation = [
-  { to: 'actions', name: 'Actions' },
-  { to: 'creative-board', name: 'Creative Board' },
-  { to: 'tag-cloud', name: 'Tag Cloud' },
-  { to: 'about', name: 'About' },
-  { to: 'guerilas', name: 'Guerilas' },
-  { to: 'contact', name: 'Contact' },
+  { to: '/actions', name: 'Actions' },
+  { to: '/creative-board', name: 'Creative Board' },
+  { to: '/tag-cloud', name: 'Tag Cloud' },
+  { to: '/about', name: 'About' },
+  { to: '/guerilas', name: 'Guerilas' },
+  { to: '/contact', name: 'Contact' },
 ]
