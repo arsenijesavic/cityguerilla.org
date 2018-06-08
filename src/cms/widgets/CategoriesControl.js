@@ -7,9 +7,13 @@ class CategoriesControl extends Component {
 
   render() {
     console.log(this.props.entry)
-    console.log(this.props)
+    var entry = this.props.entry;
+    var posts = entry.getIn(['data', 'actions']);
+    var bg = this.props.getAsset(posts);
+    console.log(posts,bg )
+
     return (
-      <input type='text' onChange={this.handleChange}  />
+      <input type="text"  class="nc-controlPane-widget" value={this.props.value} onChange={this.handleChange}  />
     )
   }
 }
