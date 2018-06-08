@@ -36,12 +36,12 @@ a {
 
 .scroll::-webkit-scrollbar-track:vertical {
   background: white;
-  border-left: 2px solid black;
+  border-left: 1px solid black;
   overflow: hidden;
 }
 
 .scroll::-webkit-scrollbar-corner {
-  border-left: 2px solid black;
+  border-left: 1px solid black;
   background: black;
 }
 

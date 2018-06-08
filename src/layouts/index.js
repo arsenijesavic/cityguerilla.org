@@ -39,7 +39,7 @@ const Layout = ({ data, children }) => (
       />
 
       <link
-        href="https://fonts.googleapis.com/css?family=Heebo"
+        href="https://fonts.googleapis.com/css?family=Heebo:300,400,700"
         rel="stylesheet"
       />
     </Helmet>

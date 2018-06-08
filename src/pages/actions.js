@@ -60,7 +60,9 @@ const Overflow = styled.div`
 
   > p {
     > span {
-      margin-right: 5px;
+      background: black;
+      color: white;
+      padding: 5px;
       font-size: 0.707em;
       text-transform: uppercase;
     }
@@ -68,6 +70,7 @@ const Overflow = styled.div`
 
   &:hover {
     left: -100%;
+    right: -200%;
     opacity: 0;
   }
 
