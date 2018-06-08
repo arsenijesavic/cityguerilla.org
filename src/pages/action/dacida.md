@@ -107,6 +107,7 @@ description: >-
   realize their artistic idea with mentoring support, which was canceled due to
   insufficient number of applications.
 dateFrom: '2017-10-29'
+dateTo: ''
 tags:
   - digital art
   - digital age

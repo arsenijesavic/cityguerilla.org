@@ -16,7 +16,6 @@ export const ActionQuery = graphql`
         title
         description
         dateFrom
-        dateTo
         type
         images {
           image
