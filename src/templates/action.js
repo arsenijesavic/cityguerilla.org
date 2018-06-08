@@ -19,7 +19,7 @@ export const ActionQuery = graphql`
         dateTo
         type
         images {
-          url
+          image
         }
       }
     }
