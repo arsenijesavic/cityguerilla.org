@@ -1,18 +1,18 @@
 ---
   templateKey: "action"
-  title: "The second perspective"
+  name: "The second perspective"
   category: " Photo Walk"
   date: "2013"
   location: "Savamala, Belgrade"
   description: "Trying to get to know and experience Savamala in all its diversity and various facets, the Guerilla team decided to change the usual way this environment was percieved. A change in perspective was often accompanied by a change in the way of thinking. This resulted in a series of photographs depicting a play with light, reflection, shapes and motifs — valuable details otherwise unnoticeable unless you pay particular attention to them, including Savamala seen from the frog’s perspective and from the rarely visited corners."
-  tags: 
+  tags:
     - "Savamala"
     - "Workshop"
     - "Belgrade"
     - "Research on Cities"
     - "Photo Walk"
     - "Urban Incubator"
-  members: 
+  members:
     - "Bojana Babić"
     - "Dajana Đuka"
     - "Jovana Sibinović"
@@ -25,6 +25,6 @@
     - "Zorica Milisavljević"
     - "Anita Knežić"
     - "Zorica Milisavljević"
-  images: 
-    - 
+  images:
+    -
       image: "/img/01_2013_Druga_perspektiva_Savamala_Gradska_Gerila_Foto_Gerila.jpg"

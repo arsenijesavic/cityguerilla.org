@@ -1,11 +1,11 @@
 ---
   templateKey: "action"
-  title: "Interventions in public space"
+  name: "Interventions in public space"
   category: "Workshop"
   date: "03 2010"
   location: "Belgrade, Avala, Dorćol, Savamala"
   description: "The aim of the one-week workshop entitled “Interventions in Public Space” led by German artist Frank Bölter (known to Belgrade audience for his art installation “Belgrade Wall” presented at Republic Square in 2009) was primarily to establish communication, networking and connection between the members of Goethe-Guerilla and the artist, thus making space for the creation of new common ideas. Belgrade was observed in an experimental way through a specially constructed kaleidoscope of different perceptions and opinions. The workshop served as an inspiration for the realization of ideas developed both during its course as well as after it. Some of the projects stemming from the “Interventions in Public Space” workshop are:\n- Museum of Yugoslav ships\n- Dolls in forgotten places in town\n- Framing old Belgrade\n- Look over the fence"
-  tags: 
+  tags:
     - "Savamala"
     - "Workshop"
     - "Guerilla"
@@ -13,7 +13,7 @@
     - "Belgrade"
     - "Art Walk"
     - "Idea Sharing"
-  members: 
+  members:
     - "Ana Jovašević"
     - "Bilja Radusin"
     - "Jelena Ristović"
@@ -26,6 +26,6 @@
     - "Nina Vurdelja"
     - "Turbo God"
     - "Zorica Milisavljević"
-  images: 
-    - 
+  images:
+    -
       image: "/img/20100227_Workshop_with_Frank_Bolter_ph_Milica_Nikolic_Micikitis-(114).jpg"

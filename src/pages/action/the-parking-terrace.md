@@ -1,18 +1,18 @@
 ---
   templateKey: "action"
-  title: "The Parking Terrace"
+  name: "The Parking Terrace"
   category: "Action"
   date: "2014"
   location: "Savamala, Belgrade"
   description: "The lack of public spaces and exterior architectural elements (balconies and terraces), which enable contact between people, Savamala owes to its historical context.  Created as a traders’ and workers’ neighborhood, it is without any architectural elements that allow social gatherings, and as such has evolved without ever surpassing its main purpose.\nBy using a terrace as an architectural element located on a parking space, temporary meeting points are set up, which emphasize their scarcity and importance for the people of Savamala. The Parking Terrace elements are everyday objects (tables, chairs, teapots) which are used to transform an element of public space into a social event."
-  tags: 
+  tags:
     - "Savamala"
     - "Action"
     - "Belgrade"
     - "Right to the City"
     - "Research on Cities"
     - "Interaction"
-  members: 
+  members:
     - "Arsenije Savić"
     - "Bojan Bilen"
     - "Doroteja Rokvić"
@@ -31,6 +31,6 @@
     - "Zorica Milisavljević"
     - "Anita Knežić"
     - "Zorica Milisavljević"
-  images: 
-    - 
+  images:
+    -
       image: "/img/01_2014_Parking-terasa_Savamala_Gradska_Gerila_Foto_Gerila.jpg"

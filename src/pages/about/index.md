@@ -1,7 +1,7 @@
 ---
 templateKey: 'about'
 path: /about
-title: About our values
+name: About our values
 details: 'City Guerilla is a creative laboratory which rests on the following principles: self-organized youth, their creative association, peer education and alternative education, exchanging a wide range of skills, knowledge and ideas. These young people have different educational backgrounds, interests, talents, abilities, life experience and attitudes. The synergy of these versatile factors forms specific creative spaces for applying various ideas in the fields of art and social activism with an aim to inspire young people to take an active part in shaping their own urban environment and strengthen civil society.
 
 City Guerilla originates from a project developed by the Goethe-Institut entitled Goethe-Guerilla, which started in 2010 with the aim to connect with young people. During seven years of the project (both as Goethe and City Guerilla), more than 150 young people from Belgrade and the region have been given an opportunity to realize their ideas and gain experience in self-organization process by implementing projects on the topic they have chosen themselves: the Right to the City – improving our own urban environment.

@@ -1,18 +1,18 @@
 ---
   templateKey: "action"
-  title: "Faces of Savamala"
+  name: "Faces of Savamala"
   category: " Photo Walk"
   date: "2013"
   location: "Savamala, Belgrade"
   description: "Who are the people of Savamala? By looking at others, the Guerilla team also investigated their own identity in Savamala. A series of photographs with portraits of both residents and passers-by presented different faces of Savamala.\nThis idea was carried out in two steps. The first included taking portraits of random passers-by, while the second regarded portraits of Savamala residents in their homes, yards, and with photos they deemed precious. In that way, through faces of numerous individuals, a face of this neighborhood was created."
-  tags: 
+  tags:
     - "Savamala"
     - "Belgrade"
     - "Research on Cities"
     - "Neighborhood"
     - "Photography"
     - "Urban Incubator"
-  members: 
+  members:
     - "Bojana Babić"
     - "Dajana Đuka"
     - "Jovana Sibinović"
@@ -27,6 +27,6 @@
     - "Zorica Milisavljević"
     - "Anita Knežić"
     - "Zorica Milisavljević"
-  images: 
-    - 
+  images:
+    -
       image: "/img/01_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinović.jpg"

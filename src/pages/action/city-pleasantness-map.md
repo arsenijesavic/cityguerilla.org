@@ -1,17 +1,17 @@
 ---
   templateKey: "action"
-  title: "City Pleasantness Map"
+  name: "City Pleasantness Map"
   category: " Online project"
   date: "14 06 2011"
   location: "Belgrade"
   description: "The “City Pleasantness Map” is an overview of selected places in Belgrade whose acoustic images were explored by the Goethe-Guerilla members during a workshop with Helgard Haug and Sebastian Bringer from the directorial team of the Rimini Protocol theater. It was realized from 14 to 16  June 2011.\nAt first, the Guerilla team planned to deal only with the sounds which can be heard in the places closely tied to their personal memories and experiences. However, it turned out that those sounds were unexpectedly monotonous in nature. The plan was changed and search for unusual sounds on completely ordinary places began.\nFrom this arose the “City Pleasantness Map” which officially documented all newly discovered places."
-  tags: 
+  tags:
     - "Audio walk"
     - "Workshop"
     - "Belgrade"
     - "Research on Cities"
     - "Rimini Protokoll Berlin"
-  members: 
+  members:
     - "Aleksandra Stošić"
     - "Ana Popović"
     - "Andreas Michalovcik"
@@ -25,6 +25,6 @@
     - "Miloš Perišić"
     - "Zorica Milisavljević"
     - "Zorica Milisavljević"
-  images: 
-    - 
+  images:
+    -
       image: "/img/20110625_Rimini_Wohlfühlorte_phAleksandraStosic-(1).jpg"

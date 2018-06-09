@@ -1,11 +1,11 @@
 ---
   templateKey: "action"
-  title: "G:DAY"
+  name: "G:DAY"
   category: "Presentation"
   date: "27 06 2015"
   location: "Spanish House, Savamala - Belgrade"
   description: "City Guerilla organized an event on 27 June 2015 in the Spanish house named G:DAY where we presented the results of its activities up until the moment. Since in 2015 City Guerilla worked in four modules, within which they developed ideas and projects with new members, the G:DAY was an event that presented all City Guerilla modules and both activities developed within them and mutual ones, thus giving a wider picture to the general public about the work of Guerilla.\nThe inner objective was to round up and sum up the work we had done with new members and to celebrate the group’s effort and accomplishment, as well as to encourage everyone to contribute to the event outside their modules, and to connect with other group members. The outside objective was to make an introduction, a public appearance and presentation to the wider public with results that came out of three months’ intensive work within the modules."
-  tags: 
+  tags:
     - "Savamala"
     - "The Open Library"
     - "Music"
@@ -20,7 +20,7 @@
     - "My Piece of The City"
     - "School of Urban Practices"
     - "Exhibition"
-  members: 
+  members:
     - "Arsenije Savić"
     - "Ivana Andrejić"
     - "Lidija Stojić"
@@ -43,6 +43,6 @@
     - "Mirjana Utvić"
     - "Zorica Milisavljević"
     - "Olivera Petrović"
-  images: 
-    - 
+  images:
+    -
       image: "/img/20150630-DanG-Spanska-kuca-Milica-Nikolic-Micikitis-(1).gif"

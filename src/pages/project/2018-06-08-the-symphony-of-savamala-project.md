@@ -1,6 +1,6 @@
 ---
 templateKey: action
-title: The Symphony of Savamala Project
+name: The Symphony of Savamala Project
 description: >-
   The Guerilla team began to deal with sounds and sound-art as early as 2011 —
   forming Guerilla’s Trashophonic Orchestra with the idea of using recycled
@@ -42,4 +42,3 @@ tags:
 images:
   - image: /img/01_20130428-spanska-kuca-simfonija-ljustura.jpg
 ---
-

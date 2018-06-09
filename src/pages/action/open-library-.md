@@ -1,13 +1,13 @@
 ---
   templateKey: "action"
-  title: "Open Library "
+  name: "Open Library "
   category: "Workshop, Interaction"
   date: "2015"
   location: "Savamala, Belgrade"
   description: "The Open Library is a project developed within the framework of activities initiated by Goethe-Guerilla in 2011. After for years, it continued to be further developed within the Schools Urban Practices module in 2015. The idea of the Open Library is a free exchange of books following the following principle: everyone is free to bring a book and put it in the library and take another, or return after reading.\nUntil 2015, the Guerilla had implemented a number of projects and workshops concerning the Open Library, starting from setting it up in Knez Mihailova Street, through public debates, to a multidisciplinary workshop for mini Mobile Open Libraries of various shapes and sizes.\nThe objective of organizing such design workshops for creating mini Open Libraries with City Guerilla members was to encourage and establish a system of free exchange of books in different communities. Bringing the general public, designers, informal and formal organizations, initiatives together and initiating dialogues with an intention to expand this system throughout Belgrade neighborhoods and cities around Serbia, triggering change into everyday life of a neighborhood, creating a toolkit publication for crafting pocket libraries, was all within the said main objective.\nThroughout activities within the project, we managed to spread the network of active participants (citizens, groups, initiatives, institutions) involved in creating and implementing the system of free book exchange. In 2015, libraries were spread around different Belgrade neighborhoods (Savamala, Dorćol, Mirijevo, Borča, Resnik, Zemun) and the team of the School of Urban Practices was checking the life and cycle of the libraries. Each person taking a library became an admin on fb page: Otvorena biblioteka, so the life and cycle of libraries could become visible to everyone interested in this project. Some libraries even went outside Belgrade to other cities in Serbia (Čačak, Valjevo).\nThe mini Open libraries and the concept itself were presented at Krokodil literature festival, Mikser festival in Belgrade, Furniture fair and Balkan Design Network, a touring exhibition where a prize winning library BOX by Olivera Petrović was presented to the audience in Belgrade, Plovdiv (Bulgaria), Zagreb (Croatia), Vienna (Austria), Tirana (Albania), Istanbul (Turkey), Skopje (Macedonia), Budapest (Hungary) and Cologne (Germany)."
-  tags: 
+  tags:
     - "The Open Library"
-  members: 
+  members:
     - "Arsenije Savić"
     - "Milena Vasojević"
     - "Miloš Jovanović"
@@ -29,6 +29,6 @@
     - "Mirjana Utvić"
     - "Zorica Milisavljević"
     - "Olivera Petrović"
-  images: 
-    - 
+  images:
+    -
       image: "/img/10_2015_Otvorena-biblioteka_GradskaGerila.jpg"

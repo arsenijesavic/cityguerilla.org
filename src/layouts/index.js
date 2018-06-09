@@ -23,7 +23,7 @@ const Layout = ({ data, children }) => (
       <meta property="og:image" content={image} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
-      <meta property="og:site_name" content={title} />
+      <meta property="og:site_name: " content={title} />
       <meta property="og:see_also" content={homepage} />
 
       <meta name="twitter:card" content={description} />

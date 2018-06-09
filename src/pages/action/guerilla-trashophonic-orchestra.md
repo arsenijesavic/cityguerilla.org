@@ -1,11 +1,11 @@
 ---
   templateKey: "action"
-  title: "Guerilla Trashophonic Orchestra"
+  name: "Guerilla Trashophonic Orchestra"
   category: "Performance"
   date: "2011"
   location: "Belgrade, Beglika (Bulgaria), Jahorina (Bosnia and Herzegovina)"
   description: "The Guerilla Trashophonic Orchestra consisted of Guerilla members who improvised on instruments made out of recycled material. The instruments were made in workshops from material which had been previously collected by the group. The rich repertoire of this orchestra included both interpretations of well-known melodies and improvisation as well.\nThe Guerilla Trashophonic Orchestra had regular performances whose aim was to turn the eyes of the public to the necessity of the environment protection, all in a fun way. On 1 April 2011, they performed at the opening of „Aprilski susreti“ („April meetings“) festival at the Student Cultural Center of Belgrade, presenting their instruments to the public for the first time. That same year, on 14 May, they performed in front of the Goethe-Institut during the Night of the Museums; on the Ecological festival BEGLIKA held from 19  to 22 August in the Rhodope mountains in Bulgaria; in September as a part of an ecological project “I recycle, therefore I am!” and in Ocotber on the EUNIC stand at the 56th International Book Fair in Belgrade."
-  tags: 
+  tags:
     - "Design"
     - "Activism"
     - "Belgrade"
@@ -15,7 +15,7 @@
     - "Ecology"
     - "Beglika Bulgaria"
     - "Jahorina, Bosnia and Herzegovina"
-  members: 
+  members:
     - "Simon Marić"
     - "Aleksandra Stošić"
     - "Ana Popović"
@@ -30,6 +30,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
-  images: 
-    - 
+  images:
+    -
       image: "/img/10_20110819_Beglika_festival_Bulgaria_izbor-(6).jpg"

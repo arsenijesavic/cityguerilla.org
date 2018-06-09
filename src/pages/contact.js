@@ -6,17 +6,17 @@ const AboutPage = () => (
     <Cell width={16} height={16} top={2} left={2}>
       <div className="wrap">
         <div className="mat-div">
-          <label htmlFor="first-name" className="mat-label">
+          <label htmlFor="first-name: " className="mat-label">
             First & Last Name
           </label>
-          <input type="text" className="mat-input" id="first-name" />
+          <input type="text" className="mat-input" id="first-name: " />
         </div>
 
         <div className="mat-div">
-          <label htmlFor="first-name" className="mat-label">
+          <label htmlFor="first-name: " className="mat-label">
             Email
           </label>
-          <input type="text" className="mat-input" id="last-name" />
+          <input type="text" className="mat-input" id="last-name: " />
         </div>
 
         <div className="mat-div">

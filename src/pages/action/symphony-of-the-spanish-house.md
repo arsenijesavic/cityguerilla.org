@@ -1,11 +1,11 @@
 ---
   templateKey: "action"
-  title: "Symphony of the Spanish house"
+  name: "Symphony of the Spanish house"
   category: "Presentation, Interaction"
   date: "2012\t\t\t\t\t /   2013"
   location: "Spanish house, Savamala, Belgrade"
   description: "One of the most endangered buildings in Savamala can be found on 2 Braće Krsmanovića Street. Known as the “Spanish House”, it was formerly used as a customhouse, a part of warehouse complex in this area built in the late 19th century. During the 20th century, it was used for various purposes, usually as headquarters of a number of companies, associations and societies, having changed many times over the years, as evident by residual labels and advertisements still visible on its façade.\nDuring 2004, it fell victim to a failed investment venture.  In an attempt to try to reconstruct it and re-design it as a hotel, and deciding not to alter the façade, the investor took out the roof and windows and started reinforcing the internal structure by building columns and beams made of reinforced concrete. However, this project was halted for unknown reasons.\nSince March 2013, having fixed the façade membranes, pavilions were built inside as a part of the Goethe-Institut’s project entitled URBAN INCUBATOR: BELGRADE, their purpose being to serve as a meeting place for the local community as well as for holding various cultural events.\nThe Guerilla members found special inspiration in this place for their sound-art project before and during its reconstruction, spontaneously turning the Spanish house into an instrument which produced very distinctive sounds. By examining the acoustics of this edifice, by then only a sort of a “shell”, and especially the acoustics of its flooded basement, the Guerilla team created an array of melodies and sounds with very specific echoes by using their own voices and random objects found on the site (metal rods, bottles, stones).\nThe material recorded represented a unique audial memory of sounds which are neither accessible nor collectible anymore, due to the subsequent pavilion construction (the basement was sealed, and water removed from it). However, at the summer exhibition in June 2013 in the Spanish house pavilion, visitors had an opportunity to hear how the place used to sound before the reconstruction."
-  tags: 
+  tags:
     - "Savamala"
     - "Belgrade"
     - "Research on Cities"
@@ -13,7 +13,7 @@
     - "Experimental Music"
     - "Savamala Symphony"
     - "Urban Incubator"
-  members: 
+  members:
     - "Bojana Babić"
     - "Dajana Đuka"
     - "Jovana Sibinović"
@@ -29,6 +29,6 @@
     - "Zorica Milisavljević"
     - "Anita Knežić"
     - "Zorica Milisavljević"
-  images: 
-    - 
+  images:
+    -
       image: "/img/01_20130422-Spanska-Kuca-Simfonija-ljustura.jpg"

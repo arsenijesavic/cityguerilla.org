@@ -1,11 +1,11 @@
 ---
   templateKey: "action"
-  title: "The Goldfish of Savamala"
+  name: "The Goldfish of Savamala"
   category: "Exhibition"
   date: "2013"
   location: "Savamala, Belgrade"
   description: "The goldfish of Savamala is still covered by a thick layer of patina. It is a symbol of this neglected city neighborhood, whose rich architectural legacy has been ravaged by time, whose coast is adorned by languishing wrecks of the former river flotilla, its streets vibrating under the wheels of heavy trucks. It is also a symbol of all unfulfilled wishes of Savamala residents. Its role was to point out what is invisible at first glance — people and places that hide extraordinary potential and qualities. This made way for a series of photographs displayed in form of an installation at the summer Guerilla exhibition.\nSpeaking with the visitors of the exhibition, ideas, visions and proposals how Savamala should look in the future were collected, as a contribution to the NextSavamala project. In exchange for a wish written on a piece of paper, each visitor received a goldfish as a symbol of its fulfillment."
-  tags: 
+  tags:
     - "Savamala"
     - "Workshop"
     - "Belgrade"
@@ -13,7 +13,7 @@
     - "Critique"
     - "Photo Walk"
     - "Urban Incubator"
-  members: 
+  members:
     - "Bojana Babić"
     - "Dajana Đuka"
     - "Jovana Sibinović"
@@ -26,6 +26,6 @@
     - "Zorica Milisavljević"
     - "Anita Knežić"
     - "Zorica Milisavljević"
-  images: 
-    - 
+  images:
+    -
       image: "/img/01_20130630_Zlatne_ribice_Savamale_Gradska Gerila_Foto_Nina Vujasin.jpg"

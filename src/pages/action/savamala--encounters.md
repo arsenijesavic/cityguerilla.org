@@ -1,17 +1,17 @@
 ---
   templateKey: "action"
-  title: "Savamala – Encounters"
+  name: "Savamala – Encounters"
   category: "Exhibition, Conversations"
   date: "10 2012"
   location: "Savamala, Belgrade"
   description: "Due to persistent neglecting, Savamala has become a mere passage, an area where the majority of people pass through without stopping. It is also noticeable that its residents barely know each other, although sharing moments, good experiences and nice moments in this neighborhood.\nFor this reason the Guerilla team decided to hold an exhibition entitled “Savamala – encountersˮ with an intention to bring together Savamala residents from different corners of Savamala who also happen to live under different conditions: in inner yards, buildings or ships, but also those who often spend their time in Savamala. The event’s aim was to reveal invisible places, tell untold stories and make people meet. The exhibition took place at the end of October in the G12 HUB gallery who used to be located in Savamala at the time.\nSince pegging washed clothes is a common picture in Savamala, we used this principle to peg the exhibits. Photos of hidden places as well as stories Savamala residents wished to share with others, but never had an opportunity to do so were presented in that way. In addition, everybody was free to peg their own stories and impressions regarding Savamala in every form possible, being that a photo, story or something else."
-  tags: 
+  tags:
     - "Savamala"
     - "Belgrade"
     - "Local Community"
     - "Research on Cities"
     - "Idea Sharing"
-  members: 
+  members:
     - "Anita Knežić"
     - "Ilija Lazarević"
     - "Ivana Panić"
@@ -25,6 +25,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
-  images: 
-    - 
+  images:
+    -
       image: "/img/10_SM_Susreti_GG12_Foto_Gerila.jpg"

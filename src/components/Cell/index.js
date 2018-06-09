@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Cell = class extends React.Component {
-
   state = {}
 
   componentDidMount() {
@@ -22,12 +21,12 @@ const Cell = class extends React.Component {
       background = true,
       padding = true,
       children,
-    } = this.props;
+    } = this.props
     const { autoHeight } = this.state
 
     return (
       <div
-        ref={node => this.node = node}
+        ref={node => (this.node = node)}
         style={{
           width: `${45 * width}px`,
           height: height ? `${45 * height}px` : `${45 * autoHeight}px`,
@@ -39,7 +38,7 @@ const Cell = class extends React.Component {
           clear: clear && 'both',
           padding: padding
             ? align === 'left'
-              ? '1px 1px 0px 1px'
+              ? '1px 0px 0px 1px'
               : '1px 1px 0px 1px'
             : 'wtf',
           overflow: 'hidden',
@@ -55,7 +54,7 @@ const Cell = class extends React.Component {
           {children}
         </div>
       </div>
-    );
+    )
   }
 }
 

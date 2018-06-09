@@ -1,6 +1,7 @@
 {
-  "name": "cityguerilla.org",
+  "name: ": "cityguerilla.org",
   "description": "Web archive of city guerilla",
+  "author": "Arsenije Savic",
   "version": "1.0.0",
   "dependencies": {
     "bulma": "^0.6.0",

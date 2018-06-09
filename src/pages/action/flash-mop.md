@@ -1,17 +1,17 @@
 ---
   templateKey: "action"
-  title: "Flash mop"
+  name: "Flash mop"
   category: "Action"
   date: "2012"
   location: "Belgrade, Savamala"
   description: "The term Flashmob describes a quick, seemingly spontaneous action of people who have never met before, performed in public spaces and surfaces. Actions are often unusual and have various goals: ranging from a simple intention to shock the public to pointing out more serious problems.\nA cleaning action named Flashmop took place on several spots in Savamala, aiming to turn attention to the poor maintenance of the area in and around the railway station. Together with several neighbors from Savamala, we started out cleaning the inside and the outside of a train that was soon to depart, then moving on to broom the platforms. Soon a pair of shop windows in Karađorđeva Street got a new shine, with a final clean up in the Geozavod building. This action intended to inspire as many people as possible to join forces and use simple means to solve the problems confronting the present Savamala."
-  tags: 
+  tags:
     - "Savamala"
     - "Action"
     - "Local Community"
     - "Urban Community"
     - "Flash mob"
-  members: 
+  members:
     - "Anita Knežić"
     - "Ilija Lazarević"
     - "Ivana Panić"
@@ -25,6 +25,6 @@
     - "Zorica Milisavljević"
     - "Dragana Žarevac"
     - "Zorica Milisavljević"
-  images: 
-    - 
+  images:
+    -
       image: "/img/12_Flešmoba_ilijaLazarevic.jpg"

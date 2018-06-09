@@ -2,12 +2,7 @@ import React from 'react'
 import { Grid, Cell } from '../components'
 
 const AboutPage = ({ data }) => {
-
-  return (
-    <Grid>
-
-    </Grid>
-  )
+  return <Grid />
 }
 
 export default AboutPage
