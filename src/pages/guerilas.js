@@ -22,6 +22,7 @@ const GuerilasPage = ({ data }) => {
     active.forEach(x => (years[x] = [...years[x], ...v]))
   })
 
+  console.log(years)
   return (
     <Grid>
       <Cell width={20} height={1} bottom={1} background={false}>

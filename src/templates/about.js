@@ -6,15 +6,11 @@ import uilogo from '../assets/images/urban-incubator-logo-l.png'
 
 const AboutPage = ({ data }) => {
   const { details } = { ...data.markdownRemark.frontmatter }
-<<<<<<< HEAD
   const projects = data.projects.edges.map(v => ({
     ...v.node.frontmatter,
     url: v.node.fields.slug,
   }))
-  console.log(projects)
-=======
 
->>>>>>> f82d10c7c5935b65806fc12ecfe0ace4da9dac96
   return (
     <Grid>
       <Cell width={4} height={3}>

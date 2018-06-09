@@ -2,26 +2,16 @@ import React, { Component, Children } from 'react'
 import { Grid, Cell } from '../components'
 
 const ActionPage = ({ data }) => {
-<<<<<<< HEAD
   const { name, description, images, tags, members } = {
     ...data.markdownRemark.frontmatter,
   }
   console.log(images)
-=======
-  const { title, description, images, tags, members } = {
-    ...data.markdownRemark.frontmatter,
-  }
->>>>>>> f82d10c7c5935b65806fc12ecfe0ace4da9dac96
   return (
     <Grid>
       <Cell width={6} height={6} top={1} left={1}>
         <div style={{ padding: '15px' }}>
           <h1 style={{ fontSize: '24px', minHeight: `${4 * 45}px` }}>
-<<<<<<< HEAD
             {name}
-=======
-            {title}
->>>>>>> f82d10c7c5935b65806fc12ecfe0ace4da9dac96
           </h1>
           <h3 style={{ fontWeight: '300', paddingBottom: '5px' }}>Workshop</h3>
           <h5 style={{ fontWeight: '300' }}>2015</h5>
@@ -130,11 +120,7 @@ const ActionPage = ({ data }) => {
         <ul style={{ padding: '5px 10px' }}>
           {members &&
             members.map((member, i) => (
-<<<<<<< HEAD
               <li key={i} style={{ display: 'block', marginBottom: '5px' }}>
-=======
-              <li style={{ display: 'block', marginBottom: '5px' }}>
->>>>>>> f82d10c7c5935b65806fc12ecfe0ace4da9dac96
                 <img
                   style={{
                     width: '35px',

@@ -3,7 +3,10 @@ import { Grid, Cell, Carousel } from '../components'
 import styled from 'styled-components'
 
 const IndexPage = ({ data }) => {
-  const { event, featuredProject, } = data.allMarkdownRemark.edges[0].node.frontmatter
+  const {
+    event,
+    featuredProject,
+  } = data.allMarkdownRemark.edges[0].node.frontmatter
 
   const actions = data.actions.edges.map(v => ({
     ...v.node.frontmatter,
@@ -54,7 +57,6 @@ const IndexPage = ({ data }) => {
                 {tag}
               </a>
             ))}
-
         </div>
       </Cell>
 
@@ -139,7 +141,7 @@ export const query = graphql`
     }
 
     actions: allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/action/"}},
+      filter: { fileAbsolutePath: { regex: "/action/" } }
       limit: 5
     ) {
       edges {
@@ -174,11 +176,9 @@ export const query = graphql`
   }
 `
 
-
 const Wrap = styled.div`
   width: 100%;
   height: 100%;
-  position: relative;
 
   > div {
     &:hover {
@@ -226,7 +226,7 @@ const Action = ({ name, description, images }) => (
       </p>
     </Overflow>
     <img
-      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+      style={{ width: '100%', minHeight: '100%', objectFit: 'contain' }}
       src={images[0].image}
       alt=""
     />

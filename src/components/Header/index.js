@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
     </div>
     <nav className="header__nav">
       <div className="header__logo-wrap">
-        <Link to="/">
+        <Link style={{ display: 'block', width: '100%', height: '100%' }} to="/">
           <img
             className="header__logo"
             //src="static/images/logo.jpg"
