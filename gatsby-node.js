@@ -129,7 +129,11 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
           const authorNode = getNodes().find(
             node2 =>
               node2.internal.type === 'MarkdownRemark' &&
+<<<<<<< HEAD
               node2.frontmatter.name === node.frontmatter.featuredProject
+=======
+              node2.frontmatter.title === node.frontmatter.featuredProject
+>>>>>>> f82d10c7c5935b65806fc12ecfe0ace4da9dac96
           )
 
           node.frontmatter = {
