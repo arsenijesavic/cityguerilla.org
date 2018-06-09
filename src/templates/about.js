@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid, Cell } from '../components'
 
 const AboutPage = ({ data }) => {
-  const  { details } = { ...data.markdownRemark.frontmatter }
+  const { details } = { ...data.markdownRemark.frontmatter }
 
   return (
     <Grid>
@@ -47,7 +47,7 @@ const AboutPage = ({ data }) => {
             padding: '30px 35px 0px 45px',
           }}
         >
-           <p>{details}</p>
+          <p>{details}</p>
         </div>
       </Cell>
 

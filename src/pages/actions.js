@@ -7,7 +7,7 @@ const getRandomCell = () => {
   const options = {
     0: { width: 7, height: 8, top: 1 },
     1: { width: 8, height: 6, top: 2, left: 2 },
-    2: { width: 11, height: 4, top: 3, left: 4, right: 1 }
+    2: { width: 11, height: 4, top: 3, left: 4, right: 1 },
   }
   const option = Math.floor(Math.random() * 3)
 
@@ -17,7 +17,7 @@ const getRandomCell = () => {
 const ActionsPage = ({ data }) => {
   const projects = data.allMarkdownRemark.edges.map(v => ({
     ...v.node.frontmatter,
-    url: v.node.fields.slug
+    url: v.node.fields.slug,
   }))
 
   return (
@@ -25,7 +25,10 @@ const ActionsPage = ({ data }) => {
       {projects &&
         projects.map((project, i) => (
           <Cell key={i} {...getRandomCell()}>
-            <Link style={{ display: 'block', width: '100%', height: '100%' }} to={project.url}>
+            <Link
+              style={{ display: 'block', width: '100%', height: '100%' }}
+              to={project.url}
+            >
               <Project {...project} />
             </Link>
           </Cell>
@@ -52,8 +55,6 @@ const Wrap = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-
   }
 `
 
@@ -83,22 +84,14 @@ const Overflow = styled.div`
       text-transform: uppercase;
     }
   }
-
-
-
 `
 const Project = ({ title, tags, images }) => (
   <Wrap>
     <Overflow>
       <h1>{title}</h1>
-      <p>
-        {tags && tags.slice(0, 8).map(tag => <span>{tag}</span>)}
-      </p>
+      <p>{tags && tags.slice(0, 8).map(tag => <span>{tag}</span>)}</p>
     </Overflow>
-    <img
-      src={images && images[0].image}
-      alt=""
-    />
+    <img src={images && images[0].image} alt="" />
   </Wrap>
 )
 

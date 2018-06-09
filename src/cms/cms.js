@@ -11,4 +11,4 @@ import CMS from 'netlify-cms'
 
 import CategoriesControl from './widgets/CategoriesControl'
 
-CMS.registerWidget('categories', CategoriesControl, null);
+CMS.registerWidget('categories', CategoriesControl, null)

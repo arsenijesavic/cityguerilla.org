@@ -1,31 +1,33 @@
 import React from 'react'
-import { withPrefix } from 'gatsby-link'
-
 import { Grid, Cell, Carousel } from '../components'
 import styled from 'styled-components'
 
 const IndexPage = ({ data }) => {
-  const { event, featuredProject } = data.allMarkdownRemark.edges[0].node.frontmatter
+  const { event, featuredProject, } = data.allMarkdownRemark.edges[0].node.frontmatter
+
   const actions = data.actions.edges.map(v => ({
     ...v.node.frontmatter,
-    url: v.node.fields.slug
+    url: v.node.fields.slug,
   }))
-  console.log(event)
-  console.log(featuredProject)
-  console.log(actions)
+
+  const tags = data.tags.edges
+    .map(v => v.node.frontmatter.tags)
+    .reduce((acc, val) => acc.concat(val))
+    .filter((v, i, a) => a.indexOf(v) === i)
+    .slice(0, 26)
+
   return (
     <Grid>
       <Cell width={4} height={3}>
         <h2 style={{ fontSize: '27px', padding: '8px 30px 21px 21px' }}>
           hello we are city guerillas
-      </h2>
+        </h2>
       </Cell>
 
       <Cell width={13} height={6} top={1} left={1}>
         <Carousel autoplay>
-          {actions && actions.map((action, i) =>
-            <Action key={i} {...action} />
-          )}
+          {actions &&
+            actions.map((action, i) => <Action key={i} {...action} />)}
         </Carousel>
       </Cell>
 
@@ -43,23 +45,15 @@ const IndexPage = ({ data }) => {
             width: '100%',
             padding: '15px 15px',
             textTransform: 'lowercase',
+            //fontSize: '0.707em'
           }}
         >
-          <a href="" style={{ marginRight: '5px', textDecoration: 'none' }}>
-            savamala
-        </a>
-          <a href="" style={{ marginRight: '5px', textDecoration: 'none' }}>
-            art
-        </a>
-          <a href="" style={{ marginRight: '5px', textDecoration: 'none' }}>
-            books
-        </a>
-          <a href="" style={{ marginRight: '5px', textDecoration: 'none' }}>
-            tags
-        </a>
-          <a href="" style={{ marginRight: '5px', textDecoration: 'none' }}>
-            tags
-        </a>
+          {tags && tags.map((tag, i) =>
+            <a href="" style={{ marginRight: '5px', textDecoration: 'none' }}>
+              {tag}
+            </a>
+          )}
+
         </div>
       </Cell>
 
@@ -81,7 +75,7 @@ const IndexPage = ({ data }) => {
           }}
         >
           we do what we like
-      </h2>
+        </h2>
       </Cell>
 
       <Cell width={6} height={9} top={0} left={5}>
@@ -121,10 +115,11 @@ const IndexPage = ({ data }) => {
 }
 export default IndexPage
 
-
 export const query = graphql`
   query IndexQuery {
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/home/"}}) {
+    allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/home/"}}
+    ) {
       edges {
         node {
           frontmatter {
@@ -144,7 +139,10 @@ export const query = graphql`
       }
     }
 
-    actions: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/action/"}}) {
+    actions: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/action/"}},
+      limit: 5
+    ) {
       edges {
         node {
           fields {
@@ -153,53 +151,78 @@ export const query = graphql`
           frontmatter {
             title
             description
+            tags
             images {
               image
             }
           }
-          excerpt
+        }
+      }
+    }
+
+    tags: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/action/"}},
+      limit: 10
+    ) {
+      edges {
+        node {
+          frontmatter {
+            tags
+          }
         }
       }
     }
   }
 `
 
+
 const Wrap = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
-  overflow: hidden;
+
+  > div {
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `
 
 const Overflow = styled.div`
   position: absolute;
   top: 0;
-  right: 0;
   bottom: 0;
-  left: -100%;
-  padding: 22.5px;
-  background: rgba(255, 255, 255, 0.9);
+  left: 0%;
+  right: 0;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7);
   opacity: 0;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
-  &:hover {
-    left: 0;
-    opacity: 1;
+  > h1 {
+    font-size: 26px;
   }
 
+  > p {
+    margin: 5px 0;
   }
 `
 const Action = ({ title, description, images }) => (
   <Wrap>
     <Overflow>
       <h1>{title}</h1>
-      <p>{description}</p>
+      <p>{description && description.split('.').slice(0, 2).join('.')}.</p>
     </Overflow>
-    {console.log(images)}
     <img
       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-      //src={images[0].image}
+      src={images[0].image}
       alt=""
     />
   </Wrap>
