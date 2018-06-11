@@ -53,19 +53,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
       - {label: "Full name: ", name: "name: ", widget: "string"}
       - {label: "Bio", name: "bio", widget: "markdown"}
-      - {label: "Member from", name: "from", widget: "date"}
-      - {label: "Member to", name: "to", widget: "date"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Location" , name: "location", widget: "string"}
-      - {label: "Website" , name: "website", widget: "string"}
-      - label: "Involved"
-        name: "involved"
-        widget: "relation"
-        collection: "actions"
-        searchFields: ["title"]
-        valueField: "title"
-        displayFields: ["title"]
+
 
   - name: "creativeBoard"
     label: "Creative Board"
