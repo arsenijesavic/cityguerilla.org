@@ -206,11 +206,12 @@ const Overflow = styled.div`
   transition: all 0.3s ease-in-out;
 
   > h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   > p {
     margin: 5px 0;
+    font-size: 14px;
   }
 `
 const Action = ({ name, description, images }) => (
@@ -221,7 +222,7 @@ const Action = ({ name, description, images }) => (
         {description &&
           description
             .split('.')
-            .slice(0, 2)
+            .slice(0, 4)
             .join('.')}.
       </p>
     </Overflow>

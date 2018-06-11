@@ -13,7 +13,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Name", name: "name", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Date from", name: "dateFrom", widget: "date"}
       - {label: "Date to", name: "dateTo", widget: "date"}
@@ -32,7 +32,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Name", name: "name", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Date from", name: "dateFrom", widget: "date"}
       - {label: "Date to", name: "dateFrom", widget: "date"}
@@ -85,6 +85,7 @@ collections:
         name: "home"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
+          - {label: "test", name: "test", widget: "categories"}
           - label: "Event"
             name: "event"
             widget: "object"
@@ -96,8 +97,8 @@ collections:
             name: "featuredProject"
             widget: "relation"
             collection: "projects"
-            searchFields: ["title"]
-            valueField: "title"
+            searchFields: ["name"]
+            valueField: "name"
             displayFields: ["title"]
 
       - file: "src/pages/about/index.md"
