@@ -7,6 +7,7 @@ class CategoriesControl extends Component {
   render() {
     console.log(this.props.entry)
     console.log(this.props)
+    window.__widget = this.props
     return (
       <input
         type="text"
