@@ -68,7 +68,7 @@ const getYearFromTo = (from, to) => {
 
 export const query = graphql`
   query GuerilasQuery {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/members/" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/member/" } }) {
       edges {
         node {
           fields {
