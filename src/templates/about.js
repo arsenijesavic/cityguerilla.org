@@ -69,11 +69,9 @@ const AboutPage = ({ data }) => {
       {projects &&
         projects.map((project, i) => (
           <Cell key={i} width={8} height={1} left={2} clear>
-          <Link style={{display: 'block'}} to={project.url}>
-            <ProjectName>
-            {project.name}
-            </ProjectName>
-          </Link>
+            <Link style={{ display: 'block' }} to={project.url}>
+              <ProjectName>{project.name}</ProjectName>
+            </Link>
           </Cell>
         ))}
 

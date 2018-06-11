@@ -54,7 +54,6 @@ const GuerilasPage = ({ data }) => {
   )
 }
 
-
 export default GuerilasPage
 
 const getYearFromTo = (from, to) => {

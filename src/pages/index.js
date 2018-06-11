@@ -1,6 +1,8 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import { Grid, Cell, Carousel } from '../components'
 import styled from 'styled-components'
+import searchIcon from '../assets/svg/Search-icon.svg'
 
 const IndexPage = ({ data }) => {
   const {
@@ -28,14 +30,18 @@ const IndexPage = ({ data }) => {
       </Cell>
 
       <Cell width={13} height={6} top={1} left={1}>
-        <Carousel autoplay>
-          {actions &&
-            actions.map((action, i) => <Action key={i} {...action} />)}
-        </Carousel>
+        <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
+          <Carousel autoplay>
+            {actions &&
+              actions.map((action, i) => <Action key={i} {...action} />)}
+          </Carousel>
+        </div>
       </Cell>
 
       <Cell width={12} height={2} top={1} left={1} background={false}>
-        <input type="search" placeholder="search" />
+        <input
+          style={{ background: ` white url(${searchIcon}) no-repeat 9px center`, backgroundSize: '20px 20px' }}
+          type="search" placeholder="search" />
       </Cell>
 
       <Cell width={5} height={1} top={1} right={1} align="right">
@@ -53,7 +59,7 @@ const IndexPage = ({ data }) => {
         >
           {tags &&
             tags.map((tag, i) => (
-              <a href="" style={{ marginRight: '5px', textDecoration: 'none' }}>
+              <a href="" style={{ marginRight: '5px' }}>
                 {tag}
               </a>
             ))}
@@ -61,8 +67,7 @@ const IndexPage = ({ data }) => {
       </Cell>
 
       <Cell width={7} height={5} top={1}>
-        <img
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        <ImageWithZoom
           src={`${featuredProject.images[0].image.replace('/static', '')}`}
           alt=""
         />
@@ -82,18 +87,19 @@ const IndexPage = ({ data }) => {
       </Cell>
 
       <Cell width={6} height={9} top={0} left={5}>
-        <div style={{ padding: '30px' }}>
+        <FeaturedProject>
           <h2 style={{ textAlign: 'center' }}>-</h2>
-          <h2 style={{ textAlign: 'center' }}>{featuredProject.name}</h2>
+          <Link>
+            <h2 style={{ textAlign: 'center' }}>{featuredProject.name}</h2>
+          </Link>
           <p style={{ marginTop: '30px', textAlign: 'justify' }}>
             {featuredProject.description.split('.')[0].trim()}
           </p>
-        </div>
+        </FeaturedProject>
       </Cell>
 
       <Cell width={5} height={4} top={1} left={2} clear>
-        <img
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        <ImageWithZoom
           src="https://scontent.fbeg4-1.fna.fbcdn.net/v/t31.0-8/18320636_1835661863360998_8386183770255603416_o.jpg?_nc_cat=0&oh=4a1c508177845f86828b4834400e7b4d&oe=5B7F7748"
           alt=""
         />
@@ -107,8 +113,7 @@ const IndexPage = ({ data }) => {
       </Cell>
 
       <Cell width={5} height={8} right={1} top={-3} align="right">
-        <img
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        <ImageWithZoom
           src="http://cityguerilla.org/images/actions/01_City_Guerilla_Dacida_2017.jpg"
           alt=""
         />
@@ -117,6 +122,28 @@ const IndexPage = ({ data }) => {
   )
 }
 export default IndexPage
+
+const ImageWithZoom = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+`
+
+
+const FeaturedProject = styled.div`
+  padding: 30px;
+  > a {
+    &:hover {
+      text-decoration: line-through;
+    }
+  }
+`
 
 export const query = graphql`
   query IndexQuery {

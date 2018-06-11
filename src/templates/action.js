@@ -5,14 +5,12 @@ const ActionPage = ({ data }) => {
   const { name, description, images, tags, members } = {
     ...data.markdownRemark.frontmatter,
   }
-  console.log(images)
+
   return (
     <Grid>
       <Cell width={6} height={6} top={1} left={1}>
         <div style={{ padding: '15px' }}>
-          <h1 style={{ fontSize: '24px', minHeight: `${4 * 45}px` }}>
-            {name}
-          </h1>
+          <h1 style={{ fontSize: '24px', minHeight: `${4 * 45}px` }}>{name}</h1>
           <h3 style={{ fontWeight: '300', paddingBottom: '5px' }}>Workshop</h3>
           <h5 style={{ fontWeight: '300' }}>2015</h5>
           <h5 style={{ fontWeight: '300' }}>Savamala, Beograd</h5>

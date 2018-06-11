@@ -43,6 +43,7 @@ const Wrap = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 
   > div {
     &:hover {
@@ -76,6 +77,7 @@ const Overflow = styled.div`
 
   > p {
     margin: 5px 0;
+    word-wrap: break-word;
     > span {
       background: black;
       color: white;

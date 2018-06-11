@@ -41,7 +41,7 @@ const Cell = class extends React.Component {
               ? '1px 0px 0px 1px'
               : '1px 1px 0px 1px'
             : 'wtf',
-          overflow: 'hidden',
+          //overflow: 'hidden',
         }}
       >
         <div
