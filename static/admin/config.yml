@@ -59,6 +59,13 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Location" , name: "location", widget: "string"}
       - {label: "Website" , name: "website", widget: "string"}
+      - label: "act"
+        name: "act"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "markdown"}
+          - {label: "Date", name: "date", widget: "date"}
 
   - name: "creativeBoard"
     label: "Creative Board"
@@ -71,9 +78,15 @@ collections:
         name: "details"
         widget: "object"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "markdown"}
-          - {label: "Date", name: "date", widget: "date"}
+          - {label: "Actions", name: "actions", widget: "categories"}
+          - label: "Action"
+            name: "action"
+            widget: "relation"
+            collection: "actions"
+            searchFields: ["name"]
+            valueField: "name"
+            displayFields: ["name"]
+
       - label: "Members"
         name: "members"
         widget: "relation"
@@ -99,7 +112,6 @@ collections:
         name: "home"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
-          - {label: "test", name: "test", widget: "categories"}
           - label: "Event"
             name: "event"
             widget: "object"
