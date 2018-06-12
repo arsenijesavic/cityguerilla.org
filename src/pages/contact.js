@@ -1,17 +1,25 @@
 import React, { Component } from 'react'
 import { Grid, Cell } from '../components'
 import cn from 'classnames'
+import Recaptcha from "react-google-recaptcha"
+
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
 const encode = (data) => {
   return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
 }
 
 
 class ContactPage extends Component {
 
-  state = {}
+  state = {
+    name: '',
+    email: '',
+    title: '',
+    message: ''
+  }
 
   handleSubmit = e => {
     fetch("/", {
@@ -25,20 +33,33 @@ class ContactPage extends Component {
     e.preventDefault();
   };
 
-  handleChange = e =>
-    this.setState({ [e.target.name]: e.target.value });
+  handleChange = e => {
+    const { id, value } = e.target
+    const data = { ...this.state }
+    data[id] = value
+    this.setState({ ...data })
+  }
+
+  handleRecaptcha = value => {
+    this.setState({ "g-recaptcha-response": value })
+  }
 
   render() {
     const { name, email, title, message } = this.state
+
     return (
       <Grid>
         <Cell width={16} height={16} top={2} left={2}>
           <form style={{ width: '450px', margin: '0 auto' }} onSubmit={this.handleSubmit}>
-            <Input type='text' label='First & Last Name' value={name} name='name' onChange={this.handleChange} />
-            <Input type='text' label='Email' name='email' value={email} onChange={this.handleChange} />
-            <Input type='text' label='Title' name='title' value={title} onChange={this.handleChange} />
-            <Input type='textarea' label=' your message...' value={message} name='message' onChange={this.handleChange} />
-            <div data-netlify-recaptcha />
+            <Input type='text' label='First & Last Name' id='name' value={name} onChange={this.handleChange} />
+            <Input type='text' label='Email' id='email' value={email} onChange={this.handleChange} />
+            <Input type='text' label='Title' id='title' value={title} onChange={this.handleChange} />
+            <Input type='textarea' label=' your message...' id='message' value={message} onChange={this.handleChange} />
+            <Recaptcha
+              ref="recaptcha"
+              sitekey={RECAPTCHA_KEY}
+              onChange={this.handleRecaptcha}
+            />
             <button type='submit'>Submit</button>
           </form>
         </Cell>
@@ -63,7 +84,7 @@ class Input extends React.Component {
       text: <input
         ref={node => this.input = node}
         type="text"
-        name={id}
+        id={id}
         value={value}
         className="mat-input"
         onFocus={() => this.setState({ isFocused: true })}
@@ -72,7 +93,7 @@ class Input extends React.Component {
       />,
       textarea: <textarea
         ref={node => this.input = node}
-        name={id}
+        id={id}
         value={value}
         className="mat-input"
         rows="10"
