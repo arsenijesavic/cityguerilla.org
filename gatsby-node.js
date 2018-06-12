@@ -209,8 +209,6 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
             }
           })
 
-          console.log(node.frontmatter.involved)
-
           node.frontmatter = {
             ...node.frontmatter,
             involved,

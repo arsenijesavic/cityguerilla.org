@@ -18,11 +18,11 @@ collections:
       - {label: "Date from", name: "dateFrom", widget: "date"}
       - {label: "Date to", name: "dateTo", widget: "date"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - label: "Tags"
-        name: "tags"
+      - label: "Members"
+        name: "members"
         widget: "relations"
         limit: "300"
-        collection: "actions"
+        collection: "Members"
         searchFields: ["name"]
         valueField: "name"
       - label: "Images"
