@@ -128,8 +128,6 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
     .forEach(node => {
       if (node) {
 
-
-
         if (node.frontmatter.featuredProject) {
           const authorNode = getNodes().find(
             node2 =>
