@@ -1,3 +1,4 @@
+const fs = require('fs')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
@@ -21,68 +22,68 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     }
   `).then(result => {
-    if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
 
-    result.data.allMarkdownRemark.edges.map(({ node }) => {
-      const {
-        id,
-        fields: { slug },
-        frontmatter: { templateKey },
-      } = node
+      result.data.allMarkdownRemark.edges.map(({ node }) => {
+        const {
+          id,
+          fields: { slug },
+          frontmatter: { templateKey },
+        } = node
 
-      createPage({
-        path: slug,
-        component: path.resolve(`./src/templates/${templateKey}.js`),
-        context: { slug, id },
+        createPage({
+          path: slug,
+          component: path.resolve(`./src/templates/${templateKey}.js`),
+          context: { slug, id },
+        })
       })
+
+      // const posts = result.data.allMarkdownRemark.edges
+
+      // posts.forEach(edge => {
+      //   const id = edge.node.id
+
+      //   createPage({
+      //     path: edge.node.fields.slug,
+      //     slug: edge.node.fields.slug
+      //     //tags: edge.node.frontmatter.tags,
+      //     component: path.resolve(
+      //       `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+      //     ),
+      //     // additional data can be passed via context
+      //     context: {
+      //       id,
+      //     },
+      //   })
+      // })
+
+      // Tag pages:
+      let tags = []
+      // Iterate through each post, putting all found tags into `tags`
+      // posts.forEach(edge => {
+      // if (_.get(edge, `node.frontmatter.tags`)) {
+      //   tags = tags.concat(edge.node.frontmatter.tags)
+      // }
+      // })
+      // Eliminate duplicate tags
+      // tags = _.uniq(tags)
+
+      // // Make tag pages
+      // tags.forEach(tag => {
+      //   const tagPath = `/tags/${_.kebabCase(tag)}/`
+
+      //   createPage({
+      //     path: tagPath,
+      //     component: path.resolve(`src/templates/tags.js`),
+      //     context: {
+      //       tag,
+      //     },
+      //   })
+      // })
     })
-
-    // const posts = result.data.allMarkdownRemark.edges
-
-    // posts.forEach(edge => {
-    //   const id = edge.node.id
-
-    //   createPage({
-    //     path: edge.node.fields.slug,
-    //     slug: edge.node.fields.slug
-    //     //tags: edge.node.frontmatter.tags,
-    //     component: path.resolve(
-    //       `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-    //     ),
-    //     // additional data can be passed via context
-    //     context: {
-    //       id,
-    //     },
-    //   })
-    // })
-
-    // Tag pages:
-    let tags = []
-    // Iterate through each post, putting all found tags into `tags`
-    // posts.forEach(edge => {
-    // if (_.get(edge, `node.frontmatter.tags`)) {
-    //   tags = tags.concat(edge.node.frontmatter.tags)
-    // }
-    // })
-    // Eliminate duplicate tags
-    // tags = _.uniq(tags)
-
-    // // Make tag pages
-    // tags.forEach(tag => {
-    //   const tagPath = `/tags/${_.kebabCase(tag)}/`
-
-    //   createPage({
-    //     path: tagPath,
-    //     component: path.resolve(`src/templates/tags.js`),
-    //     context: {
-    //       tag,
-    //     },
-    //   })
-    // })
-  })
 }
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
@@ -136,6 +137,33 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
             featuredProject: authorNode.frontmatter,
           }
         }
+
+        if (node.frontmatter.members) {
+
+          let members = []
+          const membersNode = getNodes().find(
+            node2 => {
+              if (node2.frontmatter) {
+                if (node2.internal.type === 'MarkdownRemark' &&
+                  node.frontmatter.members.includes(node2.frontmatter.name))
+                  members.push(
+                    {
+                      ...node2.frontmatter,
+                      url: node2.fields.slug
+                    }
+                  )
+              }
+            }
+          )
+
+          node.frontmatter = {
+            ...node.frontmatter,
+            members
+          }
+
+        }
+
+
       }
     })
 }

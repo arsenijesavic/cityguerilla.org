@@ -1,8 +1,9 @@
-import React, { Component, Children } from 'react'
+import React from 'react'
 import { Grid, Cell } from '../components'
+import Link from 'gatsby-link'
 
 const ActionPage = ({ data }) => {
-  const { name, description, images, tags, members } = {
+  const { name, category, dateFrom, dateTo, location, description, images, tags, members } = {
     ...data.markdownRemark.frontmatter,
   }
 
@@ -11,9 +12,9 @@ const ActionPage = ({ data }) => {
       <Cell width={6} height={6} top={1} left={1}>
         <div style={{ padding: '15px' }}>
           <h1 style={{ fontSize: '24px', minHeight: `${4 * 45}px` }}>{name}</h1>
-          <h3 style={{ fontWeight: '300', paddingBottom: '5px' }}>Workshop</h3>
+          <h3 style={{ fontWeight: '300', paddingBottom: '5px' }}>{category}</h3>
           <h5 style={{ fontWeight: '300' }}>2015</h5>
-          <h5 style={{ fontWeight: '300' }}>Savamala, Beograd</h5>
+          <h5 style={{ fontWeight: '300' }}>{location}</h5>
         </div>
       </Cell>
 
@@ -119,22 +120,27 @@ const ActionPage = ({ data }) => {
           {members &&
             members.map((member, i) => (
               <li key={i} style={{ display: 'block', marginBottom: '5px' }}>
-                <img
-                  style={{
-                    width: '35px',
-                    height: '35px',
-                    objectFit: 'cover',
-                    float: 'left',
-                  }}
-                  src="http://cityguerilla.org/images/members/member_image409246.jpg"
-                  alt=""
-                />
-                <h5
-                  style={{ float: 'left', padding: '10px', fontWeight: '700' }}
+                <Link
+                  style={{ display: 'block', width: '100%', height: '100%' }}
+                  to={member.url}
                 >
-                  {member}
-                </h5>
-                <br style={{ clear: 'both' }} />
+                  <img
+                    style={{
+                      width: '35px',
+                      height: '35px',
+                      objectFit: 'cover',
+                      float: 'left',
+                    }}
+                    src={member.image}
+                    alt=""
+                  />
+                  <h5
+                    style={{ float: 'left', padding: '10px', fontWeight: '700' }}
+                  >
+                    {member.name}
+                  </h5>
+                  <br style={{ clear: 'both' }} />
+                </Link>
               </li>
             ))}
         </ul>
@@ -150,10 +156,16 @@ export const ActionQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         name
+        category
         description
         dateFrom
+        location
         tags
-        members
+        members {
+          name
+          image
+          url
+        }
         images {
           image
         }
