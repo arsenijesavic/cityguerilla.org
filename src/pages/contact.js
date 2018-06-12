@@ -5,7 +5,7 @@ import cn from 'classnames'
 const ContactPage = () => (
   <Grid>
     <Cell width={16} height={16} top={2} left={2}>
-      <form style={{ width: '450px', margin: '0 auto' }} name="contact" method="POST" netlify>
+      <form style={{ width: '450px', margin: '0 auto' }} name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <Input type='text' label='First & Last Name' />
         <Input type='text' label='Email' />
         <Input type='text' label='Title' />
