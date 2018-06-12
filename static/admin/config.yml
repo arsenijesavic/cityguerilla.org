@@ -13,19 +13,18 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
-      - {label: "Title", name: "title", widget: "string"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Date from", name: "dateFrom", widget: "date"}
       - {label: "Date to", name: "dateTo", widget: "date"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - label: "Members"
-        name: "members"
-        widget: "relations"
-        limit: "300"
-        collection: "Members"
-        searchFields: ["name"]
-        valueField: "name"
+      # - label: "Tags"
+      #   name: "tags"
+      #   widget: "relations"
+      #   limit: "3"
+      #   collection: "posts"
+      #   searchFields: ["title"]
+      #   valueField: "title"
       - label: "Images"
         name: "images"
         widget: "list"
