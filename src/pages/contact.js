@@ -2,6 +2,13 @@ import React, { Component } from 'react'
 import { Grid, Cell } from '../components'
 import cn from 'classnames'
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
+
 class ContactPage extends Component {
 
   state = {}
