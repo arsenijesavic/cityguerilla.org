@@ -51,9 +51,14 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
-      - {label: "Full name: ", name: "name: ", widget: "string"}
+      - {label: "Name: ", name: "name: ", widget: "string"}
       - {label: "Bio", name: "bio", widget: "markdown"}
-
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "From", name: "from", widget: "date"}
+      - {label: "To", name: "to", widget: "date"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Location" , name: "location", widget: "string"}
+      - {label: "Website" , name: "website", widget: "string"}
 
   - name: "creativeBoard"
     label: "Creative Board"
