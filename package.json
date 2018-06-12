@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "dependencies": {
     "bulma": "^0.6.0",
+    "classnames": "^2.2.6",
     "d3-ease": "^1.0.3",
     "exenv": "^1.2.2",
     "gatsby": "^1.9.213",
