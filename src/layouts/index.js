@@ -32,11 +32,11 @@ const Layout = ({ data, children }) => (
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} /> */}
 
-      <link
+      {/* <link
         rel="shortcut icon"
         type="image/x-icon"
         href="http://media.cityguerilla.org/2015/10/cropped-logo-GERILA-72dpi-400_300px.png"
-      />
+      /> */}
 
       <link
         href="https://fonts.googleapis.com/css?family=Heebo:300,400,700"
