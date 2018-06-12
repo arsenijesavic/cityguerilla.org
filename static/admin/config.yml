@@ -48,10 +48,10 @@ collections:
     label: "Members"
     folder: "src/pages/member"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
-      - {label: "wtf", name: "name", widget: "string"}
+      - {label: "Name", name: "name", widget: "string"}
       - {label: "Bio", name: "bio", widget: "markdown"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "From", name: "from", widget: "date"}
