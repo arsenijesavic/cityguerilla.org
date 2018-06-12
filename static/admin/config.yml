@@ -48,7 +48,7 @@ collections:
     label: "Members"
     folder: "src/pages/member"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
       - {label: "Full name: ", name: "name: ", widget: "string"}
@@ -62,7 +62,28 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
-      - {label: "Title", name: "title", widget: "string"}
+      - label: "Details"
+        name: "details"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "markdown"}
+          - {label: "Date", name: "date", widget: "date"}
+      - label: "Members"
+        name: "members"
+        widget: "relation"
+        collection: "members"
+        searchFields: ["name"]
+        valueField: "name"
+        displayFields: ["name"]
+      - label: "Actions"
+        name: "actions"
+        widget: "relation"
+        collection: "actions"
+        searchFields: ["name"]
+        valueField: "name"
+        displayFields: ["name"]
+      - {label: "Category", name: "category", widget: "select", options: ["animation / animacija", "video / video", "blueprint / nacrt", "audio / audio", "design / dizajn", "photography / fotografija", "illustration / ilustracija", "toolkit / tulkit", "comic / strip", "publication / publikacija", "monster / monster", "infographic / infografika", "gif / gif", "booklet / buklet"]}
       - {label: "Image", name: "image", widget: "image"}
 
   - name: "pages"
