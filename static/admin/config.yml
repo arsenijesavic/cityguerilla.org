@@ -51,7 +51,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
-      - {label: "Name: ", name: "name: ", widget: "string"}
+      - {label: "wtf", name: "name", widget: "string"}
       - {label: "Bio", name: "bio", widget: "markdown"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "From", name: "from", widget: "date"}
