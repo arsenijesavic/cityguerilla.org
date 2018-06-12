@@ -67,28 +67,30 @@ collections:
           - {label: "Description", name: "description", widget: "markdown"}
           - {label: "Date", name: "date", widget: "date"}
 
-  - name: "creativeBoard"
+  - name: "creative-board"
     label: "Creative Board"
     folder: "src/pages/board"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
-      - label: "Members"
-        name: "members"
-        widget: "relation"
-        collection: "members"
-        searchFields: ["name"]
-        valueField: "name"
-        displayFields: ["name"]
-      - label: "Actions"
-        name: "actions"
-        widget: "relation"
-        collection: "actions"
-        searchFields: ["name"]
-        valueField: "name"
-        displayFields: ["name"]
+      - {label: "Title", name: "title", widget: "string"}
+      # - label: "Members"
+      #   name: "members"
+      #   widget: "relation"
+      #   collection: "members"
+      #   searchFields: ["name"]
+      #   valueField: "name"
+      #   displayFields: ["name"]
+      # - label: "Actions"
+      #   name: "actions"
+      #   widget: "relation"
+      #   collection: "actions"
+      #   searchFields: ["name"]
+      #   valueField: "name"
+      #   displayFields: ["name"]
       - {label: "Category", name: "category", widget: "select", options: ["animation / animacija", "video / video", "blueprint / nacrt", "audio / audio", "design / dizajn", "photography / fotografija", "illustration / ilustracija", "toolkit / tulkit", "comic / strip", "publication / publikacija", "monster / monster", "infographic / infografika", "gif / gif", "booklet / buklet"]}
+      - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Image", name: "image", widget: "image"}
 
   - name: "pages"
