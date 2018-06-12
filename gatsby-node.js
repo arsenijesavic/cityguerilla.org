@@ -104,7 +104,6 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   //     if (images) {
   //         images.forEach((image, i) => {
   //             if (image.image) {
-  //                 console.log(images[i])
   //                 //if (image.image.indexOf('/img') === 0)
   //                 images[i].image = path.relative(
   //                     path.dirname(node.fileAbsolutePath),

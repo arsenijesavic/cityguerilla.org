@@ -9,7 +9,6 @@ const MemberPage = ({ data }) => {
   const { name, location, from, to, image, website, involved, bio, tags } = {
     ...data.markdownRemark.frontmatter,
   }
-  console.log(involved)
   return (
     <Grid>
       <Cell width={7} height={8} top={2} left={2}>
