@@ -1,37 +1,35 @@
 import React, { Component } from 'react'
 import { Grid, Cell } from '../components'
 import cn from 'classnames'
-import Recaptcha from "react-google-recaptcha"
+import Recaptcha from 'react-google-recaptcha'
 
-const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
 
-const encode = (data) => {
+const encode = data => {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
 }
 
-
 class ContactPage extends Component {
-
   state = {
     name: '',
     email: '',
     title: '',
-    message: ''
+    message: '',
   }
 
   handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...this.state }),
     })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
+      .then(() => alert('Success!'))
+      .catch(error => alert(error))
 
-    e.preventDefault();
-  };
+    e.preventDefault()
+  }
 
   handleChange = e => {
     const { id, value } = e.target
@@ -41,7 +39,7 @@ class ContactPage extends Component {
   }
 
   handleRecaptcha = value => {
-    this.setState({ "g-recaptcha-response": value })
+    this.setState({ 'g-recaptcha-response': value })
   }
 
   render() {
@@ -50,30 +48,56 @@ class ContactPage extends Component {
     return (
       <Grid>
         <Cell width={16} height={16} top={2} left={2}>
-          <form style={{ width: '450px', margin: '0 auto' }} onSubmit={this.handleSubmit}>
-            <Input type='text' label='First & Last Name' id='name' value={name} onChange={this.handleChange} />
-            <Input type='text' label='Email' id='email' value={email} onChange={this.handleChange} />
-            <Input type='text' label='Title' id='title' value={title} onChange={this.handleChange} />
-            <Input type='textarea' label=' your message...' id='message' value={message} onChange={this.handleChange} />
-            <Recaptcha
+          <form
+            style={{ width: '450px', margin: '0 auto' }}
+            onSubmit={this.handleSubmit}
+          >
+            <Input
+              type="text"
+              label="First & Last Name"
+              id="name"
+              value={name}
+              onChange={this.handleChange}
+            />
+            <Input
+              type="text"
+              label="Email"
+              id="email"
+              value={email}
+              onChange={this.handleChange}
+            />
+            <Input
+              type="text"
+              label="Title"
+              id="title"
+              value={title}
+              onChange={this.handleChange}
+            />
+            <Input
+              type="textarea"
+              label=" your message..."
+              id="message"
+              value={message}
+              onChange={this.handleChange}
+            />
+            {/* <Recaptcha
               ref="recaptcha"
               sitekey={RECAPTCHA_KEY}
               onChange={this.handleRecaptcha}
-            />
-            <button type='submit'>Submit</button>
+            /> */}
+            <button type="submit">Submit</button>
           </form>
         </Cell>
-      </Grid >
-    );
+      </Grid>
+    )
   }
 }
 
 export default ContactPage
 
 class Input extends React.Component {
-
   state = {
-    isFocused: false
+    isFocused: false,
   }
 
   render() {
@@ -81,30 +105,39 @@ class Input extends React.Component {
     const { id, type, label, value, onChange } = this.props
 
     const types = {
-      text: <input
-        ref={node => this.input = node}
-        type="text"
-        id={id}
-        value={value}
-        className="mat-input"
-        onFocus={() => this.setState({ isFocused: true })}
-        onBlur={() => this.setState({ isFocused: false })}
-        onChange={onChange}
-      />,
-      textarea: <textarea
-        ref={node => this.input = node}
-        id={id}
-        value={value}
-        className="mat-input"
-        rows="10"
-        cols="40"
-        onFocus={() => this.setState({ isFocused: true })}
-        onBlur={() => this.setState({ isFocused: false })}
-        onChange={onChange}
-      />
+      text: (
+        <input
+          ref={node => (this.input = node)}
+          type="text"
+          id={id}
+          value={value}
+          className="mat-input"
+          onFocus={() => this.setState({ isFocused: true })}
+          onBlur={() => this.setState({ isFocused: false })}
+          onChange={onChange}
+        />
+      ),
+      textarea: (
+        <textarea
+          ref={node => (this.input = node)}
+          id={id}
+          value={value}
+          className="mat-input"
+          rows="10"
+          cols="40"
+          onFocus={() => this.setState({ isFocused: true })}
+          onBlur={() => this.setState({ isFocused: false })}
+          onChange={onChange}
+        />
+      ),
     }
     return (
-      <div className={cn('mat-div', { 'is-active': isFocused, 'is-completed': isFocused || this.input && this.input.value !== '' })}>
+      <div
+        className={cn('mat-div', {
+          'is-active': isFocused,
+          'is-completed': isFocused || (this.input && this.input.value !== ''),
+        })}
+      >
         <label htmlFor="first-name: " className="mat-label">
           {label}
         </label>
@@ -113,8 +146,6 @@ class Input extends React.Component {
     )
   }
 }
-
-
 
 // function contactFormAnimation() {
 //   $(".mat-input").focus(function () {

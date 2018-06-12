@@ -14,7 +14,9 @@ const MemberPage = ({ data }) => {
         <MemberInfo>
           <MemberName>{name}</MemberName>
           <h3 style={{ fontWeight: '300' }}>{location}</h3>
-          <h3 style={{ fontWeight: '300' }}>{from} - {to}</h3>
+          <h3 style={{ fontWeight: '300' }}>
+            {from} - {to}
+          </h3>
           <MemberLinks>
             <span>links:</span>
             <a href="">web</a>
@@ -27,8 +29,8 @@ const MemberPage = ({ data }) => {
         onStart={() => true}
         //onDrag={() => true}
         onStop={() => true}
-        defaultPosition={{ x: 230, y: 196 }}>
-
+        defaultPosition={{ x: 230, y: 196 }}
+      >
         <img
           style={{
             cursor: 'move',
@@ -49,11 +51,20 @@ const MemberPage = ({ data }) => {
       <Cell width={8} top={2} left={1} clear>
         <CellTitle>Involved in:</CellTitle>
         <div style={{ padding: '15px 30px' }}>
-          {involved && involved.map((project, i) =>
-            <p style={{ margin: '7.5px 0', whiteSpace: 'nowrap', width: '19em', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-              {project}
-            </p>
-          )}
+          {involved &&
+            involved.map((project, i) => (
+              <p
+                style={{
+                  margin: '7.5px 0',
+                  whiteSpace: 'nowrap',
+                  width: '19em',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                }}
+              >
+                {project}
+              </p>
+            ))}
         </div>
       </Cell>
 
@@ -85,17 +96,16 @@ const MemberPage = ({ data }) => {
       </Cell>
 
       <Cell width={18} height={10} top={2} left={1}>
-        <CellTitle >Creative Board</CellTitle>
+        <CellTitle>Creative Board</CellTitle>
       </Cell>
-    </Grid >
+    </Grid>
   )
 }
 
 export default MemberPage
 
-
 const CellTitle = styled.p`
-  width: ${props => props.width ? `${props.width * 45}px` : '180px'}
+  width: ${props => (props.width ? `${props.width * 45}px` : '180px')}
   height: 45px;
   background: black;
   color: white;
@@ -127,8 +137,6 @@ const MemberLinks = styled.div`
     display: inline-block;
     margin-right: 5px;
   }
-
-
 `
 
 export const aboutPageQuery = graphql`

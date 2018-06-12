@@ -8,7 +8,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/assets/images/favicon.png",
+        logo: './src/assets/images/favicon.png',
         injectHTML: true,
         icons: {
           android: true,
@@ -19,9 +19,9 @@ module.exports = {
           firefox: true,
           twitter: false,
           yandex: false,
-          windows: false
-        }
-      }
+          windows: false,
+        },
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',

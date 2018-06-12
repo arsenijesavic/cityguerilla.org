@@ -40,8 +40,13 @@ const IndexPage = ({ data }) => {
 
       <Cell width={12} height={2} top={1} left={1} background={false}>
         <input
-          style={{ background: ` white url(${searchIcon}) no-repeat 9px center`, backgroundSize: '20px 20px' }}
-          type="search" placeholder="search" />
+          style={{
+            background: ` white url(${searchIcon}) no-repeat 9px center`,
+            backgroundSize: '20px 20px',
+          }}
+          type="search"
+          placeholder="search"
+        />
       </Cell>
 
       <Cell width={5} height={1} top={1} right={1} align="right">
@@ -134,7 +139,6 @@ const ImageWithZoom = styled.img`
     transform: scale(1.3);
   }
 `
-
 
 const FeaturedProject = styled.div`
   padding: 30px;
