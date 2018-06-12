@@ -1,9 +1,22 @@
 import React from 'react'
 import { Grid, Cell } from '../components'
 import Link from 'gatsby-link'
+import moment from 'moment'
 
 const ActionPage = ({ data }) => {
-  const { name, category, dateFrom, dateTo, location, description, images, tags, members } = {
+  const {
+    name,
+    category,
+    from,
+    to,
+    location,
+    description,
+    images,
+    video,
+    tags,
+    members,
+    mentors
+  } = {
     ...data.markdownRemark.frontmatter,
   }
 
@@ -12,8 +25,10 @@ const ActionPage = ({ data }) => {
       <Cell width={6} height={6} top={1} left={1}>
         <div style={{ padding: '15px' }}>
           <h1 style={{ fontSize: '24px', minHeight: `${4 * 45}px` }}>{name}</h1>
-          <h3 style={{ fontWeight: '300', paddingBottom: '5px' }}>{category}</h3>
-          <h5 style={{ fontWeight: '300' }}>2015</h5>
+          <h3 style={{ fontWeight: '300', paddingBottom: '5px' }}>
+            {category}
+          </h3>
+          <h5 style={{ fontWeight: '300' }}>{moment(from).year()}</h5>
           <h5 style={{ fontWeight: '300' }}>{location}</h5>
         </div>
       </Cell>
@@ -135,7 +150,11 @@ const ActionPage = ({ data }) => {
                     alt=""
                   />
                   <h5
-                    style={{ float: 'left', padding: '10px', fontWeight: '700' }}
+                    style={{
+                      float: 'left',
+                      padding: '10px',
+                      fontWeight: '700',
+                    }}
                   >
                     {member.name}
                   </h5>
@@ -145,6 +164,71 @@ const ActionPage = ({ data }) => {
             ))}
         </ul>
       </Cell>
+
+
+
+      <Cell width={7} top={2} left={1}>
+        <div style={{ width: '135px', height: '45px', background: 'black' }}>
+          <h1
+            style={{
+              fontSize: '20px',
+              padding: '8px 15px',
+              color: 'white',
+              fontWeight: '100',
+              textTransform: 'lowercase',
+              textAlign: 'center',
+            }}
+          >
+            Mentors
+          </h1>
+        </div>
+        <ul style={{ padding: '5px 10px' }}>
+          {mentors &&
+            mentors.map((mentor, i) => (
+              <li key={i} style={{ display: 'block', marginBottom: '5px' }}>
+                <Link
+                  style={{ display: 'block', width: '100%', height: '100%' }}
+                  to={mentor.url}
+                >
+                  <img
+                    style={{
+                      width: '35px',
+                      height: '35px',
+                      objectFit: 'cover',
+                      float: 'left',
+                    }}
+                    src={mentor.image}
+                    alt=""
+                  />
+                  <h5
+                    style={{
+                      float: 'left',
+                      padding: '10px',
+                      fontWeight: '700',
+                    }}
+                  >
+                    {mentor.name}
+                  </h5>
+                  <br style={{ clear: 'both' }} />
+                </Link>
+              </li>
+            ))}
+        </ul>
+      </Cell>
+
+
+      {video &&
+        <Cell width={14} height={7} top={2} left={3}>
+          <iframe
+            width="560"
+            height="315"
+            src={video}
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          />
+        </Cell>
+      }
     </Grid>
   )
 }
@@ -158,10 +242,15 @@ export const ActionQuery = graphql`
         name
         category
         description
-        dateFrom
-        location
+        from
+        to
         tags
         members {
+          name
+          image
+          url
+        }
+        mentors {
           name
           image
           url
@@ -169,6 +258,7 @@ export const ActionQuery = graphql`
         images {
           image
         }
+        video
       }
     }
   }

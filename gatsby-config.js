@@ -1,8 +1,15 @@
 module.exports = {
+
   siteMetadata: {
     title: 'City Guerilla',
     author: 'Arsenije Savic',
   },
+
+  mapping: {
+    'SitePluginConnection.packageJson.author': `MarkdownRemark`,
+    'MarkdownRemark.fields.books': `MarkdownRemark`,
+  },
+
   plugins: [
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-react-helmet',

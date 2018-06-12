@@ -24,7 +24,7 @@
     "gatsby-transformer-sharp": "^1.6.21",
     "list-react-files": "^0.2.0",
     "moment": "^2.22.2",
-    "netlify-cms": "^1.7.0",
+    "netlify-cms": "git+https://github.com/arsenijesavic/netlify-cms.git#relations",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-draggable": "^3.0.5",

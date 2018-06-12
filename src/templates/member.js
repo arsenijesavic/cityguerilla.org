@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import { Grid, Cell } from '../components'
 import Draggable from 'react-draggable'
-
+import Link from 'gatsby-link'
+import moment from 'moment'
 import styled from 'styled-components'
 
 const MemberPage = ({ data }) => {
   const { name, location, from, to, image, website, involved, bio, tags } = {
     ...data.markdownRemark.frontmatter,
   }
+  console.log(involved)
   return (
     <Grid>
       <Cell width={7} height={8} top={2} left={2}>
@@ -44,32 +46,35 @@ const MemberPage = ({ data }) => {
         />
       </Draggable>
 
-      {/* white-space: nowrap
-    width: 12em
-    overflow: hidden
-    text-overflow: ellipsis */}
       <Cell width={8} top={2} left={1} clear>
         <CellTitle>Involved in:</CellTitle>
         <div style={{ padding: '15px 30px' }}>
           {involved &&
-            involved.map((project, i) => (
-              <p
-                style={{
-                  margin: '7.5px 0',
-                  whiteSpace: 'nowrap',
-                  width: '19em',
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis',
-                }}
-              >
-                {project}
-              </p>
-            ))}
+            involved
+              .sort((a, b) => new Date(a.from) - new Date(b.from))
+              .map((project, i) => (
+                <Link
+                  style={{ display: 'block', width: '100%', height: '100%' }}
+                  to={project.url}
+                >
+                  <p
+                    style={{
+                      margin: '7.5px 0',
+                      whiteSpace: 'nowrap',
+                      width: '19em',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                    }}
+                  >
+                    {moment(project.from, 'YYYY').year()}: {project.name}
+                  </p>
+                </Link>
+              ))}
         </div>
       </Cell>
 
       <Cell width={8} top={-2} left={2}>
-        <CellTitle>Bio</CellTitle>
+        <CellTitle width={2}>Bio</CellTitle>
         <div style={{ padding: '15px 30px' }}>
           <p>{bio}</p>
         </div>
@@ -105,7 +110,7 @@ const MemberPage = ({ data }) => {
 export default MemberPage
 
 const CellTitle = styled.p`
-  width: ${props => (props.width ? `${props.width * 45}px` : '180px')}
+  width: ${props => (props.width ? `${props.width * 45}px` : '180px')};
   height: 45px;
   background: black;
   color: white;
@@ -150,7 +155,11 @@ export const aboutPageQuery = graphql`
         to
         image
         website
-        involved
+        involved {
+          name
+          from
+          url
+        }
         bio
         tags
       }
