@@ -69,24 +69,11 @@ collections:
 
   - name: "creativeBoard"
     label: "Creative Board"
-    folder: "src/pages/creative-board"
+    folder: "src/pages/board"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
-      - label: "Details"
-        name: "details"
-        widget: "object"
-        fields:
-          - {label: "Actions", name: "actions", widget: "categories"}
-          - label: "Action"
-            name: "action"
-            widget: "relation"
-            collection: "actions"
-            searchFields: ["name"]
-            valueField: "name"
-            displayFields: ["name"]
-
       - label: "Members"
         name: "members"
         widget: "relation"
