@@ -1,5 +1,5 @@
 ---
-  templateKey: action
+  templateKey: project
   name: "Imaginarium"
   description: "\n\t\t\t\t\tImaginarium.Imaginarium\nImaginariumImaginarium\t\t\t\t"
   year: "11 2014 /  11 2015"

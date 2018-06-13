@@ -5,9 +5,10 @@ import styled from 'styled-components'
 import { Grid, Cell } from '../components'
 
 const TagPage = ({ data }) => {
-
-  const all = [...data.allMarkdownRemark.edges]
-    .map(v => ({ ...v.node.frontmatter, url: v.node.fields.slug }))
+  const all = [...data.allMarkdownRemark.edges].map(v => ({
+    ...v.node.frontmatter,
+    url: v.node.fields.slug,
+  }))
 
   const actions = all.filter(v => v.url.indexOf('action') > -1)
   const projects = all.filter(v => v.url.indexOf('project') > -1)
@@ -18,7 +19,7 @@ const TagPage = ({ data }) => {
 
   return (
     <Grid>
-      <Cell width={8} top={2} left={1} >
+      <Cell width={8} top={2} left={1}>
         <CellTitle>Actions</CellTitle>
         <div style={{ padding: '15px 30px' }}>
           {actions &&
@@ -45,7 +46,7 @@ const TagPage = ({ data }) => {
         </div>
       </Cell>
 
-      <Cell width={8} top={2} left={1} >
+      <Cell width={8} top={2} left={1}>
         <CellTitle>Projects</CellTitle>
         <div style={{ padding: '15px 30px' }}>
           {projects &&
@@ -72,30 +73,28 @@ const TagPage = ({ data }) => {
         </div>
       </Cell>
 
-
-      <Cell width={18} top={2} left={1} >
+      <Cell width={18} top={2} left={1}>
         <CellTitle>Members</CellTitle>
         <div style={{ padding: '15px 30px' }}>
           {members &&
-            members
-              .map((member, i) => (
-                <Link
-                  style={{ display: 'block', width: '100%', height: '100%' }}
-                  to={member.url}
+            members.map((member, i) => (
+              <Link
+                style={{ display: 'block', width: '100%', height: '100%' }}
+                to={member.url}
+              >
+                <p
+                  style={{
+                    margin: '7.5px 0',
+                    whiteSpace: 'nowrap',
+                    width: '19em',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                  }}
                 >
-                  <p
-                    style={{
-                      margin: '7.5px 0',
-                      whiteSpace: 'nowrap',
-                      width: '19em',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                    }}
-                  >
-                    {member.name}
-                  </p>
-                </Link>
-              ))}
+                  {member.name}
+                </p>
+              </Link>
+            ))}
         </div>
       </Cell>
     </Grid>
@@ -107,8 +106,8 @@ export default TagPage
 export const query = graphql`
   query TagPage($tag: String) {
     allMarkdownRemark(
-      limit: 2000,
-      filter: {frontmatter: {tags: {in: [$tag]}}}
+      limit: 2000
+      filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount
       edges {

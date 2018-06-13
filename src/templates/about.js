@@ -142,7 +142,7 @@ export const aboutPageQuery = graphql`
 `
 
 const GILogo = () => (
-  <div style={{ padding: '10%' }}>
+  <div style={{ width: '50%', margin: '0 auto', paddingTop:'10px' }}>
     <svg
       viewBox="0 0 283.466 456.378"
       enableBackground="new 0 0 283.466 456.378"

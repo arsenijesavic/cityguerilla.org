@@ -1,28 +1,27 @@
 import React from 'react'
-import { Grid, Cell } from '../components'
 import Link from 'gatsby-link'
-import moment from 'moment'
 import styled from 'styled-components'
+import moment from 'moment'
+import { Grid, Cell } from '../components'
 
-const ActionPage = ({ data }) => {
+const ProjectPage = ({ data }) => {
   const {
     name,
     category,
     from,
     to,
     location,
-    modules,
     description,
     images,
     video,
     tags,
     members,
     mentors,
-    projects
+    actions
   } = {
-    ...data.markdownRemark.frontmatter
+    ...data.markdownRemark.frontmatter,
   }
-  console.log(modules)
+  console.log(actions)
   return (
     <Grid>
       <Cell width={6} height={6} top={1} left={1}>
@@ -56,7 +55,7 @@ const ActionPage = ({ data }) => {
               fontWeight: 'bold',
             }}
           >
-            {modules}
+            The Symphony of Savamala
           </p>
         </div>
       </Cell>
@@ -119,7 +118,7 @@ const ActionPage = ({ data }) => {
         </div>
       </Cell>
 
-      <Cell width={7} top={2} left={1}>
+      <Cell width={7} top={2} right={1} align='right'>
         <div style={{ width: '135px', height: '45px', background: 'black' }}>
           <h1
             style={{
@@ -217,47 +216,38 @@ const ActionPage = ({ data }) => {
         </ul>
       </Cell>
 
-      <Cell width={4} height={1} top={2} left={2} clear background={false}>
-        <CellTitle>Projects</CellTitle>
-      </Cell>
-
-      {projects &&
-        projects.map((project, i) => (
-          <Cell key={i} width={8} height={1} left={2} clear>
-            <Link style={{ display: 'block' }} to={project.url}>
-              <ProjectName>{project}</ProjectName>
-            </Link>
-          </Cell>
-        ))}
-
-      {video && (
-        <Cell width={14} height={7} top={2} left={3}>
-          <iframe
-            width="630"
-            height="315"
-            src={video}
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          />
+      {actions &&
+        <Cell width={18} height={1} top={1} left={1} clear background={false}>
+          <CellTitle>
+            Actions
+        </CellTitle>
+        </Cell>
+      }
+      {actions && actions.map((action, i) =>
+        <Cell key={i} width={4} height={4} top={1} left={2}>
+          <Link
+            style={{ display: 'block', width: '100%', height: '100%' }}
+            to={action.url}
+          >
+            <Project {...action} />
+          </Link>
         </Cell>
       )}
     </Grid>
   )
 }
 
-export default ActionPage
+export default ProjectPage
 
-export const ActionQuery = graphql`
-  query ActionBySlug($slug: String!) {
+export const ProjectQuery = graphql`
+  query ProjectBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         name
         category
+        description
         from
         to
-        modules
-        description
         tags
         members {
           name
@@ -269,29 +259,22 @@ export const ActionQuery = graphql`
           image
           url
         }
+        actions {
+          name
+          url
+          images {
+            image
+          }
+        }
         images {
           image
         }
-        projects
-
-
         video
       }
     }
   }
 `
 
-
-const ProjectName = styled.p`
-  padding: 12px 15px;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-
-  &:hover {
-    background: black;
-    color: white;
-  }
-`
 const CellTitle = styled.p`
   width: 180px;
   height: 45px;
@@ -302,3 +285,50 @@ const CellTitle = styled.p`
   text-transform: lowercase;
   padding: 8px 15px;
 `
+
+const Wrap = styled.div`
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  > div {
+    &:hover {
+      left: -200%;
+      opacity: 0;
+    }
+  }
+
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+  }
+`
+
+const Overflow = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  > h1 {
+    font-size: 14px;
+  }
+`
+
+const Project = ({ name, tags, images }) => (
+  <Wrap>
+    <Overflow>
+      <h1>{name}</h1>
+    </Overflow>
+    <img src={images && images[0].image} alt="" />
+  </Wrap>
+)

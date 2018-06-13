@@ -1,5 +1,5 @@
 ---
-  templateKey: action
+  templateKey: project
   name: "School of Urban Practices"
   description: "\n\t\t\t\t\tSchool of Urban Practices (S.O.U.P) is dedicated to building dialogue and including the community in the process of developing new concepts of common public spaces. Continually working on locations of public interest and exchanging ideas with the local community initiatives and local entrepreneurs, School of Urban Practices develops innovative strategies and projects based on critical engagement in current problems of urban communities.United during master's studies in year 2012, they wished to direct their newly gained professional calling - that of the architect - into a new way of thinking about the surroundings, its changes, agents, and (their own) roles in the process. They have been exploring new local practices of participative design through one-on-one meetings with citizens, experts, investors and urban decision makers. Since 2015 they are actively developing their methodologie and projects as part od City Guerillas modules.\nSince year 2015. all actitities are actively coordinated by Mirjana Utvić and Olvera Petrović.\t\t\t\t"
   year: "2015"

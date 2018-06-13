@@ -1,5 +1,5 @@
 ---
-templateKey: action
+templateKey: project
 name: The Symphony of Savamala Project
 description: >-
   The Guerilla team began to deal with sounds and sound-art as early as 2011 —
