@@ -40,7 +40,7 @@
   "main": "n/a",
   "scripts": {
     "start": "rm -rf .cache && rm -rf public && npm run develop",
-    "build": "gatsby build",
+    "build": "npm install && gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "deploy": "git add . && git commit -m '...' && git push origin master",
