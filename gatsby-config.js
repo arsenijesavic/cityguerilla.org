@@ -1,5 +1,4 @@
 module.exports = {
-
   siteMetadata: {
     title: 'City Guerilla',
     author: 'Arsenije Savic',

@@ -15,7 +15,7 @@ const ActionPage = ({ data }) => {
     video,
     tags,
     members,
-    mentors
+    mentors,
   } = {
     ...data.markdownRemark.frontmatter,
   }
@@ -165,8 +165,6 @@ const ActionPage = ({ data }) => {
         </ul>
       </Cell>
 
-
-
       <Cell width={7} top={2} left={1}>
         <div style={{ width: '135px', height: '45px', background: 'black' }}>
           <h1
@@ -216,8 +214,7 @@ const ActionPage = ({ data }) => {
         </ul>
       </Cell>
 
-
-      {video &&
+      {video && (
         <Cell width={14} height={7} top={2} left={3}>
           <iframe
             width="560"
@@ -228,7 +225,7 @@ const ActionPage = ({ data }) => {
             allowFullScreen
           />
         </Cell>
-      }
+      )}
     </Grid>
   )
 }
