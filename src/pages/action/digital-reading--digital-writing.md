@@ -26,3 +26,5 @@
       image: "/img/Digitalno_citanje _digitalno_pisanje_2016_City_Guerilla_04.jpg"
     - 
       image: "/img/Digitalno_citanje _digitalno_pisanje_2016_City_Guerilla_05.jpg"
+  modules: ""
+  projects: []

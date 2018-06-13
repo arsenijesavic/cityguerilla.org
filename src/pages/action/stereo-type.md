@@ -36,3 +36,5 @@
   images: 
     - 
       image: "/img/A_pixabay_CC0-Creative-Commons.jpg"
+  modules: ""
+  projects: []

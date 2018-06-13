@@ -54,3 +54,5 @@
       image: "/img/20101013_Radionica_sa_Torstenom_Strajhartom-(73).jpg"
     - 
       image: "/img/20101013_Radionica_sa_Torstenom_Strajhartom-(9).jpg"
+  modules: ""
+  projects: []

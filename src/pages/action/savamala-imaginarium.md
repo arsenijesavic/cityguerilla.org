@@ -64,3 +64,6 @@
       image: "/img/12_20150630-Gradska-Gerila_DanG-Spanska-kuca_Savamala-imaginarijum_Milica-Nikolic.jpg"
     - 
       image: "/img/13_20150630-Gradska-Gerila_DanG-Spanska-kuca_Savamala-imaginarijum_Milica-Nikolic.jpg"
+  modules: "Savamala Walks"
+  projects: 
+    - "Savamala Walks"

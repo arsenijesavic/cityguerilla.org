@@ -95,3 +95,6 @@
       image: "/img/7_20151110_CPN-svetski-dan-nauke-GradskaGerila.jpg"
     - 
       image: "/img/9_20151110_CPN-svetski-dan-nauke-GradskaGerila.jpg"
+  modules: "School of Urban Practices"
+  projects: 
+    - "School of Urban Practices"

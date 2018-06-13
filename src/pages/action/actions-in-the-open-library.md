@@ -57,3 +57,6 @@
       image: "/img/6_2012-Otvorena-biblioteka-Pesničenje.jpg"
     - 
       image: "/img/8_2012-Otvorena-biblioteka-Pesničenje-3-Ilija-Lazarević.jpg"
+  modules: "The Open Library"
+  projects: 
+    - "The Open Library"

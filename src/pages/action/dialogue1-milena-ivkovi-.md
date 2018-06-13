@@ -70,3 +70,6 @@
       image: "/img/10_GGdij_01_milena_ivkovic-Blok74_RTRDM_Foto_GradskaGerila.jpg"
     - 
       image: "/img/11_GGdij_01_milena_ivkovic-Blok74_RTRDM_Foto_GradskaGerila.jpg"
+  modules: "Dialogues"
+  projects: 
+    - "Dialogues"

@@ -53,3 +53,6 @@
       image: "/img/09_20121124_Flanerija_Savamala_ZoricaMilisavljević.jpg"
     - 
       image: "/img/10_20121124_Flanerija_Savamala_ZoricaMilisavljević.jpg"
+  modules: "Savamala Walks"
+  projects: 
+    - "Savamala Walks"

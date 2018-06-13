@@ -72,3 +72,6 @@
     - 
       image: "/img/10_20141125_PULS_Spanska_Kuca_Gradska_Gerila_Foto_Arsenije_Savic.jpg"
   video: "https://player.vimeo.com/video/115557157"
+  modules: "Puls"
+  projects: 
+    - "Puls"

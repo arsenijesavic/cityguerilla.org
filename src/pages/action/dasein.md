@@ -70,3 +70,6 @@
       image: "/img/Dasein_Actopolis_City_Guerilla_2016_14.jpg"
     - 
       image: "/img/Dasein_Actopolis_City_Guerilla_2016_15.jpg"
+  modules: ""
+  projects: 
+    - "Actopolis. The Art of Action"

@@ -54,3 +54,6 @@
       image: "/img/8_20111112_Biblioteka_u_Knezu-(9).jpg"
     - 
       image: "/img/9_20111112_Biblioteka_u_Knezu-(10).jpg"
+  modules: "The Open Library"
+  projects: 
+    - "The Open Library"

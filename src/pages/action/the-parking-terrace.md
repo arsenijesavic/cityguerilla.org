@@ -65,3 +65,5 @@
       image: "/img/09_2014_Parking-terasa_Savamala_Gradska_Gerila_Foto_Gerila.jpg"
     - 
       image: "/img/10_2014_Parking-terasa_Savamala_Gradska_Gerila_Foto_Gerila.jpg"
+  modules: ""
+  projects: []

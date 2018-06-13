@@ -35,3 +35,5 @@
       image: "/img/Koncert-KM8-GG-2014-1-a.jpg"
     - 
       image: "/img/Koncert-KM8-GG-2014-2-a.jpg"
+  modules: ""
+  projects: []

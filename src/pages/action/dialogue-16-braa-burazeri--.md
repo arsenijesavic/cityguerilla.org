@@ -33,3 +33,6 @@
       image: "/img/04_City_guerilla_Dijalozi16_2017.jpg"
     - 
       image: "/img/05_City_guerilla_Dijalozi16_2017.jpg"
+  modules: "Dialogues"
+  projects: 
+    - "Dialogues"

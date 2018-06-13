@@ -59,3 +59,5 @@
       image: "/img/8_SM_Susreti_GG12_Foto_Gerila.jpg"
     - 
       image: "/img/9_SM_Susreti_GG12_Foto_Gerila.jpg"
+  modules: ""
+  projects: []

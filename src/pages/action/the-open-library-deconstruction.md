@@ -59,3 +59,6 @@
       image: "/img/09_20131113_Otvorena-biblioteka---dekonstrukcija_Gradska-Gerila_Foto_Gerila.jpg"
     - 
       image: "/img/10_20131113_Otvorena-biblioteka---dekonstrukcija_Gradska-Gerila_Foto_Gerila.jpg"
+  modules: "The Open Library"
+  projects: 
+    - "The Open Library"

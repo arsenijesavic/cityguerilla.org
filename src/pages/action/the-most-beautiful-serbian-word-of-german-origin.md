@@ -38,3 +38,5 @@
       image: "/img/20101027_Sajam_knjiga-(5).jpg"
     - 
       image: "/img/Konkurs Najlepsa srpska rec nemackog porekla.jpg"
+  modules: ""
+  projects: []

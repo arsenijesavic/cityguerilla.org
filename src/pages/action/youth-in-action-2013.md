@@ -73,3 +73,5 @@
       image: "/img/09_201309_Youth in Action Foto Nebojsa Vasic.jpg"
     - 
       image: "/img/10_201309_Youth in Action Foto Nebojsa Vasic.jpg"
+  modules: ""
+  projects: []

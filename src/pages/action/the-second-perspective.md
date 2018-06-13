@@ -62,3 +62,5 @@
       image: "/img/09_2013_Druga_perspektiva_Savamala_Gradska_Gerila_Foto_Gerila.jpg"
     - 
       image: "/img/10_2013_Druga_perspektiva_Savamala_Gradska_Gerila_Foto_Gerila.jpg"
+  modules: ""
+  projects: []

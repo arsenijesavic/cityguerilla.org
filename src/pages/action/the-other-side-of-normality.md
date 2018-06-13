@@ -17,3 +17,5 @@
   images: 
     - 
       image: "/img/01_City_guerilla_Druga_strana_normalnosti_2017.jpg"
+  modules: ""
+  projects: []

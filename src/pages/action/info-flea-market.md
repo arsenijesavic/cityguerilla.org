@@ -32,3 +32,5 @@
       image: "/img/01_2014_Savamala_Info-buvljak_GradskaGerila_crtez_StefanNesic.jpg"
     - 
       image: "/img/02_2014_Savamala_Info-buvljak_Gradska-Gerila_StefanNesic.jpg"
+  modules: ""
+  projects: []

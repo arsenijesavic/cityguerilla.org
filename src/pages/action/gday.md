@@ -94,3 +94,9 @@
     - 
       image: "/img/DG.jpg"
   video: "https://www.youtube.com/embed/TCHAnCDXg88?rel=0"
+  modules: "School of Urban Practices"
+  projects: 
+    - "School of Urban Practices"
+    - "Puls"
+    - "Savamala Walks"
+    - "Shhhumigrad"

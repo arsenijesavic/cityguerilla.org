@@ -59,3 +59,5 @@
       image: "/img/20110509_Speed_Dating_Novi_Sad-(50).jpg"
     - 
       image: "/img/20110509_Speed_Dating_Novi_Sad-(63).jpg"
+  modules: ""
+  projects: []

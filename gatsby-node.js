@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
@@ -15,31 +16,57 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             }
             frontmatter {
               templateKey
+              tags
             }
           }
         }
       }
     }
   `).then(result => {
-    if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
 
-    result.data.allMarkdownRemark.edges.map(({ node }) => {
-      const {
-        id,
-        fields: { slug },
-        frontmatter: { templateKey },
-      } = node
+      const data = result.data.allMarkdownRemark.edges
 
-      createPage({
-        path: slug,
-        component: path.resolve(`./src/templates/${templateKey}.js`),
-        context: { slug, id },
+      data.map(({ node }) => {
+        const {
+          id,
+          fields: { slug },
+          frontmatter: { templateKey },
+        } = node
+
+        createPage({
+          path: slug,
+          component: path.resolve(`./src/templates/${templateKey}.js`),
+          context: { slug, id },
+        })
       })
+
+      let tags = [];
+
+      _.each(data, edge => {
+        if (_.get(edge, "node.frontmatter.tags")) {
+
+          tags = tags.concat(edge.node.frontmatter.tags);
+        }
+      });
+
+      tags = _.uniq(tags);
+
+      tags.forEach(tag => {
+        createPage({
+          path: `/tags/${_.kebabCase(tag)}/`,
+          component: path.resolve("src/templates/tag.js"),
+          context: {
+            tag,
+          },
+        });
+      });
+
+
     })
-  })
 }
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {

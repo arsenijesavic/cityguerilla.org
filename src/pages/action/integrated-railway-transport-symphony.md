@@ -66,3 +66,6 @@
     - 
       image: "/img/10_2013_Smfonija_ŽIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
   video: "https://www.youtube.com/embed/jCkF30gHz0w"
+  modules: "The Symphony of Savamala Project"
+  projects: 
+    - "The Symphony of Savamala Project"

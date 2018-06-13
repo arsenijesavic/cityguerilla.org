@@ -71,3 +71,6 @@
       image: "/img/14_20151205_Techne_Milica_Nikolic_GradskaGerila.jpg"
     - 
       image: "/img/15_20151205_Techne_Milica_Nikolic_GradskaGerila.jpg"
+  modules: "Puls"
+  projects: 
+    - "Puls"

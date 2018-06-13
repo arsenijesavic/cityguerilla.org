@@ -34,3 +34,5 @@
       image: "/img/4_2010_Framing-old-Belgrade_Kuća-Vitomira-Markovića_Foto-Milica-Nikolić.jpg"
     - 
       image: "/img/5__2010_Framing-old-Belgrade_Kosančićev-venac-Beograd_Foto-Milica-Nikolić.jpg"
+  modules: ""
+  projects: []

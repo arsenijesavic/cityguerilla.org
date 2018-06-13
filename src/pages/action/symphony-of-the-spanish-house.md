@@ -76,3 +76,6 @@
     - 
       image: "/img/10_20130428-Spanska-Kuca-Simfonija-ljustura.jpg"
   video: "https://www.youtube.com/embed/txxqlglEXGE"
+  modules: "The Symphony of Savamala Project"
+  projects: 
+    - "The Symphony of Savamala Project"

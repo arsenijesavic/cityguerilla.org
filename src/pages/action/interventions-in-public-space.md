@@ -59,3 +59,5 @@
       image: "/img/20100227_Workshop_with_Frank_Bolter_ph_Milica_Nikolic_Micikitis-(367).jpg"
     - 
       image: "/img/20100227_Workshop_with_Frank_Bolter_ph_Milica_Nikolic_Micikitis-(62).jpg"
+  modules: ""
+  projects: []

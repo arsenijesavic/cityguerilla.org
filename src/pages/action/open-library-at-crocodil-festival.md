@@ -45,3 +45,5 @@
       image: "/img/Otvorena_biblioteka_Krokodil_2016_11.jpg"
     - 
       image: "/img/Otvorena_biblioteka_Krokodil_2016_12.jpg"
+  modules: ""
+  projects: []

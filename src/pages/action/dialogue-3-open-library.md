@@ -76,3 +76,6 @@
       image: "/img/11_2015_GradskaGerila_Dijalog3_OtvorenaBiblioteka_Foto_GradskaGerila.jpg"
     - 
       image: "/img/12_2015_GradskaGerila_Dijalog3_OtvorenaBiblioteka_Foto_GradskaGerila.jpg"
+  modules: "Dialogues"
+  projects: 
+    - "Dialogues"

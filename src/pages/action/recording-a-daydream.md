@@ -41,3 +41,6 @@
       image: "/img/Flanerija_City_Guerilla_Zorica Milisavljevic(1).jpg"
     - 
       image: "/img/Flanerija_City_Guerilla_Zorica Milisavljevic(3).jpg"
+  modules: ""
+  projects: 
+    - "Actopolis. The Art of Action"

@@ -74,3 +74,6 @@
       image: "/img/12_2015_GradskaGerila_Dijalog4_Ivan_Kucina_FotoGradskaGerila.jpg"
     - 
       image: "/img/13_2015_GradskaGerila_Dijalog4_Ivan_Kucina_FotoGradskaGerila.jpg"
+  modules: "Dialogues"
+  projects: 
+    - "Dialogues"

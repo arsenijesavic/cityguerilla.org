@@ -63,3 +63,5 @@
       image: "/img/09_20130630_Zlatne_ribice_Savamale_Gradska Gerila_Foto_Nina Vujasin.jpg"
     - 
       image: "/img/10_20130630_Zlatne_ribice_Savamale_Gradska Gerila_Foto_Nina Vujasin.jpg"
+  modules: ""
+  projects: []

@@ -62,3 +62,6 @@
       image: "/img/09_2014_Otvorena-biblioteka_Gradska-Gerila_Foto_Gerila.jpg"
     - 
       image: "/img/10_2014_Otvorena-biblioteka_Gradska-Gerila_Foto_Gerila.jpg"
+  modules: "The Open Library"
+  projects: 
+    - "The Open Library"

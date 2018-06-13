@@ -67,3 +67,5 @@
       image: "/img/8_2011_Djubrofonija_Noc_muzeja_izbor-(6).jpg"
     - 
       image: "/img/9_20110819_Beglika_festival_Bulgaria_izbor-(15).jpg"
+  modules: ""
+  projects: []

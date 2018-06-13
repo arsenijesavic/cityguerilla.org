@@ -99,3 +99,6 @@
       image: "/img/18_20150802-Hit-the-Hermes-Kolektiv-CityGuerilla_ph.Milica-Nikolic-Micikitis.jpg"
     - 
       image: "/img/19_20150802-Hit-the-Hermes-Kolektiv-CityGuerilla_ph.Milica-Nikolic-Micikitis.jpg"
+  modules: "Puls"
+  projects: 
+    - "Puls"

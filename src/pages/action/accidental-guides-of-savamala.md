@@ -64,3 +64,6 @@
       image: "/img/DSCF6400.gif"
     - 
       image: "/img/DSCF6417.gif"
+  modules: "Savamala Walks"
+  projects: 
+    - "Savamala Walks"

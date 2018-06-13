@@ -23,6 +23,7 @@
     "gatsby-transformer-remark": "^1.7.33",
     "gatsby-transformer-sharp": "^1.6.21",
     "list-react-files": "^0.2.0",
+    "lodash": "^4.17.10",
     "moment": "^2.22.2",
     "netlify-cms": "git+https://github.com/arsenijesavic/netlify-cms.git#03c3a90ec42b9e11003d95d69a7652ce88de6ab7",
     "prop-types": "^15.6.1",
@@ -31,6 +32,7 @@
     "react-google-recaptcha": "^0.12.0",
     "react-helmet": "^5.2.0",
     "react-move": "^2.7.0",
+    "react-tippy": "^1.2.2",
     "styled-components": "^3.3.2"
   },
   "keywords": [

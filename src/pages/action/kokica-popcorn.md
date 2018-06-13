@@ -77,3 +77,5 @@
       image: "/img/14_20151019_GradskaGerila_Kokica_Moli_Iva-Milojkovic_ph.Milica-Nikolic.jpg"
     - 
       image: "/img/15_20151019_GradskaGerila_Kokica_Moli_Iva-Milojkovic_ph.Milica-Nikolic.jpg"
+  modules: ""
+  projects: []

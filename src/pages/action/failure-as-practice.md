@@ -71,3 +71,6 @@
     - 
       image: "/img/14_20170515_City Guerilla_Failure as Practice.jpg"
   video: "https://www.youtube.com/embed/wBBm6nPhl8I"
+  modules: ""
+  projects: 
+    - "Actopolis. The Art of Action"

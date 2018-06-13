@@ -52,3 +52,5 @@
       image: "/img/2010_17.6_Ključne kvalifikacije...GG_BG_8.jpg"
     - 
       image: "/img/2010_17.6_Ključne kvalifikacije...GG_BG_9.jpg"
+  modules: ""
+  projects: []

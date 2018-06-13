@@ -55,3 +55,5 @@
       image: "/img/31.5.2010.-Krug-dvojke-kroz-vreme-i-modu-(89).jpg"
     - 
       image: "/img/31.5.2010.-Krug-dvojke-kroz-vreme-i-modu-(98).jpg"
+  modules: ""
+  projects: []

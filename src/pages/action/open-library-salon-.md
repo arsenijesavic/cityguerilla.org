@@ -46,3 +46,7 @@
       image: "/img/Salon_Otvorene_biblioteke_City Guerilla_09.jpg"
     - 
       image: "/img/Salon_Otvorene_biblioteke_City Guerilla_10.jpg"
+  modules: "School of Urban Practices"
+  projects: 
+    - "School of Urban Practices"
+    - "Actopolis. The Art of Action"

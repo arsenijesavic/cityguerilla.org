@@ -61,3 +61,5 @@
       image: "/img/2011_Druga_perspektiva_grada_i_bicikl_phMilosPerisic-(8).jpg"
     - 
       image: "/img/2011_Druga_perspektiva_grada_i_bicikl_Zorica(Iva)-(7).jpg"
+  modules: ""
+  projects: []

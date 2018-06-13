@@ -51,3 +51,5 @@
     - 
       image: "/img/09_2012_SavamalaPostexpress_GG_Foto_IlijaLazarevic.jpg"
   video: "https://www.youtube.com/embed/dXlNPkovSSE"
+  modules: ""
+  projects: []

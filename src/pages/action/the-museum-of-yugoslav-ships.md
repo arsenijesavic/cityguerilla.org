@@ -60,3 +60,5 @@
       image: "/img/8_20100421_Muzej_brodova_ph_Milica_Nikolic_Micikitis-(30).jpg"
     - 
       image: "/img/9_20100421_Muzej_brodova_ph_Milica_Nikolic_Micikitis-(65).jpg"
+  modules: ""
+  projects: []

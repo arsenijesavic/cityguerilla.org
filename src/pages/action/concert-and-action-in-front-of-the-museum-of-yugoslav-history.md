@@ -60,3 +60,5 @@
       image: "/img/29.5.2010.-Koncert-muzej-25.-maj-Milica-Nikolic-Micikitis-(74).jpg"
     - 
       image: "/img/29.5.2010.-Koncert-muzej-25.-maj-Milica-Nikolic-Micikitis-(91).jpg"
+  modules: ""
+  projects: []

@@ -51,3 +51,6 @@
       image: "/img/06_2015_Gradska-Gerila_Savamala-Priča_Aplikacija_Noć-muzeja.jpg"
     - 
       image: "/img/07_2015_Gradska-Gerila_Savamala-Priča_Aplikacija_Noć-muzeja.jpg"
+  modules: "Savamala Walks"
+  projects: 
+    - "Savamala Walks"

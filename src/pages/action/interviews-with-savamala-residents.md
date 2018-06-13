@@ -57,3 +57,5 @@
       image: "/img/09_20130510_Intervjui u Savamali_Gradska Gerila_Foto_Gerila.jpg"
     - 
       image: "/img/10_20130510_Intervjui u Savamali_Gradska Gerila_Foto_Gerila.jpg"
+  modules: ""
+  projects: []

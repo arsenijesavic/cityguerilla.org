@@ -47,3 +47,5 @@
     - 
       image: "/img/06_2015ParMinuta-Arhitekture_Vasa-Perović,-Architect_screenshot-video-Gerila.jpg"
   video: "https://player.vimeo.com/video/107905156"
+  modules: ""
+  projects: []

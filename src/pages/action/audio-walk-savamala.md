@@ -48,3 +48,6 @@
       image: "/img/07_2014.11.4.-audiowalk-photo-by-Milica-Nikolic-8mnt-manakova.jpg"
     - 
       image: "/img/08_2014.11.4.-audiowalk-photo-by-Milica-Nikolic-9mnt-zlatna-moruna.jpg"
+  modules: "Savamala Walks"
+  projects: 
+    - "Savamala Walks"

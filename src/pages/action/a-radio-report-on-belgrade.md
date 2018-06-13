@@ -28,3 +28,5 @@
   images: 
     - 
       image: "/img/Web_BlaupunktRadio-1954-Von-Eckhard-Etzold---Selbst-fotografiert,-CC-BY-SA-2.0-de,-commons.wikimedia.org.jpg"
+  modules: ""
+  projects: []

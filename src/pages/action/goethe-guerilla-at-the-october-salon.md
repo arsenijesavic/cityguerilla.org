@@ -51,3 +51,5 @@
       image: "/img/5_Oktobersalon_pranje_veša©Goethe-Guerilla2.jpg"
     - 
       image: "/img/6_Oktobersalon_pranje_veša©Goethe-Guerilla.jpg"
+  modules: ""
+  projects: []

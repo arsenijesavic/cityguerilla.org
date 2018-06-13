@@ -60,3 +60,5 @@
     - 
       image: "/img/9_Flešmoba_ZoricaMilisavljevic.jpg"
   video: "https://www.youtube.com/embed/l7J_1dts7Jg?rel=0"
+  modules: ""
+  projects: []

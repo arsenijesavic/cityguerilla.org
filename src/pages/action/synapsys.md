@@ -91,3 +91,7 @@
       image: "/img/13_2016_Gradska-Gerila-(RS)-Synapsis-ph-Miran-Kramar.jpg"
     - 
       image: "/img/14_2016_Gradska-Gerila-(RS)-Synapsis-ph-Miran-Kramar.jpg"
+  modules: "Puls"
+  projects: 
+    - "Puls"
+    - "Actopolis. The Art of Action"

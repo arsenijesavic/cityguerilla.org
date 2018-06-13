@@ -41,3 +41,5 @@
       image: "/img/9.5.2010_SpeedDating_Foto_Goethe-Guerilla_7.jpg"
     - 
       image: "/img/9.5.2010_SpeedDating_Foto_Goethe-Guerilla_8.jpg"
+  modules: ""
+  projects: []

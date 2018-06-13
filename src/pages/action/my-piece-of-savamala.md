@@ -83,3 +83,6 @@
       image: "/img/09_2015_ŠUP_Moje-parče-Svamale-Gradska-Gerila.jpg"
     - 
       image: "/img/10_2015_ŠUP_Moje-parče-Svamale-Gradska-Gerila.jpg"
+  modules: "School of Urban Practices"
+  projects: 
+    - "School of Urban Practices"

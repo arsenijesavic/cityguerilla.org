@@ -59,3 +59,5 @@
     - 
       image: "/img/20100626_Puppen_in_der_Stadt_ph_Milica_Nikolic-(99).jpg"
   video: "https://www.youtube.com/embed/8ddy5E2JmFM"
+  modules: ""
+  projects: []

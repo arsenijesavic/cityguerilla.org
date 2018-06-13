@@ -61,3 +61,6 @@
       image: "/img/07_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Švedska_Foto_GradskaGerila.jpg"
     - 
       image: "/img/08_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Švedska_Foto_GradskaGerila.jpg"
+  modules: "Dialogues"
+  projects: 
+    - "Dialogues"

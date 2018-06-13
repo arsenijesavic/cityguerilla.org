@@ -49,3 +49,5 @@
       image: "/img/STUDENTSKI-PARK.jpg"
     - 
       image: "/img/VOJNI-MUZEJ-prolaz.jpg"
+  modules: ""
+  projects: []

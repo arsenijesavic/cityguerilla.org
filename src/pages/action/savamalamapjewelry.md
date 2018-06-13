@@ -60,3 +60,5 @@
       image: "/img/SavamalaMapJewelry-2.jpg"
     - 
       image: "/img/SavamalaMapJewelry-5.jpg"
+  modules: ""
+  projects: []

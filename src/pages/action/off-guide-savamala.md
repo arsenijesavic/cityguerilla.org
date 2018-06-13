@@ -68,3 +68,5 @@
       image: "/img/8_Foto Luka Strika©dis-patch.jpg"
     - 
       image: "/img/9_Foto Luka Strika©dis-patch.jpg"
+  modules: ""
+  projects: []

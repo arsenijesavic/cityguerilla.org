@@ -53,3 +53,5 @@
       image: "/img/20110625_Rimini_Wohlfühlorte_phAleksandraStosic-(5).jpg"
     - 
       image: "/img/20110625_Rimini_Wohlfühlorte_phAleksandraStosic-(6).jpg"
+  modules: ""
+  projects: []

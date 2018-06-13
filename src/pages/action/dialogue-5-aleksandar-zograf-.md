@@ -22,3 +22,6 @@
   images: 
     - 
       image: "/img/01_City_guerilla_Diajlozi5_2015.jpg"
+  modules: "Dialogues"
+  projects: 
+    - "Dialogues"

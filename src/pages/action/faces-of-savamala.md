@@ -61,3 +61,5 @@
       image: "/img/09_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinović.jpg"
     - 
       image: "/img/10_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinović.jpg"
+  modules: ""
+  projects: []
