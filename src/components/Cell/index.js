@@ -5,7 +5,7 @@ const Cell = class extends React.Component {
 
   componentDidMount() {
     const autoHeight = Math.ceil(this.node.clientHeight / 45)
-    this.setState({ autoHeight })
+    this.setState({ autoHeight, isMounted: true })
   }
 
   render() {
@@ -22,7 +22,7 @@ const Cell = class extends React.Component {
       padding = true,
       children,
     } = this.props
-    const { autoHeight } = this.state
+    const { autoHeight, isMounted } = this.state
 
     return (
       <div
@@ -41,6 +41,8 @@ const Cell = class extends React.Component {
               ? '1px 0px 0px 1px'
               : '1px 1px 0px 1px'
             : 'wtf',
+          transition: 'all 0.3s cubic-bezier(0.42, 0, 0.58, 1)',
+          transform: `scale(${isMounted ? 1 : 0})`
           //overflow: 'hidden',
         }}
       >

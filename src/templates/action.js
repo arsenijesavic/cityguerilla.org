@@ -44,21 +44,24 @@ const ActionPage = ({ data }) => {
         />
       </Cell>
 
-      <Cell width={5} height={1} left={1}>
-        <div
-          style={{ padding: '15px', background: 'black', textAlign: 'center' }}
-        >
-          <p
-            style={{
-              color: 'white',
-              textTransform: 'uppercase',
-              fontSize: '0.707em',
-              fontWeight: 'bold',
-            }}
+      <Cell width={5} height={1} left={1} background={false}>
+        {modules &&
+
+          <div
+            style={{ padding: '15px', background: 'black', textAlign: 'center' }}
           >
-            {modules}
-          </p>
-        </div>
+            <p
+              style={{
+                color: 'white',
+                textTransform: 'uppercase',
+                fontSize: '0.707em',
+                fontWeight: 'bold',
+              }}
+            >
+              {modules}
+            </p>
+          </div>
+        }
       </Cell>
 
       <Cell width={1} height={1} left={11}>
@@ -217,10 +220,11 @@ const ActionPage = ({ data }) => {
         </ul>
       </Cell>
 
-      <Cell width={4} height={1} top={2} left={2} clear background={false}>
-        <CellTitle>Projects</CellTitle>
-      </Cell>
-
+      {projects && projects.length > 0 &&
+        <Cell width={4} height={1} top={2} left={2} clear background={false}>
+          <CellTitle>Projects</CellTitle>
+        </Cell>
+      }
       {projects &&
         projects.map((project, i) => (
           <Cell key={i} width={8} height={1} left={2} clear>

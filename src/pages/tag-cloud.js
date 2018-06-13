@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { Grid, Cell } from '../components'
-import _ from 'lodash'
+import kebabCase from 'lodash/kebabCase'
 
 const TagCloudPage = ({ data }) => {
   const tags = data.allMarkdownRemark.group
@@ -18,7 +18,7 @@ const TagCloudPage = ({ data }) => {
             tags.map((tag, i) => (
               <Link
                 style={{ marginRight: '5px', display: 'inline-block' }}
-                to={`tags/${_.kebabCase(tag.fieldValue)}`}
+                to={`tags/${kebabCase(tag.fieldValue)}`}
               >
                 <p style={{ fontSize: '0.707em', textTransform: 'uppercase' }}>
                   {tag.fieldValue.trim()}

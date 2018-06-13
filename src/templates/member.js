@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Grid, Cell } from '../components'
 import Draggable from 'react-draggable'
 import Link from 'gatsby-link'
 import moment from 'moment'
 import styled from 'styled-components'
+import kebabCase from 'lodash/kebabCase'
 
 const MemberPage = ({ data }) => {
   const { name, location, from, to, image, website, involved, bio, tags } = {
@@ -20,29 +21,31 @@ const MemberPage = ({ data }) => {
           </h3>
           <MemberLinks>
             <span>links:</span>
-            <a href="">web</a>
+            <a href={website}>web</a>
             <a href="">mail</a>
           </MemberLinks>
         </MemberInfo>
       </Cell>
 
       <Draggable
-        onStart={() => true}
-        //onDrag={() => true}
-        onStop={() => true}
-        defaultPosition={{ x: 230, y: 196 }}
+        onStart={() => console.log('start')}
+        onStop={() => console.log('stop')}
+        defaultPosition={{ x: 496, y: 46 }}
       >
-        <img
+        <div
           style={{
+            display: 'block',
             cursor: 'move',
             background: 'red',
             width: '314px',
             height: '269px',
-            objectFit: 'cover',
+            background: `url(${image})`,
+            backgroundSize: 'cover'
+
+            // objectFit: 'cover',
           }}
-          src={image}
-          alt=""
         />
+
       </Draggable>
 
       <Cell width={8} top={2} left={1} clear>
@@ -84,7 +87,7 @@ const MemberPage = ({ data }) => {
         <div style={{ padding: '15px 30px' }}>
           {tags &&
             tags.map((tag, i) => (
-              <span
+              <Link
                 key={i}
                 style={{
                   marginRight: '5px',
@@ -92,9 +95,10 @@ const MemberPage = ({ data }) => {
                   fontSize: '0.707em',
                   textTransform: 'uppercase',
                 }}
+                to={`/tags/${kebabCase(tag)}`}
               >
                 {tag}
-              </span>
+              </Link>
             ))}
         </div>
       </Cell>
@@ -102,7 +106,7 @@ const MemberPage = ({ data }) => {
       <Cell width={18} height={10} top={2} left={1}>
         <CellTitle>Creative Board</CellTitle>
       </Cell>
-    </Grid>
+    </Grid >
   )
 }
 
