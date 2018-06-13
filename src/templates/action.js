@@ -22,7 +22,7 @@ const ActionPage = ({ data }) => {
   } = {
     ...data.markdownRemark.frontmatter
   }
-  console.log(modules)
+
   return (
     <Grid>
       <Cell width={6} height={6} top={1} left={1}>

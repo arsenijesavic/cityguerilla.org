@@ -94,7 +94,6 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
               node2.frontmatter.name === node.frontmatter.featuredProject
           )
 
-          console.log(authorNode)
           node.frontmatter = {
             ...node.frontmatter,
             featuredProject: authorNode.frontmatter,

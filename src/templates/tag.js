@@ -13,9 +13,6 @@ const TagPage = ({ data }) => {
   const actions = all.filter(v => v.url.indexOf('action') > -1)
   const projects = all.filter(v => v.url.indexOf('project') > -1)
   const members = all.filter(v => v.url.indexOf('member') > -1)
-  console.log('ACTIONS', actions)
-  console.log('PROJECTS', projects)
-  console.log('MEMBERs', members)
 
   return (
     <Grid>
