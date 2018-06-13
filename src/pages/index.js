@@ -66,7 +66,7 @@ const IndexPage = ({ data }) => {
         >
           {tags &&
             tags.map((tag, i) => (
-              <Link to={`tags/${kebabCase(tag)}`} style={{ marginRight: '5px' }}>
+              <Link key={i} to={`tags/${kebabCase(tag)}`} style={{ marginRight: '5px' }}>
                 {tag}
               </Link>
             ))}
@@ -99,7 +99,7 @@ const IndexPage = ({ data }) => {
             style={{ position: 'absolute', width: '235px', left: '33px', top: '-5px' }}
             src="img/detail-1.png" alt="" />
           <h2 style={{ textAlign: 'center' }}>-</h2>
-          <Link style={{ position: 'relative' }}>
+          <Link to={`/projects/${kebabCase(featuredProject.name)}`} style={{ position: 'relative' }}>
             <h2 style={{ textAlign: 'center' }}>{featuredProject.name}</h2>
           </Link>
           <p style={{ marginTop: '30px', textAlign: 'justify' }}>
@@ -143,7 +143,7 @@ const ImageWithZoom = styled.img`
   height: 100%;
   object-fit: cover;
   transform: scale(1);
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 
   &:hover {
     transform: scale(1.3);
