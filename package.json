@@ -25,7 +25,7 @@
     "list-react-files": "^0.2.0",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
-    "netlify-cms": "git+https://github.com/arsenijesavic/netlify-cms.git#e89d8837b8aed43ade883319609e13ff63a1e3a4",
+    "netlify-cms": "git+https://github.com/arsenijesavic/netlify-cms.git#d06f849ba9fa6f46e33c598713909f77a1ef1646",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-draggable": "^3.0.5",
