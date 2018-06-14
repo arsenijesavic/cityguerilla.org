@@ -17,7 +17,16 @@ collections:
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Date from", name: "dateFrom", widget: "date"}
       - {label: "Date to", name: "dateTo", widget: "date"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Izložba / Exhibition", "Radionica / Workshop", "Performans / Performance", "Razgovori / Conversations", "Koncert / Concert", "Šetnja / Walks", "Prezentacija / Presentation", "Akcija / Action", "Interakcija / Interaction", "Diskusija / Discussion", "Intervencija / Intervention", "Instalacija / Installation", "Anketa / Survey", "Web projekat / Web project", "Okrugli sto / Round table", "Hepening / Happening", "Online projekat / Online project", "konferencija / conference", "Foto-šetnja / Photo Walk", "Igra / Game"]}
       - {label: "Tags", name: "tags", widget: "list"}
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        fields:
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+      - {label: "Video", name: "video", widget: "string"}
       - label: "Members"
         name: "members"
         widget: "relations"
@@ -25,12 +34,38 @@ collections:
         collection: "members"
         searchFields: ["name"]
         valueField: "name"
-      - label: "Images"
-        name: "images"
+      - label: "Mentors"
+        name: "mentors"
+        widget: "relations"
+        limit: "300"
+        collection: "members"
+        searchFields: ["name"]
+        valueField: "name"
+      - label: "Projects"
+        name: "projects"
+        widget: "relations"
+        limit: "300"
+        collection: "projects"
+        searchFields: ["name"]
+        valueField: "name"
+      - label: "Collaborators"
+        name: "collaborators"
         widget: "list"
         fields:
-          - {label: "Description", name: "description", widget: "string"}
-          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "link", name: "link", widget: "link"}
+      - label: "Partners"
+        name: "partners"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "link", name: "link", widget: "link"}
+      - label: "Links"
+        name: "links"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "link", name: "link", widget: "link"}
 
   - name: "projects"
     label: "Projects"
@@ -43,13 +78,7 @@ collections:
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Date from", name: "dateFrom", widget: "date"}
       - {label: "Date to", name: "dateFrom", widget: "date"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - label: "Images"
-        name: "images"
-        widget: "list"
-        fields:
-          - {label: "Description", name: "description", widget: "string"}
-          - {label: "Image", name: "image", widget: "image"}
+
 
   - name: "members"
     label: "Members"
