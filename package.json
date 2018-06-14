@@ -4,12 +4,10 @@
   "author": "Arsenije Savic",
   "version": "1.0.0",
   "dependencies": {
-    "babel-plugin-styled-components": "^1.5.1",
-    "bulma": "^0.6.0",
     "classnames": "^2.2.6",
     "d3-ease": "^1.0.3",
     "exenv": "^1.2.2",
-    "gatsby": "^1.9.270",
+    "gatsby": "^1.9.271",
     "gatsby-link": "^1.6.44",
     "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-netlify": "^1.0.21",
@@ -22,7 +20,6 @@
     "gatsby-source-filesystem": "^1.5.23",
     "gatsby-transformer-remark": "^1.7.33",
     "gatsby-transformer-sharp": "^1.6.21",
-    "list-react-files": "^0.2.0",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
     "netlify-cms": "git+https://github.com/arsenijesavic/netlify-cms.git#d06f849ba9fa6f46e33c598713909f77a1ef1646",
@@ -42,7 +39,7 @@
   "main": "n/a",
   "scripts": {
     "start": "rm -rf .cache && rm -rf public && npm run develop",
-    "build": "rm -rf node_modules && npm install && gatsby build",
+    "build": "npm install && gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "deploy": "git add . && git commit -m '...' && git push origin master",
@@ -50,6 +47,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.13.4"
+    "prettier": "^1.13.5"
   }
 }
