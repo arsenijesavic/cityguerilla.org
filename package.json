@@ -22,7 +22,7 @@
     "gatsby-transformer-sharp": "^1.6.21",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
-    "netlify-cms": "git+https://github.com/arsenijesavic/netlify-cms.git#d06f849ba9fa6f46e33c598713909f77a1ef1646",
+    "netlify-cms": "git+https://github.com/arsenijesavic/netlify-cms.git#076576f3dc5ea99ad03fc2cb4d6c315e8ac61427",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-draggable": "^3.0.5",
@@ -30,6 +30,7 @@
     "react-helmet": "^5.2.0",
     "react-move": "^2.7.0",
     "react-tippy": "^1.2.2",
+    "react-transition-group": "^2.3.1",
     "styled-components": "^3.3.2"
   },
   "keywords": [
