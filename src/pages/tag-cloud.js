@@ -5,9 +5,7 @@ import kebabCase from 'lodash/kebabCase'
 
 const TagCloudPage = ({ data }) => {
   const tags = data.allMarkdownRemark.group
-    .map(v => ({
-      ...v,
-    }))
+    .map(v => ({ ...v }))
     .filter(v => v.fieldValue !== '')
 
   return (
@@ -17,6 +15,7 @@ const TagCloudPage = ({ data }) => {
           {tags &&
             tags.map((tag, i) => (
               <Link
+                key={i}
                 style={{ marginRight: '5px', display: 'inline-block' }}
                 to={`tags/${kebabCase(tag.fieldValue)}`}
               >
@@ -35,7 +34,12 @@ export default TagCloudPage
 
 export const query = graphql`
   query TagsQuery {
-    allMarkdownRemark(limit: 2000) {
+    allMarkdownRemark(
+      limit: 2000
+      filter: {
+        frontmatter: {tags: {ne: ""}}
+      }
+    ) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount

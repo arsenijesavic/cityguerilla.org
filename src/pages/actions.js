@@ -3,16 +3,20 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { Grid, Cell, Select } from '../components'
 import moment from 'moment'
+import uniqBy from 'lodash/uniqBy'
+
+
 
 class ActionsPage extends Component {
 
   state = {
     filters: {
-      year: '',
+      from: '',
       category: '',
       tag: ''
-    }
+    },
   }
+
   handleFilter = ({ id, value }) => {
     const { filters } = { ...this.state }
     filters[id] = value
@@ -20,16 +24,14 @@ class ActionsPage extends Component {
   }
 
   render() {
-    const { filters } = this.state
-
     const { data } = this.props
-    const allData = data.allMarkdownRemark.edges
 
-    const projects = allData.map(v => ({
+    const allData = data.allMarkdownRemark.edges.map(v => ({
       ...v.node.frontmatter,
       url: v.node.fields.slug,
     }))
 
+    const projects = allData
 
     const years = allData
       .map(v => moment(v.from).format('YYYY'))
@@ -44,17 +46,21 @@ class ActionsPage extends Component {
       .map(v => v.replace(',', ''))
       .filter((elem, pos, arr) => arr.indexOf(elem) == pos)
 
+    const tags = data.tags.group
+      .map(v => v.fieldValue)
+      .filter((elem, pos, arr) => arr.indexOf(elem) == pos)
 
     return (
       <Grid>
+
         <Cell width={4} height={1} left={4} bottom={1} >
-          <Select id='year' placeholder='Year' options={years} onChange={this.handleFilter} />
+          <Select id='from' placeholder='Year' options={years} onChange={this.handleFilter} />
         </Cell>
         <Cell width={4} height={1} bottom={1} >
           <Select id='category' placeholder='Category' options={categories} onChange={this.handleFilter} />
         </Cell>
         <Cell width={4} height={1} bottom={1} >
-          <Select placeholder='Tag' />
+          <Select placeholder='Tag' options={tags} />
         </Cell>
 
 
@@ -135,6 +141,7 @@ const Overflow = styled.div`
       padding: 5px;
       font-size: 0.707em;
       text-transform: uppercase;
+      display: inline-block;
     }
   }
 `
@@ -142,7 +149,7 @@ const Project = ({ name, tags, images }) => (
   <Wrap>
     <Overflow>
       <h1>{name}</h1>
-      <p>{tags && tags.slice(0, 8).map(tag => <span>{tag}</span>)}</p>
+      <p>{tags && tags.slice(0, 8).map((tag, i) => <span key={i}>{tag}</span>)}</p>
     </Overflow>
     <img src={images && images[0].image} alt="" />
   </Wrap>
@@ -168,5 +175,42 @@ export const query = graphql`
         }
       }
     }
+
+    tags: allMarkdownRemark(
+      limit: 2000,
+      filter: {
+        fileAbsolutePath: {regex: "/action/"},
+        frontmatter: {tags: {ne: ""}}
+      }
+      ) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
+      }
+    }
+
+    years: allMarkdownRemark(
+      limit: 2000,
+      filter: {
+        fileAbsolutePath: {regex: "/action/"},
+        frontmatter: {from: {ne: "null"}}
+      }
+      ) {
+      group(field: frontmatter___from) {
+        fieldValue
+        totalCount
+      }
+    }
+
+    categories:allMarkdownRemark(
+      limit: 2000
+      filter: { fileAbsolutePath: { regex: "/action/" } }
+    ) {
+      group(field: frontmatter___category) {
+        fieldValue
+        totalCount
+      }
+    }
+
   }
 `
