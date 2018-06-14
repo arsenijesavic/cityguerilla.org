@@ -66,19 +66,19 @@ collections:
         widget: "list"
         fields:
           - {label: "Name", name: "name", widget: "string"}
-          - {label: "link", name: "link", widget: "link"}
+          - {label: "link", name: "link", widget: "string"}
       - label: "Partners"
         name: "partners"
         widget: "list"
         fields:
           - {label: "Name", name: "name", widget: "string"}
-          - {label: "link", name: "link", widget: "link"}
+          - {label: "link", name: "link", widget: "string"}
       - label: "Links"
         name: "links"
         widget: "list"
         fields:
           - {label: "Name", name: "name", widget: "string"}
-          - {label: "link", name: "link", widget: "link"}
+          - {label: "link", name: "link", widget: "string"}
 
   - name: "projects"
     label: "Projects"
