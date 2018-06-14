@@ -10,7 +10,7 @@ collections:
     label: "Action"
     folder: "src/pages/action"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
       - {label: "Name", name: "name", widget: "string"}
@@ -19,7 +19,13 @@ collections:
       - {label: "Date to", name: "dateTo", widget: "date"}
       - {label: "Location", name: "location", widget: "string"}
       - {label: "Category", name: "category", widget: "select", options: ["Izložba / Exhibition", "Radionica / Workshop", "Performans / Performance", "Razgovori / Conversations", "Koncert / Concert", "Šetnja / Walks", "Prezentacija / Presentation", "Akcija / Action", "Interakcija / Interaction", "Diskusija / Discussion", "Intervencija / Intervention", "Instalacija / Installation", "Anketa / Survey", "Web projekat / Web project", "Okrugli sto / Round table", "Hepening / Happening", "Online projekat / Online project", "konferencija / conference", "Foto-šetnja / Photo Walk", "Igra / Game"]}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - label: "Tags"
+        name: "tags"
+        widget: "relations"
+        limit: "300"
+        collection: "actions"
+        searchFields: ["tags"]
+        valueField: "tags"
       - label: "Images"
         name: "images"
         widget: "list"
@@ -43,6 +49,13 @@ collections:
         valueField: "name"
       - label: "Projects"
         name: "projects"
+        widget: "relations"
+        limit: "300"
+        collection: "projects"
+        searchFields: ["name"]
+        valueField: "name"
+      - label: "Module"
+        name: "modules"
         widget: "relations"
         limit: "300"
         collection: "projects"
