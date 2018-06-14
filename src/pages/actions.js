@@ -1,7 +1,82 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Grid, Cell } from '../components'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
+import { Grid, Cell, Select } from '../components'
+import moment from 'moment'
+
+class ActionsPage extends Component {
+
+  state = {
+    filters: {
+      year: '',
+      category: '',
+      tag: ''
+    }
+  }
+  handleFilter = ({ id, value }) => {
+    const { filters } = { ...this.state }
+    filters[id] = value
+    this.setState({ filters })
+  }
+
+  render() {
+    const { filters } = this.state
+
+    const { data } = this.props
+    const allData = data.allMarkdownRemark.edges
+
+    const projects = allData.map(v => ({
+      ...v.node.frontmatter,
+      url: v.node.fields.slug,
+    }))
+
+
+    const years = allData
+      .map(v => moment(v.from).format('YYYY'))
+      .filter((elem, pos, arr) => arr.indexOf(elem) == pos)
+      .filter(v => v !== 'Invalid date')
+      .sort((a, b) => a - b)
+
+    const categories = allData
+      .map(v => v.category && v.category.toLowerCase().split(' '))
+      .reduce((a, b) => a.concat(b), [])
+      .filter(Boolean)
+      .map(v => v.replace(',', ''))
+      .filter((elem, pos, arr) => arr.indexOf(elem) == pos)
+
+
+    return (
+      <Grid>
+        <Cell width={4} height={1} left={4} bottom={1} >
+          <Select id='year' placeholder='Year' options={years} onChange={this.handleFilter} />
+        </Cell>
+        <Cell width={4} height={1} bottom={1} >
+          <Select id='category' placeholder='Category' options={categories} onChange={this.handleFilter} />
+        </Cell>
+        <Cell width={4} height={1} bottom={1} >
+          <Select placeholder='Tag' />
+        </Cell>
+
+
+        {projects &&
+          projects.map((project, i) => (
+            <Cell key={i} {...getRandomCell()}>
+              <Link
+                style={{ display: 'block', width: '100%', height: '100%' }}
+                to={project.url}
+              >
+                <Project {...project} />
+              </Link>
+            </Cell>
+          ))}
+      </Grid>
+    )
+  }
+}
+
+export default ActionsPage
+
+
 
 const getRandomCell = () => {
   const options = {
@@ -13,36 +88,11 @@ const getRandomCell = () => {
 
   return options[option]
 }
-
-const ActionsPage = ({ data }) => {
-  const projects = data.allMarkdownRemark.edges.map(v => ({
-    ...v.node.frontmatter,
-    url: v.node.fields.slug,
-  }))
-
-  return (
-    <Grid>
-      {projects &&
-        projects.map((project, i) => (
-          <Cell key={i} {...getRandomCell()}>
-            <Link
-              style={{ display: 'block', width: '100%', height: '100%' }}
-              to={project.url}
-            >
-              <Project {...project} />
-            </Link>
-          </Cell>
-        ))}
-    </Grid>
-  )
-}
-
-export default ActionsPage
-
 const Wrap = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
+  z-index: 100;
   overflow: hidden;
 
   > div {
@@ -65,6 +115,7 @@ const Overflow = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 100;
   padding: 15px;
   background: rgba(255, 255, 255, 0.7);
   opacity: 1;
@@ -108,11 +159,12 @@ export const query = graphql`
           frontmatter {
             name
             tags
+            category
+            from
             images {
               image
             }
           }
-          excerpt
         }
       }
     }
