@@ -86,12 +86,51 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Date from", name: "dateFrom", widget: "date"}
-      - {label: "Date to", name: "dateFrom", widget: "date"}
-
+      - {label: "Date to", name: "dateTo", widget: "date"}
+      - label: "Tags"
+        name: "tags"
+        widget: "relations"
+        limit: "300"
+        collection: "actions"
+        searchFields: ["tags"]
+        valueField: "tags"
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        fields:
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+      - {label: "Video", name: "video", widget: "string"}
+      - label: "Members"
+        name: "members"
+        widget: "relations"
+        limit: "300"
+        collection: "members"
+        searchFields: ["name"]
+        valueField: "name"
+      - label: "Mentors"
+        name: "mentors"
+        widget: "relations"
+        limit: "300"
+        collection: "members"
+        searchFields: ["name"]
+        valueField: "name"
+      - label: "Partners"
+        name: "partners"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "link", name: "link", widget: "string"}
+      - label: "Links"
+        name: "links"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "link", name: "link", widget: "string"}
 
   - name: "members"
     label: "Members"
@@ -123,23 +162,31 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
-      - {label: "Title", name: "title", widget: "string"}
-      # - label: "Members"
-      #   name: "members"
-      #   widget: "relation"
-      #   collection: "members"
-      #   searchFields: ["name"]
-      #   valueField: "name"
-      #   displayFields: ["name"]
-      # - label: "Actions"
-      #   name: "actions"
-      #   widget: "relation"
-      #   collection: "actions"
-      #   searchFields: ["name"]
-      #   valueField: "name"
-      #   displayFields: ["name"]
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Date", name: "date", widget: "date"}
       - {label: "Category", name: "category", widget: "select", options: ["animation / animacija", "video / video", "blueprint / nacrt", "audio / audio", "design / dizajn", "photography / fotografija", "illustration / ilustracija", "toolkit / tulkit", "comic / strip", "publication / publikacija", "monster / monster", "infographic / infografika", "gif / gif", "booklet / buklet"]}
       - {label: "Tags", name: "tags", widget: "list"}
+      - label: "Members"
+        name: "members"
+        widget: "relations"
+        limit: "300"
+        collection: "members"
+        searchFields: ["name"]
+        valueField: "name"
+      - label: "Actions"
+        name: "actions"
+        widget: "relations"
+        limit: "300"
+        collection: "actions"
+        searchFields: ["name"]
+      - label: "Projects"
+        name: "projects"
+        widget: "relations"
+        limit: "300"
+        collection: "projects"
+        searchFields: ["name"]
+
       - {label: "Image", name: "image", widget: "image"}
 
   - name: "pages"
