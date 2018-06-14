@@ -53,13 +53,13 @@ class ActionsPage extends Component {
     return (
       <Grid>
 
-        <Cell width={4} height={1} left={4} bottom={1} >
+        <Cell width={4} height={1} left={4} bottom={1} index='900'>
           <Select id='from' placeholder='Year' options={years} onChange={this.handleFilter} />
         </Cell>
-        <Cell width={4} height={1} bottom={1} >
+        <Cell width={4} height={1} bottom={1} index='900'>
           <Select id='category' placeholder='Category' options={categories} onChange={this.handleFilter} />
         </Cell>
-        <Cell width={4} height={1} bottom={1} >
+        <Cell width={4} height={1} bottom={1} index='900'>
           <Select placeholder='Tag' options={tags} />
         </Cell>
 

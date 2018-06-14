@@ -45,6 +45,7 @@ class Select extends Component {
 export default Select
 
 const Wrap = styled.div`
+  z-index: 800;
   &:after {
     display: table;
     content: "";
@@ -72,7 +73,6 @@ const Selected = styled.div`
   padding: 12px 15px;
   text-align: center;
   position: relative;
-  z-index: 900;
 
   > p {
     cursor: pointer;
@@ -83,10 +83,9 @@ const Options = styled.div`
   position: absolute;
   top: 45px;
   left: 0;
-  z-index: 900;
   width: 135px;
   height: ${props => !props.isOpen && '0'};
-  max-height: 230px;
+  max-height: 270px;
   background: black;
   transition: all 0.3s ease-in-out;
   overflow: ${props => props.isOpen ? 'scroll' : 'hidden'};

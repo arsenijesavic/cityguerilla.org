@@ -73,7 +73,7 @@ const IndexPage = ({ data }) => {
         </div>
       </Cell>
 
-      <Cell width={7} height={5} top={1}>
+      <Cell width={7} height={5} top={1} index='999'>
         <ImageWithZoom
           src={`${featuredProject.images[0].image.replace('/static', '')}`}
           alt=""
@@ -118,7 +118,11 @@ const IndexPage = ({ data }) => {
       <Cell width={5} height={3} top={2} left={2}>
         <div style={{ textAlign: 'center', padding: '15px 15px', position: 'relative' }}>
           <img
-            style={{ position: 'absolute', width: '190px', left: '15px', top: '-20px', transform: 'rotate(10deg)' }}
+            style={{
+              position: 'absolute',
+              zIndex: '900',
+              width: '190px', left: '15px', top: '-20px', transform: 'rotate(10deg)'
+            }}
             src="img/detail-3.png"
             alt=""
           />
@@ -144,6 +148,8 @@ const ImageWithZoom = styled.img`
   object-fit: cover;
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
+  position: relative;
+  z-index: 9000;
 
   &:hover {
     transform: scale(1.3);
@@ -224,6 +230,7 @@ const Wrap = styled.div`
 
   > div {
     &:hover {
+
       opacity: 1;
     }
   }
@@ -234,6 +241,7 @@ const Wrap = styled.div`
     object-fit: cover;
   }
 `
+
 
 const Overflow = styled.div`
   position: absolute;
