@@ -195,8 +195,9 @@ export const query = graphql`
         node {
           frontmatter {
             event {
-              eventName
-              eventImage
+              name
+              date
+              image
             }
             featuredProject {
               name
