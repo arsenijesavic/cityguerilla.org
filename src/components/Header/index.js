@@ -51,10 +51,7 @@ const navigation = [
   { to: '/contact', name: 'Contact' },
 ]
 
-
-
 class Search extends React.Component {
-
   state = {}
 
   handleClick = e => {
@@ -67,13 +64,17 @@ class Search extends React.Component {
     return (
       <div className="header__search">
         <input
-          ref={node => this.input = node}
+          ref={node => (this.input = node)}
           type="text"
           placeholder="search"
           style={{ width: `${isActive ? '100px' : '0px'}` }}
           onBlur={() => this.setState({ isActive: false })}
         />
-        <svg viewBox="0 0 375.11 457.42" width="20px" onClick={this.handleClick}>
+        <svg
+          viewBox="0 0 375.11 457.42"
+          width="20px"
+          onClick={this.handleClick}
+        >
           <polygon
             className="cls-1"
             fill="none"
@@ -86,7 +87,11 @@ class Search extends React.Component {
             className="cls-2"
             fill="none"
             stroke="black"
-            strokeWidth="10" x1="126.89" y1="287.73" x2="39.89" y2="442.73"
+            strokeWidth="10"
+            x1="126.89"
+            y1="287.73"
+            x2="39.89"
+            y2="442.73"
             strokeDashoffset={isActive ? '1000' : '0'}
           />
         </svg>

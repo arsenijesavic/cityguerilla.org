@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Grid, Cell } from '../components'
-import { Index } from 'elasticlunr';
+import { Index } from 'elasticlunr'
 import searchIcon from '../assets/svg/Search-icon.svg'
 
 class SearchPage extends Component {
-
   state = {
     query: ``,
     results: [],
@@ -18,25 +17,25 @@ class SearchPage extends Component {
     }
   }
 
-  getOrCreateIndex = () => this.index
-    ? this.index
-    : Index.load(this.props.data.siteSearchIndex.index);
+  getOrCreateIndex = () =>
+    this.index ? this.index : Index.load(this.props.data.siteSearchIndex.index)
 
   search = e => {
-    const query = e.target ? e.target.value : e;
-    this.index = this.getOrCreateIndex();
-    const results = this.index.search(query, {
-      fields: {
-        name: { boost: 2, bool: "AND" },
-      },
-      bool: "OR",
-      expand: true
-    })
+    const query = e.target ? e.target.value : e
+    this.index = this.getOrCreateIndex()
+    const results = this.index
+      .search(query, {
+        fields: {
+          name: { boost: 2, bool: 'AND' },
+        },
+        bool: 'OR',
+        expand: true,
+      })
       .map(({ ref }) => this.index.documentStore.getDoc(ref))
     this.setState({
       query,
-      results
-    });
+      results,
+    })
   }
 
   render() {
@@ -57,23 +56,23 @@ class SearchPage extends Component {
           />
         </Cell>
         <Cell clear />
-        {results && results.map(page => (
-          <Cell key={page.name} width={4} height={4}>
-            {page.name}
-          </Cell>
-        ))}
+        {results &&
+          results.map(page => (
+            <Cell key={page.name} width={4} height={4}>
+              {page.name}
+            </Cell>
+          ))}
       </Grid>
     )
   }
 }
 
-
 export default SearchPage
 
 export const query = graphql`
-query SearchQuery {
-  siteSearchIndex {
-    index
+  query SearchQuery {
+    siteSearchIndex {
+      index
+    }
   }
-}
 `

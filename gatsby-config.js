@@ -15,9 +15,7 @@ module.exports = {
       resolve: `@andrew-codes/gatsby-plugin-elasticlunr-search`,
       options: {
         // Fields to index
-        fields: [
-          'name',
-        ],
+        fields: ['name'],
         resolvers: {
           MarkdownRemark: {
             name: node => node.frontmatter.name,

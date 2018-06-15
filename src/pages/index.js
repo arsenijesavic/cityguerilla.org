@@ -4,7 +4,7 @@ import { Grid, Cell, Carousel } from '../components'
 import styled from 'styled-components'
 import searchIcon from '../assets/svg/Search-icon.svg'
 import kebabCase from 'lodash/kebabCase'
-import { navigateTo } from "gatsby-link"
+import { navigateTo } from 'gatsby-link'
 
 const IndexPage = ({ data }) => {
   const {
@@ -148,10 +148,7 @@ const IndexPage = ({ data }) => {
       </Cell>
 
       <Cell width={5} height={8} right={1} top={-3} align="right">
-        <ImageWithZoom
-          src="img/01_City_Guerilla_Dacida_2017.jpg"
-          alt=""
-        />
+        <ImageWithZoom src="img/01_City_Guerilla_Dacida_2017.jpg" alt="" />
       </Cell>
     </Grid>
   )
@@ -299,20 +296,19 @@ const Action = ({ name, description, images }) => (
   </Wrap>
 )
 
-
 class InputBar extends React.Component {
   render() {
     return (
       <input
-        ref={node => this.input = node}
+        ref={node => (this.input = node)}
         style={{
           background: ` white url(${searchIcon}) no-repeat 9px center`,
           backgroundSize: '20px 20px',
         }}
         type="search"
         placeholder="search"
-        onKeyPress={e => e.key === 'Enter' &&
-          navigateTo(`/search?q=${this.input.value}`)
+        onKeyPress={e =>
+          e.key === 'Enter' && navigateTo(`/search?q=${this.input.value}`)
         }
       />
     )
