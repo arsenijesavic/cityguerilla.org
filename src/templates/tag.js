@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import moment from 'moment'
 import styled from 'styled-components'
 import { Grid, Cell } from '../components'
+import kebabCase from 'lodash/kebabCase'
 
 const TagPage = ({ data }) => {
   const all = [...data.allMarkdownRemark.edges].map(v => ({
@@ -10,12 +11,34 @@ const TagPage = ({ data }) => {
     url: v.node.fields.slug,
   }))
 
+  const tags = data.tags.group
+    .map(v => ({ ...v }))
+    .filter(v => v.fieldValue !== '')
+    .filter(v => v.totalCount > 10)
+
   const actions = all.filter(v => v.url.indexOf('action') > -1)
   const projects = all.filter(v => v.url.indexOf('project') > -1)
   const members = all.filter(v => v.url.indexOf('member') > -1)
 
   return (
     <Grid>
+      <Cell width={18} top={1} left={1} animation={false}>
+        <div style={{ padding: '15px 30px', width: '100%' }}>
+          {tags &&
+            tags.map((tag, i) => (
+              <Link
+                key={i}
+                style={{ marginRight: '5px', display: 'inline-block' }}
+                to={`/tags/${kebabCase(tag.fieldValue)}`}
+              >
+                <p style={{ fontSize: '0.707em', textTransform: 'uppercase' }}>
+                  {tag.fieldValue.trim()}
+                </p>
+              </Link>
+            ))}
+        </div>
+      </Cell>
+
       <Cell width={8} top={2} left={1}>
         <CellTitle>Actions</CellTitle>
         <div style={{ padding: '15px 30px' }}>
@@ -120,6 +143,16 @@ export const query = graphql`
             }
           }
         }
+      }
+    }
+
+    tags: allMarkdownRemark(
+      limit: 2000
+      filter: { frontmatter: { tags: { ne: "" } } }
+    ) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
       }
     }
   }

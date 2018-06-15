@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 class Select extends Component {
-
   state = {}
 
   openOptions = () => {
@@ -15,7 +14,8 @@ class Select extends Component {
 
   onSelect = selected => {
     this.setState({ selected, isOptionsOpen: false })
-    this.props.onChange && this.props.onChange({ id: this.props.id, value: selected })
+    this.props.onChange &&
+      this.props.onChange({ id: this.props.id, value: selected })
   }
 
   render() {
@@ -30,11 +30,12 @@ class Select extends Component {
             {selected ? selected : placeholder}
           </p>
           <Options isOpen={isOptionsOpen}>
-            {options && options.map((option, i) =>
-              <Option key={i} onClick={() => this.onSelect(option)}>
-                {option}
-              </Option>
-            )}
+            {options &&
+              options.map((option, i) => (
+                <Option key={i} onClick={() => this.onSelect(option)}>
+                  {option}
+                </Option>
+              ))}
           </Options>
         </Selected>
       </Wrap>
@@ -48,7 +49,7 @@ const Wrap = styled.div`
   z-index: 800;
   &:after {
     display: table;
-    content: "";
+    content: '';
     clear: both;
   }
 `
@@ -88,7 +89,7 @@ const Options = styled.div`
   max-height: 270px;
   background: black;
   transition: all 0.3s ease-in-out;
-  overflow: ${props => props.isOpen ? 'scroll' : 'hidden'};
+  overflow: ${props => (props.isOpen ? 'scroll' : 'hidden')};
 `
 
 const Option = styled.p`

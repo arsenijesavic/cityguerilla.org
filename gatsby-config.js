@@ -30,13 +30,6 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-nprogress`,
-    //   options: {
-    //     color: `black`,
-    //     showSpinner: true,
-    //   },
-    // },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

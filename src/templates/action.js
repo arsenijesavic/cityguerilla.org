@@ -18,9 +18,12 @@ const ActionPage = ({ data }) => {
     tags,
     members,
     mentors,
-    projects
+    projects,
+    partners,
+    collaborators,
+    links,
   } = {
-    ...data.markdownRemark.frontmatter
+    ...data.markdownRemark.frontmatter,
   }
 
   return (
@@ -28,10 +31,8 @@ const ActionPage = ({ data }) => {
       <Cell width={6} height={6} top={1} left={1}>
         <div style={{ padding: '15px' }}>
           <h1 style={{ fontSize: '24px', minHeight: `${4 * 45}px` }}>{name}</h1>
-          <h3 style={{ fontWeight: '300', paddingBottom: '5px' }}>
-            {category}
-          </h3>
-          <h5 style={{ fontWeight: '300' }}>{moment(from).year()}</h5>
+          <h4 style={{ fontWeight: '300' }}>{category}</h4>
+          <h5 style={{ fontWeight: '800' }}>{moment(from).year()}</h5>
           <h5 style={{ fontWeight: '300' }}>{location}</h5>
         </div>
       </Cell>
@@ -45,10 +46,13 @@ const ActionPage = ({ data }) => {
       </Cell>
 
       <Cell width={5} height={1} left={1} background={false}>
-        {modules &&
-
+        {modules && (
           <div
-            style={{ padding: '15px', background: 'black', textAlign: 'center' }}
+            style={{
+              padding: '15px',
+              background: 'black',
+              textAlign: 'center',
+            }}
           >
             <p
               style={{
@@ -61,18 +65,18 @@ const ActionPage = ({ data }) => {
               {modules}
             </p>
           </div>
-        }
+        )}
       </Cell>
 
       <Cell width={1} height={1} left={11}>
         <div style={{ background: 'black', width: '100%', height: '100%' }}>
-          F
+          r
         </div>
       </Cell>
 
       <Cell width={1} height={1}>
         <div style={{ background: 'black', width: '100%', height: '100%' }}>
-          Fff
+          l
         </div>
       </Cell>
 
@@ -83,8 +87,7 @@ const ActionPage = ({ data }) => {
             width: '100%',
             height: '100%',
             overflow: 'scroll',
-            //padding: '30px 35px 0px 45px',
-            padding: '30px',
+            padding: '15px 30px 0px 30px',
           }}
         >
           <p>{description}</p>
@@ -171,60 +174,139 @@ const ActionPage = ({ data }) => {
         </ul>
       </Cell>
 
-      <Cell width={7} top={2} left={1}>
-        <div style={{ width: '135px', height: '45px', background: 'black' }}>
-          <h1
-            style={{
-              fontSize: '20px',
-              padding: '8px 15px',
-              color: 'white',
-              fontWeight: '100',
-              textTransform: 'lowercase',
-              textAlign: 'center',
-            }}
-          >
-            Mentors
-          </h1>
-        </div>
-        <ul style={{ padding: '5px 10px' }}>
-          {mentors &&
-            mentors.map((mentor, i) => (
-              <li key={i} style={{ display: 'block', marginBottom: '5px' }}>
-                <Link
-                  style={{ display: 'block', width: '100%', height: '100%' }}
-                  to={mentor.url}
-                >
-                  <img
-                    style={{
-                      width: '35px',
-                      height: '35px',
-                      objectFit: 'cover',
-                      float: 'left',
-                    }}
-                    src={mentor.image}
-                    alt=""
+      {links &&
+        links.length > 1 && (
+          <Cell width={5} left={1} top={1} clear>
+            <CellTitle width={1}>
+              <svg width="100%" height="100%" viewBox="0 0 512.092 512.092">
+                <g fill="white">
+                  <path
+                    d="M312.453,199.601c-6.066-6.102-12.792-11.511-20.053-16.128c-19.232-12.315-41.59-18.859-64.427-18.859
+			c-31.697-0.059-62.106,12.535-84.48,34.987L34.949,308.23c-22.336,22.379-34.89,52.7-34.91,84.318
+			c-0.042,65.98,53.41,119.501,119.39,119.543c31.648,0.11,62.029-12.424,84.395-34.816l89.6-89.6
+			c1.628-1.614,2.537-3.816,2.524-6.108c-0.027-4.713-3.87-8.511-8.583-8.484h-3.413c-18.72,0.066-37.273-3.529-54.613-10.581
+			c-3.195-1.315-6.867-0.573-9.301,1.877l-64.427,64.512c-20.006,20.006-52.442,20.006-72.448,0
+			c-20.006-20.006-20.006-52.442,0-72.448l108.971-108.885c19.99-19.965,52.373-19.965,72.363,0
+			c13.472,12.679,34.486,12.679,47.957,0c5.796-5.801,9.31-13.495,9.899-21.675C322.976,216.108,319.371,206.535,312.453,199.601z"
                   />
-                  <h5
-                    style={{
-                      float: 'left',
-                      padding: '10px',
-                      fontWeight: '700',
-                    }}
+                  <path
+                    d="M477.061,34.993c-46.657-46.657-122.303-46.657-168.96,0l-89.515,89.429c-2.458,2.47-3.167,6.185-1.792,9.387
+			c1.359,3.211,4.535,5.272,8.021,5.205h3.157c18.698-0.034,37.221,3.589,54.528,10.667c3.195,1.315,6.867,0.573,9.301-1.877
+			l64.256-64.171c20.006-20.006,52.442-20.006,72.448,0c20.006,20.006,20.006,52.442,0,72.448l-80.043,79.957l-0.683,0.768
+			l-27.989,27.819c-19.99,19.965-52.373,19.965-72.363,0c-13.472-12.679-34.486-12.679-47.957,0
+			c-5.833,5.845-9.35,13.606-9.899,21.845c-0.624,9.775,2.981,19.348,9.899,26.283c9.877,9.919,21.433,18.008,34.133,23.893
+			c1.792,0.853,3.584,1.536,5.376,2.304c1.792,0.768,3.669,1.365,5.461,2.048c1.792,0.683,3.669,1.28,5.461,1.792l5.035,1.365
+			c3.413,0.853,6.827,1.536,10.325,2.133c4.214,0.626,8.458,1.025,12.715,1.195h5.973h0.512l5.12-0.597
+			c1.877-0.085,3.84-0.512,6.059-0.512h2.901l5.888-0.853l2.731-0.512l4.949-1.024h0.939c20.961-5.265,40.101-16.118,55.381-31.403
+			l108.629-108.629C523.718,157.296,523.718,81.65,477.061,34.993z"
+                  />
+                </g>
+              </svg>
+            </CellTitle>
+            <ul style={{ padding: '10px', fontSize: '1em' }}>
+              {links &&
+                links.map((link, i) => (
+                  <li key={i} style={{ display: 'block' }}>
+                    <a target="_tab" href={link.url}>
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+            </ul>
+          </Cell>
+        )}
+      {mentors &&
+        mentors.length > 1 && (
+          <Cell width={7} top={2} right={1} align="right">
+            <div
+              style={{ width: '135px', height: '45px', background: 'black' }}
+            >
+              <CellTitle>Mentors</CellTitle>
+            </div>
+            <ul style={{ padding: '5px 10px' }}>
+              {mentors &&
+                mentors.map((mentor, i) => (
+                  <li key={i} style={{ display: 'block', marginBottom: '5px' }}>
+                    <Link
+                      style={{
+                        display: 'block',
+                        width: '100%',
+                        height: '100%',
+                      }}
+                      to={mentor.url}
+                    >
+                      <img
+                        style={{
+                          width: '35px',
+                          height: '35px',
+                          objectFit: 'cover',
+                          float: 'left',
+                        }}
+                        src={mentor.image}
+                        alt=""
+                      />
+                      <h5
+                        style={{
+                          float: 'left',
+                          padding: '10px',
+                          fontWeight: '700',
+                        }}
+                      >
+                        {mentor.name}
+                      </h5>
+                      <br style={{ clear: 'both' }} />
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          </Cell>
+        )}
+      {collaborators &&
+        collaborators.length > 1 && (
+          <Cell width={7} top={2} right={1} align="right" clear>
+            <div
+              style={{ width: '135px', height: '45px', background: 'black' }}
+            >
+              <CellTitle>Collaborators</CellTitle>
+            </div>
+            <ul style={{ padding: '5px 10px' }}>
+              {collaborators &&
+                collaborators.map((collaborator, i) => (
+                  <li
+                    key={i}
+                    style={{ display: 'block', marginBottom: '2.5px' }}
                   >
-                    {mentor.name}
-                  </h5>
-                  <br style={{ clear: 'both' }} />
-                </Link>
-              </li>
-            ))}
-        </ul>
-      </Cell>
+                    <Link
+                      style={{
+                        display: 'block',
+                        width: '100%',
+                        height: '100%',
+                      }}
+                      to={collaborator.url}
+                    >
+                      <h5
+                        style={{
+                          float: 'left',
+                          padding: '5px 10px',
+                          fontWeight: '700',
+                        }}
+                      >
+                        {collaborator.name}
+                      </h5>
+                      <br style={{ clear: 'both' }} />
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          </Cell>
+        )}
 
-      {projects && projects.length > 0 &&
-        <Cell width={4} height={1} top={2} left={2} clear background={false}>
-          <CellTitle>Projects</CellTitle>
-        </Cell>
-      }
+      {projects &&
+        projects.length > 0 && (
+          <Cell width={4} height={1} left={2} clear background={false}>
+            <CellTitle>Projects</CellTitle>
+          </Cell>
+        )}
       {projects &&
         projects.map((project, i) => (
           <Cell key={i} width={8} height={1} left={2} clear>
@@ -277,15 +359,23 @@ export const ActionQuery = graphql`
           image
         }
         projects
-
-
+        partners {
+          name
+          url
+        }
+        links {
+          name
+          url
+        }
+        collaborators {
+          name
+          url
+        }
         video
       }
     }
   }
 `
-
-
 const ProjectName = styled.p`
   padding: 12px 15px;
   transition: all 0.3s ease-in-out;
@@ -297,7 +387,7 @@ const ProjectName = styled.p`
   }
 `
 const CellTitle = styled.p`
-  width: 180px;
+  width: ${props => (props.width ? `${props.width * 45}px` : '180px')};
   height: 45px;
   background: black;
   color: white;
@@ -305,4 +395,38 @@ const CellTitle = styled.p`
   font-weight: 100;
   text-transform: lowercase;
   padding: 8px 15px;
+`
+
+const Links = styled.div`
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: white;
+  transition: all 0.3s ease-in-out;
+
+  > svg {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  > div {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &:hover {
+    height: 180px;
+    width: 100%;
+    > div {
+      left: 0;
+    }
+  }
 `

@@ -5,15 +5,12 @@ import { Grid, Cell, Select } from '../components'
 import moment from 'moment'
 import uniqBy from 'lodash/uniqBy'
 
-
-
 class ActionsPage extends Component {
-
   state = {
     filters: {
       from: '',
       category: '',
-      tag: ''
+      tag: '',
     },
   }
 
@@ -52,17 +49,25 @@ class ActionsPage extends Component {
 
     return (
       <Grid>
-
-        <Cell width={4} height={1} left={4} bottom={1} index='900'>
-          <Select id='from' placeholder='Year' options={years} onChange={this.handleFilter} />
+        <Cell width={4} height={1} left={4} bottom={1} index="900">
+          <Select
+            id="from"
+            placeholder="Year"
+            options={years}
+            onChange={this.handleFilter}
+          />
         </Cell>
-        <Cell width={4} height={1} bottom={1} index='900'>
-          <Select id='category' placeholder='Category' options={categories} onChange={this.handleFilter} />
+        <Cell width={4} height={1} bottom={1} index="900">
+          <Select
+            id="category"
+            placeholder="Category"
+            options={categories}
+            onChange={this.handleFilter}
+          />
         </Cell>
-        <Cell width={4} height={1} bottom={1} index='900'>
-          <Select placeholder='Tag' options={tags} />
+        <Cell width={4} height={1} bottom={1} index="900">
+          <Select placeholder="Tag" options={tags} />
         </Cell>
-
 
         {projects &&
           projects.map((project, i) => (
@@ -81,8 +86,6 @@ class ActionsPage extends Component {
 }
 
 export default ActionsPage
-
-
 
 const getRandomCell = () => {
   const options = {
@@ -149,7 +152,9 @@ const Project = ({ name, tags, images }) => (
   <Wrap>
     <Overflow>
       <h1>{name}</h1>
-      <p>{tags && tags.slice(0, 8).map((tag, i) => <span key={i}>{tag}</span>)}</p>
+      <p>
+        {tags && tags.slice(0, 8).map((tag, i) => <span key={i}>{tag}</span>)}
+      </p>
     </Overflow>
     <img src={images && images[0].image} alt="" />
   </Wrap>
@@ -177,12 +182,12 @@ export const query = graphql`
     }
 
     tags: allMarkdownRemark(
-      limit: 2000,
+      limit: 2000
       filter: {
-        fileAbsolutePath: {regex: "/action/"},
-        frontmatter: {tags: {ne: ""}}
+        fileAbsolutePath: { regex: "/action/" }
+        frontmatter: { tags: { ne: "" } }
       }
-      ) {
+    ) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
@@ -190,19 +195,19 @@ export const query = graphql`
     }
 
     years: allMarkdownRemark(
-      limit: 2000,
+      limit: 2000
       filter: {
-        fileAbsolutePath: {regex: "/action/"},
-        frontmatter: {from: {ne: "null"}}
+        fileAbsolutePath: { regex: "/action/" }
+        frontmatter: { from: { ne: "null" } }
       }
-      ) {
+    ) {
       group(field: frontmatter___from) {
         fieldValue
         totalCount
       }
     }
 
-    categories:allMarkdownRemark(
+    categories: allMarkdownRemark(
       limit: 2000
       filter: { fileAbsolutePath: { regex: "/action/" } }
     ) {
@@ -211,6 +216,5 @@ export const query = graphql`
         totalCount
       }
     }
-
   }
 `

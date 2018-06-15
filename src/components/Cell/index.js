@@ -21,6 +21,7 @@ const Cell = class extends React.Component {
       background = true,
       padding = true,
       index,
+      animation = true,
       children,
     } = this.props
     const { autoHeight, isMounted } = this.state
@@ -40,13 +41,13 @@ const Cell = class extends React.Component {
           padding: padding
             ? align === 'left'
               ? '1px 0px 0px 1px'
-              : '1px 1px 0px 1px'
+              : '1px 1px 0px 0px'
             : 'wtf',
           transition: 'all 0.3s cubic-bezier(0.42, 0, 0.58, 1)',
-          transform: `scale(${isMounted ? 1 : 0})`,
+          ...(animation && { transform: `scale(${isMounted ? 1 : 0})` }),
           //overflow: 'hidden',
           position: 'relative',
-          zIndex: index ? index : '1'
+          zIndex: index ? index : '1',
         }}
       >
         <div
@@ -55,7 +56,7 @@ const Cell = class extends React.Component {
             height: '100%',
             background: background && 'white',
             position: 'relative',
-            zIndex: '1'
+            zIndex: '1',
           }}
         >
           {children}

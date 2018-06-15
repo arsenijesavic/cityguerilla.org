@@ -40,12 +40,11 @@ const MemberPage = ({ data }) => {
             width: '314px',
             height: '269px',
             background: `url(${image})`,
-            backgroundSize: 'cover'
+            backgroundSize: 'cover',
 
             // objectFit: 'cover',
           }}
         />
-
       </Draggable>
 
       <Cell width={8} top={2} left={1} clear>
@@ -106,7 +105,7 @@ const MemberPage = ({ data }) => {
       <Cell width={18} height={10} top={2} left={1}>
         <CellTitle>Creative Board</CellTitle>
       </Cell>
-    </Grid >
+    </Grid>
   )
 }
 

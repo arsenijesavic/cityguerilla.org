@@ -17,7 +17,7 @@ const ProjectPage = ({ data }) => {
     tags,
     members,
     mentors,
-    actions
+    actions,
   } = {
     ...data.markdownRemark.frontmatter,
   }
@@ -118,7 +118,7 @@ const ProjectPage = ({ data }) => {
         </div>
       </Cell>
 
-      <Cell width={7} top={2} right={1} align='right'>
+      <Cell width={7} top={2} right={1} align="right">
         <div style={{ width: '135px', height: '45px', background: 'black' }}>
           <h1
             style={{
@@ -216,23 +216,22 @@ const ProjectPage = ({ data }) => {
         </ul>
       </Cell>
 
-      {actions &&
+      {actions && (
         <Cell width={18} height={1} top={1} left={1} clear background={false}>
-          <CellTitle>
-            Actions
-        </CellTitle>
-        </Cell>
-      }
-      {actions && actions.map((action, i) =>
-        <Cell key={i} width={4} height={4} top={1} left={2}>
-          <Link
-            style={{ display: 'block', width: '100%', height: '100%' }}
-            to={action.url}
-          >
-            <Project {...action} />
-          </Link>
+          <CellTitle>Actions</CellTitle>
         </Cell>
       )}
+      {actions &&
+        actions.map((action, i) => (
+          <Cell key={i} width={4} height={4} top={1} left={2}>
+            <Link
+              style={{ display: 'block', width: '100%', height: '100%' }}
+              to={action.url}
+            >
+              <Project {...action} />
+            </Link>
+          </Cell>
+        ))}
     </Grid>
   )
 }

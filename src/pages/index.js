@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import searchIcon from '../assets/svg/Search-icon.svg'
 import kebabCase from 'lodash/kebabCase'
 
-
 const IndexPage = ({ data }) => {
   const {
     event,
@@ -66,14 +65,18 @@ const IndexPage = ({ data }) => {
         >
           {tags &&
             tags.map((tag, i) => (
-              <Link key={i} to={`tags/${kebabCase(tag)}`} style={{ marginRight: '5px' }}>
+              <Link
+                key={i}
+                to={`tags/${kebabCase(tag)}`}
+                style={{ marginRight: '5px' }}
+              >
                 {tag}
               </Link>
             ))}
         </div>
       </Cell>
 
-      <Cell width={7} height={5} top={1} index='999'>
+      <Cell width={7} height={5} top={1} index="999">
         <ImageWithZoom
           src={`${featuredProject.images[0].image.replace('/static', '')}`}
           alt=""
@@ -96,10 +99,20 @@ const IndexPage = ({ data }) => {
       <Cell width={6} height={9} top={0} left={5}>
         <FeaturedProject>
           <img
-            style={{ position: 'absolute', width: '235px', left: '33px', top: '-5px' }}
-            src="img/detail-1.png" alt="" />
+            style={{
+              position: 'absolute',
+              width: '235px',
+              left: '33px',
+              top: '-5px',
+            }}
+            src="img/detail-1.png"
+            alt=""
+          />
           <h2 style={{ textAlign: 'center' }}>-</h2>
-          <Link to={`/projects/${kebabCase(featuredProject.name)}`} style={{ position: 'relative' }}>
+          <Link
+            to={`/projects/${kebabCase(featuredProject.name)}`}
+            style={{ position: 'relative' }}
+          >
             <h2 style={{ textAlign: 'center' }}>{featuredProject.name}</h2>
           </Link>
           <p style={{ marginTop: '30px', textAlign: 'justify' }}>
@@ -116,12 +129,21 @@ const IndexPage = ({ data }) => {
       </Cell>
 
       <Cell width={5} height={3} top={2} left={2}>
-        <div style={{ textAlign: 'center', padding: '15px 15px', position: 'relative' }}>
+        <div
+          style={{
+            textAlign: 'center',
+            padding: '15px 15px',
+            position: 'relative',
+          }}
+        >
           <img
             style={{
               position: 'absolute',
               zIndex: '900',
-              width: '190px', left: '15px', top: '-20px', transform: 'rotate(10deg)'
+              width: '190px',
+              left: '15px',
+              top: '-20px',
+              transform: 'rotate(10deg)',
             }}
             src="img/detail-3.png"
             alt=""
@@ -230,7 +252,6 @@ const Wrap = styled.div`
 
   > div {
     &:hover {
-
       opacity: 1;
     }
   }
@@ -241,7 +262,6 @@ const Wrap = styled.div`
     object-fit: cover;
   }
 `
-
 
 const Overflow = styled.div`
   position: absolute;

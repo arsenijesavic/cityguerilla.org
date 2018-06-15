@@ -36,9 +36,7 @@ export const query = graphql`
   query TagsQuery {
     allMarkdownRemark(
       limit: 2000
-      filter: {
-        frontmatter: {tags: {ne: ""}}
-      }
+      filter: { frontmatter: { tags: { ne: "" } } }
     ) {
       group(field: frontmatter___tags) {
         fieldValue
