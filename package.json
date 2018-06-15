@@ -4,8 +4,10 @@
   "author": "Arsenije Savic",
   "version": "1.0.0",
   "dependencies": {
+    "@andrew-codes/gatsby-plugin-elasticlunr-search": "^1.0.4",
     "classnames": "^2.2.6",
     "d3-ease": "^1.0.3",
+    "elasticlunr": "^0.9.5",
     "exenv": "^1.2.2",
     "gatsby": "^1.9.271",
     "gatsby-link": "^1.6.44",
@@ -23,13 +25,13 @@
     "moment": "^2.22.2",
     "netlify-cms": "git+https://github.com/arsenijesavic/netlify-cms.git#076576f3dc5ea99ad03fc2cb4d6c315e8ac61427",
     "prop-types": "^15.6.1",
+    "query-string": "^6.1.0",
     "react": "^16.4.0",
     "react-draggable": "^3.0.5",
     "react-google-recaptcha": "^0.12.0",
     "react-helmet": "^5.2.0",
     "react-move": "^2.7.0",
     "react-tippy": "^1.2.2",
-    "react-transition-group": "^2.3.1",
     "styled-components": "^3.3.2"
   },
   "keywords": [

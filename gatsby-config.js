@@ -11,6 +11,21 @@ module.exports = {
 
   plugins: [
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `@andrew-codes/gatsby-plugin-elasticlunr-search`,
+      options: {
+        // Fields to index
+        fields: [
+          'name',
+        ],
+        resolvers: {
+          MarkdownRemark: {
+            name: node => node.frontmatter.name,
+            images: node => node.frontmatter.images,
+          },
+        },
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-favicon`,
