@@ -4,7 +4,7 @@ import cn from 'classnames'
 import Recaptcha from 'react-google-recaptcha'
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
-
+console.log(process.env)
 const encode = data => {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -110,6 +110,7 @@ class Input extends React.Component {
           ref={node => (this.input = node)}
           type="text"
           id={id}
+          name={id}
           value={value}
           className="mat-input"
           onFocus={() => this.setState({ isFocused: true })}
@@ -121,6 +122,7 @@ class Input extends React.Component {
         <textarea
           ref={node => (this.input = node)}
           id={id}
+          name={id}
           value={value}
           className="mat-input"
           rows="10"
