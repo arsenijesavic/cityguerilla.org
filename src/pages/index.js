@@ -155,7 +155,7 @@ const IndexPage = ({ data }) => {
 
       <Cell width={5} height={8} right={1} top={-3} align="right">
         <ImageWithZoom
-          src="http://cityguerilla.org/images/actions/01_City_Guerilla_Dacida_2017.jpg"
+          src="img/01_City_Guerilla_Dacida_2017.jpg"
           alt=""
         />
       </Cell>

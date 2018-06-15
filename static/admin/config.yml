@@ -201,9 +201,9 @@ collections:
             name: "event"
             widget: "object"
             fields:
-              - {label: "Event Name", name: "eventName", widget: "string"}
-              - {label: "Event Date", name: "eventDate", widget: "date"}
-              - {label: "Event Image", name: "eventImage", widget: "image"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Date", name: "date", widget: "date"}
+              - {label: "Image", name: "image", widget: "image"}
           - label: "Featured Project"
             name: "featuredProject"
             widget: "relation"
