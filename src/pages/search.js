@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Grid, Cell } from '../components'
 import { Index } from 'elasticlunr';
 import searchIcon from '../assets/svg/Search-icon.svg'
-import queryString from 'query-string'
 
 class SearchPage extends Component {
 
