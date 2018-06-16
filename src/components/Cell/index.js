@@ -47,7 +47,7 @@ const Cell = class extends React.Component {
           ...(animation && { transform: `scale(${isMounted ? 1 : 0})` }),
           //overflow: 'hidden',
           position: 'relative',
-          zIndex: index ? index : '1',
+          zIndex: index ? index : 'auto',
         }}
       >
         <div

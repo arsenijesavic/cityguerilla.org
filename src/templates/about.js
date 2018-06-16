@@ -1,11 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Grid, Cell } from '../components'
 import styled from 'styled-components'
+import moment from 'moment'
+import { Grid, Cell } from '../components'
+import Draggable from 'react-draggable'
 import uilogo from '../assets/images/urban-incubator-logo-l.png'
 
 const AboutPage = ({ data }) => {
-  const { details } = { ...data.markdownRemark.frontmatter }
+  const { details, timeline } = { ...data.markdownRemark.frontmatter }
   const projects = data.projects.edges.map(v => ({
     ...v.node.frontmatter,
     url: v.node.fields.slug,
@@ -29,7 +31,7 @@ const AboutPage = ({ data }) => {
         <Insta />
       </Cell>
 
-      <Cell width={10} height={15} left={2} clear>
+      <Cell width={10} height={16} left={2} clear>
         <div
           className="scroll"
           style={{
@@ -43,9 +45,20 @@ const AboutPage = ({ data }) => {
         </div>
       </Cell>
 
-      <Cell width={7} height={17} top={-2} align="right">
+      {/* <Cell width={7} height={17} top={-2} align="right">
         <CellTitle>Timeline</CellTitle>
-      </Cell>
+      </Cell> */}
+      {timeline &&
+        timeline.map((event, i) => (
+          <Cell key={i} width={1} height={1} top={i > 0 && 1} left={4}>
+            <TimelineEvent>
+              <TimelineDetails>
+                <h3>{moment(event.year).format('YY')}</h3>
+                <p>{event.description}</p>
+              </TimelineDetails>
+            </TimelineEvent>
+          </Cell>
+        ))}
 
       <Cell width={4} height={1} top={2} left={2} clear background={false}>
         <CellTitle>Projects</CellTitle>
@@ -68,7 +81,14 @@ const AboutPage = ({ data }) => {
         <UILogo />
       </Cell>
 
-      <Cell width={2} height={2} top={1} left={4} background={false}>
+      <Cell
+        width={2}
+        height={2}
+        top={1}
+        left={4}
+        background={false}
+        index={9000}
+      >
         <Folder />
       </Cell>
 
@@ -80,6 +100,82 @@ const AboutPage = ({ data }) => {
 }
 
 export default AboutPage
+
+const TimelineEvent = styled.div`
+  width: 100%;
+  height: 100%;
+  position: relative;
+`
+
+const TimelineDetails = styled.div`
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  background: black;
+  padding: 10px 0;
+  cursor: pointer;
+  z-index: 10;
+
+  transform: translate(-50%, 0);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    width: 225px;
+    height: 180px;
+    z-index: 1000;
+    > p {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  > h3 {
+    color: white;
+  }
+
+  > p {
+    display: none;
+    opacity: 0;
+    font-size: 0.707em;
+    color: white;
+    padding: 10px;
+    transition: opacity 3s ease-in-out;
+  }
+`
+
+export const aboutPageQuery = graphql`
+  query AboutPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        title
+        details
+        timeline {
+          title
+          description
+          year
+        }
+      }
+    }
+    projects: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/project/" } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            name
+          }
+        }
+      }
+    }
+  }
+`
 
 const UILogo = () => (
   <a
@@ -117,32 +213,6 @@ const CellTitle = styled.p`
   font-weight: 100;
   text-transform: lowercase;
   padding: 8px 15px;
-`
-
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-        details
-      }
-    }
-    projects: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/project/" } }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            name
-          }
-        }
-      }
-    }
-  }
 `
 
 const GILogo = () => (
@@ -353,21 +423,74 @@ C135.661,29.421,132.821,28.251,129.921,28.251z"
 
 const FolderWrap = styled.div`
   padding: 10px;
+  position: relative;
 `
-const Folder = () => (
-  <FolderWrap>
-    <svg viewBox="0 0 220.37 206.37">
-      <path
-        d="M258.1,56.11V232.82H37.73V56.11Z"
-        transform="translate(-37.73 -26.46)"
-      />
-      <polygon points="0.67 24.54 7.45 0 94.9 0 102.77 24.54 0.67 24.54" />
-    </svg>
-  </FolderWrap>
-)
+
+const FolderWindow = styled.div`
+  transition: width height 0.3 ease-in;
+  position: absolute;
+  z-index: 9999;
+  width: ${props => (props.isActive ? '500px' : '0')};
+  height: ${props => (props.isActive ? '300px' : '0')};
+
+  border: 1px solid black;
+  top: -130px;
+  left: -170px;
+  background: white;
+`
+
+const FolderWindowHandle = styled.div`
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid black
+  position: relative;
+  cursor: move;
+  > span {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+`
+
+class Folder extends React.Component {
+  state = {
+    isClicked: false,
+  }
+  render() {
+    const { isClicked } = this.state
+
+    return (
+      <FolderWrap
+        onClick={() => !isClicked && this.setState({ isClicked: true })}
+      >
+        <svg viewBox="0 0 220.37 206.37">
+          <path
+            d="M258.1,56.11V232.82H37.73V56.11Z"
+            transform="translate(-37.73 -26.46)"
+          />
+          <polygon points="0.67 24.54 7.45 0 94.9 0 102.77 24.54 0.67 24.54" />
+        </svg>
+        <Draggable handle="strong" onStart={() => true} onStop={() => true}>
+          <FolderWindow isActive={isClicked}>
+            {isClicked && (
+              <strong className="cursor">
+                <FolderWindowHandle>
+                  <span onClick={() => this.setState({ isClicked: false })}>
+                    X
+                  </span>
+                </FolderWindowHandle>
+              </strong>
+            )}
+          </FolderWindow>
+        </Draggable>
+      </FolderWrap>
+    )
+  }
+}
 
 const Document = () => (
-  <FolderWrap>
+  <div style={{ padding: '10px' }}>
     <svg viewBox="0 0 191.21 241.62">
       <polygon points="191.21 241.62 0 241.62 0 0 138.58 0 139.78 56.76 190.22 57.24 191.21 241.62" />
       <rect fill="#fff" x="36.62" y="80.39" width="115.29" height="3.15" />
@@ -413,5 +536,5 @@ const Document = () => (
         y2="58.78"
       />
     </svg>
-  </FolderWrap>
+  </div>
 )

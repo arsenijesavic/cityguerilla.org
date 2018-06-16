@@ -6,4 +6,3 @@ event:
   image: img/01_City_Guerilla_Dacida_2017.jpg
 featuredProject: The Symphony of Savamala Project
 ---
-

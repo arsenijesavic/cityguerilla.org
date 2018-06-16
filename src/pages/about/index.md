@@ -11,6 +11,43 @@ From 2010 until today there have been many exhibitions, installations, workshops
 Once a controversial name, Goethe-Guerilla (Goethe = an institution, Guerilla = freedom of action), which strongly depicts the singularity of this symbiosis during the organic process of self-organization of a group of young people on their way to independence under the roof of a cultural institution, has in the meantime, among young people, become a synonym for team work, creativity, open access, exchange of knowledge and ideas in the fields of art and social activism both on local and international levels. Since 2012 members of Goethe-Guerilla have been focused on the run-down neighborhood of Savamala. They have been monitoring, investigating and documenting its dramatic architectural transformation and have either taken an active part in it or opposed it through their projects and actions. In March 2013 the Goethe-Insititut officially launches the project "Urban Incubator: Belgrade" in Savamala. Soon after, Goethe-Guerilla joines other local and international projects from the previous generations (2010-2014), decides to become independent founding an association named City Guerilla, which continues its activities supported the Goethe-Institut, now as a partner.
 
 Since 2010 until today, members of Goethe/City Guerilla have, in cooperation with the Goethe-Institut, realized more than 200 small and large scale projects and actions in Serbia and abroad, thus establishing a wide cooperation network with similar initiatives in the country and the region. '
+timeline:
+  -
+    title: Goethe Gerile
+    description: "Početak projekta Goethe-Instituta u Beogradu Goethe-Institut, Inicijatori: Juta Gerig, direktorka i Zorica Milisavljević, koordinator specijalnih projekata (mentor Gerila projekta od 2010. do 2016.)"
+    year: 2010-01-01T00:00:00+01:00
+  -
+    title: Goethe Gerile
+    description: "Početak projekta Goethe-Instituta u Beogradu Goethe-Institut, Inicijatori: Juta Gerig, direktorka i Zorica Milisavljević, koordinator specijalnih projekata (mentor Gerila projekta od 2010. do 2016.)"
+    year: 2011-01-01T00:00:00+01:00
+  -
+    title: Goethe Gerile
+    description: "Početak projekta Goethe-Instituta u Beogradu Goethe-Institut, Inicijatori: Juta Gerig, direktorka i Zorica Milisavljević, koordinator specijalnih projekata (mentor Gerila projekta od 2010. do 2016.)"
+    year: 2012-01-01T00:00:00+01:00
+  -
+    title: Goethe Gerile
+    description: "Početak projekta Goethe-Instituta u Beogradu Goethe-Institut, Inicijatori: Juta Gerig, direktorka i Zorica Milisavljević, koordinator specijalnih projekata (mentor Gerila projekta od 2010. do 2016.)"
+    year: 2013-01-01T00:00:00+01:00
+  -
+    title: Goethe Gerile
+    description: "Početak projekta Goethe-Instituta u Beogradu Goethe-Institut, Inicijatori: Juta Gerig, direktorka i Zorica Milisavljević, koordinator specijalnih projekata (mentor Gerila projekta od 2010. do 2016.)"
+    year: 2014-01-01T00:00:00+01:00
+  -
+    title: Goethe Gerile
+    description: "Početak projekta Goethe-Instituta u Beogradu Goethe-Institut, Inicijatori: Juta Gerig, direktorka i Zorica Milisavljević, koordinator specijalnih projekata (mentor Gerila projekta od 2010. do 2016.)"
+    year: 2015-01-01T00:00:00+01:00
+  -
+    title: Goethe Gerile
+    description: "Početak projekta Goethe-Instituta u Beogradu Goethe-Institut, Inicijatori: Juta Gerig, direktorka i Zorica Milisavljević, koordinator specijalnih projekata (mentor Gerila projekta od 2010. do 2016.)"
+    year: 2016-01-01T00:00:00+01:00
+  -
+    title: Goethe Gerile
+    description: "Početak projekta Goethe-Instituta u Beogradu Goethe-Institut, Inicijatori: Juta Gerig, direktorka i Zorica Milisavljević, koordinator specijalnih projekata (mentor Gerila projekta od 2010. do 2016.)"
+    year: 2017-01-01T00:00:00+01:00
+  -
+    title: Goethe Gerile
+    description: "Početak projekta Goethe-Instituta u Beogradu Goethe-Institut, Inicijatori: Juta Gerig, direktorka i Zorica Milisavljević, koordinator specijalnih projekata (mentor Gerila projekta od 2010. do 2016.)"
+    year: 2018-01-01T00:00:00+01:00
 ---
 ### Shade-grown coffee
 Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.

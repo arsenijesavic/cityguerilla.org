@@ -1,10 +1,10 @@
 import React from 'react'
-import { Grid, Cell } from '../components'
-import Draggable from 'react-draggable'
 import Link from 'gatsby-link'
 import moment from 'moment'
 import styled from 'styled-components'
 import kebabCase from 'lodash/kebabCase'
+import { Grid, Cell } from '../components'
+import Draggable from 'react-draggable'
 
 const MemberPage = ({ data }) => {
   const { name, location, from, to, image, website, involved, bio, tags } = {
@@ -36,12 +36,11 @@ const MemberPage = ({ data }) => {
           style={{
             display: 'block',
             cursor: 'move',
-            background: 'red',
             width: '314px',
             height: '269px',
             background: `url(${image})`,
             backgroundSize: 'cover',
-
+            zIndex: '10000',
             // objectFit: 'cover',
           }}
         />
