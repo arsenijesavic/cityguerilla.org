@@ -23,47 +23,47 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     }
   `).then(result => {
-    if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
-
-    const data = result.data.allMarkdownRemark.edges
-
-    data.map(({ node }) => {
-      const {
-        id,
-        fields: { slug },
-        frontmatter: { templateKey },
-      } = node
-
-      createPage({
-        path: slug,
-        component: path.resolve(`./src/templates/${templateKey}.js`),
-        context: { slug, id },
-      })
-    })
-
-    let tags = []
-
-    _.each(data, edge => {
-      if (_.get(edge, 'node.frontmatter.tags')) {
-        tags = tags.concat(edge.node.frontmatter.tags)
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
       }
-    })
 
-    tags = _.uniq(tags)
+      const data = result.data.allMarkdownRemark.edges
 
-    tags.forEach(tag => {
-      createPage({
-        path: `/tags/${_.kebabCase(tag)}/`,
-        component: path.resolve('src/templates/tag.js'),
-        context: {
-          tag,
-        },
+      data.map(({ node }) => {
+        const {
+          id,
+          fields: { slug },
+          frontmatter: { templateKey },
+        } = node
+
+        createPage({
+          path: slug,
+          component: path.resolve(`./src/templates/${templateKey}.js`),
+          context: { slug, id },
+        })
+      })
+
+      let tags = []
+
+      _.each(data, edge => {
+        if (_.get(edge, 'node.frontmatter.tags')) {
+          tags = tags.concat(edge.node.frontmatter.tags)
+        }
+      })
+
+      tags = _.uniq(tags)
+
+      tags.forEach(tag => {
+        createPage({
+          path: `/tags/${_.kebabCase(tag)}/`,
+          component: path.resolve('src/templates/tag.js'),
+          context: {
+            tag,
+          },
+        })
       })
     })
-  })
 }
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
@@ -71,6 +71,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
+
     createNodeField({
       name: `slug`,
       node,
@@ -80,12 +81,11 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 }
 
 exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
-  const { createNodeField } = boundActionCreators
-
   getNodes()
     .filter(node => node.internal.type === 'MarkdownRemark')
     .forEach(node => {
       if (node) {
+
         // featuredProject
         if (node.frontmatter.featuredProject) {
           const authorNode = getNodes().find(
@@ -157,7 +157,7 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
               )
                 involved.push({
                   ...node2.frontmatter,
-                  url: node2.fields.slug,
+                  url: node2.fields.slug || 'wtf',
                 })
             }
           })
@@ -191,6 +191,25 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
             actions,
           }
         }
+
+
+        //add board fled to member
+        if (node.fields.slug.includes('/member/')) {
+          const board = getNodes()
+            .filter(node2 => node2.internal.type === 'MarkdownRemark')
+            .filter(node2 => node2.fields.slug.includes('/board/'))
+            .filter(node2 => node2.frontmatter.members.map(v => v.name).includes(node.frontmatter.name))
+            .map(v => v.frontmatter)
+
+          node.frontmatter = {
+            ...node.frontmatter,
+            board
+          }
+        }
+
+
+
+
         //projects
       }
     })

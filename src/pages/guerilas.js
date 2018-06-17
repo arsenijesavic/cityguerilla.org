@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Grid, Cell } from '../components'
+import { Grid, Cell, Select } from '../components'
 import moment from 'moment'
+
+
 const GuerilasPage = ({ data }) => {
   const members = data.allMarkdownRemark.edges.map(v => ({
     ...v.node.frontmatter,
@@ -85,29 +87,7 @@ export const query = graphql`
   }
 `
 
-const Select = () => (
-  <Grid>
-    <Cell width={1} height={1} left={8} padding={false}>
-      <div
-        style={{
-          width: '100%',
-          height: '100%',
-          background: 'black',
-          color: 'white',
-          textAlign: 'center',
-          fontSize: '30px',
-          padding: '2.5px 0',
-          margin: '0',
-        }}
-      >
-        +
-      </div>
-    </Cell>
-    <Cell width={3} height={1} padding={false}>
-      <h4 style={{ padding: '10px 15px', textAlign: 'center' }}>all</h4>
-    </Cell>
-  </Grid>
-)
+
 
 const Member = ({ name, image, url }) => (
   <Cell

@@ -34,6 +34,11 @@ a:hover {
   text-decoration: line-through;
 }
 
+iframe {
+  border: none;
+  outline: none;
+}
+
 .scroll::-webkit-scrollbar {
   width: 15px;
 }
