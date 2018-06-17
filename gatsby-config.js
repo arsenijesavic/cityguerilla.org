@@ -6,7 +6,6 @@ module.exports = {
 
   mapping: {
     'SitePluginConnection.packageJson.author': `MarkdownRemark`,
-    'MarkdownRemark.fields.books': `MarkdownRemark`,
   },
 
   plugins: [
@@ -20,6 +19,7 @@ module.exports = {
           MarkdownRemark: {
             name: node => node.frontmatter.name,
             images: node => node.frontmatter.images,
+            template: node => node.frontmatter.templateKey
           },
         },
       },

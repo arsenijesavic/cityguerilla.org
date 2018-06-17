@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
+import Link from 'gatsby-link'
 import { Grid, Cell } from '../components'
 import { Index } from 'elasticlunr'
 import searchIcon from '../assets/svg/Search-icon.svg'
+import styled from 'styled-components'
+import moment from 'moment'
 
 class SearchPage extends Component {
   state = {
@@ -40,6 +43,9 @@ class SearchPage extends Component {
 
   render() {
     const { query, results } = this.state
+    const actions = results.filter(v => v.template === 'action')
+    const projects = results.filter(v => v.template === 'project')
+    const members = results.filter(v => v.template === 'member')
 
     return (
       <Grid>
@@ -56,12 +62,87 @@ class SearchPage extends Component {
           />
         </Cell>
         <Cell clear />
-        {results &&
-          results.map(page => (
-            <Cell key={page.name} width={4} height={4}>
-              {page.name}
-            </Cell>
-          ))}
+
+
+        <Cell width={8} top={2} left={1}>
+          <CellTitle>Actions</CellTitle>
+          <div style={{ padding: '15px 30px' }}>
+            {actions &&
+              actions
+                .sort((a, b) => new Date(a.from) - new Date(b.from))
+                .map((project, i) => (
+                  <Link
+                    style={{ display: 'block', width: '100%', height: '100%' }}
+                    to={project.url}
+                  >
+                    <p
+                      style={{
+                        margin: '7.5px 0',
+                        whiteSpace: 'nowrap',
+                        width: '19em',
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                      }}
+                    >
+                      {moment(project.from, 'YYYY').year()}: {project.name}
+                    </p>
+                  </Link>
+                ))}
+          </div>
+        </Cell>
+
+        <Cell width={8} top={2} left={1}>
+          <CellTitle>Projects</CellTitle>
+          <div style={{ padding: '15px 30px' }}>
+            {projects &&
+              projects
+                .sort((a, b) => new Date(a.from) - new Date(b.from))
+                .map((project, i) => (
+                  <Link
+                    style={{ display: 'block', width: '100%', height: '100%' }}
+                    to={project.url}
+                  >
+                    <p
+                      style={{
+                        margin: '7.5px 0',
+                        whiteSpace: 'nowrap',
+                        width: '19em',
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                      }}
+                    >
+                      {moment(project.from, 'YYYY').year()}: {project.name}
+                    </p>
+                  </Link>
+                ))}
+          </div>
+        </Cell>
+
+        <Cell width={18} top={2} left={1}>
+          <CellTitle>Members</CellTitle>
+          <div style={{ padding: '15px 30px' }}>
+            {members &&
+              members.map((member, i) => (
+                <Link
+                  style={{ display: 'block', width: '100%', height: '100%' }}
+                  to={member.url}
+                >
+                  <p
+                    style={{
+                      margin: '7.5px 0',
+                      whiteSpace: 'nowrap',
+                      width: '19em',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                    }}
+                  >
+                    {member.name}
+                  </p>
+                </Link>
+              ))}
+          </div>
+        </Cell>
+
       </Grid>
     )
   }
@@ -75,4 +156,15 @@ export const query = graphql`
       index
     }
   }
+`
+
+const CellTitle = styled.p`
+  width: ${props => (props.width ? `${props.width * 45}px` : '180px')};
+  height: 45px;
+  background: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: lowercase;
+  padding: 8px 15px;
 `

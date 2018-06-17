@@ -24,8 +24,9 @@ const Cell = class extends React.Component {
       animation = true,
       children,
     } = this.props
-    const { autoHeight, isMounted } = this.state
-
+    const { isMounted } = this.state
+    const autoHeight = Math.ceil(this.node.clientHeight / 45) + 1
+    console.log(autoHeight)
     return (
       <div
         ref={node => (this.node = node)}
