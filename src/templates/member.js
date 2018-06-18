@@ -7,7 +7,18 @@ import { Grid, Cell } from '../components'
 import Draggable from 'react-draggable'
 
 const MemberPage = ({ data }) => {
-  const { name, location, from, to, image, website, involved, bio, tags, board } = {
+  const {
+    name,
+    location,
+    from,
+    to,
+    image,
+    website,
+    involved,
+    bio,
+    tags,
+    board,
+  } = {
     ...data.markdownRemark.frontmatter,
   }
 
@@ -105,20 +116,26 @@ const MemberPage = ({ data }) => {
 
       <Cell width={18} height={10} top={2} left={1}>
         <CellTitle>Creative Board</CellTitle>
-        {board && board.map((item, i) =>
-          <Draggable
-            key={i}
-            onStart={() => console.log('start')}
-            onStop={() => console.log('stop')}
-            defaultPosition={{ x: Math.floor(Math.random() * (45 * 15)), y: Math.floor(Math.random() * (45 * 7)) }}
-          >
-            <BoardItem>
-              {item.url
-                ? <iframe src={item.url} frameborder="0" />
-                : <img src={item.image} alt="" />}
-            </BoardItem>
-          </Draggable>
-        )}
+        {board &&
+          board.map((item, i) => (
+            <Draggable
+              key={i}
+              onStart={() => console.log('start')}
+              onStop={() => console.log('stop')}
+              defaultPosition={{
+                x: Math.floor(Math.random() * (45 * 15)),
+                y: Math.floor(Math.random() * (45 * 7)),
+              }}
+            >
+              <BoardItem>
+                {item.url ? (
+                  <iframe src={item.url} frameborder="0" />
+                ) : (
+                  <img src={item.image} alt="" />
+                )}
+              </BoardItem>
+            </Draggable>
+          ))}
       </Cell>
     </Grid>
   )
@@ -128,7 +145,8 @@ export default MemberPage
 
 const BoardItem = styled.div`
   position: absolute;
-  > iframe, img {
+  > iframe,
+  img {
     width: 135px;
     height: 135px;
     object-fit: cover;

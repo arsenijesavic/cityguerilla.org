@@ -63,7 +63,6 @@ class SearchPage extends Component {
         </Cell>
         <Cell clear />
 
-
         <Cell width={8} top={2} left={1}>
           <CellTitle>Actions</CellTitle>
           <div style={{ padding: '15px 30px' }}>
@@ -142,7 +141,6 @@ class SearchPage extends Component {
               ))}
           </div>
         </Cell>
-
       </Grid>
     )
   }

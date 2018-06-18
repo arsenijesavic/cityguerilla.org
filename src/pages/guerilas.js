@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import { Grid, Cell, Select } from '../components'
 import moment from 'moment'
 
-
 const GuerilasPage = ({ data }) => {
   const members = data.allMarkdownRemark.edges.map(v => ({
     ...v.node.frontmatter,
@@ -86,8 +85,6 @@ export const query = graphql`
     }
   }
 `
-
-
 
 const Member = ({ name, image, url }) => (
   <Cell

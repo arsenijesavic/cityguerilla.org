@@ -19,7 +19,7 @@ module.exports = {
           MarkdownRemark: {
             name: node => node.frontmatter.name,
             images: node => node.frontmatter.images,
-            template: node => node.frontmatter.templateKey
+            template: node => node.frontmatter.templateKey,
           },
         },
       },
