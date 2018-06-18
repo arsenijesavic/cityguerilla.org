@@ -1,0 +1,17 @@
+---
+  templateKey: "member"
+  name: "Goran Štrbo"
+  location: "Belgrade"
+  website: ""
+  bio: "Born: 18 May 1987\n\nPlace: Belgrade, Serbia\n\nMember of Goethe-Guerilla, musician, photographer, student of political science / journalism, diligent, persistent and shy. He loves sounds, light of all kind, thinks taking an elevator regularly is a healthy spiritual habit and that gas masks are the flavor of the month. He writes a blog, has MySpace and Facebook profiles, uses Flickr, tweets, has a last fm profile and mail addresses at yahoo and gmail - and besides all of that he leads a pretty real life with pretty real people who also lead pretty real lives. He's virtually never at home. He’s into street art and every kind of urban spam, audiotapes, field recordings, colors and forms.\n“Never believe someone who tells you that you aren’t able to change something. The ones who say this are just scared of change“. Die Ärzte"
+  from: "2010"
+  to: "2010"
+  image: "/img/GoranStrbo.jpg"
+  tags: 
+    - "Street-Art"
+    - "Art"
+    - "Belgrade"
+    - "Experimental Music"
+    - "Sound"
+    - "Writing"
+    - "People"

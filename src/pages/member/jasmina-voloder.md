@@ -1,0 +1,15 @@
+---
+  templateKey: "member"
+  name: "Jasmina Voloder"
+  location: "Sarajevo"
+  website: ""
+  bio: "I am Jasmina Voloder. I am 21 years old, live in Sarajevo and am a true cancer woman :) I study law, in my spare time I play basketball and like every form of competition - I think that healthy rivalry leads to quality. I like to read, to write, to create. The power of mind - yes, power of hand - no. I think, I understand, I forgive, I accept. Lead by will, under pressure by insecurity, I know nothing can be done, before it can be done."
+  from: "2011"
+  to: "2011"
+  image: "/img/JasminaVoloder.jpg"
+  tags: 
+    - "Art"
+    - "Writing"
+    - "Books"
+    - "Sport"
+    - "Bosnia and Herzegovina"

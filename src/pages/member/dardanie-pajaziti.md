@@ -1,0 +1,15 @@
+---
+  templateKey: "member"
+  name: "Dardanie Pajaziti"
+  location: "Prishtina"
+  website: ""
+  bio: "My name is Dardanie Pajaziti and I was born on 7 May 1990 in Prishtina. I have lived for 10 years with my family in North Rhine-Westphalia where I also finished elementary school. Since I were a child i was interested in art and creativity and had my own program for youngsters on the radio. Now I am at the end of my German language and literature studies. I hope that I will finish it successfully."
+  from: "2011"
+  to: "2012"
+  image: "/img/DardaniePajaziti.jpg"
+  tags: 
+    - "Art"
+    - "Creative Practice"
+    - "German"
+    - "Germany"
+    - "Kosovo"

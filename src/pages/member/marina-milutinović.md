@@ -1,0 +1,16 @@
+---
+  templateKey: "member"
+  name: "Marina Milutinović"
+  location: "Belgrade"
+  website: ""
+  bio: "Improvement of the art here, cooperation and knowledge exchange with others - these are the aims I am striving to achieve. I work and enjoy my life as a painter in the most beautiful city - Belgrade."
+  from: "2010"
+  to: "2010"
+  image: "/img/MarinaMilutinovic.jpg"
+  tags: 
+    - "Art"
+    - "Belgrade"
+    - "Idea Sharing"
+    - "Collaboration"
+    - "Knowledge Exchange"
+    - "Painting"

@@ -1,0 +1,18 @@
+---
+  templateKey: "member"
+  name: "Mladen Pešić"
+  location: "Belgrade"
+  website: ""
+  bio: "1986 Leskovac, 2004 Belgrade, 2009 Faculty of Architecture, 34m2, architecture, competitions, eXPlode, colleagues, again a little more architecture, urban development, city, country, public space, private space… Large, small, expensive, cheap… Group, individual, community."
+  from: "2010"
+  to: "2010"
+  image: "/img/MladenPesic.jpg"
+  tags: 
+    - "Architecture"
+    - "Music"
+    - "Belgrade"
+    - "Community"
+    - "Public Space"
+    - "Research on Cities"
+    - "Urbanism"
+    - "Privacy"

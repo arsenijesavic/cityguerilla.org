@@ -1,0 +1,18 @@
+---
+  templateKey: "member"
+  name: "Đurđija Vučinić"
+  location: "Belgrade"
+  website: ""
+  bio: "Student of the last year of Music science at the Faculty for Music. When I grow up, I will be conductor, music producer, composer for film and theater soundtrack, jazz pianist, jazz saxophonist and photographer. My favorite sound: tuning of the symphony orchestra before the conductor comes. Together with my fellow students I exert myself for editing and systematization of the data bank for national history of music."
+  from: "2010"
+  to: "2010"
+  image: "/img/DjurdjijaVucinic.jpg"
+  tags: 
+    - "Art"
+    - "Music"
+    - "Belgrade"
+    - "Heritage"
+    - "Photography"
+    - "Books"
+    - "Theater"
+    - "Film"

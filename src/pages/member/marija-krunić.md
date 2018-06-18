@@ -1,0 +1,18 @@
+---
+  templateKey: "member"
+  name: "Marija Krunić"
+  location: "Belgrade"
+  website: ""
+  bio: "At heart still a child, I was born in Belgrade where I am still growing up. I see the whole world as my home. From an early age on I have shown big interest in what is happening around me - both in the country and in the world - I have been interested in other cultures and societies that differ from that in which we’re living in. Therefore, sociology studies was the only right choice for me. A great passion and something that always return to with a smile is learning foreign languages. What gives me joy are dear people, unforgettable trips, a nice word and even a nicer deed, and, recently, different forms of social activism that gave me a possibility to influence my passive environment at least a little bit. I often wish the day would be at least eight hours longer, so I could accomplish everything I want and see everyone I would like to see in my life. But probably even that wouldn’t be enough."
+  from: "2011"
+  to: "2011"
+  image: "/img/MarijaKrunic.jpg"
+  tags: 
+    - "Art"
+    - "Belgrade"
+    - "Culture"
+    - "People"
+    - "Books"
+    - "Travelling"
+    - "Languages"
+    - "Sociology"

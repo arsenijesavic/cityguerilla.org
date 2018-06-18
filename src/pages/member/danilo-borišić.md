@@ -1,0 +1,16 @@
+---
+  templateKey: "member"
+  name: "Danilo Borišić"
+  location: "Belgrade"
+  website: ""
+  bio: "A salute to all men of good will! My name is Danilo, I live in Belgrade and study economics. My wish is to bring my linguistic skills to perfection and to travel around our planet to extend my horizon. I am interested in sociology and the human psyche. Because I have many obligations, I like to spend my spare time with nice and dear people somewhere far away from the tumult of the city. Daily routine can be terrible, so I try to enrich it."
+  from: "2010"
+  to: "2010"
+  image: "/img/DaniloBorisic.jpg"
+  tags: 
+    - "Belgrade"
+    - "Books"
+    - "Travelling"
+    - "Psychology"
+    - "Languages"
+    - "Sociology"

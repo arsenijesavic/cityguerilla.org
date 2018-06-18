@@ -1,0 +1,16 @@
+---
+  templateKey: "member"
+  name: "Ana Abramović"
+  location: "Zagreb"
+  website: ""
+  bio: "I live and study in Zagreb. I hope that my interests in literature, film, culture and in learning Russian and German will make me wiser and smarter in the years to come. In my spare time I eavesdrop on conversations in the tram and plan what to do in my non-spare time."
+  from: "2011"
+  to: "2012"
+  image: "/img/AnaAbramovic.jpg"
+  tags: 
+    - "Culture"
+    - "Books"
+    - "German"
+    - "Film"
+    - "Languages"
+    - "Croatia"

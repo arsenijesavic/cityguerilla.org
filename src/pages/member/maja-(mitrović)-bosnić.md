@@ -1,23 +1,13 @@
 ---
   templateKey: "member"
-  name: "Maja Bosnić"
+  name: "Maja (Mitrović) Bosnić"
   location: "Belgrade"
-  since: "2011 - 2018"
+  website: ""
+  bio: "Maja Bosnić has a PhD in Music Composition (Goldsmiths University of London, UK), as well as MA in Music Pedagogy (Faculty of Music, University of Arts in Belgrade, Serbia). Her research is based on examining the creative potential of audience, amateurs and non-musicians, while her findings are demonstrated in works that include the audience in a performance. Her projects have been performed throughout Europe with the support of Ministry of Culture of the Republic of Serbia and European Cultural Foundation. Working as a professor in an elementary music school and music high school she gained many years of pedagogical experience. Apart from that she has been a conductor of numerous different ensembles and organizer of creative music workshops. Maja is a founder of Association Zabuna - organization that works towards stimulating production and development of contemporary experimental music. She is a member of Composers Society of Serbia, as well as Royal Philharmonic Society in the UK. Her achievements were recognized by the Fund for Young Talents of the Ministry of Youth and Sport of the Republic of Serbia which awarded her  “Dositeja” scholarship five years in a row."
   from: "2011"
   to: "2018"
-  website: ""
   image: "/img/MajaMitrovic.jpg"
-  involved:
-    - "2015: G:DAY"
-    - "2015: Collective interpretation of the Spanish house"
-    - "2011: Speed Dating with German 2011"
-    - "2011: City Pleasantness Map"
-    - "2011: Guerilla Trashophonic Orchestra"
-    - "2011: Marking the Unofficial Public Toilets"
-    - "2011: Stammtisch – Regulars’ Table 2011"
-    - "2011: Another perspective of the city"
-  bio: "Maja Bosnić has a PhD in Music Composition (Goldsmiths University of London, UK), as well as MA in Music Pedagogy (Faculty of Music, University of Arts in Belgrade, Serbia). Her research is based on examining the creative potential of audience, amateurs and non-musicians, while her findings are demonstrated in works that include the audience in a performance. Her projects have been performed throughout Europe with the support of Ministry of Culture of the Republic of Serbia and European Cultural Foundation. Working as a professor in an elementary music school and music high school she gained many years of pedagogical experience. Apart from that she has been a conductor of numerous different ensembles and organizer of creative music workshops. Maja is a founder of Association Zabuna - organization that works towards stimulating production and development of contemporary experimental music. She is a member of Composers Society of Serbia, as well as Royal Philharmonic Society in the UK. Her achievements were recognized by the Fund for Young Talents of the Ministry of Youth and Sport of the Republic of Serbia which awarded her  “Dositeja” scholarship five years in a row."
-  tags:
+  tags: 
     - "Savamala"
     - "Art"
     - "Activism"

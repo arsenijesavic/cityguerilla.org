@@ -1,0 +1,17 @@
+---
+  templateKey: "member"
+  name: "Igor Cvejić"
+  location: "Belgrade"
+  website: ""
+  bio: "Igor Cvejić is in his final year of philosophy studies. He is particularly interested in activities that will lead to a more free and more open awareness of oneself, others, the world around us and everything that can be done in it, while facing the responsibility for your own actions.at the same time."
+  from: "2010"
+  to: "2010"
+  image: "/img/IgorCvejic.jpg"
+  tags: 
+    - "Art"
+    - "Music"
+    - "Belgrade"
+    - "Writing"
+    - "Books"
+    - "Philosophy"
+    - "Psychology"

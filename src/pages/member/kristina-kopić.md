@@ -1,0 +1,17 @@
+---
+  templateKey: "member"
+  name: "Kristina Kopić"
+  location: "Zagreb"
+  website: ""
+  bio: "I am Kristina and I am 22 years old. Family, friends, new acquaintances, traveling, songs, dances, books, movies - they are all parts of me, a mosaic I don’t want to lose, because they formed me as a person and helped me to grow responsibility for society.\nBesides that, I like to take a look into different fields - from sports to entertainment games up to rummaging through economic drawers, which hide a lot of interesting and uncanny information.\nI want to explore all these things and to give back something to society and I’m happy I got that chance.\nFor now I am studying Business administration, with an uncertain future. However, I hope that I will be able to filter my unique interests out of many others and to find myself in the work I will love. I wish that the results of my work can contribute to a better quality of life in my environment."
+  from: "2011"
+  to: "2011"
+  image: "/img/member_image737866.jpg"
+  tags: 
+    - "Music"
+    - "Books"
+    - "Film"
+    - "Travelling"
+    - "Sport"
+    - "Dance"
+    - "Croatia"

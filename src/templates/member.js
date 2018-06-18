@@ -22,7 +22,6 @@ const MemberPage = ({ data }) => {
     ...data.markdownRemark.frontmatter,
   }
 
-  console.log(board)
   return (
     <Grid>
       <Cell width={7} height={8} top={2} left={2}>
@@ -32,11 +31,11 @@ const MemberPage = ({ data }) => {
           <h3 style={{ fontWeight: '300' }}>
             {from} - {to}
           </h3>
-          <MemberLinks>
-            <span>links:</span>
-            <a href={website}>web</a>
-            <a href="">mail</a>
-          </MemberLinks>
+          {website &&
+            <MemberLinks>
+              <a href={website}>web</a>
+            </MemberLinks>
+          }
         </MemberInfo>
       </Cell>
 
@@ -53,8 +52,8 @@ const MemberPage = ({ data }) => {
             height: '269px',
             background: `url(${image})`,
             backgroundSize: 'cover',
+            position: 'relative',
             zIndex: '10000',
-            // objectFit: 'cover',
           }}
         />
       </Draggable>
@@ -131,8 +130,8 @@ const MemberPage = ({ data }) => {
                 {item.url ? (
                   <iframe src={item.url} frameborder="0" />
                 ) : (
-                  <img src={item.image} alt="" />
-                )}
+                    <img src={item.image} alt="" />
+                  )}
               </BoardItem>
             </Draggable>
           ))}

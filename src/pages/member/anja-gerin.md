@@ -2,13 +2,11 @@
   templateKey: "member"
   name: "Anja Gerin"
   location: "Sarajevo"
-  since: "2011 - 2012"
+  website: "web"
+  bio: "Having spent 14 years in a provincial town called Penzberg in Upper Bavaria, I decided to move back to Sarajevo because I was interested in my origin. I wanted to get to know more about the culture and to form my own opinion about the town in which I was born on 5 April 1990. I organized a pupils-exchange between my high school in Sarajevo and my former high school in Penzberg. After graduating in 2008 at 2nd high school in Sarajevo (IB-Diploma Program) I decided to start to study design. At that time I decided for product design at the Academy of Fine Arts in Sarajevo. In 2010 I worked as an organization assistant in the project „Park of Encounter“ led by the KuKuK collective from Stuttgart. The project’s aim regarded building three playgrounds for children which encouraged the child development. I like to cooperate on creative projects where teamwork plays a great role. I am determined and think that this project will give us all the opportunity to express ourselves creatively, and be part of the development of the culture program collecting precious experiences along the way."
   from: "2011"
   to: "2012"
-  website: "web"
   image: "/img/AnjaGerin.jpg"
-  involved: []
-  bio: "Having spent 14 years in a provincial town called Penzberg in Upper Bavaria, I decided to move back to Sarajevo because I was interested in my origin. I wanted to get to know more about the culture and to form my own opinion about the town in which I was born on 5 April 1990. I organized a pupils-exchange between my high school in Sarajevo and my former high school in Penzberg. After graduating in 2008 at 2nd high school in Sarajevo (IB-Diploma Program) I decided to start to study design. At that time I decided for product design at the Academy of Fine Arts in Sarajevo. In 2010 I worked as an organization assistant in the project „Park of Encounter“ led by the KuKuK collective from Stuttgart. The project’s aim regarded building three playgrounds for children which encouraged the child development. I like to cooperate on creative projects where teamwork plays a great role. I am determined and think that this project will give us all the opportunity to express ourselves creatively, and be part of the development of the culture program collecting precious experiences along the way."
   tags: 
     - "Design"
     - "Architecture"

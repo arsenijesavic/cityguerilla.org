@@ -1,0 +1,16 @@
+---
+  templateKey: "member"
+  name: "Bilja Radusin"
+  location: "Belgrade"
+  website: ""
+  bio: "Bilja Radusin is an economist with a creative vein. She loves autumn sceneries and the smell of rain. She visits various places in the city and imagines being on a trip through time."
+  from: "2010"
+  to: "2010"
+  image: "/img/BiljaRadusin.jpg"
+  tags: 
+    - "Art"
+    - "Music"
+    - "Belgrade"
+    - "Books"
+    - "Travelling"
+    - "Languages"

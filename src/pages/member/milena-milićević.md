@@ -1,0 +1,15 @@
+---
+  templateKey: "member"
+  name: "Milena Milićević"
+  location: "Belgrade"
+  website: ""
+  bio: "A Serbian who dreams and acts in several languages and always understands a smile. What makes her happy? Dear people, passionate dancing, crazy travels and the power of the right words. Soon a certified philologist and often master of her own destiny."
+  from: "2010"
+  to: "2010"
+  image: "/img/MilenaMilicevic.jpg"
+  tags: 
+    - "Belgrade"
+    - "Knowledge Exchange"
+    - "Books"
+    - "Dance"
+    - "Languages"

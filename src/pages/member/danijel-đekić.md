@@ -1,0 +1,15 @@
+---
+  templateKey: "member"
+  name: "Danijel Đekić"
+  location: "Zagreb"
+  website: ""
+  bio: "24 years are behind me. I study German philology and musicology in Zagreb. I search, wander, travel. I read, listen, think. But do I find answers? I admire nature and her creations - her durability which defies fads and the ephemeral."
+  from: "2011"
+  to: "2011"
+  image: "/img/member_image74806.jpg"
+  tags: 
+    - "Music"
+    - "Books"
+    - "German"
+    - "Travelling"
+    - "Croatia"

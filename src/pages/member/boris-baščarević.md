@@ -1,0 +1,15 @@
+---
+  templateKey: "member"
+  name: "Boris Baščarević"
+  location: "Belgrade"
+  website: ""
+  bio: "Boris Baščarević is an international studies student at the Faculty of Political Sciences at the University of Belgrade. At the same time he studies German studies at the Faculty of Philology. He likes to travel and is also interested in international organizations, international relations and foreign languages."
+  from: "2010"
+  to: "2010"
+  image: "/img/BorisBascarevic.jpg"
+  tags: 
+    - "Belgrade"
+    - "Books"
+    - "German"
+    - "Travelling"
+    - "Languages"

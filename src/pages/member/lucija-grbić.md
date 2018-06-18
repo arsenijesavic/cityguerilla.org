@@ -2,13 +2,11 @@
   templateKey: "member"
   name: "Lucija Grbić"
   location: "Zagreb"
-  since: "2012 - 2012"
+  website: ""
+  bio: "In my 24 years, I’ve dealt with a lot of things, but I still find new ones again and again. I’m searching for innovative solutions, for something inspiring, something I consider beautiful; or I just create my own something with my fantasy, and transfer it to reality with a pen or a brush, or by using photography. In my circle of friends I am the initiator and organizer of common activities. I am often in rush, but still I love this hectic rush. I love to discover new places, so I often wonder around, always accompanied by music. I exclude myself a bit from the world. As I love traveling so much, the fact that I probably won’t see every place that I want to see, is making me sad. But I defy this by traveling a lot."
   from: "2012"
   to: "2012"
-  website: ""
   image: "/img/LucijaGrbic.jpg"
-  involved: []
-  bio: "In my 24 years, I’ve dealt with a lot of things, but I still find new ones again and again. I’m searching for innovative solutions, for something inspiring, something I consider beautiful; or I just create my own something with my fantasy, and transfer it to reality with a pen or a brush, or by using photography. In my circle of friends I am the initiator and organizer of common activities. I am often in rush, but still I love this hectic rush. I love to discover new places, so I often wonder around, always accompanied by music. I exclude myself a bit from the world. As I love traveling so much, the fact that I probably won’t see every place that I want to see, is making me sad. But I defy this by traveling a lot."
   tags: 
     - "Flânerie"
     - "Art"

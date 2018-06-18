@@ -1,0 +1,16 @@
+---
+  templateKey: "member"
+  name: "Isidora Stanković"
+  location: "Belgrade"
+  website: ""
+  bio: "Notes, ink, thunderstorm, tradition. Rhythm, sublimity, fog, culture. Sun, ambitions, rocks, picture. Minor, creativity, mask, waves."
+  from: "2010"
+  to: "2010"
+  image: "/img/IsidoraStankovic.jpg"
+  tags: 
+    - "Music"
+    - "Belgrade"
+    - "Creative Practice"
+    - "Culture"
+    - "Travelling"
+    - "Languages"

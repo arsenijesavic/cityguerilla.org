@@ -132,13 +132,16 @@ collections:
           - {label: "Name", name: "name", widget: "string"}
           - {label: "link", name: "link", widget: "string"}
 
+
+
+
   - name: "members"
     label: "Members"
     folder: "src/pages/member"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "member"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Bio", name: "bio", widget: "markdown"}
       - {label: "Image", name: "image", widget: "image"}
@@ -147,13 +150,9 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Location" , name: "location", widget: "string"}
       - {label: "Website" , name: "website", widget: "string"}
-      - label: "act"
-        name: "act"
-        widget: "object"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "markdown"}
-          - {label: "Date", name: "date", widget: "date"}
+
+
+
 
   - name: "creative-board"
     label: "Creative Board"
@@ -186,8 +185,13 @@ collections:
         limit: "300"
         collection: "projects"
         searchFields: ["name"]
-
       - {label: "Image", name: "image", widget: "image"}
+      - label: "Item"
+        name: "item"
+        widget: "list"
+        fields:
+          - {label: "url", name: "url", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
 
   - name: "pages"
     label: "Pages"

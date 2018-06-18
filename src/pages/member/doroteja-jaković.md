@@ -1,0 +1,18 @@
+---
+  templateKey: "member"
+  name: "Doroteja Jaković"
+  location: "Zagreb"
+  website: ""
+  bio: "Once a friend of mine called me “a friend of people and life“. The old sport made me laugh. Yes, it’s true. Doris loves people, she’s in love with people of all cultures, in all corners of the world - BOUNDLESSLY. Challenge, movement, dynamic, music - especially the loud one - green nature - education - art - exploration of unknown and slightly dangerous terrain, not quitting, civil society and activism, interculturalism, human rights, international exchange and encounters, social engagement and projects, networking and connecting, and also crazy, spontaneous and far journeys, are things that form my character and feed my soul. For that I am grateful."
+  from: "2012"
+  to: "2012"
+  image: "/img/DorotejaJakovic.jpg"
+  tags: 
+    - "Art"
+    - "Research on Cities"
+    - "Social Activism"
+    - "People"
+    - "Travelling"
+    - "Education"
+    - "Croatia"
+    - "Civil society"

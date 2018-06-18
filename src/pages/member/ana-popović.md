@@ -1,0 +1,18 @@
+---
+  templateKey: "member"
+  name: "Ana Popović"
+  location: "Belgrade"
+  website: ""
+  bio: "I am student of the theatrical-direction and literature. I notice that there is too much theater in life and hope that I will bring at least a little life in the theater. In my spare time I collect rhetorical stylistic devices."
+  from: "2011"
+  to: "2011"
+  image: "/img/AnaPopovic.jpg"
+  tags: 
+    - "Art"
+    - "Music"
+    - "Belgrade"
+    - "People"
+    - "Books"
+    - "Theater"
+    - "Travelling"
+    - "Poetry"

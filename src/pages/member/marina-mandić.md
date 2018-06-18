@@ -1,0 +1,16 @@
+---
+  templateKey: "member"
+  name: "Marina Mandić"
+  location: "Zagreb"
+  website: ""
+  bio: "I am from Zagreb and study French and Spanish. Although I take every chance to escape the city to see new places, every time I’m happy to come back to it and find again new things to explore, like new districts in which I can get lost.\nI love the unknown and the different, getting to know different cultures and customs, talking to strangers, discovering and creating things.\nLanguages are my passion. I talk a lot, I listen a lot. The more languages, the merrier, even if they were unknown."
+  from: "2012"
+  to: "2012"
+  image: "/img/MarinaMandic.jpg"
+  tags: 
+    - "Revealing"
+    - "Creation"
+    - "Culture"
+    - "Books"
+    - "Languages"
+    - "Croatia"

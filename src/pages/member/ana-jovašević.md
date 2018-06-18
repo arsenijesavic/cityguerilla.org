@@ -1,0 +1,16 @@
+---
+  templateKey: "member"
+  name: "Ana Jovašević"
+  location: "Belgrade"
+  website: ""
+  bio: "Hello my name is Ana (Jovašević). I am 22 and study Culture Management at the Faculty of Drama Arts. I’m always on the move, so see you somewhere!"
+  from: "2010"
+  to: "2010"
+  image: "/img/AnaJovasevic.jpg"
+  tags: 
+    - "Music"
+    - "Belgrade"
+    - "Culture"
+    - "Books"
+    - "Theater"
+    - "Berlin"

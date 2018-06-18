@@ -2,16 +2,11 @@
   templateKey: "member"
   name: "Miona Stefanović"
   location: "Belgrade"
-  since: "2010 - 2010"
+  website: ""
+  bio: "I am Miona Stefanović. I’m finishing my fifth year at the Faculty of Applied Arts, department of Ceramics studies. Besides that I play tennis, ski, like photography and dogs… I am sociable and communicative, even if I stutter a bit, and I don’t bite, unless that is required from me!"
   from: "2010"
   to: "2010"
-  website: ""
   image: "/img/MionaStefanovic.jpg"
-  involved: 
-    - "2010: Interventions in public space"
-    - "2010: The Museum of Yugoslav Ships"
-    - "2010: Freilautzeichnen – drawing loudly through the silent city"
-  bio: "I am Miona Stefanović. I’m finishing my fifth year at the Faculty of Applied Arts, department of Ceramics studies. Besides that I play tennis, ski, like photography and dogs… I am sociable and communicative, even if I stutter a bit, and I don’t bite, unless that is required from me!"
   tags: 
     - "Art"
     - "Belgrade"

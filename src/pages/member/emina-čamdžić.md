@@ -1,0 +1,17 @@
+---
+  templateKey: "member"
+  name: "Emina Čamdžić"
+  location: "Sarajevo"
+  website: ""
+  bio: "I am Emina Čamdžić, a 23 year old architect from Sarajevo. Things that partially define me are architecture, painting, drawing, photography (with a regular digital camera and bent corners), music (I don’t know, how the world would survive without it), smiling (everything is easier when you smile), fashion (an essential component of everyone), Jane Austen or Dostoevsky (answer: both) etc. I love traveling and getting to know new people and cultures. Besides, I enjoy the beauty of Sarajevo and Bosnia and Herzegovina and every day I marvel at new experiences and little things that I notice while walking through the streets of Bascarsija or on the Wilson promenade."
+  from: "2011"
+  to: "2012"
+  image: "/img/EminaCamdzic.jpg"
+  tags: 
+    - "Architecture"
+    - "Music"
+    - "Drawing"
+    - "Photography"
+    - "Books"
+    - "Painting"
+    - "Bosnia and Herzegovina"

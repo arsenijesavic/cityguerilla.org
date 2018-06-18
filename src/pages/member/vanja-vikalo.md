@@ -1,0 +1,18 @@
+---
+  templateKey: "member"
+  name: "Vanja Vikalo"
+  location: "Herceg Novi"
+  website: "web"
+  bio: "Primarily, I deal with illustrations, besides that I experiment with live-video and with like-minded people from Herceg Novi and Belgrade I organize a festival of contemporary art in Herceg Novi called “Sinestezija”. All three areas interest me pretty much, so I feel split at the moment, but I try to merge all three things into one. I haven’t stopped drawing since my first contact with a pencil, and the first time I saw it as work in my first academic year when I began to illustrate for Rope Clothing. An important moment was the foundation of D-Bend-Studio together with the designer Mirko Lazarevic. Our aim was to concentrate on alternative music and to avoid the corporate approach to design. In short time we managed to work for brands and organizations that were important to us, such as Exit Festival, Kidspatch, Zla Zla, Fox TV among others.\n\nOur works were published many times in books, mostly in Asia, as well as on different blogs. At the moment you can find me in Herceg Novi, I am drinking coffee next to the fishermen and think about a new edition of the festival."
+  from: "2012"
+  to: "2012"
+  image: "/img/VanjaVikalo.jpg"
+  tags: 
+    - "Street-Art"
+    - "Design"
+    - "Illustration"
+    - "Art"
+    - "Music"
+    - "Belgrade"
+    - "Drawing"
+    - "Herceg Novi"

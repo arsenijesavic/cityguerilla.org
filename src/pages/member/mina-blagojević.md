@@ -2,15 +2,11 @@
   templateKey: "member"
   name: "Mina Blagojević"
   location: "Belgrade"
-  since: "2014 - 2014"
+  website: ""
+  bio: "A happy person of a wide smile and often childish ideas, who accidentally ended up at the Faculty of Political Science, with a naive thought that this world can become much better. In the end, however, she learned to swim in it expelling justice whenever it’s possible and whenever she’s not lazy! She thinks green and \"sings\" aloud!"
   from: "2014"
   to: "2014"
-  website: ""
   image: "/img/MinaBlagojevic.jpg"
-  involved: 
-    - "2014: The Parking Terrace"
-    - "2014: Puls of Savamala"
-  bio: "A happy person of a wide smile and often childish ideas, who accidentally ended up at the Faculty of Political Science, with a naive thought that this world can become much better. In the end, however, she learned to swim in it expelling justice whenever it’s possible and whenever she’s not lazy! She thinks green and \"sings\" aloud!"
   tags: 
     - "Street-Art"
     - "Savamala"

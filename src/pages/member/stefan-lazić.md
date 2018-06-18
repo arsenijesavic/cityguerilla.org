@@ -1,0 +1,17 @@
+---
+  templateKey: "member"
+  name: "Stefan Lazić"
+  location: "Belgrade"
+  website: ""
+  bio: "I was born in Belgrade, where I grew up. I went to school there, and I did that a bit in some other countries as well. I have been writing since high school, and in the last few years I have been part of the music magazine “Nocturne”. By working there I merged my love of music and writing, so spending time with earphones in my ears now has a multiple role. Although I am a graduate economist, I am turned to culture, art and working with children through various activities, so I still walk different paths looking for the one that will become my way. Through the work with Goethe-Guerilla, I will try to connect my love to Belgrade with the benefit it can have from our creativity and ideas, in order to eventually incorporate a part of us into its appearance and identity."
+  from: "2013"
+  to: "2013"
+  image: "/img/StefanLazic.jpg"
+  tags: 
+    - "Savamala"
+    - "Music"
+    - "Belgrade"
+    - "Research on Cities"
+    - "Culture"
+    - "Writing"
+    - "Books"
