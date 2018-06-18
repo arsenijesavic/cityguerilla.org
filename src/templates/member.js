@@ -31,11 +31,11 @@ const MemberPage = ({ data }) => {
           <h3 style={{ fontWeight: '300' }}>
             {from} - {to}
           </h3>
-          {website &&
+          {website && (
             <MemberLinks>
               <a href={website}>web</a>
             </MemberLinks>
-          }
+          )}
         </MemberInfo>
       </Cell>
 
@@ -113,29 +113,32 @@ const MemberPage = ({ data }) => {
         </div>
       </Cell>
 
-      <Cell width={18} height={10} top={2} left={1}>
-        <CellTitle>Creative Board</CellTitle>
-        {board &&
-          board.map((item, i) => (
-            <Draggable
-              key={i}
-              onStart={() => console.log('start')}
-              onStop={() => console.log('stop')}
-              defaultPosition={{
-                x: Math.floor(Math.random() * (45 * 15)),
-                y: Math.floor(Math.random() * (45 * 7)),
-              }}
-            >
-              <BoardItem>
-                {item.url ? (
-                  <iframe src={item.url} frameborder="0" />
-                ) : (
-                    <img src={item.image} alt="" />
-                  )}
-              </BoardItem>
-            </Draggable>
-          ))}
-      </Cell>
+      {board &&
+        board.length > 0 && (
+          <Cell width={18} height={10} top={2} left={1}>
+            <CellTitle>Creative Board</CellTitle>
+            {board &&
+              board.map((item, i) => (
+                <Draggable
+                  key={i}
+                  onStart={() => console.log('start')}
+                  onStop={() => console.log('stop')}
+                  defaultPosition={{
+                    x: Math.floor(Math.random() * (45 * 15)),
+                    y: Math.floor(Math.random() * (45 * 7)),
+                  }}
+                >
+                  <BoardItem>
+                    {item.url ? (
+                      <iframe src={item.url} frameborder="0" />
+                    ) : (
+                      <img src={item.image} alt="" />
+                    )}
+                  </BoardItem>
+                </Draggable>
+              ))}
+          </Cell>
+        )}
     </Grid>
   )
 }
