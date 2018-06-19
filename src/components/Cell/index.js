@@ -28,7 +28,7 @@ const Cell = class extends React.Component {
 
     const { isMounted } = this.state
     const autoHeight = this.node && Math.ceil(this.node.clientHeight / 45)
-
+    console.log(autoHeight)
     return (
       <div
         ref={node => (this.node = node)}

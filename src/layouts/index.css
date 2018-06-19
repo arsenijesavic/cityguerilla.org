@@ -39,6 +39,18 @@ iframe {
   outline: none;
 }
 
+
+
+
+
+.tag-cloud-tag {
+  cursor: pointer;
+}
+
+.tag-cloud-tag:hover {
+  text-decoration: line-through;
+}
+
 .scroll::-webkit-scrollbar {
   width: 15px;
 }

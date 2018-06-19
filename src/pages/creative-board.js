@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Grid, Cell } from '../components'
+import { Grid, Cell, Select } from '../components'
 import { Tooltip } from 'react-tippy'
 
 const CreativeBoardPage = ({ data }) => {
@@ -23,6 +23,20 @@ const CreativeBoardPage = ({ data }) => {
 
   return (
     <Grid>
+
+      <Cell width={4} left={8} height={1} bottom={2}>
+        <Select
+          id="from"
+          placeholder="Category"
+          options={boards
+            .map(v => v.category)
+            .filter((v, i, a) => a.indexOf(v) === i)
+          }
+          onChange={() => console.log('chang')}
+        />
+      </Cell>
+
+
       {boards &&
         boards.map((board, i) => (
           <Cell key={i} {...cellSize(board.category)}>
@@ -37,13 +51,13 @@ const CreativeBoardPage = ({ data }) => {
               {board.image ? (
                 <ImageWithZoom src={board.image} alt="" />
               ) : (
-                <iframe
-                  width="100%"
-                  height="315"
-                  src={board.url}
-                  frameBorder="0"
-                />
-              )}
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src={board.url}
+                    frameBorder="0"
+                  />
+                )}
               <div
                 style={{
                   position: 'absolute',

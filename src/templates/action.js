@@ -26,6 +26,7 @@ const ActionPage = ({ data }) => {
   } = {
     ...data.markdownRemark.frontmatter,
   }
+  console.log(collaborators)
 
   return (
     <Grid>
@@ -252,8 +253,10 @@ const ActionPage = ({ data }) => {
             </ul>
           </Cell>
         )}
+
+
       {collaborators &&
-        collaborators.length > 1 && (
+        collaborators.length > 0 && (
           <Cell width={7} top={2} right={1} align="right" clear>
             <div
               style={{ width: '135px', height: '45px', background: 'black' }}
@@ -319,6 +322,19 @@ const ActionPage = ({ data }) => {
           />
         </Cell>
       )}
+{partners && partners.length > 0 &&
+      <Cell width={18}  top={2} left={1}>
+      <div style={{width:'135px',height:'135px'}}>
+
+      {partners.map((v,i)=>
+        <img
+        style={{ width:'100%',height:'100%',objectFit:'contain'}}
+         src="http://www.arts.bg.ac.rs/wp-content/uploads/2015/04/image.jpg" alt=""/>
+      )}
+
+      </div>
+      </Cell>
+}
     </Grid>
   )
 }

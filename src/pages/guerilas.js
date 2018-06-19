@@ -23,16 +23,25 @@ const GuerilasPage = ({ data }) => {
     active.forEach(x => (years[x] = [...years[x], ...v]))
   })
 
+
   return (
     <Grid>
-      <Cell width={20} height={1} bottom={1} background={false}>
-        <Select />
+      <Cell width={4} left={8} height={1} bottom={1}>
+        <Select
+          id="from"
+          placeholder="Year"
+          options={members
+            .map(v => v.from)
+            .filter((v, i, a) => a.indexOf(v) === i)
+            .sort((a, b) => Number(b) - Number(a))}
+          onChange={() => console.log('chang')}
+        />
       </Cell>
 
       {years &&
         Object.keys(years).map((v, i) => (
           <Grid key={i}>
-            <Cell width={5} height={1} top={1} right={1} left={2} bottom={1}>
+            <Cell width={5} height={1} top={1} right={1} left={2} bottom={1} clear>
               <div style={{ background: 'black' }}>
                 <h3
                   style={{
