@@ -2,8 +2,7 @@ import React from 'react'
 import { navigateTo } from 'gatsby-link'
 import kebabCase from 'lodash/kebabCase'
 import { Grid, Cell } from '../components'
-import { TagCloud } from "react-tagcloud"
-
+import { TagCloud } from 'react-tagcloud'
 
 const TagCloudPage = ({ data }) => {
   const tags = data.allMarkdownRemark.group
@@ -14,12 +13,14 @@ const TagCloudPage = ({ data }) => {
     <Grid>
       <Cell width={18} top={1} left={1}>
         <div style={{ padding: '15px 30px', width: '100%' }}>
-
           <TagCloud
             minSize={12}
             maxSize={35}
             disableRandomColor={true}
-            tags={tags && tags.map(v => ({ value: v.fieldValue, count: v.totalCount }))}
+            tags={
+              tags &&
+              tags.map(v => ({ value: v.fieldValue, count: v.totalCount }))
+            }
             onClick={tag => navigateTo(`tags/${kebabCase(tag.value)}`)}
           />
           {/* {tags &&
@@ -34,7 +35,6 @@ const TagCloudPage = ({ data }) => {
                 </p>
               </Link>
             ))} */}
-
         </div>
       </Cell>
     </Grid>

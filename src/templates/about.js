@@ -7,7 +7,9 @@ import Draggable from 'react-draggable'
 import uilogo from '../assets/images/urban-incubator-logo-l.png'
 
 const AboutPage = ({ data }) => {
-  const { details, timeline } = { ...data.markdownRemark.frontmatter }
+  const { details, timeline, documents } = {
+    ...data.markdownRemark.frontmatter,
+  }
   const projects = data.projects.edges.map(v => ({
     ...v.node.frontmatter,
     url: v.node.fields.slug,
@@ -45,9 +47,6 @@ const AboutPage = ({ data }) => {
         </div>
       </Cell>
 
-      {/* <Cell width={7} height={17} top={-2} align="right">
-        <CellTitle>Timeline</CellTitle>
-      </Cell> */}
       {timeline &&
         timeline.map((event, i) => (
           <Cell key={i} width={1} height={1} top={i > 0 && 1} left={4}>
@@ -89,7 +88,9 @@ const AboutPage = ({ data }) => {
         background={false}
         index={9000}
       >
-        <Folder />
+        <Folder>
+          {documents && documents.map((doc, i) => <p key={i}>{doc.name}</p>)}
+        </Folder>
       </Cell>
 
       <Cell width={2} height={2} top={1} left={4} background={false}>
@@ -458,11 +459,14 @@ const FolderWindowHandle = styled.div`
   }
 `
 
+const FolderWindowInner = styled.div``
+
 class Folder extends React.Component {
   state = {
     isClicked: false,
   }
   render() {
+    const { children } = this.props
     const { isClicked } = this.state
 
     return (
@@ -487,6 +491,8 @@ class Folder extends React.Component {
                 </FolderWindowHandle>
               </strong>
             )}
+
+            {isClicked && <FolderWindowInner>{children}</FolderWindowInner>}
           </FolderWindow>
         </Draggable>
       </FolderWrap>
@@ -543,3 +549,6 @@ const Document = () => (
     </svg>
   </div>
 )
+
+// <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.74 604.67">
+//                                         <title>pdf-icon</title><path d="M7.49,58.55c2-.41,17.22.08,26.63-.2.29-3.78.13-23.89.13-23.89s22.85.12,28.53-.37c.29-5.27-.21-27.24-.21-27.24s221-1.24,289.77-1.24c20.08,22.17,40.22,44.28,60.21,66.53q35.61,39.65,71,79.5V443.7c-.2,3.15-1.37,113.16-1.37,113.16s-22.56.18-27.77.57c-.45,5.59-.05,28.47-.05,28.47s-22.49,0-26.92.34c0,4.12-.14,24-.14,24L8.94,609.92S5.35,59,7.49,58.55Zm332.21-40H76.25V544H470.3V164.33h-6.23c-37-.14-124-1.62-124-1.62s.21-3.72.18-11.43q-.28-62.95-.53-125.89C339.69,23.28,339.69,21.18,339.69,18.59ZM441,557H434.3q-166.12-.4-332.25-.82c-8.82,0-37.35,0-37.35,0s0-3.63-.25-11.42c-.4-12.51-.72-25-.74-37.55q-.33-226.44-.56-452.88c0-2.21,0-4.41,0-6.7H46.71V573H441ZM414.43,586h-6q-62.69-.14-125.39-.29c-78.3-.29-248.19-1-248.19-1s.13-2.59-.07-13.09c-.31-15.87-.61-31.74-.63-47.61q-.33-222.74-.56-445.47c0-2.23,0-4.46,0-6.92H20.28v525.6H414.43ZM353.11,24.42V151.19c13,.83,109.25.26,114.5-.13C430.07,109.59,391.52,66.86,353.11,24.42Z" transform="translate(-6.81 -5.61)"></path><path d="M228.81,338.28V231.18c.31-.23.59-.62.87-.62,18,.19,36-.34,53.84.88,14.31,1,24.52,9.76,30.16,22.71,8.45,19.4,8.68,39.38,1.11,59.13-5.39,14.08-15.9,23.6-30.94,24.69C265.69,339.29,247.37,338.28,228.81,338.28Zm22-17.71c9.06,0,17.68.48,26.22-.13,9.17-.66,15.26-5.95,17.63-15a77.77,77.77,0,0,0,.35-39.19c-2.07-8.21-7.05-14.71-15.75-16-9.27-1.38-18.77-1.3-28.45-1.88Z" transform="translate(-6.81 -5.61)"></path><path d="M127.2,231.39c19.69,0,39-1.21,58,.36,17.32,1.42,27.52,18.38,24.91,37.36-2.34,17-13.71,27.56-31.43,28.47-9.64.5-19.33.09-29.67.09V339H127.2Zm22,48.73c8.9-.47,17.34-.51,25.68-1.46,7.87-.9,12.45-6.39,12.71-13.81.27-7.74-4-14.11-11.94-15-8.63-.94-17.44-.21-26.45-.21Z" transform="translate(-6.81 -5.61)"></path><path d="M339.07,230.61h74.1v18h-52v25.82H406v18.43H360.92v46H339.07Z" transform="translate(-6.81 -5.61)"></path><rect x="65.36" y="403.45" width="399.87" height="137.05"></rect></svg>

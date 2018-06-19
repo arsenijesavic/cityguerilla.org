@@ -23,19 +23,16 @@ const CreativeBoardPage = ({ data }) => {
 
   return (
     <Grid>
-
       <Cell width={4} left={8} height={1} bottom={2}>
         <Select
           id="from"
           placeholder="Category"
           options={boards
             .map(v => v.category)
-            .filter((v, i, a) => a.indexOf(v) === i)
-          }
+            .filter((v, i, a) => a.indexOf(v) === i)}
           onChange={() => console.log('chang')}
         />
       </Cell>
-
 
       {boards &&
         boards.map((board, i) => (
@@ -51,13 +48,13 @@ const CreativeBoardPage = ({ data }) => {
               {board.image ? (
                 <ImageWithZoom src={board.image} alt="" />
               ) : (
-                  <iframe
-                    width="100%"
-                    height="315"
-                    src={board.url}
-                    frameBorder="0"
-                  />
-                )}
+                <iframe
+                  width="100%"
+                  height="315"
+                  src={board.url}
+                  frameBorder="0"
+                />
+              )}
               <div
                 style={{
                   position: 'absolute',

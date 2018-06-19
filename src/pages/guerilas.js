@@ -23,7 +23,6 @@ const GuerilasPage = ({ data }) => {
     active.forEach(x => (years[x] = [...years[x], ...v]))
   })
 
-
   return (
     <Grid>
       <Cell width={4} left={8} height={1} bottom={1}>
@@ -41,7 +40,15 @@ const GuerilasPage = ({ data }) => {
       {years &&
         Object.keys(years).map((v, i) => (
           <Grid key={i}>
-            <Cell width={5} height={1} top={1} right={1} left={2} bottom={1} clear>
+            <Cell
+              width={5}
+              height={1}
+              top={1}
+              right={1}
+              left={2}
+              bottom={1}
+              clear
+            >
               <div style={{ background: 'black' }}>
                 <h3
                   style={{
