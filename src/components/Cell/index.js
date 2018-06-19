@@ -1,7 +1,6 @@
 import React from 'react'
 
 class Cell extends React.Component {
-
   state = {}
 
   componentDidMount() {
@@ -20,8 +19,7 @@ class Cell extends React.Component {
 
   updateHeight() {
     const autoHeight = Math.ceil(this.node.clientHeight / 45)
-    if (this.state.autoHeight !== autoHeight)
-      this.setState({ autoHeight })
+    if (this.state.autoHeight !== autoHeight) this.setState({ autoHeight })
   }
 
   render() {
@@ -43,13 +41,16 @@ class Cell extends React.Component {
 
     const { isMounted, autoHeight } = this.state
 
-
     return (
       <div
         ref={node => (this.node = node)}
         style={{
           width: `${45 * width}px`,
-          height: height ? `${45 * height}px` : autoHeight === 'auto' ? 'auto' : `${45 * autoHeight}px`,
+          height: height
+            ? `${45 * height}px`
+            : autoHeight === 'auto'
+              ? 'auto'
+              : `${45 * autoHeight}px`,
           marginTop: top && `${45 * top}px`,
           marginRight: right && `${45 * right}px`,
           marginBottom: bottom && `${45 * bottom}px`,

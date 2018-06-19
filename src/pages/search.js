@@ -70,26 +70,21 @@ class SearchPage extends Component {
           <CellTitle>Actions</CellTitle>
           <div style={{ width: '100%', height: '100%', padding: '15px 30px' }}>
             {actions &&
-              actions
-                .map((action, i) => (
-                  <Link
-                    key={i}
-                    style={{ display: 'block' }}
-                    to={action.url}
+              actions.map((action, i) => (
+                <Link key={i} style={{ display: 'block' }} to={action.url}>
+                  <p
+                    style={{
+                      margin: '7.5px 0',
+                      whiteSpace: 'nowrap',
+                      width: '19em',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                    }}
                   >
-                    <p
-                      style={{
-                        margin: '7.5px 0',
-                        whiteSpace: 'nowrap',
-                        width: '19em',
-                        overflow: 'hidden',
-                        textOverflow: 'ellipsis',
-                      }}
-                    >
-                      {moment(action.from, 'YYYY').year()}: {action.name}
-                    </p>
-                  </Link>
-                ))}
+                    {moment(action.from, 'YYYY').year()}: {action.name}
+                  </p>
+                </Link>
+              ))}
           </div>
         </Cell>
 
@@ -100,11 +95,7 @@ class SearchPage extends Component {
               projects
                 .sort((a, b) => new Date(a.from) - new Date(b.from))
                 .map((project, i) => (
-                  <Link
-                    key={i}
-                    style={{ display: 'block' }}
-                    to={project.url}
-                  >
+                  <Link key={i} style={{ display: 'block' }} to={project.url}>
                     <p
                       style={{
                         margin: '7.5px 0',
@@ -126,11 +117,7 @@ class SearchPage extends Component {
           <div style={{ width: '100%', height: '100%', padding: '15px 30px' }}>
             {members &&
               members.map((member, i) => (
-                <Link
-                  key={i}
-                  style={{ display: 'block' }}
-                  to={member.url}
-                >
+                <Link key={i} style={{ display: 'block' }} to={member.url}>
                   <p
                     style={{
                       margin: '7.5px 0',
@@ -160,7 +147,6 @@ export const query = graphql`
     }
   }
 `
-
 
 const CellTitle = styled.p`
   width: ${props => (props.width ? `${props.width * 45}px` : '180px')};

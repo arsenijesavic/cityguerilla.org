@@ -189,7 +189,8 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
             )
             .map(v => ({ ...v.frontmatter, url: v.fields.slug }))
 
-          involved.forEach(v => console.log(v.name))
+          //involved.forEach(v => console.log(v.name))
+
           node.frontmatter = {
             ...node.frontmatter,
             involved,

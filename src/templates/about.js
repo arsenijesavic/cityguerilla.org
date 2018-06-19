@@ -6,7 +6,6 @@ import { Grid, Cell } from '../components'
 import Draggable from 'react-draggable'
 import uilogo from '../assets/images/urban-incubator-logo-l.png'
 
-
 const AboutPage = ({ data }) => {
   const { details, timeline, documents } = {
     ...data.markdownRemark.frontmatter,
@@ -50,7 +49,14 @@ const AboutPage = ({ data }) => {
 
       {timeline &&
         timeline.map((event, i) => (
-          <Cell key={i} width={3} height={1} top={i > 0 && 1} left={(i % 2)+1}  index={Math.floor(10000/(i+1))} >
+          <Cell
+            key={i}
+            width={3}
+            height={1}
+            top={i > 0 && 1}
+            left={(i % 2) + 1}
+            index={Math.floor(10000 / (i + 1))}
+          >
             <TimelineEvent>
               <TimelineDetails>
                 <h3>{moment(event.year).format('YYYY')}</h3>
@@ -140,15 +146,12 @@ const TimelineDetails = styled.div`
       width: 100%;
       opacity: 1;
       visibility: visible;
-
     }
   }
 
   > h3 {
     color: white;
   }
-
-
 `
 
 export const aboutPageQuery = graphql`

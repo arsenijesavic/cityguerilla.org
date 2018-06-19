@@ -26,8 +26,6 @@ const ActionPage = ({ data }) => {
   } = {
     ...data.markdownRemark.frontmatter,
   }
-  console.log(images)
-
 
   return (
     <Grid>
@@ -41,24 +39,24 @@ const ActionPage = ({ data }) => {
       </Cell>
 
       <Cell width={12} height={6} top={1}>
-          <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
+        <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
           <Carousel
-          // renderBottomLeftControls={({ previousSlide }) => (
-          //   <button style={{width:'45px', height:'45px', padding:'0', margin:'0' }} onClick={previousSlide}>
-          //   BACK
-          //   </button>
-          // )}
-           autoplay
-           >
+            // renderBottomLeftControls={({ previousSlide }) => (
+            //   <button style={{width:'45px', height:'45px', padding:'0', margin:'0' }} onClick={previousSlide}>
+            //   BACK
+            //   </button>
+            // )}
+            autoplay
+          >
             {images &&
-              images.map((image, i) =>
-              <img
-              key={i}
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          src={image.image}
-          alt=""
-        />
-              )}
+              images.map((image, i) => (
+                <img
+                  key={i}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  src={image.image}
+                  alt=""
+                />
+              ))}
           </Carousel>
         </div>
       </Cell>
@@ -343,7 +341,7 @@ const ActionPage = ({ data }) => {
             <div style={{ width: '135px', height: '135px' }}>
               {partners.map((v, i) => (
                 <img
-                key={i}
+                  key={i}
                   style={{
                     width: '100%',
                     height: '100%',
