@@ -310,7 +310,7 @@ const ActionPage = ({ data }) => {
 
       {projects &&
         projects.length > 0 && (
-          <Cell width={4} height={1} left={2} clear background={false}>
+          <Cell width={4} height={1} top={2} left={2} clear background={false}>
             <CellTitle>Projects</CellTitle>
           </Cell>
         )}
