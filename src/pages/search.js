@@ -26,6 +26,7 @@ class SearchPage extends Component {
   search = e => {
     const query = e.target ? e.target.value : e
     this.index = this.getOrCreateIndex()
+
     const results = this.index
       .search(query, {
         fields: {
@@ -35,6 +36,7 @@ class SearchPage extends Component {
         expand: true,
       })
       .map(({ ref }) => this.index.documentStore.getDoc(ref))
+
     this.setState({
       query,
       results,
@@ -43,7 +45,9 @@ class SearchPage extends Component {
 
   render() {
     const { query, results } = this.state
-    const actions = results.filter(v => v.template === 'action')
+    const actions = results
+      .filter(v => v.template === 'action')
+      .sort((a, b) => new Date(a.from) - new Date(b.from))
     const projects = results.filter(v => v.template === 'project')
     const members = results.filter(v => v.template === 'member')
 
@@ -61,18 +65,17 @@ class SearchPage extends Component {
             placeholder="search"
           />
         </Cell>
-        <Cell clear />
 
         <Cell width={8} top={2} left={1}>
           <CellTitle>Actions</CellTitle>
-          <div style={{ padding: '15px 30px' }}>
+          <div style={{ width: '100%', height: '100%', padding: '15px 30px' }}>
             {actions &&
               actions
-                .sort((a, b) => new Date(a.from) - new Date(b.from))
-                .map((project, i) => (
+                .map((action, i) => (
                   <Link
-                    style={{ display: 'block', width: '100%', height: '100%' }}
-                    to={project.url}
+                    key={i}
+                    style={{ display: 'block' }}
+                    to={action.url}
                   >
                     <p
                       style={{
@@ -83,7 +86,7 @@ class SearchPage extends Component {
                         textOverflow: 'ellipsis',
                       }}
                     >
-                      {moment(project.from, 'YYYY').year()}: {project.name}
+                      {moment(action.from, 'YYYY').year()}: {action.name}
                     </p>
                   </Link>
                 ))}
@@ -92,13 +95,14 @@ class SearchPage extends Component {
 
         <Cell width={8} top={2} left={1}>
           <CellTitle>Projects</CellTitle>
-          <div style={{ padding: '15px 30px' }}>
+          <div style={{ width: '100%', height: '100%', padding: '15px 30px' }}>
             {projects &&
               projects
                 .sort((a, b) => new Date(a.from) - new Date(b.from))
                 .map((project, i) => (
                   <Link
-                    style={{ display: 'block', width: '100%', height: '100%' }}
+                    key={i}
+                    style={{ display: 'block' }}
                     to={project.url}
                   >
                     <p
@@ -119,11 +123,12 @@ class SearchPage extends Component {
 
         <Cell width={18} top={2} left={1}>
           <CellTitle>Members</CellTitle>
-          <div style={{ padding: '15px 30px' }}>
+          <div style={{ width: '100%', height: '100%', padding: '15px 30px' }}>
             {members &&
               members.map((member, i) => (
                 <Link
-                  style={{ display: 'block', width: '100%', height: '100%' }}
+                  key={i}
+                  style={{ display: 'block' }}
                   to={member.url}
                 >
                   <p
@@ -155,6 +160,7 @@ export const query = graphql`
     }
   }
 `
+
 
 const CellTitle = styled.p`
   width: ${props => (props.width ? `${props.width * 45}px` : '180px')};

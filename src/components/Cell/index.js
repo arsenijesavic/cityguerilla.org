@@ -1,11 +1,27 @@
 import React from 'react'
 
-const Cell = class extends React.Component {
+class Cell extends React.Component {
+
   state = {}
 
   componentDidMount() {
+    this.setState({ isMounted: true })
+    this.updateHeight()
+  }
+
+  componentDidUpdate() {
+    this.updateHeight()
+  }
+
+  componentWillReceiveProps(nextProp) {
+    if (this.props.children !== nextProp.children)
+      this.setState({ autoHeight: 'auto' })
+  }
+
+  updateHeight() {
     const autoHeight = Math.ceil(this.node.clientHeight / 45)
-    this.setState({ autoHeight, isMounted: true })
+    if (this.state.autoHeight !== autoHeight)
+      this.setState({ autoHeight })
   }
 
   render() {
@@ -25,15 +41,15 @@ const Cell = class extends React.Component {
       children,
     } = this.props
 
-    const { isMounted } = this.state
-    const autoHeight = this.node && Math.ceil(this.node.clientHeight / 45)
-    console.log(autoHeight)
+    const { isMounted, autoHeight } = this.state
+
+
     return (
       <div
         ref={node => (this.node = node)}
         style={{
           width: `${45 * width}px`,
-          height: height ? `${45 * height}px` : `${45 * autoHeight}px`,
+          height: height ? `${45 * height}px` : autoHeight === 'auto' ? 'auto' : `${45 * autoHeight}px`,
           marginTop: top && `${45 * top}px`,
           marginRight: right && `${45 * right}px`,
           marginBottom: bottom && `${45 * bottom}px`,
@@ -52,6 +68,7 @@ const Cell = class extends React.Component {
         }}
       >
         <div
+          ref={node => (this.child = node)}
           style={{
             width: '100%',
             height: '100%',

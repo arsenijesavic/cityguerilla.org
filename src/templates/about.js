@@ -6,6 +6,7 @@ import { Grid, Cell } from '../components'
 import Draggable from 'react-draggable'
 import uilogo from '../assets/images/urban-incubator-logo-l.png'
 
+
 const AboutPage = ({ data }) => {
   const { details, timeline, documents } = {
     ...data.markdownRemark.frontmatter,
@@ -49,10 +50,10 @@ const AboutPage = ({ data }) => {
 
       {timeline &&
         timeline.map((event, i) => (
-          <Cell key={i} width={1} height={1} top={i > 0 && 1} left={4}>
+          <Cell key={i} width={3} height={1} top={i > 0 && 1} left={(i % 2)+1}  index={Math.floor(10000/(i+1))} >
             <TimelineEvent>
               <TimelineDetails>
-                <h3>{moment(event.year).format('YY')}</h3>
+                <h3>{moment(event.year).format('YYYY')}</h3>
                 <p>{event.description}</p>
               </TimelineDetails>
             </TimelineEvent>
@@ -118,18 +119,28 @@ const TimelineDetails = styled.div`
   background: black;
   padding: 10px 0;
   cursor: pointer;
-  z-index: 10;
 
   transform: translate(-50%, 0);
   transition: all 0.3s ease-in-out;
 
+  > p {
+    visibility: hidden;
+    width: 0%;
+    opacity: 0;
+    font-size: 0.707em;
+    color: white;
+    padding: 10px;
+    transition: opacity 1s ease-in-out;
+  }
+
   &:hover {
     width: 225px;
     height: 180px;
-    z-index: 1000;
     > p {
-      display: block;
+      width: 100%;
       opacity: 1;
+      visibility: visible;
+
     }
   }
 
@@ -137,14 +148,7 @@ const TimelineDetails = styled.div`
     color: white;
   }
 
-  > p {
-    display: none;
-    opacity: 0;
-    font-size: 0.707em;
-    color: white;
-    padding: 10px;
-    transition: opacity 3s ease-in-out;
-  }
+
 `
 
 export const aboutPageQuery = graphql`
