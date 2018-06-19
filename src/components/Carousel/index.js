@@ -51,7 +51,7 @@ class NextButton extends React.Component {
   render() {
     const disabled =
       this.props.currentSlide + this.props.slidesToScroll >=
-        this.props.slideCount && !this.props.wrapAround
+      this.props.slideCount && !this.props.wrapAround
     return (
       <button
         style={defaultButtonStyles(disabled)}
@@ -126,7 +126,7 @@ class PagingDots extends React.Component {
   }
 }
 
-const addEvent = function(elem, type, eventHandle) {
+const addEvent = function (elem, type, eventHandle) {
   if (elem === null || typeof elem === 'undefined') {
     return
   }
@@ -139,7 +139,7 @@ const addEvent = function(elem, type, eventHandle) {
   }
 }
 
-const removeEvent = function(elem, type, eventHandle) {
+const removeEvent = function (elem, type, eventHandle) {
   if (elem === null || typeof elem === 'undefined') {
     return
   }
@@ -289,15 +289,15 @@ export default class Carousel extends React.Component {
 
         const length = this.props.vertical
           ? Math.round(
-              Math.sqrt(
-                Math.pow(e.touches[0].pageY - this.touchObject.startY, 2)
-              )
+            Math.sqrt(
+              Math.pow(e.touches[0].pageY - this.touchObject.startY, 2)
             )
+          )
           : Math.round(
-              Math.sqrt(
-                Math.pow(e.touches[0].pageX - this.touchObject.startX, 2)
-              )
+            Math.sqrt(
+              Math.pow(e.touches[0].pageX - this.touchObject.startX, 2)
             )
+          )
 
         this.touchObject = {
           startX: this.touchObject.startX,
@@ -312,12 +312,12 @@ export default class Carousel extends React.Component {
           left: this.props.vertical
             ? 0
             : this.getTargetLeft(
-                this.touchObject.length * this.touchObject.direction
-              ),
+              this.touchObject.length * this.touchObject.direction
+            ),
           top: this.props.vertical
             ? this.getTargetLeft(
-                this.touchObject.length * this.touchObject.direction
-              )
+              this.touchObject.length * this.touchObject.direction
+            )
             : 0,
         })
       },
@@ -369,11 +369,11 @@ export default class Carousel extends React.Component {
 
         const length = this.props.vertical
           ? Math.round(
-              Math.sqrt(Math.pow(e.clientY - this.touchObject.startY, 2))
-            )
+            Math.sqrt(Math.pow(e.clientY - this.touchObject.startY, 2))
+          )
           : Math.round(
-              Math.sqrt(Math.pow(e.clientX - this.touchObject.startX, 2))
-            )
+            Math.sqrt(Math.pow(e.clientX - this.touchObject.startX, 2))
+          )
 
         this.touchObject = {
           startX: this.touchObject.startX,
@@ -388,12 +388,12 @@ export default class Carousel extends React.Component {
           left: this.props.vertical
             ? 0
             : this.getTargetLeft(
-                this.touchObject.length * this.touchObject.direction
-              ),
+              this.touchObject.length * this.touchObject.direction
+            ),
           top: this.props.vertical
             ? this.getTargetLeft(
-                this.touchObject.length * this.touchObject.direction
-              )
+              this.touchObject.length * this.touchObject.direction
+            )
             : 0,
         })
       },
@@ -466,7 +466,7 @@ export default class Carousel extends React.Component {
       if (this.touchObject.direction === 1) {
         if (
           this.state.currentSlide >=
-            React.Children.count(this.props.children) - slidesToShow &&
+          React.Children.count(this.props.children) - slidesToShow &&
           !this.props.wrapAround
         ) {
           this.setState({ easing: easing[this.props.edgeEasing] })
@@ -570,14 +570,14 @@ export default class Carousel extends React.Component {
             left: this.props.vertical
               ? 0
               : this.getTargetLeft(
-                  this.state.slideWidth,
-                  prevState.currentSlide
-                ),
+                this.state.slideWidth,
+                prevState.currentSlide
+              ),
             top: this.props.vertical
               ? this.getTargetLeft(
-                  this.state.slideWidth,
-                  prevState.currentSlide
-                )
+                this.state.slideWidth,
+                prevState.currentSlide
+              )
               : 0,
             currentSlide: 0,
             isWrappingAround: true,
@@ -834,7 +834,7 @@ export default class Carousel extends React.Component {
     return 100
   }
 
-  setDimensions(props, stateCb = () => {}) {
+  setDimensions(props, stateCb = () => { }) {
     props = props || this.props
 
     let slideWidth
@@ -987,7 +987,7 @@ export default class Carousel extends React.Component {
       if (this.state.slideWidth !== 1) {
         slidesAfter = Math.ceil(
           (Math.abs(positionValue) - this.state.slideWidth) /
-            this.state.slideWidth
+          this.state.slideWidth
         )
       }
 
@@ -1007,7 +1007,7 @@ export default class Carousel extends React.Component {
       position: 'relative',
       display: 'block',
       width: this.props.width,
-      height: 'auto',
+      height: '100%',
       boxSizing: 'border-box',
       MozBoxSizing: 'border-box',
       visibility: this.state.slideWidth ? 'visible' : 'hidden',
@@ -1077,8 +1077,11 @@ export default class Carousel extends React.Component {
       case 'BottomLeft': {
         return {
           position: 'absolute',
-          bottom: 0,
-          left: 0,
+          //bottom: 0,
+          //left: 0,
+          right: '45px',
+          bottom: '-45px',
+          zIndex: '9000'
         }
       }
       case 'BottomCenter': {
@@ -1248,10 +1251,10 @@ Carousel.propTypes = {
 }
 
 Carousel.defaultProps = {
-  afterSlide() {},
+  afterSlide() { },
   autoplay: false,
   autoplayInterval: 3000,
-  beforeSlide() {},
+  beforeSlide() { },
   cellAlign: 'left',
   cellSpacing: 0,
   dragging: true,
@@ -1260,7 +1263,7 @@ Carousel.defaultProps = {
   framePadding: '0px',
   frameOverflow: 'hidden',
   heightMode: 'first',
-  onResize() {},
+  onResize() { },
   slideIndex: 0,
   slidesToScroll: 1,
   slidesToShow: 1,

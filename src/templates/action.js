@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Cell } from '../components'
+import { Grid, Cell, Carousel } from '../components'
 import Link from 'gatsby-link'
 import moment from 'moment'
 import styled from 'styled-components'
@@ -26,7 +26,8 @@ const ActionPage = ({ data }) => {
   } = {
     ...data.markdownRemark.frontmatter,
   }
-  console.log(collaborators)
+  console.log(images)
+
 
   return (
     <Grid>
@@ -40,11 +41,26 @@ const ActionPage = ({ data }) => {
       </Cell>
 
       <Cell width={12} height={6} top={1}>
-        <img
+          <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
+          <Carousel
+          // renderBottomLeftControls={({ previousSlide }) => (
+          //   <button style={{width:'45px', height:'45px', padding:'0', margin:'0' }} onClick={previousSlide}>
+          //   BACK
+          //   </button>
+          // )}
+           autoplay
+           >
+            {images &&
+              images.map((image, i) =>
+              <img
+              key={i}
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          src={images && images[0].image}
+          src={image.image}
           alt=""
         />
+              )}
+          </Carousel>
+        </div>
       </Cell>
 
       <Cell width={5} height={1} left={1} background={false}>
@@ -303,7 +319,7 @@ const ActionPage = ({ data }) => {
       {projects &&
         projects.map((project, i) => (
           <Cell key={i} width={8} height={1} left={2} clear>
-            <Link style={{ display: 'block' }} to={project.url}>
+            <Link style={{ display: 'block' }} to={project.url || '/'}>
               <ProjectName>{project}</ProjectName>
             </Link>
           </Cell>
@@ -327,6 +343,7 @@ const ActionPage = ({ data }) => {
             <div style={{ width: '135px', height: '135px' }}>
               {partners.map((v, i) => (
                 <img
+                key={i}
                   style={{
                     width: '100%',
                     height: '100%',
