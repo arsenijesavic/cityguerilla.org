@@ -153,6 +153,10 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         details
+        documents {
+          name
+          url
+        }
         timeline {
           title
           description
@@ -160,6 +164,7 @@ export const aboutPageQuery = graphql`
         }
       }
     }
+
     projects: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/project/" } }
     ) {

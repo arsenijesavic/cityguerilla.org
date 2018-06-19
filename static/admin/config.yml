@@ -221,5 +221,10 @@ collections:
         name: "about"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
-          - {label: "Featured Action", name: "featuredAction", widget: "string"}
           - {label: "Details", name: "details", widget: "markdown"}
+          - label: "Documents"
+            name: "documents"
+            widget: "list"
+            fields:
+              - {label: "Url", name: "url", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
