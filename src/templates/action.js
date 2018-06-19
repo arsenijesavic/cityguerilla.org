@@ -3,6 +3,7 @@ import { Grid, Cell } from '../components'
 import Link from 'gatsby-link'
 import moment from 'moment'
 import styled from 'styled-components'
+import kebabCase from 'lodash/kebabCase'
 
 const ActionPage = ({ data }) => {
   const {
@@ -95,22 +96,11 @@ const ActionPage = ({ data }) => {
       </Cell>
 
       <Cell width={7} top={2} left={1}>
-        <div style={{ width: '45px', height: '45px', background: 'black' }}>
-          <h1
-            style={{
-              fontSize: '27px',
-              padding: '2.5px 15px',
-              color: 'white',
-              fontWeight: '100',
-            }}
-          >
-            #
-          </h1>
-        </div>
-        <div style={{ padding: '2.5px 30px' }}>
+        <CellTitle width={1}>#</CellTitle>
+        <div style={{ padding: '15px 30px' }}>
           {tags &&
             tags.map((tag, i) => (
-              <span
+              <Link
                 key={i}
                 style={{
                   marginRight: '5px',
@@ -118,9 +108,10 @@ const ActionPage = ({ data }) => {
                   fontSize: '0.707em',
                   textTransform: 'uppercase',
                 }}
+                to={`/tags/${kebabCase(tag)}`}
               >
                 {tag}
-              </span>
+              </Link>
             ))}
         </div>
       </Cell>

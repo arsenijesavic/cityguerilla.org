@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Cell = class extends React.Component {
+
   state = {}
 
   componentDidMount() {
@@ -24,8 +25,10 @@ const Cell = class extends React.Component {
       animation = true,
       children,
     } = this.props
+
     const { isMounted } = this.state
-    const autoHeight = this.node && Math.ceil(this.node.clientHeight / 45) + 1
+    const autoHeight = this.node && Math.ceil(this.node.clientHeight / 45)
+
     return (
       <div
         ref={node => (this.node = node)}
@@ -45,7 +48,6 @@ const Cell = class extends React.Component {
             : 'wtf',
           transition: 'all 0.3s cubic-bezier(0.42, 0, 0.58, 1)',
           ...(animation && { transform: `scale(${isMounted ? 1 : 0})` }),
-          //overflow: 'hidden',
           position: 'relative',
           zIndex: index ? index : 'auto',
         }}
