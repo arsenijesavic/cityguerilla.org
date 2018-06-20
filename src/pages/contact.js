@@ -4,7 +4,7 @@ import cn from 'classnames'
 import Recaptcha from 'react-google-recaptcha'
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
-
+console.log(process.env)
 const encode = data => {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))

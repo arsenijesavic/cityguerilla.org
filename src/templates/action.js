@@ -26,7 +26,7 @@ const ActionPage = ({ data }) => {
   } = {
     ...data.markdownRemark.frontmatter,
   }
-  console.log(partners)
+
   return (
     <Grid>
       <Cell width={6} height={6} top={1} left={1}>
@@ -41,11 +41,32 @@ const ActionPage = ({ data }) => {
       <Cell width={12} height={6} top={1}>
         <div style={{ width: '100%', height: '100%' }}>
           <Carousel
-            // renderBottomLeftControls={({ previousSlide }) => (
-            //   <button style={{width:'45px', height:'45px', padding:'0', margin:'0' }} onClick={previousSlide}>
-            //   BACK
-            //   </button>
-            // )}
+            renderBottomLeftControls={({ previousSlide }) => (
+              <button
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  padding: '0',
+                  margin: '0',
+                  background:'none',
+                  cursor:`url('/assets/back.png'), auto`,
+                }}
+                onClick={previousSlide}
+              />
+            )}
+            renderBottomRightControls={({ nextSlide }) => (
+              <button
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  padding: '0',
+                  margin: '0',
+                  cursor:`url('/assets/next.png'), auto`,
+                  background:'none'
+                }}
+                onClick={nextSlide}
+              />
+            )}
             autoplay
           >
             {images &&

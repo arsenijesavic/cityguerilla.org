@@ -1078,11 +1078,11 @@ export default class Carousel extends React.Component {
       case 'BottomLeft': {
         return {
           position: 'absolute',
-          //bottom: 0,
-          //left: 0,
-          right: '45px',
-          bottom: '-45px',
+          top: '0',
+          left: '0',
+          bottom: '0px',
           zIndex: '9000',
+          width: '90px',
         }
       }
       case 'BottomCenter': {
@@ -1098,8 +1098,12 @@ export default class Carousel extends React.Component {
       case 'BottomRight': {
         return {
           position: 'absolute',
-          bottom: 0,
-          right: 0,
+          top: '0',
+          right: '0px',
+          bottom: '0px',
+          zIndex: '9000',
+          cursor: 'pointer',
+          width: '90px',
         }
       }
       default: {
