@@ -1,14 +1,10 @@
-exports.onClientEntry = (a) => {
-  console.log('when')
-  window.___emitter.on(`onDelayedLoadPageResources`, () => {
-    console.log('1')
-  })
+let i = 0
+
+exports.onClientEntry = a => {
   window.___emitter.on(`onPostLoadPageResources`, () => {
-    console.log('2')
+    i++
+    i = i % 3
+    if (i === 1) window.isLoading = true
+    else window.isLoading = false
   })
-}
-
-
-exports.onInitialClientRender = () => {
-  console.log("ReactDOM.render has executed")
 }

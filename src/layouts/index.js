@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import './index.css'
 import grid from '../assets/svg/grid.svg'
 
-const Layout = ({ data, children, ...props }) => (
+const Layout = ({ data, children }) => (
   <div>
     <Helmet>
       <title>{data.site.siteMetadata.title}</title>
@@ -43,6 +43,7 @@ const Layout = ({ data, children, ...props }) => (
         rel="stylesheet"
       />
     </Helmet>
+
     <div style={{ margin: '0px auto', width: `${20 * 45 + 1}px` }}>
       <Header />
       <div
@@ -54,33 +55,9 @@ const Layout = ({ data, children, ...props }) => (
           background: `url(${grid})`,
         }}
       >
-
         {children()}
       </div>
-      <footer style={{ margin: `$0px auto`, textAlign: 'center' }}>
-        <a
-          style={{ padding: '11.25px 0' }}
-          target="_top"
-          href="mailto:cityguerilla@gmail.com?Subject=Hello"
-        >
-          cityguerilla@gmail.com
-        </a>
-        <div style={{ padding: '11.25px 0' }}>
-          <a
-            style={{ marginRight: '11.25px' }}
-            target="_tab"
-            href="https://www.facebook.com/gradskagerila/"
-          >
-            facebook
-          </a>
-          <a target="_tab" href="https://www.instagram.com/city.guerilla/">
-            instagram
-          </a>
-        </div>
-        <p style={{ padding: '11.25px 0' }}>
-          2017. CityGuerilla. All right reserved. ©
-        </p>
-      </footer>
+      <Footer />
     </div>
   </div>
 )
@@ -100,3 +77,30 @@ export const query = graphql`
     }
   }
 `
+
+const Footer = () => (
+  <footer style={{ margin: `0px auto`, textAlign: 'center' }}>
+    <a
+      style={{ padding: '11.25px 0' }}
+      target="_top"
+      href="mailto:cityguerilla@gmail.com?Subject=Hello"
+    >
+      cityguerilla@gmail.com
+    </a>
+    <div style={{ padding: '11.25px 0' }}>
+      <a
+        style={{ marginRight: '11.25px' }}
+        target="_tab"
+        href="https://www.facebook.com/gradskagerila/"
+      >
+        facebook
+      </a>
+      <a target="_tab" href="https://www.instagram.com/city.guerilla/">
+        instagram
+      </a>
+    </div>
+    <p style={{ padding: '11.25px 0' }}>
+      2017. CityGuerilla. All right reserved. ©
+    </p>
+  </footer>
+)
