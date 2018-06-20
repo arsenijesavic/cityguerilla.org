@@ -34,9 +34,11 @@
     - 
       name: "G12 HUB"
       url: "http://www.g12hub.com/en"
+      image: "/img/G12-logo.png"
     - 
       name: "Goethe-Institut"
       url: "https://www.goethe.de/ins/cs/sr/index.html"
+      image: "/img/gi-logo.png"
   links: []
   images: 
     - 

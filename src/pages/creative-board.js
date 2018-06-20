@@ -18,6 +18,9 @@ const CreativeBoardPage = ({ data }) => {
     if (category === 'audio / audio')
       return { width: 8, height: 4, top: 1, left: 1 }
 
+    if (category === 'illustration / ilustracija')
+      return { width: 4, height: 7, top: 1, left: 1 }
+
     return { width: 5, height: 5, top: 1, left: 1 }
   }
 

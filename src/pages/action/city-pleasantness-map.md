@@ -33,9 +33,11 @@
     - 
       name: "Rimini Protokoll Berlin"
       url: "http://www.rimini-protokoll.de/website/en/"
+      image: "/img/rpb-logo.jpg"
     - 
       name: "Goethe-Institut"
       url: "https://www.goethe.de/ins/cs/sr/index.html"
+      image: "/img/gi-logo.png"
   links: 
     - 
       name: "Project on apporee.org"

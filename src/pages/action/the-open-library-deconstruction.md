@@ -37,6 +37,7 @@
     - 
       name: "Goethe-Institut"
       url: "https:/www.goethe.de/ins/cs/en/index.html"
+      image: "/img/gi-logo.png"
   links: []
   images: 
     - 

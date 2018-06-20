@@ -31,9 +31,11 @@
     - 
       name: "dis-patch"
       url: "http://www.dis-patch.com/"
+      image: "/img/dispatch-logo.jpg"
     - 
       name: "Goethe-Institut"
       url: "https://www.goethe.de/ins/cs/sr/index.html"
+      image: "/img/gi-logo.png"
   links: 
     - 
       name: "Savamala Off Guide (dis-patch on flickr)"

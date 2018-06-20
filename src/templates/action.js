@@ -26,7 +26,7 @@ const ActionPage = ({ data }) => {
   } = {
     ...data.markdownRemark.frontmatter,
   }
-
+  console.log(partners)
   return (
     <Grid>
       <Cell width={6} height={6} top={1} left={1}>
@@ -209,10 +209,24 @@ const ActionPage = ({ data }) => {
                 </g>
               </svg>
             </CellTitle>
-            <ul style={{ padding: '10px', fontSize: '1em' }}>
+            <ul
+              style={{
+                padding: '10px',
+                fontSize: '1em',
+                width: '100%',
+                height: '100%',
+              }}
+            >
               {links &&
                 links.map((link, i) => (
-                  <li key={i} style={{ display: 'block' }}>
+                  <li
+                    key={i}
+                    style={{
+                      display: 'block',
+                      width: '100%',
+                      wordBreak: 'break-all',
+                    }}
+                  >
                     <a target="_tab" href={link.url}>
                       {link.name}
                     </a>
@@ -337,20 +351,32 @@ const ActionPage = ({ data }) => {
       )}
       {partners &&
         partners.length > 0 && (
-          <Cell width={18} top={2} left={1}>
-            <div style={{ width: '135px', height: '135px' }}>
-              {partners.map((v, i) => (
-                <img
-                  key={i}
+          <Cell width={9} top={2} left={1}>
+            <CellTitle>Partners</CellTitle>
+            <div style={{ padding: '2.5px 15px' }}>
+              {partners.map((partner, i) => (
+                <div
                   style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'contain',
+                    width: '135px',
+                    height: '135px',
+                    display: 'block',
+                    float: 'left',
+                    marginRight: '45px',
                   }}
-                  src="http://www.arts.bg.ac.rs/wp-content/uploads/2015/04/image.jpg"
-                  alt=""
-                />
+                >
+                  <img
+                    key={i}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'contain',
+                    }}
+                    src={partner.image}
+                    alt=""
+                  />
+                </div>
               ))}
+              <br style={{ clear: 'both' }} />
             </div>
           </Cell>
         )}
@@ -359,6 +385,26 @@ const ActionPage = ({ data }) => {
 }
 
 export default ActionPage
+
+// [ 'Goethe-Institut',
+//   '​Urban Incubator',
+//   'Kafe/knjižara Magistrala',
+//   'Gallery Kolektiv',
+//   'Museum Night',
+//   'Magacin',
+
+//   'La casa amarilla',
+
+//   'Galerija Močvara',
+//   'Muzej grada Beograda',
+//   'Kafe-knjizara Meduza',
+//   'KC GRAD',
+//   'dis-patch',
+//   '​Mikser festival',
+//   'Rimini Protokoll Berlin',
+//   'Band Bicikl (Free Music Archive)',
+//   'Museum of Yugoslav History',
+//   'G12 HUB' ]
 
 export const ActionQuery = graphql`
   query ActionBySlug($slug: String!) {
@@ -388,6 +434,7 @@ export const ActionQuery = graphql`
         partners {
           name
           url
+          image
         }
         links {
           name

@@ -39,9 +39,11 @@
     - 
       name: "Goethe-Institut"
       url: "https://www.goethe.de/ins/cs/sr/index.html"
+      image: "/img/gi-logo.png"
     - 
       name: "Band Bicikl (Free Music Archive)"
       url: "http://freemusicarchive.org/music/Bicikl"
+      image: "/img/bicikl-logo.jpg"
   links: 
     - 
       name: "Beglika Fest (Facebook)"

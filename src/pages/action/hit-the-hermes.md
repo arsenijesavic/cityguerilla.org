@@ -53,12 +53,15 @@
     - 
       name: "Goethe-Institut"
       url: "https://www.goethe.de/ins/cs/sr/index.html"
+      image: "/img/gi-logo.png"
     - 
       name: "Gallery Kolektiv"
       url: "https://www.facebook.com/Kolektiv-1866288996929102/"
+      image: "/img/kolektiv-logo.jpg"
     - 
       name: "Urban Incubator"
       url: "http://urbanincubator.rs/"
+      image: "/img/ui-logo.png"
   links: []
   images: 
     - 

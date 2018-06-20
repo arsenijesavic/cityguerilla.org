@@ -23,6 +23,7 @@
     - 
       name: "Goethe-Institut"
       url: "https://www.goethe.de/ins/cs/sr/index.html"
+      image: "/img/gi-logo.png"
   links: 
     - 
       name: "Info-Flea Market"

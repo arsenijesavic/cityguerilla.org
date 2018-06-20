@@ -46,12 +46,15 @@
     - 
       name: "Goethe-Institut"
       url: "https://www.goethe.de/ins/cs/sr/index.html"
+      image: "/img/gi-logo.png"
     - 
       name: "Urban Incubator"
       url: "http://urbanincubator.rs/"
+      image: "/img/ui-logo.png"
     - 
       name: "​Mikser festival"
       url: "http://house.mikser.rs/projekat-moje-parce-savamale-nagraden-na-salonu-arhitekture/"
+      image: "/img/mikser-logo.jpg"
   links: 
     - 
       name: "School of Urban Practices"

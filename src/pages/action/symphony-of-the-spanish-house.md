@@ -38,9 +38,11 @@
     - 
       name: "Goethe-Institut"
       url: "https://www.goethe.de/ins/cs/sr/index.html"
+      image: "/img/gi-logo.png"
     - 
       name: "Urban Incubator: Belgrade"
       url: "http://www.goethe.de/ins/cs/bel/prj/uic/srindex.htm?wt_sc=urbanincubator"
+      image: "/img/ui-logo.png"
   links: 
     - 
       name: "Symphony of the Shell 2"

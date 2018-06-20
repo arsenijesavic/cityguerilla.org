@@ -288,7 +288,7 @@ const Action = ({ url, name, description, images }) => (
               .split('.')
               .slice(0, 4)
               .join('.')}.
-      </p>
+        </p>
       </Overflow>
       <img
         style={{ width: '100%', minHeight: '100%', objectFit: 'contain' }}

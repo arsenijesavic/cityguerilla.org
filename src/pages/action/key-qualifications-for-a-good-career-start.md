@@ -24,6 +24,7 @@
     - 
       name: "Goethe-Institut"
       url: "https://www.goethe.de/ins/cs/sr/index.html"
+      image: "/img/gi-logo.png"
   links: 
     - 
       name: "Centre for Career Development of the University of Belgrade"

@@ -19,6 +19,7 @@
     - 
       name: "KC GRAD"
       url: "https://www.facebook.com/kcgrad/"
+      image: "/img/kcgrad-logo.jpg"
   links: 
     - 
       name: "nerdworking.org"

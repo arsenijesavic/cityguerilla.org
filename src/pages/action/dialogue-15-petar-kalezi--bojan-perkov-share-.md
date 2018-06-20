@@ -22,6 +22,7 @@
     - 
       name: "Kafe/knjižara Magistrala"
       url: "https://www.facebook.com/knjizara.magistrala/"
+      image: "/img/magistrala-logo.jpg"
   links: 
     - 
       name: "SHARE foundation"

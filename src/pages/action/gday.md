@@ -57,6 +57,7 @@
     - 
       name: "Goethe-Institut Belgrad"
       url: "https://www.goethe.de/ins/cs/de/index.html"
+      image: "/img/gi-logo.png"
   links: 
     - 
       name: "PULS"

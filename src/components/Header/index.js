@@ -14,7 +14,6 @@ const Header = ({ siteTitle }) => (
       </div>
 
       <Search />
-
     </div>
     <nav className="header__nav">
       <div className="header__logo-wrap">

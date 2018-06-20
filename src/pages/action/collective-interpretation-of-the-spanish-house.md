@@ -57,9 +57,11 @@
     - 
       name: "Goethe-Institut"
       url: "https://www.goethe.de/ins/cs/sr/index.html"
+      image: "/img/gi-logo.png"
     - 
       name: "Urban Incubator"
       url: "http://urbanincubator.rs/"
+      image: "/img/ui-logo.png"
   links: 
     - 
       name: "School of Urban Practices"

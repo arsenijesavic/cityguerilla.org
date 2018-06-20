@@ -43,18 +43,23 @@
     - 
       name: "Goethe-Institut"
       url: "https://www.goethe.de/ins/cs/sr/index.html"
+      image: "/img/gi-logo.png"
     - 
       name: "Magacin"
       url: "https://magacin2015.wordpress.com/"
+      image: "/img/magacin-logo.jpg"
     - 
       name: "La casa amarilla"
       url: "https://lacasa-amarilla.es/artista/stanislav-drca/"
+      image: ""
     - 
       name: "Galerija Močvara"
       url: "http://www.mochvara.hr/galerija-mochvara"
+      image: "/img/močvara-logo.jpg"
     - 
       name: "Muzej grada Beograda"
       url: "http://www.mgb.org.rs/en/"
+      image: "/img/mgb-logo.jpg"
   links: 
     - 
       name: "Urban Incubator"

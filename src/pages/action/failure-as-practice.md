@@ -31,9 +31,11 @@
     - 
       name: "Goethe-Institut"
       url: "https://www.goethe.de/ins/cs/sr/index.html"
+      image: "/img/gi-logo.png"
     - 
       name: "Belgrade City Museum"
       url: "http://www.mgb.org.rs/en/"
+      image: "/img/mgb-logo.jpg"
   links: 
     - 
       name: "Actopolis"

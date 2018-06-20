@@ -92,11 +92,20 @@ const getRandomCell = () => {
     0: { width: 7, height: 8, top: 1 },
     1: { width: 8, height: 6, top: 2, left: 2 },
     2: { width: 11, height: 4, top: 3, left: 4, right: 1 },
+    3: { width: 5, height: 8, top: 2, left: 1 },
+    4: { width: 6, height: 6, top: 1, left: 5 },
+    5: { width: 11, height: 6, left: 7 },
+    6: { width: 12, height: 4, right: 4 },
+    7: { width: 7, height: 8, top: 3, left: 2 },
+    8: { width: 7, height: 8, top: 1, left: 2, bottom: 2 },
+    9: { width: 6, height: 8, top: 2, left: 1 },
+    10: { width: 12, height: 6, top: 1, left: 1 },
   }
-  const option = Math.floor(Math.random() * 3)
+  const option = Math.floor(Math.random() * 10)
 
   return options[option]
 }
+
 const Wrap = styled.div`
   width: 100%;
   height: 100%;

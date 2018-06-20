@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import moment from 'moment'
 import { Grid, Cell } from '../components'
-import {FacebookIcon,GILogo} from '../assets/svg'
+import { FacebookIcon, GILogo } from '../assets/svg'
 import Draggable from 'react-draggable'
 import uilogo from '../assets/images/urban-incubator-logo-l.png'
 
@@ -110,11 +110,9 @@ const AboutPage = ({ data }) => {
 
 export default AboutPage
 
-
-
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
-    markdownRemark(id: {eq: $id}) {
+    markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
@@ -130,7 +128,9 @@ export const aboutPageQuery = graphql`
         }
       }
     }
-    projects: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/project/"}}) {
+    projects: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/project/" } }
+    ) {
       edges {
         node {
           fields {
@@ -144,9 +144,6 @@ export const aboutPageQuery = graphql`
     }
   }
 `
-
-
-
 
 const TimelineEvent = styled.div`
   width: 100%;
@@ -192,9 +189,6 @@ const TimelineDetails = styled.div`
     color: white;
   }
 `
-
-
-
 
 const UILogo = () => (
   <a
@@ -250,8 +244,6 @@ const IconWrap = styled.div`
   height: 100%;
   padding: 5px;
 `
-
-
 
 const Insta = () => (
   <IconWrap>

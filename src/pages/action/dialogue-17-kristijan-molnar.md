@@ -19,6 +19,7 @@
     - 
       name: "Kafe-knjizara Meduza"
       url: "https://www.facebook.com/meduzabeograd/"
+      image: "/img/meduza-logo.jpg"
   links: 
     - 
       name: "http://www.christallization.rs/"
