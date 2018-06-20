@@ -9,6 +9,7 @@
 .header__lng {
   font-size: 12px;
   padding: 10px;
+  float: left;
 }
 
 .header__nav {
@@ -54,16 +55,13 @@
 
 .cls-1, .cls-2 {
   stroke-dasharray: 1000;
-  stroke-dashoffset: 0;
-  /*-webkit-transition: all 0.9s;*/
   transition: all 0.6s;
   stroke-miterlimit: 10;
   stroke-width: 30px;
-  /*animation: dash 1s linear forwards;*/
 }
 
 .cls-2 {
-  stroke-width: 60px;
+  stroke-width: 30px;
 }
 
 .header__search svg {

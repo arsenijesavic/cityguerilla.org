@@ -229,3 +229,4 @@ collections:
             fields:
               - {label: "Url", name: "url", widget: "string"}
               - {label: "Name", name: "name", widget: "string"}
+          - {label: "Presskit", name: "presskit", widget: "file"}

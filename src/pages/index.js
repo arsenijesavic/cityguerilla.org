@@ -277,24 +277,26 @@ const Overflow = styled.div`
     font-size: 14px;
   }
 `
-const Action = ({ name, description, images }) => (
-  <Wrap>
-    <Overflow>
-      <h1>{name}</h1>
-      <p>
-        {description &&
-          description
-            .split('.')
-            .slice(0, 4)
-            .join('.')}.
+const Action = ({ url, name, description, images }) => (
+  <Link to={url} style={{ display: 'block', width: '100%', height: '100%' }}>
+    <Wrap>
+      <Overflow>
+        <h1>{name}</h1>
+        <p>
+          {description &&
+            description
+              .split('.')
+              .slice(0, 4)
+              .join('.')}.
       </p>
-    </Overflow>
-    <img
-      style={{ width: '100%', minHeight: '100%', objectFit: 'contain' }}
-      src={images[0].image}
-      alt=""
-    />
-  </Wrap>
+      </Overflow>
+      <img
+        style={{ width: '100%', minHeight: '100%', objectFit: 'contain' }}
+        src={images[0].image}
+        alt=""
+      />
+    </Wrap>
+  </Link>
 )
 
 class InputBar extends React.Component {

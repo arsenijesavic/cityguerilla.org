@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import './index.css'
 import logo from '../../assets/images/logo.jpg'
+import { navigateTo } from 'gatsby-link'
 
 const Header = ({ siteTitle }) => (
   <header className="header">
@@ -11,7 +12,9 @@ const Header = ({ siteTitle }) => (
         <span> | </span>
         <a href="">sr</a>
       </div>
-      {/* <Search /> */}
+
+      <Search />
+
     </div>
     <nav className="header__nav">
       <div className="header__logo-wrap">
@@ -61,6 +64,7 @@ class Search extends React.Component {
 
   render() {
     const { isActive } = this.state
+
     return (
       <div className="header__search">
         <input
@@ -69,6 +73,9 @@ class Search extends React.Component {
           placeholder="search"
           style={{ width: `${isActive ? '100px' : '0px'}` }}
           onBlur={() => this.setState({ isActive: false })}
+          onKeyPress={e =>
+            e.key === 'Enter' && navigateTo(`/search?q=${this.input.value}`)
+          }
         />
         <svg
           viewBox="0 0 375.11 457.42"
@@ -80,7 +87,7 @@ class Search extends React.Component {
             fill="none"
             stroke="black"
             strokeWidth="10"
-            strokeDashoffset={isActive ? '1000' : '0'}
+            strokeDashoffset={isActive ? 1000 : 0}
             points="140.63 20.29 354.79 138.57 239.85 349.17 20.63 231.29 140.63 20.29"
           />
           <line
