@@ -33,13 +33,13 @@ const ActionPage = ({ data }) => {
         <div style={{ padding: '15px' }}>
           <h1 style={{ fontSize: '24px', minHeight: `${4 * 45}px` }}>{name}</h1>
           <h4 style={{ fontWeight: '300' }}>{category}</h4>
-          <h5 style={{ fontWeight: '800' }}>{moment(from).year()}</h5>
+          {/* <h5 style={{ fontWeight: '800' }}>{moment(from).year()}</h5> */}
           <h5 style={{ fontWeight: '300' }}>{location}</h5>
         </div>
       </Cell>
 
       <Cell width={12} height={6} top={1}>
-        <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
+        <div style={{ width: '100%', height: '100%' }}>
           <Carousel
             // renderBottomLeftControls={({ previousSlide }) => (
             //   <button style={{width:'45px', height:'45px', padding:'0', margin:'0' }} onClick={previousSlide}>
@@ -84,17 +84,34 @@ const ActionPage = ({ data }) => {
         )}
       </Cell>
 
-      <Cell width={1} height={1} left={11}>
-        <div style={{ background: 'black', width: '100%', height: '100%' }}>
-          r
+      <Cell width={2} height={1} left={11}>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            padding: '15px',
+            background: 'black',
+            textAlign: 'center',
+          }}
+        >
+          <p
+            style={{
+              color: 'white',
+              textTransform: 'uppercase',
+              fontSize: '0.707em',
+              fontWeight: 'bold',
+            }}
+          >
+            {moment(from).year()}
+          </p>
         </div>
       </Cell>
 
-      <Cell width={1} height={1}>
+      {/* <Cell width={1} height={1}>
         <div style={{ background: 'black', width: '100%', height: '100%' }}>
           l
         </div>
-      </Cell>
+      </Cell> */}
 
       <Cell width={10} height={15} top={2} left={1}>
         <div
