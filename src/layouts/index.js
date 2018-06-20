@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import './index.css'
 import grid from '../assets/svg/grid.svg'
 
-const Layout = ({ data, children }) => (
+const Layout = ({ data, children, ...props }) => (
   <div>
     <Helmet>
       <title>{data.site.siteMetadata.title}</title>
@@ -54,6 +54,7 @@ const Layout = ({ data, children }) => (
           background: `url(${grid})`,
         }}
       >
+
         {children()}
       </div>
       <footer style={{ margin: `$0px auto`, textAlign: 'center' }}>
