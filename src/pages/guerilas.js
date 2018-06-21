@@ -113,6 +113,7 @@ const Member = ({ name, image, url }) => (
     background={false}
     padding={false}
   >
+    {console.log(name, url)}
     <Grid>
       <Link
         style={{ display: 'block', width: '100%', height: '100%' }}
