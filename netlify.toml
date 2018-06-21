@@ -1,2 +1,0 @@
-[build.environment]
-  API_URI="https://dev-api.foo.com/:splat"
