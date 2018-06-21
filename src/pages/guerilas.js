@@ -114,8 +114,11 @@ const Member = ({ name, image, url }) => (
     padding={false}
   >
     <Grid>
-      <Link style={{ display: 'block' }} to={url}>
-        <Cell width={2} height={2} padding={false}>
+      <Link
+        style={{ display: 'block', width: '100%', height: '100%' }}
+        to={url || '/'}
+      >
+        <Cell width={2} height={2}>
           <img
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             src={image}

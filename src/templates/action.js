@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import moment from 'moment'
 import styled from 'styled-components'
 import kebabCase from 'lodash/kebabCase'
+import Modal from 'react-modal'
 
 const ActionPage = ({ data }) => {
   const {
@@ -39,47 +40,7 @@ const ActionPage = ({ data }) => {
       </Cell>
 
       <Cell width={12} height={6} top={1}>
-        <div style={{ width: '100%', height: '100%' }}>
-          <Carousel
-            renderBottomLeftControls={({ previousSlide }) => (
-              <button
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  padding: '0',
-                  margin: '0',
-                  background: 'none',
-                  cursor: `url('/assets/back.png'), auto`,
-                }}
-                onClick={previousSlide}
-              />
-            )}
-            renderBottomRightControls={({ nextSlide }) => (
-              <button
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  padding: '0',
-                  margin: '0',
-                  cursor: `url('/assets/next.png'), auto`,
-                  background: 'none',
-                }}
-                onClick={nextSlide}
-              />
-            )}
-            autoplay
-          >
-            {images &&
-              images.map((image, i) => (
-                <img
-                  key={i}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                  src={image.image}
-                  alt=""
-                />
-              ))}
-          </Carousel>
-        </div>
+        <CarouselWithGallery data={images} />
       </Cell>
 
       <Cell width={5} height={1} left={1} background={false}>
@@ -394,6 +355,7 @@ const ActionPage = ({ data }) => {
             <div style={{ padding: '2.5px 15px' }}>
               {partners.map((partner, i) => (
                 <div
+                  key={i}
                   style={{
                     width: '135px',
                     height: '135px',
@@ -541,3 +503,112 @@ const Links = styled.div`
     }
   }
 `
+
+class CarouselWithGallery extends React.Component {
+  state = {}
+  render() {
+    const { data } = this.props
+    const { isGalleryOpen } = this.state
+    console.log(isGalleryOpen)
+    return (
+      <div style={{ width: '100%', height: '100%' }}>
+        <Carousel
+          renderBottomLeftControls={({ previousSlide }) => (
+            <button
+              style={{
+                width: '100%',
+                height: '100%',
+                padding: '0',
+                margin: '0',
+                background: 'none',
+                cursor: `url('/assets/back.png'), auto`,
+              }}
+              onClick={previousSlide}
+            />
+          )}
+          renderBottomRightControls={({ nextSlide }) => (
+            <button
+              style={{
+                width: '100%',
+                height: '100%',
+                padding: '0',
+                margin: '0',
+                cursor: `url('/assets/next.png'), auto`,
+                background: 'none',
+              }}
+              onClick={nextSlide}
+            />
+          )}
+          autoplay
+        >
+          {data &&
+            data.map((image, i) => (
+              <img
+                key={i}
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                src={image.image}
+                onClick={() => this.setState({ isGalleryOpen: true })}
+                alt=""
+              />
+            ))}
+        </Carousel>
+        <Gallery
+          data={data}
+          isOpen={isGalleryOpen}
+          onClose={() => this.setState({ isGalleryOpen: false })}
+        />
+      </div>
+    )
+  }
+}
+
+class Gallery extends React.Component {
+  state = {
+    selectedImage: 0,
+  }
+
+  render() {
+    const { data, isOpen, onClose } = this.props
+    const { selectedImage } = this.state
+
+    return (
+      <Modal className="modal" isOpen={isOpen} ariaHideApp={false}>
+        <div style={{ padding: '15px' }}>
+          <div style={{ height: '10vh' }}>
+            {/* <div onClick={onClose}>X</div> */}
+            {data &&
+              data.map((image, i) => (
+                <div
+                  onClick={() => this.setState({ selectedImage: i })}
+                  key={i}
+                  style={{
+                    width: '135px',
+                    height: '135px',
+                    display: 'inline-block',
+                    ...(selectedImage === i ? { border: '5px solid red' } : {}),
+                  }}
+                >
+                  <img
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                    }}
+                    src={image.image}
+                    alt=""
+                  />
+                </div>
+              ))}
+          </div>
+          <div style={{ height: '85vh' }}>
+            <img
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              src={data[selectedImage].image}
+              alt=""
+            />
+          </div>
+        </div>
+      </Modal>
+    )
+  }
+}

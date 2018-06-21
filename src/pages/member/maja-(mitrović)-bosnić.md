@@ -1,13 +1,13 @@
 ---
   templateKey: "member"
-  name: "Maja (Mitrović) Bosnić"
+  name: "Maja Bosnić"
   location: "Belgrade"
   website: ""
   bio: "Maja Bosnić has a PhD in Music Composition (Goldsmiths University of London, UK), as well as MA in Music Pedagogy (Faculty of Music, University of Arts in Belgrade, Serbia). Her research is based on examining the creative potential of audience, amateurs and non-musicians, while her findings are demonstrated in works that include the audience in a performance. Her projects have been performed throughout Europe with the support of Ministry of Culture of the Republic of Serbia and European Cultural Foundation. Working as a professor in an elementary music school and music high school she gained many years of pedagogical experience. Apart from that she has been a conductor of numerous different ensembles and organizer of creative music workshops. Maja is a founder of Association Zabuna - organization that works towards stimulating production and development of contemporary experimental music. She is a member of Composers Society of Serbia, as well as Royal Philharmonic Society in the UK. Her achievements were recognized by the Fund for Young Talents of the Ministry of Youth and Sport of the Republic of Serbia which awarded her  “Dositeja” scholarship five years in a row."
   from: "2011"
   to: "2018"
   image: "/img/MajaMitrovic.jpg"
-  tags: 
+  tags:
     - "Savamala"
     - "Art"
     - "Activism"

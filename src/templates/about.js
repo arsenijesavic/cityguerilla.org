@@ -8,7 +8,7 @@ import Draggable from 'react-draggable'
 import uilogo from '../assets/images/urban-incubator-logo-l.png'
 
 const AboutPage = ({ data }) => {
-  const { details, timeline, documents } = {
+  const { details, timeline, documents, presskit } = {
     ...data.markdownRemark.frontmatter,
   }
   const projects = data.projects.edges.map(v => ({
@@ -99,8 +99,13 @@ const AboutPage = ({ data }) => {
         <Folder>
           {documents &&
             documents.map((doc, i) => (
-              <a key={i} href={doc.url} target='_tab' style={{ display: 'inline-block',padding:'15px' }} >
-                <svg width='60px' viewBox="0 0 476.74 604.67">
+              <a
+                key={i}
+                href={doc.url}
+                target="_tab"
+                style={{ display: 'inline-block', padding: '15px' }}
+              >
+                <svg width="60px" viewBox="0 0 476.74 604.67">
                   <path
                     d="M7.49,58.55c2-.41,17.22.08,26.63-.2.29-3.78.13-23.89.13-23.89s22.85.12,28.53-.37c.29-5.27-.21-27.24-.21-27.24s221-1.24,289.77-1.24c20.08,22.17,40.22,44.28,60.21,66.53q35.61,39.65,71,79.5V443.7c-.2,3.15-1.37,113.16-1.37,113.16s-22.56.18-27.77.57c-.45,5.59-.05,28.47-.05,28.47s-22.49,0-26.92.34c0,4.12-.14,24-.14,24L8.94,609.92S5.35,59,7.49,58.55Zm332.21-40H76.25V544H470.3V164.33h-6.23c-37-.14-124-1.62-124-1.62s.21-3.72.18-11.43q-.28-62.95-.53-125.89C339.69,23.28,339.69,21.18,339.69,18.59ZM441,557H434.3q-166.12-.4-332.25-.82c-8.82,0-37.35,0-37.35,0s0-3.63-.25-11.42c-.4-12.51-.72-25-.74-37.55q-.33-226.44-.56-452.88c0-2.21,0-4.41,0-6.7H46.71V573H441ZM414.43,586h-6q-62.69-.14-125.39-.29c-78.3-.29-248.19-1-248.19-1s.13-2.59-.07-13.09c-.31-15.87-.61-31.74-.63-47.61q-.33-222.74-.56-445.47c0-2.23,0-4.46,0-6.92H20.28v525.6H414.43ZM353.11,24.42V151.19c13,.83,109.25.26,114.5-.13C430.07,109.59,391.52,66.86,353.11,24.42Z"
                     transform="translate(-6.81 -5.61)"
@@ -126,7 +131,12 @@ const AboutPage = ({ data }) => {
       </Cell>
 
       <Cell width={2} height={2} top={1} left={4} background={false}>
-        <Document />
+        <Link
+          style={{ width: '100%', height: '100%', display: 'block' }}
+          to={presskit}
+        >
+          <Document />
+        </Link>
       </Cell>
     </Grid>
   )
@@ -150,6 +160,7 @@ export const aboutPageQuery = graphql`
           description
           year
         }
+        presskit
       }
     }
     projects: allMarkdownRemark(
@@ -303,6 +314,7 @@ C135.661,29.421,132.821,28.251,129.921,28.251z"
 const FolderWrap = styled.div`
   padding: 10px;
   position: relative;
+  cursor: pointer;
 `
 
 const FolderWindow = styled.div`
@@ -374,7 +386,7 @@ class Folder extends React.Component {
 }
 
 const Document = () => (
-  <div style={{ padding: '10px' }}>
+  <div style={{ padding: '7px 15px 10px 15px' }}>
     <svg viewBox="0 0 191.21 241.62">
       <polygon points="191.21 241.62 0 241.62 0 0 138.58 0 139.78 56.76 190.22 57.24 191.21 241.62" />
       <rect fill="#fff" x="36.62" y="80.39" width="115.29" height="3.15" />

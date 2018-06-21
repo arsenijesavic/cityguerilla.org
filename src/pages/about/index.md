@@ -50,7 +50,11 @@ details: >-
   Since 2010 until today, members of Goethe/City Guerilla have, in cooperation
   with the Goethe-Institut, realized more than 200 small and large scale
   projects and actions in Serbia and abroad, thus establishing a wide
-  cooperation network with similar initiatives in the country and the region. 
+  cooperation network with similar initiatives in the country and the region.
+timeline:
+  - title: zsda
+    description: dsadsa
+    year: 1231
 documents:
   - name: katalog 2014
     url: 'https://issuu.com/cityguerilla/docs/gg_katalog_manji'

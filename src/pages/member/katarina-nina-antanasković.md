@@ -1,13 +1,13 @@
 ---
   templateKey: "member"
-  name: "Katarina Nina Antanasković"
+  name: "Katarina Antanasković"
   location: "Belgrade"
   website: ""
   bio: "I am organist and music theorist. I’m interested in history - how people became artists and artists became people. I’m interested in being present in the present. Also in how the museum art of baroque composers can be reconciled with the curative shaman’s rituals and the exploration of the space of the computer era. I’m interested in the exploration of nostalgia as an agent for preserving of the values of the past. Moreover, I would like to know which possibilities there are for manipulating this feeling."
   from: "2012"
   to: "2013"
   image: "/img/KatarinaNinaAntanaskovic.jpg"
-  tags: 
+  tags:
     - "Art"
     - "Activism"
     - "Music"
