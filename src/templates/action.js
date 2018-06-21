@@ -603,7 +603,7 @@ class Gallery extends React.Component {
           <div style={{ height: '85vh' }}>
             <img
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              src={data[selectedImage].image}
+              src={data && data[selectedImage] && data[selectedImage].image}
               alt=""
             />
           </div>
