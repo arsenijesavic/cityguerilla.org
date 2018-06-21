@@ -48,8 +48,8 @@ const ActionPage = ({ data }) => {
                   height: '100%',
                   padding: '0',
                   margin: '0',
-                  background:'none',
-                  cursor:`url('/assets/back.png'), auto`,
+                  background: 'none',
+                  cursor: `url('/assets/back.png'), auto`,
                 }}
                 onClick={previousSlide}
               />
@@ -61,8 +61,8 @@ const ActionPage = ({ data }) => {
                   height: '100%',
                   padding: '0',
                   margin: '0',
-                  cursor:`url('/assets/next.png'), auto`,
-                  background:'none'
+                  cursor: `url('/assets/next.png'), auto`,
+                  background: 'none',
                 }}
                 onClick={nextSlide}
               />
