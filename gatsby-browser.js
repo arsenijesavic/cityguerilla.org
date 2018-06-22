@@ -8,5 +8,3 @@
 //     else window.isLoading = false
 //   })
 // }
-
-

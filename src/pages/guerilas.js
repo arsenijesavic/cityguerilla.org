@@ -41,15 +41,17 @@ const GuerilasPage = ({ data }) => {
         Object.keys(years).map((v, i) => (
           <Grid key={i}>
             <Cell
-              width={5}
+              width={18}
               height={1}
               top={1}
               right={1}
               left={2}
               bottom={1}
+              background={false}
+              padding={false}
               clear
             >
-              <div style={{ background: 'black' }}>
+              <div style={{ background: 'black', width: '135px' }}>
                 <h3
                   style={{
                     textAlign: 'center',
@@ -61,7 +63,7 @@ const GuerilasPage = ({ data }) => {
                 </h3>
               </div>
             </Cell>
-            <Cell clear />
+
             {years[v] &&
               years[v].map((member, i) => <Member key={i} {...member} />)}
           </Grid>
@@ -113,23 +115,30 @@ const Member = ({ name, image, url }) => (
     background={false}
     padding={false}
   >
-    {console.log(name, url)}
-    <Grid>
-      <Link
-        style={{ display: 'block', width: '100%', height: '100%' }}
-        to={url || '/'}
-      >
-        <Cell width={2} height={2}>
-          <img
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-            src={image}
-            alt=""
-          />
-        </Cell>
-        <Cell width={3} height={1} clear>
-          <h5 style={{ padding: '12.5px 5px' }}>{name}</h5>
-        </Cell>
-      </Link>
-    </Grid>
+    <Link
+      style={{ display: 'block', width: '100%', height: '100%' }}
+      to={url || '/'}
+    >
+      <Cell width={2} height={2}>
+        <img
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          src={image}
+          alt=""
+        />
+      </Cell>
+      <Cell width={3} height={1} clear>
+        <h5
+          style={{
+            padding: '12.5px 5px',
+            whiteSpace: 'nowrap',
+            width: '10em',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+          }}
+        >
+          {name}
+        </h5>
+      </Cell>
+    </Link>
   </Cell>
 )
