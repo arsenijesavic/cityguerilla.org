@@ -23,47 +23,47 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     }
   `).then(result => {
-    if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
-
-    const data = result.data.allMarkdownRemark.edges
-
-    data.map(({ node }) => {
-      const {
-        id,
-        fields: { slug },
-        frontmatter: { templateKey },
-      } = node
-
-      createPage({
-        path: slug,
-        component: path.resolve(`./src/templates/${templateKey}.js`),
-        context: { slug, id },
-      })
-    })
-
-    let tags = []
-
-    _.each(data, edge => {
-      if (_.get(edge, 'node.frontmatter.tags')) {
-        tags = tags.concat(edge.node.frontmatter.tags)
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
       }
-    })
 
-    tags = _.uniq(tags)
+      const data = result.data.allMarkdownRemark.edges
 
-    tags.forEach(tag => {
-      createPage({
-        path: `/tags/${_.kebabCase(tag)}/`,
-        component: path.resolve('src/templates/tag.js'),
-        context: {
-          tag,
-        },
+      data.map(({ node }) => {
+        const {
+          id,
+          fields: { slug },
+          frontmatter: { templateKey },
+        } = node
+
+        createPage({
+          path: slug,
+          component: path.resolve(`./src/templates/${templateKey}.js`),
+          context: { slug, id },
+        })
+      })
+
+      let tags = []
+
+      _.each(data, edge => {
+        if (_.get(edge, 'node.frontmatter.tags')) {
+          tags = tags.concat(edge.node.frontmatter.tags)
+        }
+      })
+
+      tags = _.uniq(tags)
+
+      tags.forEach(tag => {
+        createPage({
+          path: `/tags/${_.kebabCase(tag)}/`,
+          component: path.resolve('src/templates/tag.js'),
+          context: {
+            tag,
+          },
+        })
       })
     })
-  })
 }
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
@@ -189,7 +189,7 @@ exports.sourceNodes = ({ boundActionCreators, getNodes, getNode }) => {
             )
             .map(v => ({ ...v.frontmatter, url: v.fields.slug }))
 
-          involved.forEach(v => v.name)
+          //involved.forEach(v => v.name)
 
           node.frontmatter = {
             ...node.frontmatter,
