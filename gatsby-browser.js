@@ -1,10 +1,16 @@
-// let i = 0
+exports.onClientEntry = (pluginOptions = {}) => {
+  //const options = { ...defaultOptions, ...pluginOptions }
 
-// exports.onClientEntry = a => {
-//   window.___emitter.on(`onPostLoadPageResources`, () => {
-//     i++
-//     i = i % 3
-//     if (i === 1) window.isLoading = true
-//     else window.isLoading = false
-//   })
-// }
+  window.___emitter.on(`onDelayedLoadPageResources`, () => {
+    console.log('onDelayedLoadPageResources')
+  })
+  window.___emitter.on(`onPostLoadPageResources`, () => {
+    console.log('onPostLoadPageResources')
+  })
+
+  const styles = ``
+  // const node = document.createElement(`style`)
+  // node.id = `nprogress-styles`
+  // node.innerHTML = styles
+  // document.head.appendChild(node)
+}

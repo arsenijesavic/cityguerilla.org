@@ -40,6 +40,74 @@ iframe {
   outline: none;
 }
 
+
+
+.rect {
+  transform: translate(270px, 135px);
+  animation: movement 1s infinite;
+}
+
+@keyframes movement {
+  0%{
+    x: 45px;
+    y: 225px;
+  }
+
+  10% {
+    x: 45px;
+    y: 225px;
+  }
+
+  20% {
+    x: 90px;
+    y: 225px;
+  }
+
+  30% {
+    x: 135px;
+    y: 225px;
+  }
+
+  40% {
+    x: 135px;
+    y: 275px;
+  }
+
+  50% {
+    x: 135px;
+    y: 320px;
+  }
+
+  60% {
+    x: 90px;
+    y: 320px;
+  }
+
+  70% {
+    x: 45px;
+    y: 320px;
+  }
+
+  80% {
+    x: 45px;
+    y: 275px;
+  }
+
+  90% {
+    x: 45px;
+    y: 225px;
+  }
+
+  100% {
+    x: 45px;
+    y: 225px;
+  }
+}
+
+
+
+
+
 .tag-cloud-tag {
   cursor: pointer;
 }

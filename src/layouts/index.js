@@ -14,7 +14,6 @@ const Layout = ({ data, children }) => (
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
-      <meta name="theme-color" content="#000000" />
 
       {/* <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
@@ -23,7 +22,7 @@ const Layout = ({ data, children }) => (
       <meta property="og:image" content={image} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
-      <meta property="og:site_name: " content={title} />
+      <meta property="og:site_name" content={title} />
       <meta property="og:see_also" content={homepage} />
 
       <meta name="twitter:card" content={description} />
@@ -31,12 +30,6 @@ const Layout = ({ data, children }) => (
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} /> */}
-
-      {/* <link
-        rel="shortcut icon"
-        type="image/x-icon"
-        href="http://media.cityguerilla.org/2015/10/cropped-logo-GERILA-72dpi-400_300px.png"
-      /> */}
 
       <link
         href="https://fonts.googleapis.com/css?family=Heebo:300,400,700"
@@ -53,8 +46,10 @@ const Layout = ({ data, children }) => (
           marginBottom: `${45}px`,
           paddingBottom: `${45.3 * 2}px`,
           background: `url(${grid})`,
+          position: 'relative',
         }}
       >
+        <GridOverlay />
         {children()}
       </div>
       <Footer />
@@ -77,6 +72,22 @@ export const query = graphql`
     }
   }
 `
+
+const GridOverlay = () => (
+  <div
+    style={{
+      position: 'absolute',
+      top: '0',
+      right: '0',
+      bottom: '0',
+      left: '0',
+    }}
+  >
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      {/* <rect className='rect' width='45px' height='45px' x='45px' y='270px' /> */}
+    </svg>
+  </div>
+)
 
 const Footer = () => (
   <footer style={{ margin: `0px auto`, textAlign: 'center' }}>
