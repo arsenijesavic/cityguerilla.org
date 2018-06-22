@@ -1,9 +1,8 @@
-exports.onClientEntry = (pluginOptions = {}) => {
-  //const options = { ...defaultOptions, ...pluginOptions }
-
+exports.onClientEntry = () => {
   window.___emitter.on(`onDelayedLoadPageResources`, () => {
     console.log('onDelayedLoadPageResources')
   })
+
   window.___emitter.on(`onPostLoadPageResources`, () => {
     console.log('onPostLoadPageResources')
   })
