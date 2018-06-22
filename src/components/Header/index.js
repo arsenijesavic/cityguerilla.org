@@ -4,7 +4,7 @@ import './index.css'
 import logo from '../../assets/images/logo.jpg'
 import { navigateTo } from 'gatsby-link'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header className="header">
     <div className="header__top">
       <div className="header__lng">
@@ -21,12 +21,7 @@ const Header = ({ siteTitle }) => (
           style={{ display: 'block', width: '100%', height: '100%' }}
           to="/"
         >
-          <img
-            className="header__logo"
-            //src="static/images/logo.jpg"
-            src={logo}
-            alt="logo"
-          />
+          <img className="header__logo" src={logo} alt="logo" />
         </Link>
       </div>
       <ul className="header__nav-items">
@@ -105,17 +100,3 @@ class Search extends React.Component {
     )
   }
 }
-
-// $(".search-top svg").click(function (e) {
-//   $(".cls-1").css('stroke-dashoffset', '1000')
-//   $(".cls-2").css('stroke-dashoffset', '1000')
-//   $(".search-top input").css('width', '100px');
-//   setTimeout(function () {
-//     $(".search-top .search-bar-toop").focus()
-//   }, 100);
-// })
-// $(".search-top input").blur(function () {
-//   $(".search-top input").css('width', '0px');
-//   $(".cls-2").css('stroke-dashoffset', '0')
-//   $(".cls-1").css('stroke-dashoffset', '0')
-// })
