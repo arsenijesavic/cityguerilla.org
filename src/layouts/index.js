@@ -15,7 +15,7 @@ const Layout = ({ data, children }) => (
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
 
-      {/* <meta name="description" content={description} />
+      <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
 
       <meta property="og:url" content={homepage} />
@@ -29,7 +29,7 @@ const Layout = ({ data, children }) => (
       <meta name="twitter:url" content={homepage} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} /> */}
+      <meta name="twitter:image" content={image} />
 
       <link
         href="https://fonts.googleapis.com/css?family=Heebo:300,400,700"
