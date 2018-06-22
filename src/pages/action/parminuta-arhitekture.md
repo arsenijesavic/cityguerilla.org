@@ -37,17 +37,17 @@
       url: "https://vimeo.com/parminuta"
   images: 
     - 
-      image: "/img/01_2015_ParMinuta-Arhitekture-_arch.-Srđan-Gavrilović_Screenshot-Video-Gerila.jpg"
+      image: "/img/01_2015_ParMinuta-Arhitekture-_arch.-Srđan-Gavrilovic_Screenshot-Video-Gerila.jpg"
     - 
-      image: "/img/02_2015_ParMinuta-Arhitekture_arch.-Borislav-Petrović,-associate-professor_screenshot-Video-Gerila.jpg"
+      image: "/img/02_2015_ParMinuta-Arhitekture_arch.-Borislav-Petrovic,-associate-professor_screenshot-Video-Gerila.jpg"
     - 
-      image: "/img/03_2015_ParMinuta-Arhitekture_arch.-Ivan-Rašković,-associate-professor_screenshot-video-Gerila.jpg"
+      image: "/img/03_2015_ParMinuta-Arhitekture_arch.-Ivan-Raskovic,-associate-professor_screenshot-video-Gerila.jpg"
     - 
-      image: "/img/04_2015_ParMinuta-Arhitekture_arch.-Milan-Đurić,-associate-professor_screenshot-video-Gerila.jpg"
+      image: "/img/04_2015_ParMinuta-Arhitekture_arch.-Milan-Đuric,-associate-professor_screenshot-video-Gerila.jpg"
     - 
-      image: "/img/05_ParMinuta-Arhitekture_mr.-Milan-Vujović,-Associate-Professor_screenshot-video_Gerila.jpg"
+      image: "/img/05_ParMinuta-Arhitekture_mr.-Milan-Vujovic,-Associate-Professor_screenshot-video_Gerila.jpg"
     - 
-      image: "/img/06_2015ParMinuta-Arhitekture_Vasa-Perović,-Architect_screenshot-video-Gerila.jpg"
+      image: "/img/06_2015ParMinuta-Arhitekture_Vasa-Perovic,-Architect_screenshot-video-Gerila.jpg"
   video: "https://player.vimeo.com/video/107905156"
   modules: ""
   projects: []

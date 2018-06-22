@@ -41,25 +41,25 @@
       url: "http://Miroslav Marinkovic"
   images: 
     - 
-      image: "/img/12_Flešmoba_ilijaLazarevic.jpg"
+      image: "/img/12_Flesmoba_ilijaLazarevic.jpg"
     - 
-      image: "/img/13_Flešmoba_iljaLazarevic.jpg"
+      image: "/img/13_Flesmoba_iljaLazarevic.jpg"
     - 
-      image: "/img/3a_Flešmoba_IlijaLazarevic.jpg"
+      image: "/img/3a_Flesmoba_IlijaLazarevic.jpg"
     - 
-      image: "/img/3_Flešmoba_IlijaLazarevic.jpg"
+      image: "/img/3_Flesmoba_IlijaLazarevic.jpg"
     - 
-      image: "/img/4_Flešmoba_IlijaLazarevic.jpg"
+      image: "/img/4_Flesmoba_IlijaLazarevic.jpg"
     - 
-      image: "/img/5_Flešmoba_IlijaLazarevic.jpg"
+      image: "/img/5_Flesmoba_IlijaLazarevic.jpg"
     - 
-      image: "/img/6_Flešmoba_ilijaLazarevic.jpg"
+      image: "/img/6_Flesmoba_ilijaLazarevic.jpg"
     - 
-      image: "/img/7_Flešmoba_IlijaLazarevic.jpg"
+      image: "/img/7_Flesmoba_IlijaLazarevic.jpg"
     - 
-      image: "/img/8_Flešmoba_ilijaLazarevic.jpg"
+      image: "/img/8_Flesmoba_ilijaLazarevic.jpg"
     - 
-      image: "/img/9_Flešmoba_ZoricaMilisavljevic.jpg"
+      image: "/img/9_Flesmoba_ZoricaMilisavljevic.jpg"
   video: "https://www.youtube.com/embed/l7J_1dts7Jg?rel=0"
   modules: ""
   projects: []

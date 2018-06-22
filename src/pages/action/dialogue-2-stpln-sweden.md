@@ -50,19 +50,19 @@
     - 
       image: "/img/01_City_guerilla_Diajlozi2_2015.jpg"
     - 
-      image: "/img/02_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Švedska_Foto_GradskaGerila.jpg"
+      image: "/img/02_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Svedska_Foto_GradskaGerila.jpg"
     - 
-      image: "/img/03_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Švedska_Foto_GradskaGerila.jpg"
+      image: "/img/03_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Svedska_Foto_GradskaGerila.jpg"
     - 
-      image: "/img/04_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Švedska_Foto_GradskaGerila.jpg"
+      image: "/img/04_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Svedska_Foto_GradskaGerila.jpg"
     - 
-      image: "/img/05_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Švedska_Foto_GradskaGerila.jpg"
+      image: "/img/05_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Svedska_Foto_GradskaGerila.jpg"
     - 
-      image: "/img/06_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Švedska_Foto_GradskaGerila.jpg"
+      image: "/img/06_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Svedska_Foto_GradskaGerila.jpg"
     - 
-      image: "/img/07_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Švedska_Foto_GradskaGerila.jpg"
+      image: "/img/07_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Svedska_Foto_GradskaGerila.jpg"
     - 
-      image: "/img/08_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Švedska_Foto_GradskaGerila.jpg"
+      image: "/img/08_2015-04-15-Gradska-Gerila_Dijalog-2_STPLN,-Svedska_Foto_GradskaGerila.jpg"
   modules: "Dialogues"
   projects: 
     - "Dialogues"

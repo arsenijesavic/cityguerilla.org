@@ -44,24 +44,24 @@
   links: []
   images: 
     - 
-      image: "/img/01_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinović.jpg"
+      image: "/img/01_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinovic.jpg"
     - 
-      image: "/img/02_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinović.jpg"
+      image: "/img/02_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinovic.jpg"
     - 
-      image: "/img/03_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinović.jpg"
+      image: "/img/03_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinovic.jpg"
     - 
-      image: "/img/04_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinović.jpg"
+      image: "/img/04_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinovic.jpg"
     - 
-      image: "/img/05_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinović.jpg"
+      image: "/img/05_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinovic.jpg"
     - 
-      image: "/img/06_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinović.jpg"
+      image: "/img/06_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinovic.jpg"
     - 
-      image: "/img/07_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinović.jpg"
+      image: "/img/07_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinovic.jpg"
     - 
-      image: "/img/08_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinović.jpg"
+      image: "/img/08_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinovic.jpg"
     - 
-      image: "/img/09_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinović.jpg"
+      image: "/img/09_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinovic.jpg"
     - 
-      image: "/img/10_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinović.jpg"
+      image: "/img/10_20131101_Lica_Savamale_Gradska-Gerila_Foto_Jovana-Sibinovic.jpg"
   modules: ""
   projects: []

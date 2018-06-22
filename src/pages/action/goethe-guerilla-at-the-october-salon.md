@@ -41,16 +41,16 @@
       url: "http://www.kh-berlin.de/projekt-detail/Project/detail/in-savamala-53-oktobersalon-belgrad-2012-1100.html"
   images: 
     - 
-      image: "/img/1_jedan_put_sama_akcija_zaustavljanja_saobraćaja_ispred_Geozavoda.jpg"
+      image: "/img/1_jedan_put_sama_akcija_zaustavljanja_saobracaja_ispred_Geozavoda.jpg"
     - 
-      image: "/img/2_Oktobarski-salon-pranje-umetničkog-veša.jpg"
+      image: "/img/2_Oktobarski-salon-pranje-umetnickog-vesa.jpg"
     - 
-      image: "/img/3_Oktobarski-salon_pranje-umetničkog-veša.jpg"
+      image: "/img/3_Oktobarski-salon_pranje-umetnickog-vesa.jpg"
     - 
-      image: "/img/4_Oktobersalon_pranje_veša©Goethe-Guerilla.jpg"
+      image: "/img/4_Oktobersalon_pranje_vesa©Goethe-Guerilla.jpg"
     - 
-      image: "/img/5_Oktobersalon_pranje_veša©Goethe-Guerilla2.jpg"
+      image: "/img/5_Oktobersalon_pranje_vesa©Goethe-Guerilla2.jpg"
     - 
-      image: "/img/6_Oktobersalon_pranje_veša©Goethe-Guerilla.jpg"
+      image: "/img/6_Oktobersalon_pranje_vesa©Goethe-Guerilla.jpg"
   modules: ""
   projects: []

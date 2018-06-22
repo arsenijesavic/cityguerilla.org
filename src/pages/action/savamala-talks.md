@@ -41,19 +41,19 @@
   links: []
   images: 
     - 
-      image: "/img/01_2015_Gradska-Gerila_Savamala-Priča_Aplikacija_Noć-muzeja.jpg"
+      image: "/img/01_2015_Gradska-Gerila_Savamala-Prica_Aplikacija_Noc-muzeja.jpg"
     - 
-      image: "/img/02_2015_Gradska-Gerila_Savamala-Priča_Aplikacija_Noć-muzeja.jpg"
+      image: "/img/02_2015_Gradska-Gerila_Savamala-Prica_Aplikacija_Noc-muzeja.jpg"
     - 
-      image: "/img/03_2015_Gradska-Gerila_Savamala-Priča_Aplikacija_Noć-muzeja.jpg"
+      image: "/img/03_2015_Gradska-Gerila_Savamala-Prica_Aplikacija_Noc-muzeja.jpg"
     - 
-      image: "/img/04_2015_Gradska-Gerila_Savamala-Priča_Aplikacija_Noć-muzeja.jpg"
+      image: "/img/04_2015_Gradska-Gerila_Savamala-Prica_Aplikacija_Noc-muzeja.jpg"
     - 
-      image: "/img/05_2015_Gradska-Gerila_Savamala-Priča_Aplikacija_Noć-muzeja.jpg"
+      image: "/img/05_2015_Gradska-Gerila_Savamala-Prica_Aplikacija_Noc-muzeja.jpg"
     - 
-      image: "/img/06_2015_Gradska-Gerila_Savamala-Priča_Aplikacija_Noć-muzeja.jpg"
+      image: "/img/06_2015_Gradska-Gerila_Savamala-Prica_Aplikacija_Noc-muzeja.jpg"
     - 
-      image: "/img/07_2015_Gradska-Gerila_Savamala-Priča_Aplikacija_Noć-muzeja.jpg"
+      image: "/img/07_2015_Gradska-Gerila_Savamala-Prica_Aplikacija_Noc-muzeja.jpg"
   modules: "Savamala Walks"
   projects: 
     - "Savamala Walks"

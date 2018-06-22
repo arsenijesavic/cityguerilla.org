@@ -39,11 +39,11 @@
   links: []
   images: 
     - 
-      image: "/img/10_20120402-Otvorena-biblioteka-Dan-dečje-knjige-Nina-Antanasković.jpg"
+      image: "/img/10_20120402-Otvorena-biblioteka-Dan-decje-knjige-Nina-Antanaskovic.jpg"
     - 
-      image: "/img/13_20120402-Otvorena-biblioteka-Dan-dečje-knjige-Nina-Antanasković-4.jpg"
+      image: "/img/13_20120402-Otvorena-biblioteka-Dan-decje-knjige-Nina-Antanaskovic-4.jpg"
     - 
-      image: "/img/14_20120402Otvorena-biblioteka-Dan-dečje-knjige-Nina-Antanasković-5.jpg"
+      image: "/img/14_20120402Otvorena-biblioteka-Dan-decje-knjige-Nina-Antanaskovic-5.jpg"
     - 
       image: "/img/16_20120308-Otvorena-biblioteka-Glumci-biblioteci-1.jpg"
     - 
@@ -55,9 +55,9 @@
     - 
       image: "/img/3_2012-Otvorena-biblioteka-Share-konferencija-2.jpg"
     - 
-      image: "/img/6_2012-Otvorena-biblioteka-Pesničenje.jpg"
+      image: "/img/6_2012-Otvorena-biblioteka-Pesnicenje.jpg"
     - 
-      image: "/img/8_2012-Otvorena-biblioteka-Pesničenje-3-Ilija-Lazarević.jpg"
+      image: "/img/8_2012-Otvorena-biblioteka-Pesnicenje-3-Ilija-Lazarevic.jpg"
   modules: "The Open Library"
   projects: 
     - "The Open Library"

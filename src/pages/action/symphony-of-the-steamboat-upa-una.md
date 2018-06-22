@@ -53,25 +53,25 @@
       url: "https://designforthelivingworld.com/2013/04/10/savamala-a-place-for-making/"
   images: 
     - 
-      image: "/img/01_201305_Simfonija Župe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
+      image: "/img/01_201305_Simfonija Zupe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
     - 
-      image: "/img/02_201305_Simfonija Župe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
+      image: "/img/02_201305_Simfonija Zupe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
     - 
-      image: "/img/03_201305_Simfonija Župe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
+      image: "/img/03_201305_Simfonija Zupe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
     - 
-      image: "/img/04_201305_Simfonija Župe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
+      image: "/img/04_201305_Simfonija Zupe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
     - 
-      image: "/img/05_201305_Simfonija Župe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
+      image: "/img/05_201305_Simfonija Zupe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
     - 
-      image: "/img/06_201305_Simfonija Župe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
+      image: "/img/06_201305_Simfonija Zupe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
     - 
-      image: "/img/07_201305_Simfonija Župe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
+      image: "/img/07_201305_Simfonija Zupe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
     - 
-      image: "/img/08_201305_Simfonija Župe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
+      image: "/img/08_201305_Simfonija Zupe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
     - 
-      image: "/img/09_201305_Simfonija Župe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
+      image: "/img/09_201305_Simfonija Zupe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
     - 
-      image: "/img/10_201305_Simfonija Župe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
+      image: "/img/10_201305_Simfonija Zupe_Savamala_Beograd_Gradska Gerila_Foto_Gerila.jpg"
   video: "https://www.youtube.com/embed/vPv8ucJhewo"
   modules: "The Symphony of Savamala Project"
   projects: 

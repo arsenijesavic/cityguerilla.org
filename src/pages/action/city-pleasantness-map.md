@@ -44,16 +44,16 @@
       url: "http://aporee.org/maps/work/projects.php?project=gguerilla"
   images: 
     - 
-      image: "/img/20110625_Rimini_Wohlfühlorte_phAleksandraStosic-(1).jpg"
+      image: "/img/20110625_Rimini_Wohlfuhlorte_phAleksandraStosic-(1).jpg"
     - 
-      image: "/img/20110625_Rimini_Wohlfühlorte_phAleksandraStosic-(2).jpg"
+      image: "/img/20110625_Rimini_Wohlfuhlorte_phAleksandraStosic-(2).jpg"
     - 
-      image: "/img/20110625_Rimini_Wohlfühlorte_phAleksandraStosic-(3).jpg"
+      image: "/img/20110625_Rimini_Wohlfuhlorte_phAleksandraStosic-(3).jpg"
     - 
-      image: "/img/20110625_Rimini_Wohlfühlorte_phAleksandraStosic-(4).jpg"
+      image: "/img/20110625_Rimini_Wohlfuhlorte_phAleksandraStosic-(4).jpg"
     - 
-      image: "/img/20110625_Rimini_Wohlfühlorte_phAleksandraStosic-(5).jpg"
+      image: "/img/20110625_Rimini_Wohlfuhlorte_phAleksandraStosic-(5).jpg"
     - 
-      image: "/img/20110625_Rimini_Wohlfühlorte_phAleksandraStosic-(6).jpg"
+      image: "/img/20110625_Rimini_Wohlfuhlorte_phAleksandraStosic-(6).jpg"
   modules: ""
   projects: []

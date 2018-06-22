@@ -48,25 +48,25 @@
   links: []
   images: 
     - 
-      image: "/img/01_2013_Smfonija_ŽIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
+      image: "/img/01_2013_Smfonija_ZIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
     - 
-      image: "/img/02_2013_Smfonija_ŽIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
+      image: "/img/02_2013_Smfonija_ZIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
     - 
-      image: "/img/03_2013_Smfonija_ŽIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
+      image: "/img/03_2013_Smfonija_ZIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
     - 
-      image: "/img/04_2013_Smfonija_ŽIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
+      image: "/img/04_2013_Smfonija_ZIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
     - 
-      image: "/img/05_2013_Smfonija_ŽIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
+      image: "/img/05_2013_Smfonija_ZIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
     - 
-      image: "/img/06_2013_Smfonija_ŽIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
+      image: "/img/06_2013_Smfonija_ZIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
     - 
-      image: "/img/07_2013_Smfonija_ŽIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
+      image: "/img/07_2013_Smfonija_ZIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
     - 
-      image: "/img/08_2013_Smfonija_ŽIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
+      image: "/img/08_2013_Smfonija_ZIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
     - 
-      image: "/img/09_2013_Smfonija_ŽIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
+      image: "/img/09_2013_Smfonija_ZIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
     - 
-      image: "/img/10_2013_Smfonija_ŽIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
+      image: "/img/10_2013_Smfonija_ZIT_Gradska_Gerila_Savamala_Beograd_Foto_Gerila.jpg"
   video: "https://www.youtube.com/embed/jCkF30gHz0w"
   modules: "The Symphony of Savamala Project"
   projects: 

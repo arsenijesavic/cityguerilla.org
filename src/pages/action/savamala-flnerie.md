@@ -35,25 +35,25 @@
   links: []
   images: 
     - 
-      image: "/img/01_20121124_Flanerija_Savamala_ZoricaMilisavljević.jpg"
+      image: "/img/01_20121124_Flanerija_Savamala_ZoricaMilisavljevic.jpg"
     - 
-      image: "/img/02_20121124_Flanerija_Savamala_ZoricaMilisavljević.jpg"
+      image: "/img/02_20121124_Flanerija_Savamala_ZoricaMilisavljevic.jpg"
     - 
-      image: "/img/03_20121124_Flanerija_Savamala_ZoricaMilisavljević.jpg"
+      image: "/img/03_20121124_Flanerija_Savamala_ZoricaMilisavljevic.jpg"
     - 
-      image: "/img/04_20121124_Flanerija_Savamala_ZoricaMilisavljević.jpg"
+      image: "/img/04_20121124_Flanerija_Savamala_ZoricaMilisavljevic.jpg"
     - 
-      image: "/img/05_20121124_Flanerija_Savamala_ZoricaMilisavljević.jpg"
+      image: "/img/05_20121124_Flanerija_Savamala_ZoricaMilisavljevic.jpg"
     - 
-      image: "/img/06_20121124_Flanerija_Savamala_ZoricaMilisavljević.jpg"
+      image: "/img/06_20121124_Flanerija_Savamala_ZoricaMilisavljevic.jpg"
     - 
-      image: "/img/07_20121124_Flanerija_Savamala_ZoricaMilisavljević.jpg"
+      image: "/img/07_20121124_Flanerija_Savamala_ZoricaMilisavljevic.jpg"
     - 
-      image: "/img/08_20121124_Flanerija_Savamala_ZoricaMilisavljević.jpg"
+      image: "/img/08_20121124_Flanerija_Savamala_ZoricaMilisavljevic.jpg"
     - 
-      image: "/img/09_20121124_Flanerija_Savamala_ZoricaMilisavljević.jpg"
+      image: "/img/09_20121124_Flanerija_Savamala_ZoricaMilisavljevic.jpg"
     - 
-      image: "/img/10_20121124_Flanerija_Savamala_ZoricaMilisavljević.jpg"
+      image: "/img/10_20121124_Flanerija_Savamala_ZoricaMilisavljevic.jpg"
   modules: "Savamala Walks"
   projects: 
     - "Savamala Walks"

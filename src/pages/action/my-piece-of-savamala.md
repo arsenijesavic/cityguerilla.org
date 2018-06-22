@@ -67,25 +67,25 @@
       url: "https://prezi.com/uyyiqorxqdjf/moje-parce-savamale/"
   images: 
     - 
-      image: "/img/01_2015_ŠUP_Moje-parče-Svamale-Gradska-Gerila.jpg"
+      image: "/img/01_2015_SUP_Moje-parce-Svamale-Gradska-Gerila.jpg"
     - 
-      image: "/img/02_2015_ŠUP_Moje-parče-Svamale-Gradska-Gerila.jpg"
+      image: "/img/02_2015_SUP_Moje-parce-Svamale-Gradska-Gerila.jpg"
     - 
-      image: "/img/03_2015_ŠUP_Moje-parče-Svamale-Gradska-Gerila.jpg"
+      image: "/img/03_2015_SUP_Moje-parce-Svamale-Gradska-Gerila.jpg"
     - 
-      image: "/img/04_2015_ŠUP_Moje-parče-Svamale-Gradska-Gerila.jpg"
+      image: "/img/04_2015_SUP_Moje-parce-Svamale-Gradska-Gerila.jpg"
     - 
-      image: "/img/05_2015_ŠUP_Moje-parče-Svamale-Gradska-Gerila.jpg"
+      image: "/img/05_2015_SUP_Moje-parce-Svamale-Gradska-Gerila.jpg"
     - 
-      image: "/img/06_2015_ŠUP_Moje-parče-Svamale-Gradska-Gerila.jpg"
+      image: "/img/06_2015_SUP_Moje-parce-Svamale-Gradska-Gerila.jpg"
     - 
-      image: "/img/07_2015_ŠUP_Moje-parče-Svamale-Gradska-Gerila.jpg"
+      image: "/img/07_2015_SUP_Moje-parce-Svamale-Gradska-Gerila.jpg"
     - 
-      image: "/img/08_2015_ŠUP_Moje-parče-Svamale-Gradska-Gerila.jpg"
+      image: "/img/08_2015_SUP_Moje-parce-Svamale-Gradska-Gerila.jpg"
     - 
-      image: "/img/09_2015_ŠUP_Moje-parče-Svamale-Gradska-Gerila.jpg"
+      image: "/img/09_2015_SUP_Moje-parce-Svamale-Gradska-Gerila.jpg"
     - 
-      image: "/img/10_2015_ŠUP_Moje-parče-Svamale-Gradska-Gerila.jpg"
+      image: "/img/10_2015_SUP_Moje-parce-Svamale-Gradska-Gerila.jpg"
   modules: "School of Urban Practices"
   projects: 
     - "School of Urban Practices"

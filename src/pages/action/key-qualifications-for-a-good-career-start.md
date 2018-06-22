@@ -34,24 +34,24 @@
       url: "http://serbien.ahk.de/ahk-serbien/"
   images: 
     - 
-      image: "/img/2010_17.6_Ključne kvalifikacije...GG_BG_1.jpg"
+      image: "/img/2010_17.6_Kljucne kvalifikacije...GG_BG_1.jpg"
     - 
-      image: "/img/2010_17.6_Ključne kvalifikacije...GG_BG_10.jpg"
+      image: "/img/2010_17.6_Kljucne kvalifikacije...GG_BG_10.jpg"
     - 
-      image: "/img/2010_17.6_Ključne kvalifikacije...GG_BG_2.jpg"
+      image: "/img/2010_17.6_Kljucne kvalifikacije...GG_BG_2.jpg"
     - 
-      image: "/img/2010_17.6_Ključne kvalifikacije...GG_BG_3.jpg"
+      image: "/img/2010_17.6_Kljucne kvalifikacije...GG_BG_3.jpg"
     - 
-      image: "/img/2010_17.6_Ključne kvalifikacije...GG_BG_4.jpg"
+      image: "/img/2010_17.6_Kljucne kvalifikacije...GG_BG_4.jpg"
     - 
-      image: "/img/2010_17.6_Ključne kvalifikacije...GG_BG_5.jpg"
+      image: "/img/2010_17.6_Kljucne kvalifikacije...GG_BG_5.jpg"
     - 
-      image: "/img/2010_17.6_Ključne kvalifikacije...GG_BG_6.jpg"
+      image: "/img/2010_17.6_Kljucne kvalifikacije...GG_BG_6.jpg"
     - 
-      image: "/img/2010_17.6_Ključne kvalifikacije...GG_BG_7.jpg"
+      image: "/img/2010_17.6_Kljucne kvalifikacije...GG_BG_7.jpg"
     - 
-      image: "/img/2010_17.6_Ključne kvalifikacije...GG_BG_8.jpg"
+      image: "/img/2010_17.6_Kljucne kvalifikacije...GG_BG_8.jpg"
     - 
-      image: "/img/2010_17.6_Ključne kvalifikacije...GG_BG_9.jpg"
+      image: "/img/2010_17.6_Kljucne kvalifikacije...GG_BG_9.jpg"
   modules: ""
   projects: []

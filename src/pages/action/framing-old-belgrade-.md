@@ -28,12 +28,12 @@
   links: []
   images: 
     - 
-      image: "/img/2_2010_Framing-old-Belgrade_Karađorđeva-Savamala_Foto-Milica-Nikolić.jpeg.jpg"
+      image: "/img/2_2010_Framing-old-Belgrade_Karađorđeva-Savamala_Foto-Milica-Nikolic.jpeg.jpg"
     - 
-      image: "/img/3_2010_Framing-old-Belgrade_najstarija-kuća-Dušanova-Dorćol_Foto-Milica-Nikolić.jpeg.jpg"
+      image: "/img/3_2010_Framing-old-Belgrade_najstarija-kuca-Dusanova-Dorcol_Foto-Milica-Nikolic.jpeg.jpg"
     - 
-      image: "/img/4_2010_Framing-old-Belgrade_Kuća-Vitomira-Markovića_Foto-Milica-Nikolić.jpg"
+      image: "/img/4_2010_Framing-old-Belgrade_Kuca-Vitomira-Markovica_Foto-Milica-Nikolic.jpg"
     - 
-      image: "/img/5__2010_Framing-old-Belgrade_Kosančićev-venac-Beograd_Foto-Milica-Nikolić.jpg"
+      image: "/img/5__2010_Framing-old-Belgrade_Kosancicev-venac-Beograd_Foto-Milica-Nikolic.jpg"
   modules: ""
   projects: []

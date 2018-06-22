@@ -37,24 +37,24 @@
   links: []
   images: 
     - 
-      image: "/img/10_Stammtisch_Fidel_Ilija-Lazarević.jpg"
+      image: "/img/10_Stammtisch_Fidel_Ilija-Lazarevic.jpg"
     - 
-      image: "/img/1_Stammtisch_Čekaonica_Katarina-Nina-Antanasković.jpg"
+      image: "/img/1_Stammtisch_Cekaonica_Katarina-Nina-Antanaskovic.jpg"
     - 
-      image: "/img/2_Stammtisch_Čekaonica_Katarina-Nina-Antanasković.jpg"
+      image: "/img/2_Stammtisch_Cekaonica_Katarina-Nina-Antanaskovic.jpg"
     - 
-      image: "/img/3_Stammtisch_Čekaonica_Katarina-Nina-Antanasković.jpg"
+      image: "/img/3_Stammtisch_Cekaonica_Katarina-Nina-Antanaskovic.jpg"
     - 
-      image: "/img/4_Stammtisch_Čekaonica_Katarina-Nina-Antanasković.jpg"
+      image: "/img/4_Stammtisch_Cekaonica_Katarina-Nina-Antanaskovic.jpg"
     - 
-      image: "/img/5_Stammtisch_Čekaonica_Katarina-Nina-Antanasković.jpg"
+      image: "/img/5_Stammtisch_Cekaonica_Katarina-Nina-Antanaskovic.jpg"
     - 
-      image: "/img/6_Stammtisch_Fidel_Ilija-Lazarević.jpg"
+      image: "/img/6_Stammtisch_Fidel_Ilija-Lazarevic.jpg"
     - 
-      image: "/img/7_Stammtisch_Fidel_Ilija-Lazarević.jpg"
+      image: "/img/7_Stammtisch_Fidel_Ilija-Lazarevic.jpg"
     - 
-      image: "/img/8_Stammtisch_Fidel_Ilija-Lazarević.jpg"
+      image: "/img/8_Stammtisch_Fidel_Ilija-Lazarevic.jpg"
     - 
-      image: "/img/9_Stammtisch_Fidel_Ilija-Lazarević.jpg"
+      image: "/img/9_Stammtisch_Fidel_Ilija-Lazarevic.jpg"
   modules: ""
   projects: []
