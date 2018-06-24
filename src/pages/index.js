@@ -7,15 +7,19 @@ import kebabCase from 'lodash/kebabCase'
 import { navigateTo } from 'gatsby-link'
 
 const IndexPage = ({ data }) => {
-  const {
-    event,
-    featuredProject,
-  } = data.allMarkdownRemark.edges[0].node.frontmatter
+  const { event } = data.allMarkdownRemark.edges[0].node.frontmatter
 
   const actions = data.actions.edges.map(v => ({
     ...v.node.frontmatter,
     url: v.node.fields.slug,
   }))
+
+  const projects = data.projects.edges.map(v => ({
+    ...v.node.frontmatter,
+    url: v.node.fields.slug,
+  }))
+
+  const featuredProject = projects[Math.floor(Math.random() * projects.length)]
 
   const tags = data.tags.edges
     .map(v => v.node.frontmatter.tags)
@@ -103,12 +107,9 @@ const IndexPage = ({ data }) => {
             src="img/detail-1.png"
             alt=""
           />
-          <h2 style={{ textAlign: 'center' }}>-</h2>
-          <Link
-            to={`/projects/${kebabCase(featuredProject.name)}`}
-            style={{ position: 'relative' }}
-          >
-            <h2 style={{ textAlign: 'center' }}>{featuredProject.name}</h2>
+          <h2>-</h2>
+          <Link to={featuredProject.url} style={{ position: 'relative' }}>
+            <h2>{featuredProject.name}</h2>
           </Link>
           <p style={{ marginTop: '30px', textAlign: 'justify' }}>
             {featuredProject.description.split('.')[0].trim()}
@@ -156,30 +157,6 @@ const IndexPage = ({ data }) => {
 }
 export default IndexPage
 
-const ImageWithZoom = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1);
-  transition: transform 0.3s ease-in-out;
-  position: relative;
-  z-index: 9000;
-
-  &:hover {
-    transform: scale(1.3);
-  }
-`
-
-const FeaturedProject = styled.div`
-  position: relative;
-  padding: 30px;
-  > a {
-    &:hover {
-      text-decoration: line-through;
-    }
-  }
-`
-
 export const query = graphql`
   query IndexQuery {
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/home/" } }) {
@@ -215,7 +192,26 @@ export const query = graphql`
           frontmatter {
             name
             description
-            tags
+            images {
+              image
+            }
+          }
+        }
+      }
+    }
+
+    projects: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/project/" } }
+      limit: 30
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            name
+            description
             images {
               image
             }
@@ -235,6 +231,31 @@ export const query = graphql`
           }
         }
       }
+    }
+  }
+`
+
+const ImageWithZoom = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  z-index: 9000;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+`
+
+const FeaturedProject = styled.div`
+  position: relative;
+  padding: 30px;
+  text-align: center;
+  > a {
+    &:hover {
+      text-decoration: line-through;
     }
   }
 `

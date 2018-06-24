@@ -1,14 +1,18 @@
 ---
-  templateKey: project
+  templateKey: "project"
   name: "School of Urban Practices"
   description: "\n\t\t\t\t\tSchool of Urban Practices (S.O.U.P) is dedicated to building dialogue and including the community in the process of developing new concepts of common public spaces. Continually working on locations of public interest and exchanging ideas with the local community initiatives and local entrepreneurs, School of Urban Practices develops innovative strategies and projects based on critical engagement in current problems of urban communities.United during master's studies in year 2012, they wished to direct their newly gained professional calling - that of the architect - into a new way of thinking about the surroundings, its changes, agents, and (their own) roles in the process. They have been exploring new local practices of participative design through one-on-one meetings with citizens, experts, investors and urban decision makers. Since 2015 they are actively developing their methodologie and projects as part od City Guerillas modules.\nSince year 2015. all actitities are actively coordinated by Mirjana Utvić and Olvera Petrović.\t\t\t\t"
-  year: "2015"
-  images:
-    - image: "img/01_CityGuerilla_S.O.U.P_C5project.gif"
-    - image: "img/02_CityGuerilla_S.O.U.P_MPSproject.gif"
-    - image: "img/03_CityGuerilla_S.O.U.P_SHproject.gif"
-    - image: "img/04_CityGuerilla_S.O.U.P_SHproject.gif"
-  members:
+  from: "2015"
+  images: 
+    - 
+      image: "/img/01_CityGuerilla_S.O.U.P_C5project.gif"
+    - 
+      image: "/img/02_CityGuerilla_S.O.U.P_MPSproject.gif"
+    - 
+      image: "/img/03_CityGuerilla_S.O.U.P_SHproject.gif"
+    - 
+      image: "/img/04_CityGuerilla_S.O.U.P_SHproject.gif"
+  members: 
     - "Arsenije Savić"
     - "Milena Vasojević"
     - "Miloš Jovanović"
@@ -40,11 +44,11 @@
     - "Ivana Andrejić"
     - "Lidija Stojić"
     - "Tina Oparnica"
-  mentors:
+  mentors: 
     - "Mirjana Utvić"
     - "Zorica Milisavljević"
     - "Olivera Petrović"
-  tags:
+  tags: 
     - "Savamala"
     - "The Open Library"
     - "Architecture"
@@ -65,17 +69,17 @@
     - "Common Space"
     - "Citizens Participation"
     - "My Piece of The City"
-  actions:
+  actions: 
     - "Open Library "
     - "Collective interpretation of the Spanish house"
     - "G:DAY"
     - "Open Library Salon "
     - "My Piece of Savamala"
-  links:
-    -
+  links: 
+    - 
       name: "School of urban practices FB"
       url: "\\"
-    -
+    - 
       name: "Open library FB"
       url: "\\"
   partners: []
