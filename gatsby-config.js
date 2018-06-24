@@ -13,11 +13,9 @@ module.exports = {
   },
 
   plugins: [
-    `gatsby-plugin-styled-components`,
     {
       resolve: `@andrew-codes/gatsby-plugin-elasticlunr-search`,
       options: {
-        // Fields to index
         fields: ['name'],
         resolvers: {
           MarkdownRemark: {
@@ -29,6 +27,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-92678589-1',
+        head: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
