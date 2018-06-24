@@ -9,6 +9,7 @@ collections:
   - name: "actions"
     label: "Action"
     folder: "src/pages/action"
+    create: true
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}
@@ -83,6 +84,7 @@ collections:
   - name: "projects"
     label: "Projects"
     folder: "src/pages/project"
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project"}
@@ -137,6 +139,7 @@ collections:
   - name: "members"
     label: "Members"
     folder: "src/pages/member"
+    create: true
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "member"}
@@ -155,6 +158,7 @@ collections:
   - name: "creative-board"
     label: "Creative Board"
     folder: "src/pages/board"
+    create: true
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "action"}

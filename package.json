@@ -24,7 +24,7 @@
     "gatsby-transformer-sharp": "^1.6.27",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
-    "netlify-cms": "git+https://github.com/arsenijesavic/netlify-cms.git#904bd6bbeb87e0e40a6d8e8101cb50db173f8f26",
+    "netlify-cms": "git+https://github.com/arsenijesavic/netlify-cms.git#046c948f7ad667a84902943924cee45990660f25",
     "prop-types": "^15.6.2",
     "query-string": "^6.1.0",
     "react": "^16.4.1",
