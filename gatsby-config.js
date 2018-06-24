@@ -5,7 +5,7 @@ module.exports = {
     description: `https://cityguerilla.org/`,
     homepage: `https://cityguerilla.org/`,
     keywords: 'art, ngo',
-    image: 'https://https://v3.cityguerilla.org//assets/cover.jpg',
+    image: 'https://https://v3.cityguerilla.org/assets/cover.jpg',
   },
 
   mapping: {

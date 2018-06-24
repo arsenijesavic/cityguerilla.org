@@ -1,13 +1,13 @@
 exports.onClientEntry = () => {
-  window.___emitter.on(`onDelayedLoadPageResources`, () => {
-    console.log('onDelayedLoadPageResources')
-  })
+  // window.___emitter.on(`onDelayedLoadPageResources`, () => {
+  //   console.log('onDelayedLoadPageResources')
+  // })
 
-  window.___emitter.on(`onPostLoadPageResources`, () => {
-    console.log('onPostLoadPageResources')
-  })
+  // window.___emitter.on(`onPostLoadPageResources`, () => {
+  //   console.log('onPostLoadPageResources')
+  // })
 
-  const styles = ``
+  // const styles = ``
   // const node = document.createElement(`style`)
   // node.id = `nprogress-styles`
   // node.innerHTML = styles
