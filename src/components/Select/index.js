@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 class Select extends Component {
-  state = {}
+  state = {
+    selected: 'all',
+  }
 
   openOptions = () => {
     this.setState({ isOptionsOpen: true })
@@ -27,11 +29,11 @@ class Select extends Component {
         <Icon>+</Icon>
         <Selected onMouseLeave={isOptionsOpen && this.closeOptions}>
           <p onMouseEnter={!isOptionsOpen && this.openOptions}>
-            {selected ? selected : placeholder}
+            {selected !== 'all' ? selected : placeholder}
           </p>
           <Options isOpen={isOptionsOpen}>
             {options &&
-              options.map((option, i) => (
+              ['all', ...options].map((option, i) => (
                 <Option key={i} onClick={() => this.onSelect(option)}>
                   {option}
                 </Option>
@@ -77,6 +79,10 @@ const Selected = styled.div`
 
   > p {
     cursor: pointer;
+    max-width: 8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 `
 

@@ -15,6 +15,7 @@ const AboutPage = ({ data }) => {
     ...v.node.frontmatter,
     url: v.node.fields.slug,
   }))
+  console.log(timeline)
 
   return (
     <Grid>
@@ -60,7 +61,7 @@ const AboutPage = ({ data }) => {
           >
             <TimelineEvent>
               <TimelineDetails>
-                <h3>{moment(event.year).format('YYYY')}</h3>
+                <h3>{event.year}</h3>
                 <p>{event.description}</p>
               </TimelineDetails>
             </TimelineEvent>
@@ -212,7 +213,7 @@ const TimelineDetails = styled.div`
 
   &:hover {
     width: 225px;
-    height: 180px;
+    height: 225px;
     > p {
       width: 100%;
       opacity: 1;

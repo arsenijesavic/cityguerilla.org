@@ -4,13 +4,35 @@ import styled from 'styled-components'
 import { Grid, Cell, Select } from '../components'
 import moment from 'moment'
 import uniqBy from 'lodash/uniqBy'
+import isArray from 'lodash/isArray'
+import isDate from 'lodash/isDate'
+// var query = {address: "England", name: "Mark"};
+
+// var result = users.filter(search, query);
+
+// function search(user){
+//   return Object.keys(this).every((key) =>
+//     user[key] === this[key]);
+
+// return Object.keys(this).every((key) => {
+//   if(isArray(user[key]))
+//     user[key].containts(this[key])
+//   else
+//     user[key] === this[key]
+// );
+
+// }
+
+// function isArray (value) {
+// return value && typeof value === 'object' && value.constructor === Array;
+// }
 
 class ActionsPage extends Component {
   state = {
     filters: {
-      from: '',
-      category: '',
-      tag: '',
+      //from: 'all',
+      category: 'all',
+      tags: 'all',
     },
   }
 
@@ -21,29 +43,42 @@ class ActionsPage extends Component {
   }
 
   render() {
-    const { data } = this.props
+    const { filters } = this.state
 
-    const allData = data.allMarkdownRemark.edges.map(v => ({
+    const data = this.props.data.allMarkdownRemark.edges.map(v => ({
       ...v.node.frontmatter,
       url: v.node.fields.slug,
     }))
 
-    const projects = allData
+    function search(data) {
+      const isValid = Object.keys(this).filter(key => {
+        if (this[key] === 'all') return true
+        else if (isArray(data[key]) && data[key].includes(this[key]))
+          return true
+        //else return false
+      })
+      console.log(isValid)
+      return isValid
+    }
 
-    const years = allData
-      .map(v => moment(v.from).format('YYYY'))
+    const projects = data.filter(search, filters)
+    console.log(projects, filters)
+    //const projects = data
+
+    const years = data
+      .map(v => v.from && moment(v.from).format('YYYY'))
       .filter((elem, pos, arr) => arr.indexOf(elem) == pos)
       .filter(v => v !== 'Invalid date')
       .sort((a, b) => a - b)
 
-    const categories = allData
+    const categories = data
       .map(v => v.category && v.category.toLowerCase().split(' '))
       .reduce((a, b) => a.concat(b), [])
       .filter(Boolean)
       .map(v => v.replace(',', ''))
       .filter((elem, pos, arr) => arr.indexOf(elem) == pos)
 
-    const tags = data.tags.group
+    const tags = this.props.data.tags.group
       .map(v => v.fieldValue)
       .filter((elem, pos, arr) => arr.indexOf(elem) == pos)
 
@@ -66,7 +101,12 @@ class ActionsPage extends Component {
           />
         </Cell>
         <Cell width={4} height={1} bottom={1} index="900">
-          <Select placeholder="Tag" options={tags} />
+          <Select
+            id="tags"
+            placeholder="Tag"
+            options={tags}
+            onChange={this.handleFilter}
+          />
         </Cell>
 
         {projects &&

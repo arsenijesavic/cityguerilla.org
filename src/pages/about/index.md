@@ -52,9 +52,43 @@ details: >-
   projects and actions in Serbia and abroad, thus establishing a wide
   cooperation network with similar initiatives in the country and the region.
 timeline:
-  - title: zsda
-    description: dsadsa
-    year: 1231
+  - title: Goethe-Gerila
+    description: 'Initiation of the Goethe-Institut project in Belgrade
+Goethe-Institut, Initiators: Jutta Gehrig, director and Zorica Milisavljević, coordinator of special projects (mentor of the Guerilla project from 2010 to 2016)'
+    year: 2010
+
+  - title: Goethe-Gerila
+    description: 'Under the wing of the Goethe-Institut, new groups are established in the region: Prishtina, Sarajevo, Skopje, Zagreb. The first regional meeting in Ohrid. The second generation of Guerilla in Belgrade'
+    year: 2011
+
+  - title: Goethe-Gerila
+    description: 'Region: establishment of Goethe-Guerilla in Herceg Novi. Establishment of further groups in Budapest, Krakow and Vilnius (under the wing of the Goethe-Institut). Regional Workshop "Youth in Action", Germany. Participants from Belgrade, Sarajevo, Budapest, Vilnius and various cities in Germany. Belgrade:  focus on Savamala'
+    year: 2012
+
+  - title: Goethe-Gerila
+    description: 'Belgrade: Guerilla becomes part of a Goethe-Institut project Urban Incubator: Belgrade in Savamala. Regional workshop "Youth in Action" in Savamala, Belgrade. Participants from Belgrade, Sarajevo, Budapest, Vilnius and various cities in Germany. Belgrade: members from previous generations become co-mentors. Within the Urban Incubator project active as "local scouts"'
+    year: 2013
+
+  - title: Goethe-Gerila
+    description: 'The fifth generation of Goethe-Guerilla in Belgrade is simultaneously active in Savamala together with active members from the previous generation. Founding Assembly, Srebrno jezero, December 2014. Establishment of the City Guerilla Association. Cooperation with the newly founded Urban Incubator Association'
+    year: 2014
+
+  - title: Goethe-Gerila
+    description: 'Formation of four modules: School of Urban Practices, Savamala Walks, Puls, Shhhumigrad. The modules are led by the experienced Guerilla members from previous generations. All the actions are focused on Savamala. Cooperation with the Urban Incubator Association'
+    year: 2015
+
+  - title: Goethe-Gerila
+    description: 'Realization of projects and actions in Savamala. School of Urban Practices: award at the Architecture Salon for the project "My Piece of Savamala". Actopolis. The Art of Action: Participation in the international project of the Goethe-Institut and the organization of Urban Künste Ruhr, Germany, as a part of the Belgrade edition entitled "Formal-Informal. Self-organized cultural scene in Belgrade", Curator: Mirjana Boba Stojadinović'
+    year: 2016
+
+  - title: Goethe-Gerila
+    description: 'Initiation of the Goethe-Institut project in Belgrade
+Goethe-Institut, Initiators: Jutta Gehrig, director and Zorica Milisavljević, coordinator of special projects (mentor of the Guerilla project from 2010 to 2016)'
+    year: 2017
+  - title: Goethe-Gerila
+    description: 'Initiation of the Goethe-Institut project in Belgrade
+Goethe-Institut, Initiators: Jutta Gehrig, director and Zorica Milisavljević, coordinator of special projects (mentor of the Guerilla project from 2010 to 2016)'
+    year: 2018
 documents:
   - name: katalog 2014
     url: 'https://issuu.com/cityguerilla/docs/gg_katalog_manji'
@@ -67,4 +101,3 @@ documents:
       https://issuu.com/cityguerilla/docs/city_guerilla_raport_2017_31168d19a850d7
 presskit: /img/prijava-upisa-udruzenja-komplet-t.pdf
 ---
-
